@@ -42,6 +42,6 @@ themes/calm/node_modules/*
 
 # Ignore build files #
 # ================== #
-themes/calm/.idea
+themes/calm/.idea/
 themes/calm/gulpfile.js
 themes/calm/build/*
