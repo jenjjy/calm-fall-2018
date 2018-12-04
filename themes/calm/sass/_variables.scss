@@ -3,25 +3,25 @@
 $base__space-unit: 1.5rem;
 
 // Main Colors
-$primary__color: #52B0CC;
-$secondary__color: #B4DE96;
+$primary__color: #52b0cc;
+$secondary__color: #b4de96;
 
 // Background Colors
-$box__background: #AACBD8;
-$color__background-body: #F0F3F8;
+$box__background: #aacbd8;
+$color__background-body: #f0f3f8;
 $color__background-pre: yellow;
 
 // Text Color
 $color__text-main: #787878;
-$color__white: #FFFF;
+$color__white: #ffff;
 
-$color__link: #9EC284;
-$color__link-hover: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
+$color__link: #9ec284;
+$color__link-hover: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 
 // Typography
 
 $font__main: 'Quicksand', sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+$font__pre: 'Courier 10 Pitch', Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
