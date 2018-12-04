@@ -11,13 +11,24 @@
 }
 
 // Structure
-/* Ex of how to include this in your scss:
- * "@include flex(row wrap, center, flex-start);" */
 @mixin flex($flexflow, $justify, $align) {
   display: flex;
   flex-flow: $flexflow;
   justify-content: $justify;
   align-items: $align;
+}
+/* Ex of how to include this in scss:
+ * "@include flex(row wrap, center, flex-start);" */
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
 }
 
 // Rem output with px fallback
