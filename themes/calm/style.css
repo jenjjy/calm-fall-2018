@@ -222,7 +222,7 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'Quicksand-Light';
   src: url("../../fonts/Quicksand-Light.eot");
   src: url("../../fonts/Quicksand-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Quicksand-Light.woff2") format("woff2"), url("../../fonts/Quicksand-Light.woff") format("woff"), url("../../fonts/Quicksand-Light.ttf") format("truetype"), url("../../fonts/Quicksand-Light.svg#Quicksand-Light") format("svg");
   font-weight: 300;
@@ -355,8 +355,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #787878;
+  font-family: "Quicksand-Light", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -379,8 +379,8 @@ address {
   margin: 0 0 1.5rem; }
 
 pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  background: yellow;
+  font-family: "Quicksand", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -390,16 +390,16 @@ pre {
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Muli-Bold", "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666;
+  border-bottom: 1px dotted 1px dotted black;
   cursor: help; }
 
 mark, ins {
-  background: #fff9c0;
+  background: purple;
   text-decoration: none; }
 
 big {
@@ -422,7 +422,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #f0f3f8;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote,
@@ -434,7 +434,7 @@ q {
     content: ''; }
 
 hr {
-  background-color: #ccc;
+  background-color: green;
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
@@ -542,11 +542,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #9ec284; }
   a:visited {
-    color: purple; }
+    color: yellowgreen; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -630,12 +630,12 @@ a {
   width: 1px;
   overflow: hidden; }
   .screen-reader-text:focus {
-    background-color: #f1f1f1;
+    background-color: red;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #21759b;
+    color: green;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
