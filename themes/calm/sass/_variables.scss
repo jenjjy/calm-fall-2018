@@ -2,22 +2,20 @@
 
 $base__space-unit: 1.5rem;
 
-// Colors
+// Main Colors
+$primary__color: #52B0CC;
+$secondary__color: #B4DE96;
 
-$color__background-body: #fff;
-$color__text-main: #404040;
+// Background Colors
+$box_background: #AACBD8;
+$color__background-body: #F0F3F8;
 
-$color__background-screen: #f1f1f1;
-$color__text-screen: #21759b;
+// Text Color
+$color__text-main: #787878;
+$color__white: #FFFF;
 
-$color__background-hr: #ccc;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
-$color__border-abbr: #666;
-
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
+$color__link-hover: #B4DE96;
 
 // Typography
 
