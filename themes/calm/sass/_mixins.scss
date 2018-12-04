@@ -1,3 +1,15 @@
+// Button
+@mixin button {
+  background: $secondary__color;
+  border-radius: 25px;
+  color: $color__white;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  &:hover {
+    background: $color__link-hover;
+  }
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
   font-size: ($sizeValue * 16) * 1px;
