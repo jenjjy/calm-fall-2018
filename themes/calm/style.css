@@ -39,6 +39,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/* Ex of how to include this in your scss:
+ * "@include flex(row wrap, center, flex-start);" */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;

@@ -10,6 +10,16 @@
   }
 }
 
+// Structure
+/* Ex of how to include this in your scss:
+ * "@include flex(row wrap, center, flex-start);" */
+@mixin flex($flexflow, $justify, $align) {
+  display: flex;
+  flex-flow: $flexflow;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
   font-size: ($sizeValue * 16) * 1px;
