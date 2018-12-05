@@ -5,7 +5,12 @@
 /* Buttons */
 .button {
   @include button;
-  @include heightandwidth(50px, 300px);
+  font-family: $font__secondary;
+  padding: 0.8rem 6rem;
+  font-size: 17px;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
 }
 
 /* Fields */

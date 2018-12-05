@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="banner-header">
             <h1>innovation tools for teachers</h1>
             <div>
-                <a href="#" class="button">Link Button</a>
+                <a href="#" class="button">purchase now</a>
 
             </div>
         </div>
