@@ -51,7 +51,7 @@ include_once( RF_DIR . '/lib/functions/taxonomies.php' );
 
 
 // Register Testimony Post Type
-function testimony() {
+function calm_testimony() {
 
 	$labels = array(
 		'name'                  => 'Testimonials',
@@ -104,4 +104,4 @@ function testimony() {
 	register_post_type( 'testimony', $args );
 
 }
-add_action( 'init', 'testimony', 0 );
+add_action( 'init', 'calm_testimony', 0 );

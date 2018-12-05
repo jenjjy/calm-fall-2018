@@ -566,6 +566,8 @@ a {
     float: left;
     position: relative; }
   .main-navigation a {
+    background: #52b0cc;
+    color: #fff;
     display: block;
     text-decoration: none; }
 
