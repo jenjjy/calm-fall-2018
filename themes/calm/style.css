@@ -800,6 +800,10 @@ object {
 .gallery-caption {
   display: block; }
 
+.site-header {
+  background: #52b0cc;
+  color: #fff; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
