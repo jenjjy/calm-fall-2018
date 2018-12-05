@@ -683,6 +683,10 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+/* Footer */
+.site-footer {
+  border: solid red; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
