@@ -3,8 +3,7 @@
 --------------------------------------------------------------*/
 
 /* Buttons */
-
-button {
+.button {
   @include button;
   @include heightandwidth(50px, 300px);
 }
