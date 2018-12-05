@@ -27,7 +27,7 @@ get_header(); ?>
         <?php /* Start Testimony Loop */ ?>
         <?php while (have_posts()) : the_post(); ?>
 
-            <?php get_template_part('template-parts/testimony'); ?>
+            <?php get_template_part( 'testimony' ); ?>
 
         <?php endwhile; ?>
 
