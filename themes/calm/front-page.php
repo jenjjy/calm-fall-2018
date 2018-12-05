@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="banner-header">
             <h1>innovation tools for teachers</h1>
             <div>
-                <a href="#" class="button">purchase now</a>
+                <a href="https://calmversation.thinkific.com/" class="button">purchase now</a>
 
             </div>
         </div>
@@ -25,9 +25,9 @@ get_header(); ?>
         </div>
 
         <?php /* Start Testimony Loop */ ?>
-        <?php while ( have_posts() ) : the_post(); ?>
+        <?php while (have_posts()) : the_post(); ?>
 
-            <?php get_template_part('template-parts/testimony'); ?>
+            <?php get_template_part( 'testimony' ); ?>
 
         <?php endwhile; ?>
 
