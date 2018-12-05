@@ -527,8 +527,6 @@ textarea {
 /* Links */
 a {
   color: #9ec284; }
-  a:visited {
-    color: yellowgreen; }
   a:hover, a:focus, a:active {
     color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
   a:focus {
