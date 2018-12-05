@@ -10,11 +10,30 @@
 	</div><!-- #content -->
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			 <div class="site-info">
-				  
-			   		<div id="secondary" class="widget-area" role="complementary">
+		  <div class="site-info">
+			 <div class="socail-media-icon">
+		
+			 <a href="mailto:hello@calmversation.com">
+			      <i class="far fa-envelope"></i>
+			 </a>
 
-				   	   <?php dynamic_sidebar( 'sidebar-1' ); ?>
+			 <a href="https://www.facebook.com/calmversation/">
+                   <i class="fab fa-facebook"></i>
+			 </a>	 
+			<a href="https://www.instagram.com/calmversation/">      
+					 <i class="fab fa-instagram"></i>   
+			</a>
+
+			</div>
+                <div class="footer-naviation">
+<ul>
+<a href="https://calm.van.cp.academy.red"><li>Home</li></a>
+<a href=""
+
+</ul>
+              </div>
+
+
 
 			   		</div><!--widget-area-->
 				</div><!-- .site-info -->
