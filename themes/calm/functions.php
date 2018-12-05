@@ -98,7 +98,7 @@ function calm_scripts()
 
     // Custom JS
 
-    wp_enqueue_script('qod-script', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery'), '', true);
+    wp_enqueue_script('calm-scripts', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery'), '', true);
 
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
