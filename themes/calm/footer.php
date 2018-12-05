@@ -26,11 +26,12 @@
 
 			</div>
                 <div class="footer-naviation">
-<ul>
-<a href="https://calm.van.cp.academy.red"><li>Home</li></a>
-<a href=""
-
-</ul>
+					<ul>
+							<a href="https://calm.van.cp.academy.red"><li>Home</li></a>
+							<a href=""><li>faq</li></a>
+							<a href=""><li>terms of use</li></a>
+							<a href=""><li>Privacy Policy<li></a>
+					</ul>
               </div>
 
 
