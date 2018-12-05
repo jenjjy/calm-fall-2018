@@ -478,6 +478,7 @@ table {
 /* Buttons */
 button {
   background: #b4de96;
+  border-color: #b4de96;
   border-radius: 25px;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -672,18 +673,6 @@ a {
 .widget_search .search-submit {
   display: none; }
 
-button {
-  background: #b4de96;
-  border-radius: 25px;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  height: 50px;
-  width: 300px; }
-  button:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
-
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -794,4 +783,7 @@ object {
 # Front Page
 --------------------------------------------------------------*/
 .banner-header {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1rem; }
+  .banner-header h1 {
+    font-size: 2.7rem; }

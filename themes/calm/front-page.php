@@ -13,7 +13,7 @@ get_header(); ?>
             <h1>innovation tools for teachers</h1>
             <div>
                 <button type="button">
-                        purchase now
+                    <p>purchase now</p>
                 </button>
             </div>
         </div>
@@ -25,6 +25,8 @@ get_header(); ?>
             </div>
         </div>
 
+
+        <?php get_template_part("testimony"); ?>
 
     </main><!-- #main -->
 </div><!-- #primary -->
