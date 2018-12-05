@@ -571,7 +571,8 @@ a {
     background: #52b0cc;
     color: #fff;
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: uppercase; }
     @media (min-width: 500px) {
       .main-navigation a {
         color: #787878;
