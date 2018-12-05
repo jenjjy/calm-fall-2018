@@ -541,7 +541,9 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -778,10 +780,6 @@ object {
 
 .gallery-caption {
   display: block; }
-
-.site-header {
-  background: #52b0cc;
-  color: #fff; }
 
 /*--------------------------------------------------------------
 # Page Templates
