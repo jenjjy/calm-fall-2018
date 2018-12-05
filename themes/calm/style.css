@@ -358,7 +358,7 @@ input,
 select,
 textarea {
   color: #787878;
-  font-family: "Quicksand-Light", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -481,10 +481,13 @@ table {
   border-color: #b4de96;
   border-radius: 25px;
   color: #fff;
-  padding: 0.5rem 1rem;
   text-transform: uppercase;
-  height: 50px;
-  width: 300px; }
+  font-family: "Muli", sans-serif;
+  padding: 0.8rem 6rem;
+  font-size: 17px;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none; }
   .button:hover {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
@@ -790,6 +793,7 @@ object {
 --------------------------------------------------------------*/
 .banner-header {
   text-align: center;
-  margin-bottom: 1rem; }
+  margin-bottom: 2.2rem; }
   .banner-header h1 {
+    font-family: 'Quicksand-Light', sans-serif;
     font-size: 2.7rem; }
