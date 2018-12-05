@@ -12,9 +12,8 @@ get_header(); ?>
         <div class="banner-header">
             <h1>innovation tools for teachers</h1>
             <div>
-                <button type="button">
-                    <p>purchase now</p>
-                </button>
+                <a href="#" class="button">Link Button</a>
+
             </div>
         </div>
         <div class="hero-image hero-home">
@@ -25,8 +24,13 @@ get_header(); ?>
             </div>
         </div>
 
+        <?php /* Start Testimony Loop */ ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php get_template_part("testimony"); ?>
+            <?php get_template_part('template-parts/testimony'); ?>
+
+        <?php endwhile; ?>
+
 
     </main><!-- #main -->
 </div><!-- #primary -->
