@@ -9,6 +9,14 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+        <div class="banner-header">
+            <h1>innovation tools for teachers</h1>
+            <div>
+                <button>
+
+                </button>
+            </div>
+        </div>
         <div class="hero-image hero-home">
             <img src= <?php echo (get_template_directory_uri()) . "/images/banner-image-mobile.png"; ?>
                  alt = "calmversation banner" />
