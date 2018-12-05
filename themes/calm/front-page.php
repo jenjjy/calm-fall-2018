@@ -12,8 +12,8 @@ get_header(); ?>
         <div class="banner-header">
             <h1>innovation tools for teachers</h1>
             <div>
-                <button>
-
+                <button type="button">
+                        purchase now
                 </button>
             </div>
         </div>

@@ -43,3 +43,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+// Height and Width
+
+@mixin heightandwidth($height, $width){
+  height: $height;
+  width: $width;
+
+}
