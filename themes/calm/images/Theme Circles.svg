@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="585px" height="600px" viewBox="0 0 585 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Theme Circles</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="91.5" cy="91.5" r="91.5"></circle>
+        <filter x="-9.0%" y="-4.6%" width="113.7%" height="113.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.104308197 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-11.7%" y="-11.7%" width="123.5%" height="123.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="-4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.104308197 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-11.7%" y="-11.7%" width="123.5%" height="123.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="-4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.104308197 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-11.7%" y="-11.7%" width="123.4%" height="123.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="-4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.104308197 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-11.7%" y="-7.4%" width="119.1%" height="119.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="-2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.173063859 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-7" cx="91.5" cy="91.5" r="91.5"></circle>
+        <filter x="-9.0%" y="-4.6%" width="113.7%" height="113.7%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="-4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0870131341 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page-Desktop" transform="translate(-122.000000, -2133.000000)">
+            <g id="Group-5" transform="translate(135.000000, 1986.000000)">
+                <g id="Theme-Circles" transform="translate(0.000000, 150.000000)">
+                    <g id="arrow" transform="translate(58.000000, 108.000000)" fill-rule="nonzero" stroke="#B4DE96" stroke-linecap="round" stroke-width="6">
+                        <path d="M432.369144,309.703136 C446.235257,280.724559 454,248.269056 454,214 M388.768941,55.0485118 C366.201675,34.034962 339.619103,17.3223831 310.308569,6.20572367 M139.245422,11 C138.333757,11.4579746 130.659914,16.4247383 129.755484,16.8948512 C67.2001263,49.4104189 22.0763804,110.831737 12.0834819,183.459569 M12.0301689,244.150393 C23.0282343,325.147465 77.7114266,392.261168 151.570221,420.981977 M188.695059,431.889496 C202.465271,434.586175 216.701133,436 231.270407,436 C313.348358,436 384.844542,391.128276 422.114928,324.802257" id="Shape"></path>
+                        <polyline id="Path-2" stroke-linejoin="round" points="364 56.4 389.532318 56.4 389.532318 34"></polyline>
+                        <polyline id="Path-2-Copy" stroke-linejoin="round" transform="translate(440.126023, 295.779002) rotate(71.000000) translate(-440.126023, -295.779002) " points="428.729239 308.934627 451.522807 307.717346 451.522807 282.623376"></polyline>
+                        <polyline id="Path-2-Copy-5" stroke-linejoin="round" transform="translate(14.231463, 254.168170) rotate(206.000000) translate(-14.231463, -254.168170) " points="2.8517014 263.268821 22.2799225 262.251688 25.6112254 245.067519"></polyline>
+                        <polyline id="Path-2-Copy-6" stroke-linejoin="round" transform="translate(199.637988, 433.778940) rotate(138.000000) translate(-199.637988, -433.778940) " points="186.258226 445.37959 209.100969 444.083046 213.01775 422.178289"></polyline>
+                        <polyline id="Path-2-Copy-7" stroke-linejoin="round" transform="translate(132.780534, 14.907699) rotate(287.000000) translate(-132.780534, -14.907699) " points="120.400772 25.0083496 141.536254 23.8794523 145.160296 4.80704808 141.437946 23.5667938"></polyline>
+                    </g>
+                    <g id="Theme-1" transform="translate(204.000000, 0.000000)">
+                        <g id="Oval">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#52B0CC" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <text id="Theme-1-Ideas-and-In" font-family="Quicksand-Bold, Quicksand" font-size="16" font-weight="bold" letter-spacing="0.2" fill="#FFFFFF">
+                            <tspan x="59.296" y="81.877095">Theme 1</tspan>
+                            <tspan x="8.592" y="101.877095">Ideas and Inspiration</tspan>
+                        </text>
+                    </g>
+                    <g id="Theme-2" filter="url(#filter-3)" transform="translate(386.000000, 166.000000)">
+                        <circle id="Oval" fill="#52B0CC" cx="91.5" cy="91.5" r="91.5"></circle>
+                        <text id="Theme-2-Communicatio" font-family="Quicksand-Bold, Quicksand" font-size="16" font-weight="bold" letter-spacing="0.2" fill="#FFFFFF">
+                            <tspan x="57.92" y="85.9664804">Theme 2</tspan>
+                            <tspan x="30.224" y="105.96648">Communication</tspan>
+                        </text>
+                    </g>
+                    <g id="Theme-4" filter="url(#filter-4)" transform="translate(68.000000, 403.000000)">
+                        <circle id="Oval" fill="#52B0CC" cx="91.5" cy="91.5" r="91.5"></circle>
+                        <text id="Theme-4-Learning" font-family="Quicksand-Bold, Quicksand" font-size="16" font-weight="bold" letter-spacing="0.2" fill="#FFFFFF">
+                            <tspan x="56.544" y="88.0111732">Theme 4</tspan>
+                            <tspan x="56.588" y="108.011173">Learning</tspan>
+                        </text>
+                    </g>
+                    <g id="Theme-3" filter="url(#filter-5)" transform="translate(328.000000, 403.000000)">
+                        <ellipse id="Oval" fill="#52B0CC" cx="92.5111111" cy="91.5" rx="91.4888889" ry="91.5"></ellipse>
+                        <text id="Theme-3-Emotions" font-family="Quicksand-Bold, Quicksand" font-size="16" font-weight="bold" letter-spacing="0.2" fill="#FFFFFF">
+                            <tspan x="58.532" y="88.0111732">Theme 3</tspan>
+                            <tspan x="55.64" y="108.011173">Emotions</tspan>
+                        </text>
+                    </g>
+                    <g id="Theme-5" filter="url(#filter-6)" transform="translate(0.000000, 167.000000)">
+                        <g id="Oval">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                            <use fill="#52B0CC" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        </g>
+                        <text id="Theme-5-Problem-Solv" font-family="Quicksand-Bold, Quicksand" font-size="16" font-weight="bold" letter-spacing="0.2" fill="#FFFFFF">
+                            <tspan x="57.576" y="88.0111732">Theme 5 </tspan>
+                            <tspan x="27.784" y="108.011173">Problem Solving</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="504px" height="177px" viewBox="0 0 504 177" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Design for all kids</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Courses-Problem-solving-Copy-2" transform="translate(-801.000000, -3436.000000)">
+            <g id="Design-for-all-kids" transform="translate(801.000000, 3436.000000)">
+                <g id="Group-3" fill="#52B0CC" fill-rule="nonzero">
+                    <polygon id="Rectangle" points="171 0 339 0 339 59 171 59"></polygon>
+                    <polygon id="Rectangle" points="87 59 255 59 255 118 87 118"></polygon>
+                    <polygon id="Rectangle" points="0 118 168 118 168 177 0 177"></polygon>
+                    <polygon id="Rectangle" points="168 118 336 118 336 177 168 177"></polygon>
+                    <polygon id="Rectangle" points="255 59 423 59 423 118 255 118"></polygon>
+                    <polygon id="Rectangle" points="336 118 504 118 504 177 336 177"></polygon>
+                </g>
+                <text id="5---7" font-family="Quicksand-Regular, Quicksand" font-size="28" font-weight="normal" letter-spacing="0.98" fill="#FFFFFF">
+                    <tspan x="54" y="158">5 - 7</tspan>
+                </text>
+                <text id="8---10" font-family="Quicksand-Regular, Quicksand" font-size="28" font-weight="normal" letter-spacing="0.98" fill="#FFFFFF">
+                    <tspan x="215" y="158">8 - 10</tspan>
+                </text>
+                <text id="11---13" font-family="Quicksand-Regular, Quicksand" font-size="28" font-weight="normal" letter-spacing="0.98" fill="#FFFFFF">
+                    <tspan x="382" y="158">11 - 13</tspan>
+                </text>
+                <text id="14---15" font-family="Quicksand-Regular, Quicksand" font-size="28" font-weight="normal" letter-spacing="0.98" fill="#FFFFFF">
+                    <tspan x="130" y="99">14 - 15</tspan>
+                </text>
+                <text id="16---17" font-family="Quicksand-Regular, Quicksand" font-size="28" font-weight="normal" letter-spacing="0.98" fill="#FFFFFF">
+                    <tspan x="298" y="99">16 - 17</tspan>
+                </text>
+                <text id="18" font-family="Quicksand-Regular, Quicksand" font-size="28" font-weight="normal" letter-spacing="0.98" fill="#FFFFFF">
+                    <tspan x="241" y="40">18</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
