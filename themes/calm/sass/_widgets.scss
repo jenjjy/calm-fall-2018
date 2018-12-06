@@ -21,4 +21,59 @@
 
 .site-footer {
   border: solid red;
+  background-color: $primary__color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+
+  ul {
+    list-style: none;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: $color__white;
+    display: block;
+    margin: 5px;
+    border: red solid;
+  }
+
+  .footer-navigation {
+
+    margin-right: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+
+  }
+
+  h6 {
+    color: $color__white;
+  }
+
+  .social-media-icon {
+
+    ul {
+
+      width: 90%;
+      display: flex;
+      margin-left: 10px;
+    }
+
+    li {
+      border: solid blue;
+      justify-content: flex-start;
+      display: flex;
+
+    }
+
+    a {
+
+      margin: 0px 25px;
+      font-size: 30px;
+    }
+  }
+
+
 }
