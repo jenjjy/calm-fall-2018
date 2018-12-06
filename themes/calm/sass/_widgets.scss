@@ -19,7 +19,7 @@
 /* Footer */
 
 .site-footer {
-  border: solid red;
+
   background-color: $primary__color;
   @include flex(column, null, center);
   padding-top: 20px;
@@ -38,7 +38,7 @@
   }
 
   .footer-navigation {
-    border: green solid;
+
     text-align: center;
     letter-spacing: 2px;
   }
@@ -50,15 +50,14 @@
   }
 
   .social-media-icon {
-    border: pink solid;
-    margin-right: 90px;
+
     padding-top: 10px;
 
 
 
     ul {
-      border: yellow solid;
-      @include flex(row, null, space-between);
+
+      @include flex(row, null, center);
 
       a {
         margin: 0px 25px;
