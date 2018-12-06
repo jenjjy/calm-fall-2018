@@ -954,10 +954,13 @@ object {
     font-size: 2.7rem; }
 
 /*--------------------------------------------------------------
-# our company 
+# our company  and our fonder
 --------------------------------------------------------------*/
-.page .site-main .entry-header .entry-title {
-  border: solid red; }
+.page-template-page-our-founder .site-content .founder-site-main .entry-header .entry-title,
+.page-template-page-our-founder .site-content .company-site-main .entry-header .entry-title,
+.page-template-page-our-company .site-content .founder-site-main .entry-header .entry-title,
+.page-template-page-our-company .site-content .company-site-main .entry-header .entry-title {
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # our founder

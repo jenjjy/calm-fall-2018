@@ -1,15 +1,13 @@
 <?php
 /**
- * 
- * Template Name:Our Founder page
- * The template for displaying all pages.
+ *Template Name: Our Company
  * @package Calmversation_Theme
  */
 
 get_header(); ?>
 
-	<div id="primary" class="founder-content-area">
-		<main id="main" class="founder-site-main" role="main">
+	<div id="primary" class="company-content-area">
+		<main id="main" class="company-site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 

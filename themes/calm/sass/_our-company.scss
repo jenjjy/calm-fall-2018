@@ -1,29 +1,33 @@
 /*--------------------------------------------------------------
-# our company 
+# our company  and our fonder
 --------------------------------------------------------------*/
 
-.page {
-    .site-main {
+.page-template-page-our-founder,
+.page-template-page-our-company {
+    .site-content {
 
-        .entry-header {
+        .founder-site-main,
+        .company-site-main {
 
-            .entry-title {
+            .entry-header {
 
-                border: solid red;
+                .entry-title {
+                    text-align: center;
+
+
+                }
+
+
 
             }
+
 
 
 
         }
 
 
-
-
     }
-
-
-
 
 }
 
