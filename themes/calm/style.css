@@ -600,6 +600,7 @@ a {
 
 /* Small menu. */
 .sub-menu {
+  border: 1px solid #52b0cc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,8 +610,10 @@ a {
           flex-direction: column; }
   .sub-menu a:hover, .sub-menu a:focus {
     border-bottom: transparent; }
-  .sub-menu li {
-    border: 1px solid #52b0cc; }
+  .sub-menu li:hover {
+    background: #52b0cc;
+    color: #fff;
+    width: 100%; }
 
 .menu-toggle,
 .main-navigation.toggled ul {

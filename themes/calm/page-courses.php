@@ -31,6 +31,14 @@ get_header(); ?>
 				<div class="course-theme-blocks">
 				<?php foreach ( $course_posts as $post ) : setup_postdata( $post ); ?>
 				<article class ="themes">
+					<?php
+					$post_id = $post->ID; 
+					$post_url = $post->guid;
+					?>
+					
+					<h2><?php echo CFS()->get('theme_title', $post_id);?></h2>
+					<p><?php echo CFS()->get('theme_description', $post_id);?> </p>
+					<a href="<?php echo $post_url;?>">Learn More</a>
 					<div class="img-container">
 					<?php  /* Content from your array of post results goes here */ 
 						if(has_post_thumbnail()){
@@ -69,7 +77,8 @@ get_header(); ?>
 			<section class="course-pack">
 				<h2><?php echo CFS()->get( 'course_pack_title' ); ?></h2>
 				<p><?php echo CFS()->get( 'course_pack' ); ?></p>
-				<button class="course_pack_button"> <?php echo CFS()->get( 'course_pack_button' ); ?></button>
+				<?php echo CFS()->get( 'course_pack_button' );?>
+				
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->		
