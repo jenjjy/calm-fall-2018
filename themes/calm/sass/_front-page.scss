@@ -14,3 +14,12 @@
   }
 }
 
+
+.front-page-check-mark {
+  @include flex(row wrap, flex-start, center);
+
+  h2 {
+    width: 50%;
+    font-size: 16px;
+  }
+}
