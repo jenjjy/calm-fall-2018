@@ -46,7 +46,6 @@ a {
     @include tablet {
       color: $color__text-main;
       background: $color__background-body;
-      font-size: 1.5rem;
       padding: 0 2rem;
       &:focus {
         border-bottom: $border-active;
@@ -55,10 +54,13 @@ a {
         border-bottom: $border-hover;
       }
     }
+    @include desktop {
+      font-size: 1.5rem;
+    }
   }
 
   ul {
-    display: flex;
+    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -133,7 +135,7 @@ a {
   }
 
   .main-navigation ul {
-    // display: block;
+    display: none;
     @include tablet {
       display: flex;
     }
