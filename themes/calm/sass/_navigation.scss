@@ -7,8 +7,7 @@
 a {
   color: $color__link;
 
-  &:visited {
-  }
+  &:visited {}
 
   &:hover,
   &:focus,
@@ -47,13 +46,16 @@ a {
       color: $color__text-main;
       background: $color__background-body;
       padding: 0 2rem;
+
       &:focus {
         border-bottom: $border-active;
       }
+
       &:hover {
         border-bottom: $border-hover;
       }
     }
+
     @include desktop {
       font-size: 1.5rem;
     }
@@ -81,8 +83,9 @@ a {
       }
 
       li {
-        &:hover > ul,
-        &.focus > ul {
+
+        &:hover>ul,
+        &.focus>ul {
           left: 100%;
         }
       }
@@ -93,17 +96,15 @@ a {
         width: 200px;
       }
 
-      :hover > a,
-      .focus > a {
-      }
+      :hover>a,
+      .focus>a {}
 
       a:hover,
-      a.focus {
-      }
+      a.focus {}
     }
 
-    li:hover > ul,
-    li.focus > ul {
+    li:hover>ul,
+    li.focus>ul {
       left: auto;
     }
   }
@@ -112,15 +113,13 @@ a {
     // float: left;
     // position: relative;
 
-    &:hover > a,
-    &.focus > a {
-    }
+    &:hover>a,
+    &.focus>a {}
   }
 
-  .current_page_item > a,
-  .current-menu-item > a,
-  .current_page_ancestor > a {
-  }
+  .current_page_item>a,
+  .current-menu-item>a,
+  .current_page_ancestor>a {}
 }
 
 /* Small menu. */
@@ -136,6 +135,7 @@ a {
 
   .main-navigation ul {
     display: none;
+
     @include tablet {
       display: flex;
     }
@@ -153,12 +153,8 @@ a {
 
     &:hover,
     &:focus {
-<<<<<<< HEAD
-      background: border-bottom: transparent;
-=======
       // background: $primary__color;
       border-bottom: transparent;
->>>>>>> babadd23946993fc426668c1becfe0d74097299f
     }
   }
 
