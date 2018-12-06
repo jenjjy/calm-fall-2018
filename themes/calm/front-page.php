@@ -23,7 +23,7 @@ get_header(); ?>
 
 
         <?php endwhile; ?>
-        <div>
+        <div class="checkmark-container">
             <?php
 
             $loop = CFS()->get('goal');
