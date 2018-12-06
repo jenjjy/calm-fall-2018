@@ -9,9 +9,8 @@
 .logo-main {
   display: flex;
   justify-content: center;
-  // text-align: center;
-  margin: auto;
   height: auto;
+  margin: auto;
   width: 150px;
   @include tablet {
     width: 350px;
@@ -23,14 +22,14 @@
   justify-content: center;
 }
 
-.responsive-menu-slide-top {
-  .slide-top {
-    ul {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-}
+// .responsive-menu-slide-top {
+//   .slide-top {
+//     ul {
+//       height: 100%;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//   }
+// }
