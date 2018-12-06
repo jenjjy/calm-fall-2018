@@ -30,6 +30,7 @@
   ul {
     list-style: none;
     margin: 0;
+    padding: 0px;
   }
 
   a {
@@ -41,19 +42,18 @@
   }
 
   .footer-navigation {
-    margin-right: 70px;
+
     text-align: center;
     letter-spacing: 2px;
   }
 
   h6 {
     color: $color__white;
+    margin: 0px;
+    letter-spacing: 0.5px;
   }
 
   .social-media-icon {
-    margin-right: 90px;
-
-
 
     ul {
 
@@ -74,23 +74,26 @@
     }
   }
 
-  @include desktop {
-    .site-footer {
-      border: red solid;
-    }
+}
 
+
+@include desktop {
+  .site-footer {
+    border: red solid;
+  }
+
+
+  .social-media-icon {
+    border: green solid;
 
   }
 
 
 
+  footer-navigation {
+    border: blue solid;
 
-
-
-
-
-
-
+  }
 
 
 
