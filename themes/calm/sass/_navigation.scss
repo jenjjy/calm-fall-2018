@@ -76,6 +76,9 @@ a {
       }
 
       li {
+        &:hover {
+          color: #fff;
+        }
         &:hover > ul,
         &.focus > ul {
           left: 100%;
@@ -122,8 +125,8 @@ a {
 
 .sub-menu {
   display: flex;
-  // flex-direction: column;
-  border: 1px solid #52b0cc;
+  flex-direction: column;
+
   // border-right: 1px solid #52b0cc;
   // border-top: 1px solid #52b0cc;
 
@@ -137,8 +140,9 @@ a {
   }
 
   li {
+    border: 1px solid #52b0cc;
     &:last-child a {
-      border-bottom: 1px solid #52b0cc;
+      // border-bottom: 1px solid #52b0cc;
     }
   }
 }
@@ -154,7 +158,7 @@ a {
   }
 
   .main-navigation ul {
-    display: none;
+    // display: none;
     @include tablet {
       display: flex;
     }

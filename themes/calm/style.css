@@ -587,6 +587,8 @@ a {
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
+      .main-navigation ul ul li:hover {
+        color: #fff; }
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
@@ -603,12 +605,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #52b0cc; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .sub-menu a:hover, .sub-menu a:focus {
     border-bottom: transparent;
     border-bottom: transparent; }
-  .sub-menu li:last-child a {
-    border-bottom: 1px solid #52b0cc; }
+  .sub-menu li {
+    border: 1px solid #52b0cc; }
 
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -616,14 +621,13 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    display: none; }
-  .main-navigation ul {
     display: none; } }
-  @media screen and (min-width: 768px) and (min-width: 500px) {
-    .main-navigation ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+
+@media screen and (min-width: 768px) and (min-width: 500px) {
+  .main-navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -915,10 +919,40 @@ object {
       width: 254px; } }
 
 .menu-header-container {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.hamburger span:nth-child(1) {
+  top: 0px; }
+
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+  top: 18px; }
+
+.hamburger span:nth-child(4) {
+  top: 36px; }
+
+.hamburger.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.hamburger.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.hamburger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.hamburger.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
 
 /*--------------------------------------------------------------
 # Page Templates
