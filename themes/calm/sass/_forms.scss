@@ -3,6 +3,16 @@
 --------------------------------------------------------------*/
 
 /* Buttons */
+.button-purchase {
+  @include button;
+  font-family: $font__secondary;
+  padding: 0.8rem 6rem;
+  font-size: 17px;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+}
+
 .button {
   @include button;
   font-family: $font__secondary;

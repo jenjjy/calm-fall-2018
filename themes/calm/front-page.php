@@ -12,8 +12,7 @@ get_header(); ?>
         <div class="banner-header">
             <h1>innovation tools for teachers</h1>
             <div>
-                <a href="https://calmversation.thinkific.com/" class="button">purchase now</a>
-
+                <a href="https://calmversation.thinkific.com/" class="button-purchase">purchase now</a>
             </div>
         </div>
 

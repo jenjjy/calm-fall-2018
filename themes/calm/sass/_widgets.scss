@@ -52,32 +52,26 @@
   }
 
   .social-media-icon {
-<<<<<<< HEAD
     margin-right: 90px;
 
-=======
->>>>>>> ff7803c7075d9ea2c87c92d6be3be87159ba5ef9
 
-    ul {
+    padding-top: 10px;
+    display: flex;
 
-      padding-top: 10px;
-      display: flex;
-
-    }
-
-    li {
-
-      @include flex(flex-start, null, null);
-
-    }
-
-    a {
-      margin: 0px 25px;
-
-    }
   }
 
+  li {
+
+    @include flex(flex-start, null, null);
+
+  }
+
+  a {
+    margin: 0px 25px;
+
+  }
 }
+
 
 /*footer desttop*/
 @include desktop {
@@ -89,15 +83,13 @@
 
 }
 
-  .social-media-icon {
-    border: green solid;
+.social-media-icon {
+  border: green solid;
 
-<<<<<<< HEAD
-// Video for front page
+  // Video for front page
 
-.vp-video-wrapper .transparent {
-  border-radius: 10px;
-=======
+  .vp-video-wrapper .transparent {
+    border-radius: 10px;
   }
 
   .footer-navigation {
@@ -106,7 +98,4 @@
   }
 
 
-
-
->>>>>>> ff7803c7075d9ea2c87c92d6be3be87159ba5ef9
 }
