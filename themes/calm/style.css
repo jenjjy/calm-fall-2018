@@ -627,6 +627,7 @@ a {
     border-right: 1px solid #52b0cc;
     border-top: 1px solid #52b0cc; }
     .sub-menu a:hover, .sub-menu a:focus {
+      border-bottom: transparent;
       border-bottom: transparent; }
   .sub-menu li:last-child a {
     border-bottom: 1px solid #52b0cc; }
@@ -734,7 +735,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20px; }
+  padding-top: 20px;
+  /*footer desttop*/ }
   .site-footer ul {
     list-style: none;
     margin: 0;
@@ -749,7 +751,7 @@ a {
     letter-spacing: 2px; }
   .site-footer h6 {
     color: #fff;
-    margin: 0px;
+    margin: 0;
     letter-spacing: 0.5px; }
   .site-footer .social-media-icon {
     margin-right: 90px;
@@ -765,30 +767,29 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-flow: flex-start;
             flex-flow: flex-start; }
-<<<<<<< HEAD
-  .site-footer .social-media-icon a {
-    margin: 0px 25px;
-    font-size: 25px; }
-=======
-  .site-footer a {
-    margin: 0px 25px; }
->>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
+    .site-footer li li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: flex-start;
+              flex-flow: flex-start; }
+    .site-footer li a {
+      margin: 0px 25px;
+      font-size: 25px; }
+    .site-footer li a {
+      margin: 0px 25px; }
+  @media (min-width: 1200px) {
+    .site-footer .site-footer {
+      border: red solid; }
+    .site-footer .social-media-icon {
+      border: green solid; }
+      .site-footer .social-media-icon .vp-video-wrapper .transparent {
+        border-radius: 10px; }
+      .site-footer .social-media-icon .footer-navigation {
+        border: pink solid; } }
 
-/*footer desttop*/
-@media (min-width: 1200px) {
-  .site-footer {
-    border: red solid; } }
-
-<<<<<<< HEAD
-=======
-.social-media-icon {
-  border: green solid; }
-  .social-media-icon .vp-video-wrapper .transparent {
-    border-radius: 10px; }
-  .social-media-icon .footer-navigation {
-    border: pink solid; }
-
->>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
