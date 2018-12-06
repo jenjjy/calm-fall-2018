@@ -7,8 +7,7 @@
 a {
   color: $color__link;
 
-  &:visited {
-  }
+  &:visited {}
 
   &:hover,
   &:focus,
@@ -45,13 +44,16 @@ a {
       color: $color__text-main;
       background: $color__background-body;
       padding: 0 2rem;
+
       &:focus {
         border-bottom: $border-active;
       }
+
       &:hover {
         border-bottom: $border-hover;
       }
     }
+
     @include desktop {
       font-size: 1.5rem;
     }
@@ -70,17 +72,24 @@ a {
       top: $base__space-unit;
       left: -999rem;
       z-index: 99999;
+
       ul {
         left: -999rem;
         top: 0;
       }
 
       li {
+<<<<<<< HEAD
         &:hover {
           color: #fff;
         }
         &:hover > ul,
         &.focus > ul {
+=======
+
+        &:hover>ul,
+        &.focus>ul {
+>>>>>>> 12ec3e41454269fec28f789961f1a06657783f6e
           left: 100%;
         }
       }
@@ -91,17 +100,15 @@ a {
         width: 200px;
       }
 
-      :hover > a,
-      .focus > a {
-      }
+      :hover>a,
+      .focus>a {}
 
       a:hover,
-      a.focus {
-      }
+      a.focus {}
     }
 
-    li:hover > ul,
-    li.focus > ul {
+    li:hover>ul,
+    li.focus>ul {
       left: auto;
     }
   }
@@ -110,15 +117,13 @@ a {
     // float: left;
     // position: relative;
 
-    &:hover > a,
-    &.focus > a {
-    }
+    &:hover>a,
+    &.focus>a {}
   }
 
-  .current_page_item > a,
-  .current-menu-item > a,
-  .current_page_ancestor > a {
-  }
+  .current_page_item>a,
+  .current-menu-item>a,
+  .current_page_ancestor>a {}
 }
 
 /* Small menu. */
@@ -131,9 +136,9 @@ a {
   // border-top: 1px solid #52b0cc;
 
   a {
+
     &:hover,
     &:focus {
-      border-bottom: transparent;
       // background: $primary__color;
       border-bottom: transparent;
     }
@@ -158,7 +163,12 @@ a {
   }
 
   .main-navigation ul {
+<<<<<<< HEAD
     // display: none;
+=======
+    display: none;
+
+>>>>>>> 12ec3e41454269fec28f789961f1a06657783f6e
     @include tablet {
       display: flex;
     }

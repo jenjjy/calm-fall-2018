@@ -610,7 +610,6 @@ a {
       -ms-flex-direction: column;
           flex-direction: column; }
   .sub-menu a:hover, .sub-menu a:focus {
-    border-bottom: transparent;
     border-bottom: transparent; }
   .sub-menu li {
     border: 1px solid #52b0cc; }
@@ -782,8 +781,6 @@ a {
       border: red solid; }
     .site-footer .social-media-icon {
       border: green solid; }
-      .site-footer .social-media-icon .vp-video-wrapper .transparent {
-        border-radius: 10px; }
       .site-footer .social-media-icon .footer-navigation {
         border: pink solid; } }
 
