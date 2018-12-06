@@ -826,8 +826,10 @@ a {
   width: 86%;
   margin: 0 auto; }
   .entry-content h2 {
-    font-weight: lighter;
+    font-weight: bolder;
     font-size: 27px; }
+    .entry-content h2 h2:nth-child(3) {
+      font-size: 36px; }
   .entry-content p:nth-child(1) {
     margin-top: -25px; }
 
