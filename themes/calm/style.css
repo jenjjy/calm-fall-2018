@@ -557,7 +557,6 @@ a {
   .main-navigation a {
     background: #52b0cc;
     color: #fff;
-    font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase; }
     @media (min-width: 500px) {
@@ -600,6 +599,19 @@ a {
       left: auto; }
 
 /* Small menu. */
+.sub-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .sub-menu a:hover, .sub-menu a:focus {
+    border-bottom: transparent; }
+  .sub-menu li {
+    border: 1px solid #52b0cc; }
+
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block; }
@@ -614,24 +626,6 @@ a {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
-
-.sub-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .sub-menu a {
-    border-left: 1px solid #52b0cc;
-    border-right: 1px solid #52b0cc;
-    border-top: 1px solid #52b0cc; }
-    .sub-menu a:hover, .sub-menu a:focus {
-      border-bottom: transparent;
-      border-bottom: transparent; }
-  .sub-menu li:last-child a {
-    border-bottom: 1px solid #52b0cc; }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -917,10 +911,40 @@ object {
       width: 254px; } }
 
 .menu-header-container {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.hamburger span:nth-child(1) {
+  top: 0px; }
+
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+  top: 18px; }
+
+.hamburger span:nth-child(4) {
+  top: 36px; }
+
+.hamburger.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.hamburger.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.hamburger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.hamburger.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
 
 /*--------------------------------------------------------------
 # Page Templates
