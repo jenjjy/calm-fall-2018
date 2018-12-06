@@ -29,10 +29,32 @@ a {
 /* Menus */
 
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
+  // clear: both;
+  // display: block;
+  // float: left;
+  padding: 2rem 0;
   width: 100%;
+
+  a {
+    background: $primary__color;
+    color: $color__white;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include tablet {
+      color: $color__text-main;
+      background: $color__background-body;
+      padding: 0 2rem;
+      &:active {
+        border-bottom: $border-active;
+      }
+      &:hover {
+        border-bottom: $border-hover;
+      }
+    }
+  }
 
   ul {
     display: flex;
@@ -85,26 +107,6 @@ a {
 
     &:hover > a,
     &.focus > a {
-    }
-  }
-
-  a {
-    background: $primary__color;
-    color: $color__white;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    @include tablet {
-      color: $color__text-main;
-      background: $color__background-body;
-      padding: 0 2rem;
-      &:active {
-        border-bottom: $border-active;
-      }
-      &:hover {
-        border-bottom: $border-hover;
-      }
     }
   }
 

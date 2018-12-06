@@ -536,10 +536,24 @@ a {
 
 /* Menus */
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
+  padding: 2rem 0;
   width: 100%; }
+  .main-navigation a {
+    background: #52b0cc;
+    color: #fff;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase; }
+    @media (min-width: 500px) {
+      .main-navigation a {
+        color: #787878;
+        background: #f0f3f8;
+        padding: 0 2rem; }
+        .main-navigation a:active {
+          border-bottom: 2px solid #52b0cc; }
+        .main-navigation a:hover {
+          border-bottom: 2px solid #787878; } }
   .main-navigation ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -569,21 +583,6 @@ a {
   .main-navigation li {
     float: left;
     position: relative; }
-  .main-navigation a {
-    background: #52b0cc;
-    color: #fff;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase; }
-    @media (min-width: 500px) {
-      .main-navigation a {
-        color: #787878;
-        background: #f0f3f8;
-        padding: 0 2rem; }
-        .main-navigation a:active {
-          border-bottom: 2px solid #52b0cc; }
-        .main-navigation a:hover {
-          border-bottom: 2px solid #787878; } }
 
 /* Small menu. */
 .menu-toggle,
@@ -846,16 +845,34 @@ object {
 .gallery-caption {
   display: block; }
 
+.site-header {
+  height: 60px;
+  padding-top: 1rem; }
+  @media (min-width: 500px) {
+    .site-header {
+      height: auto; } }
+
 .logo-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  height: auto;
   width: 150px; }
   @media (min-width: 500px) {
     .logo-main {
-      width: 500px; } }
+      width: 350px; } }
 
-ul.menu {
+.menu-header-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .responsive-menu-slide-top .slide-top ul {
   height: 100%;
@@ -886,6 +903,5 @@ ul.menu {
   .banner-header h1 {
     padding-bottom: 25px;
     margin: 0 auto;
-    width: 80%;
     font-family: 'Quicksand-Light', sans-serif;
     font-size: 2.7rem; }
