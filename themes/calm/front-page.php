@@ -16,18 +16,19 @@ get_header(); ?>
 
             </div>
         </div>
-        <div class="hero-image hero-home">
-            <img src= <?php echo (get_template_directory_uri()) . "/images/banner-image-mobile.png"; ?>
-                 alt = "calmversation banner" />
-            <div class="main-logo">
-                <h1>hello hello hello</h1>
-            </div>
-        </div>
+
+        <?php /* Start the Loop */ ?>
+        <?php while (have_posts()) : the_post(); ?>
+
+            <?php get_template_part('template-parts/content'); ?>
+
+        <?php endwhile; ?>
+
 
         <?php /* Start Testimony Loop */ ?>
         <?php while (have_posts()) : the_post(); ?>
 
-            <?php get_template_part( 'testimony' ); ?>
+            <?php get_template_part('testimony'); ?>
 
         <?php endwhile; ?>
 
