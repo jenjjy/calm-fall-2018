@@ -54,6 +54,23 @@ get_header(); ?>
     <?php endforeach; wp_reset_postdata(); ?>
     </div>
   </section>
+ 
+ <h2><?php echo CFS()->get( 'feature_title' ); ?><h2>
+  <?php
+$loop = CFS()->get( 'features' );
+foreach ( $loop as $row ) : ?>
+<div>
+<img src="<?php echo $row['feature_image']; ?>">
+   <p> <?php
+    echo $row['feature_text']; ?></p>
+	</div>
+<?php endforeach; ?> 
+
+<h2><?php echo CFS()->get( 'course_pack_title' ); ?></h2>
+<p><?php echo CFS()->get( 'course_pack' ); ?></p>
+
+<button class="course_pack_button"> <?php echo CFS()->get( 'course_pack_button' ); ?></button>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
