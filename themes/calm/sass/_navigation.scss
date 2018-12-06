@@ -35,20 +35,25 @@ a {
   padding: 2rem 0;
   width: 100%;
 
+  @include tablet {
+    .current-menu-item {
+      a {
+        border-bottom: $border-active;
+      }
+    }
+  }
+
   a {
     background: $primary__color;
     color: $color__white;
+    font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
 
     @include tablet {
       color: $color__text-main;
       background: $color__background-body;
-      padding: 0 2rem;
-
-      &:focus {
-        border-bottom: $border-active;
-      }
+      padding: 0 1rem;
 
       &:hover {
         border-bottom: $border-hover;
@@ -67,6 +72,8 @@ a {
     padding-left: 0;
 
     ul {
+      display: none;
+
       border-bottom: none;
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       font-family: $font__main-light;
@@ -108,8 +115,7 @@ a {
   }
 
   li {
-    // float: left;
-    // position: relative;
+    padding: 0 1rem;
 
     &:hover > a,
     &.focus > a {
@@ -125,13 +131,13 @@ a {
 /* Small menu. */
 
 .sub-menu {
+  display: none;
   border: 1px solid #52b0cc;
-  display: flex;
-  flex-direction: column;
 
-  // border-right: 1px solid #52b0cc;
-  // border-top: 1px solid #52b0cc;
-
+  // &:hover {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
   a {
     &:hover,
     &:focus {

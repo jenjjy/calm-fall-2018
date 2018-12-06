@@ -15,7 +15,6 @@
 /* Footer */
 
 .site-footer {
-
   background-color: $primary__color;
   @include flex(column, null, center);
   padding-top: 20px;
@@ -34,7 +33,6 @@
   }
 
   .footer-navigation {
-
     text-align: center;
     letter-spacing: 2px;
   }
@@ -46,13 +44,9 @@
   }
 
   .social-media-icon {
-
     padding-top: 10px;
 
-
-
     ul {
-
       @include flex(row, null, center);
 
       a {
@@ -61,7 +55,7 @@
     }
   }
 
-  /*footer desttop*/
+  /*footer desktop*/
 
   @include desktop {
     .site-footer {
