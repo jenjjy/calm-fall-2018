@@ -15,6 +15,7 @@
 /* Footer */
 
 .site-footer {
+
   background-color: $primary__color;
   @include flex(column, null, center);
   padding-top: 20px;
@@ -33,6 +34,7 @@
   }
 
   .footer-navigation {
+
     text-align: center;
     letter-spacing: 2px;
   }
@@ -44,29 +46,26 @@
   }
 
   .social-media-icon {
-    margin-right: 90px;
+
     padding-top: 10px;
-    display: flex;
-  }
 
-  li {
-    @include flex(flex-start, null, null);
 
-    li {
-      @include flex(flex-start, null, null);
-    }
 
-    a {
-      margin: 0px 25px;
-      font-size: 25px;
-    }
+    ul {
 
-    a {
-      margin: 0px 25px;
+      @include flex(row, null, center);
+
+      a {
+        margin: 0px 25px;
+      }
     }
   }
 
+<<<<<<< HEAD
+  /*footer desttop*/
+=======
   /*footer desktop*/
+>>>>>>> 8f818295202debcb46b5678804496fcf425ac993
 
   @include desktop {
     .site-footer {
