@@ -729,7 +729,8 @@ a {
         -ms-flex-flow: flex-start;
             flex-flow: flex-start; }
   .site-footer .social-media-icon a {
-    margin: 0px 25px; }
+    margin: 0px 25px;
+    font-size: 25px; }
 
 /*footer desttop*/
 @media (min-width: 1200px) {
@@ -739,9 +740,6 @@ a {
     border: green solid; }
   .footer-navigation {
     border: pink solid; } }
-
-.vp-video-wrapper .transparent {
-  border-radius: 10px; }
 
 /*--------------------------------------------------------------
 # Content
