@@ -557,7 +557,6 @@ a {
   .main-navigation a {
     background: #52b0cc;
     color: #fff;
-    display: block;
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase; }
@@ -766,14 +765,22 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-flow: flex-start;
             flex-flow: flex-start; }
+<<<<<<< HEAD
+  .site-footer .social-media-icon a {
+    margin: 0px 25px;
+    font-size: 25px; }
+=======
   .site-footer a {
     margin: 0px 25px; }
+>>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
 
 /*footer desttop*/
 @media (min-width: 1200px) {
   .site-footer {
     border: red solid; } }
 
+<<<<<<< HEAD
+=======
 .social-media-icon {
   border: green solid; }
   .social-media-icon .vp-video-wrapper .transparent {
@@ -781,6 +788,7 @@ a {
   .social-media-icon .footer-navigation {
     border: pink solid; }
 
+>>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/

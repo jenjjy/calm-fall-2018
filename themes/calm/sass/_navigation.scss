@@ -151,7 +151,12 @@ a {
 
     &:hover,
     &:focus {
+<<<<<<< HEAD
       background: border-bottom: transparent;
+=======
+      // background: $primary__color;
+      border-bottom: transparent;
+>>>>>>> babadd23946993fc426668c1becfe0d74097299f
     }
   }
 

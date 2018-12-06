@@ -52,23 +52,38 @@
   }
 
   .social-media-icon {
+<<<<<<< HEAD
+=======
     margin-right: 90px;
 
+>>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
 
     padding-top: 10px;
     display: flex;
 
   }
 
+<<<<<<< HEAD
+    li {
+      @include flex(flex-start, null, null);
+=======
   li {
 
     @include flex(flex-start, null, null);
+>>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
 
   }
 
+<<<<<<< HEAD
+    a {
+      margin: 0px 25px;
+      font-size: 25px;
+    }
+=======
   a {
     margin: 0px 25px;
 
+>>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
   }
 }
 
@@ -81,15 +96,17 @@
 
   }
 
-}
 
 .social-media-icon {
   border: green solid;
 
+<<<<<<< HEAD
+=======
   // Video for front page
 
   .vp-video-wrapper .transparent {
     border-radius: 10px;
+>>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
   }
 
   .footer-navigation {
@@ -98,4 +115,9 @@
   }
 
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
 }
