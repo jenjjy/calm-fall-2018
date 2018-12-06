@@ -1,3 +1,7 @@
+.logo-main {
+  width: 200px;
+}
+
 ul.menu {
   display: flex;
 }
@@ -5,6 +9,7 @@ ul.menu {
 .responsive-menu-slide-top {
   .slide-top {
     ul {
+      height: 100%
       display: flex;
       flex-direction: column;
       justify-content: center;

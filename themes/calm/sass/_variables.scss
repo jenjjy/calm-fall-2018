@@ -1,6 +1,8 @@
 // Structure
 
 $base__space-unit: 1.5rem;
+$border-active: 2px solid #52b0cc;
+$border-hover: 2px solid #787878;
 $color__border-abbr: 1px dotted black;
 $color__background-ins: purple;
 $color__background-hr: green;
@@ -29,16 +31,9 @@ $color__link-visited: yellowgreen;
 
 // Typography
 
-$font__main: 'Quicksand',
-sans-serif;
-$font__secondary: 'Muli',
-sans-serif;
-$font__code: 'Muli-Bold',
-'Andale Mono',
-'DejaVu Sans Mono',
-monospace;
-$font__pre: 'Quicksand',
-Courier,
-monospace;
+$font__main: 'Quicksand', sans-serif;
+$font__secondary: 'Muli', sans-serif;
+$font__code: 'Muli-Bold', 'Andale Mono', 'DejaVu Sans Mono', monospace;
+$font__pre: 'Quicksand', Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
