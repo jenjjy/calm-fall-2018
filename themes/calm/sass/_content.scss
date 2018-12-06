@@ -54,10 +54,15 @@
   text-align: center;
   width: 86%;
   margin: 0 auto;
-  h2{
-    font-size: 26px;
+
+  h2 {
+    font-weight: lighter;
+    width: 77%;
+    margin: 0 auto;
+    font-size: 27px;
   }
-  p:nth-child(1){
+
+  p:nth-child(1) {
     margin-top: -25px;
   }
 }
