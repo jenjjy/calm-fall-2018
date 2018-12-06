@@ -37,8 +37,6 @@ a {
   a {
     background: $primary__color;
     color: $color__white;
-    // display: block;
-    font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -71,10 +69,8 @@ a {
       border-bottom: none;
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       font-family: $font__main-light;
-
       top: $base__space-unit;
       left: -999rem;
-
       z-index: 99999;
 
       ul {
@@ -123,6 +119,30 @@ a {
 }
 
 /* Small menu. */
+
+.sub-menu {
+  display: flex;
+  // flex-direction: column;
+  border: 1px solid #52b0cc;
+  // border-right: 1px solid #52b0cc;
+  // border-top: 1px solid #52b0cc;
+
+  a {
+
+    &:hover,
+    &:focus {
+      // background: $primary__color;
+      border-bottom: transparent;
+    }
+  }
+
+  li {
+    &:last-child a {
+      border-bottom: 1px solid #52b0cc;
+    }
+  }
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
@@ -138,29 +158,6 @@ a {
 
     @include tablet {
       display: flex;
-    }
-  }
-}
-
-.sub-menu {
-  display: flex;
-  flex-direction: column;
-
-  a {
-    border-left: 1px solid #52b0cc;
-    border-right: 1px solid #52b0cc;
-    border-top: 1px solid #52b0cc;
-
-    &:hover,
-    &:focus {
-      // background: $primary__color;
-      border-bottom: transparent;
-    }
-  }
-
-  li {
-    &:last-child a {
-      border-bottom: 1px solid #52b0cc;
     }
   }
 }
