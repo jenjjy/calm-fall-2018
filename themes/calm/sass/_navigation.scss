@@ -139,9 +139,11 @@ a {
     }
   }
 }
+
 .sub-menu {
   display: flex;
   flex-direction: column;
+
   a {
     border-left: 1px solid #52b0cc;
     border-right: 1px solid #52b0cc;
@@ -149,10 +151,10 @@ a {
 
     &:hover,
     &:focus {
-      background: 
-      border-bottom: transparent;
+      background: border-bottom: transparent;
     }
   }
+
   li {
     &:last-child a {
       border-bottom: 1px solid #52b0cc;
