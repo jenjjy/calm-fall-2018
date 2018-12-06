@@ -1,0 +1,14 @@
+ul.menu {
+  display: flex;
+}
+
+.responsive-menu-slide-top {
+  .slide-top {
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
