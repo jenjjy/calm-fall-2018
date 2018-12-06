@@ -841,12 +841,16 @@ object {
 .gallery-caption {
   display: block; }
 
+.logo-main {
+  width: 200px; }
+
 ul.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .responsive-menu-slide-top .slide-top ul {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
