@@ -20,7 +20,7 @@
 /* Footer */
 
 .site-footer {
-  border: solid red;
+
   background-color: $primary__color;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
 
   ul {
     list-style: none;
-
+    margin: 0;
   }
 
   a {
@@ -37,15 +37,13 @@
     color: $color__white;
     display: block;
     margin: 5px;
-    border: red solid;
+
   }
 
   .footer-navigation {
-
-    margin-right: 50px;
+    margin-right: 70px;
     text-align: center;
     letter-spacing: 2px;
-
   }
 
   h6 {
@@ -53,27 +51,48 @@
   }
 
   .social-media-icon {
+    margin-right: 90px;
+
+
 
     ul {
 
-      width: 90%;
+      padding-top: 10px;
       display: flex;
-      margin-left: 10px;
+
     }
 
     li {
-      border: solid blue;
       justify-content: flex-start;
       display: flex;
 
     }
 
     a {
-
       margin: 0px 25px;
-      font-size: 30px;
+
     }
   }
+
+  @include desktop {
+    .site-footer {
+      border: red solid;
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
