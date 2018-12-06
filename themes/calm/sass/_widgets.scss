@@ -47,77 +47,63 @@
 
   h6 {
     color: $color__white;
-    margin: 0px;
+    margin: 0;
     letter-spacing: 0.5px;
   }
 
   .social-media-icon {
-<<<<<<< HEAD
-=======
     margin-right: 90px;
-
->>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
 
     padding-top: 10px;
     display: flex;
 
   }
 
-<<<<<<< HEAD
-    li {
-      @include flex(flex-start, null, null);
-=======
   li {
-
     @include flex(flex-start, null, null);
->>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
 
-  }
+    li {
 
-<<<<<<< HEAD
+      @include flex(flex-start, null, null);
+
+    }
+
     a {
       margin: 0px 25px;
       font-size: 25px;
     }
-=======
-  a {
-    margin: 0px 25px;
 
->>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
-  }
-}
+    a {
+      margin: 0px 25px;
 
-
-/*footer desttop*/
-@include desktop {
-
-  .site-footer {
-    border: red solid;
-
+    }
   }
 
 
-.social-media-icon {
-  border: green solid;
+  /*footer desttop*/
+  @include desktop {
 
-<<<<<<< HEAD
-=======
-  // Video for front page
+    .site-footer {
+      border: red solid;
 
-  .vp-video-wrapper .transparent {
-    border-radius: 10px;
->>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
+    }
+
+
+    .social-media-icon {
+      border: green solid;
+
+      // Video for front page
+
+      .vp-video-wrapper .transparent {
+        border-radius: 10px;
+      }
+
+      .footer-navigation {
+        border: pink solid;
+
+      }
+
+
+    }
   }
-
-  .footer-navigation {
-    border: pink solid;
-
-  }
-
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> a099766946b798f5a466311a2cecefe42a04ea68
 }
