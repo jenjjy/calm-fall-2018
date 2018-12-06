@@ -1,12 +1,26 @@
-.logo-main {
-  width: 150px;
+.site-header {
+  height: 60px;
+  padding-top: 1rem;
   @include tablet {
-    width: 500px;
+    height: auto;
   }
 }
 
-ul.menu {
+.logo-main {
   display: flex;
+  justify-content: center;
+  // text-align: center;
+  margin: auto;
+  height: auto;
+  width: 150px;
+  @include tablet {
+    width: 350px;
+  }
+}
+
+.menu-header-container {
+  display: flex;
+  justify-content: center;
 }
 
 .responsive-menu-slide-top {
