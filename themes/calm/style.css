@@ -992,3 +992,16 @@ object {
     margin-left: 10px;
     width: 50%;
     font-size: 16px; }
+
+/*--------------------------------------------------------------
+# our company  and our fonder
+--------------------------------------------------------------*/
+.page-template-page-our-founder .site-content .founder-site-main .entry-header .entry-title,
+.page-template-page-our-founder .site-content .company-site-main .entry-header .entry-title,
+.page-template-page-our-company .site-content .founder-site-main .entry-header .entry-title,
+.page-template-page-our-company .site-content .company-site-main .entry-header .entry-title {
+  text-align: center; }
+
+/*--------------------------------------------------------------
+# our founder
+--------------------------------------------------------------*/
