@@ -714,45 +714,55 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 20px; }
   .site-footer ul {
     list-style: none;
-    margin: 0; }
+    margin: 0;
+    padding: 0px; }
   .site-footer a {
     text-decoration: none;
     color: #fff;
     display: block;
     margin: 5px; }
   .site-footer .footer-navigation {
-    margin-right: 70px;
     text-align: center;
     letter-spacing: 2px; }
   .site-footer h6 {
-    color: #fff; }
-  .site-footer .social-media-icon {
-    margin-right: 90px; }
-    .site-footer .social-media-icon ul {
-      padding-top: 10px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .site-footer .social-media-icon li {
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .site-footer .social-media-icon a {
-      margin: 0px 25px; }
-  @media (min-width: 1200px) {
-    .site-footer .site-footer {
-      border: red solid; } }
+    color: #fff;
+    margin: 0px;
+    letter-spacing: 0.5px; }
+  .site-footer .social-media-icon ul {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .site-footer .social-media-icon li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: flex-start;
+            flex-flow: flex-start; }
+  .site-footer .social-media-icon a {
+    margin: 0px 25px; }
+
+/*footer desttop*/
+@media (min-width: 1200px) {
+  .site-footer {
+    border: red solid; }
+  .social-media-icon {
+    border: green solid; }
+  .footer-navigation {
+    border: pink solid; } }
+
+.vp-video-wrapper .transparent {
+  border-radius: 10px; }
 
 /*--------------------------------------------------------------
 # Content
@@ -797,7 +807,10 @@ a {
   width: 86%;
   margin: 0 auto; }
   .entry-content h2 {
-    font-size: 26px; }
+    font-weight: lighter;
+    width: 77%;
+    margin: 0 auto;
+    font-size: 27px; }
   .entry-content p:nth-child(1) {
     margin-top: -25px; }
 
