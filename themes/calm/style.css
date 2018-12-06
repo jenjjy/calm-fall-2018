@@ -587,8 +587,6 @@ a {
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
-      .main-navigation ul ul li:hover {
-        color: #fff; }
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
@@ -620,13 +618,14 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    display: none; } }
-
-@media screen and (min-width: 768px) and (min-width: 500px) {
+    display: none; }
   .main-navigation ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
+    display: none; } }
+  @media screen and (min-width: 768px) and (min-width: 500px) {
+    .main-navigation ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
