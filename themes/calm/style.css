@@ -564,16 +564,16 @@ a {
       .main-navigation a {
         color: #787878;
         background: #f0f3f8;
-        font-size: 1.5rem;
         padding: 0 2rem; }
         .main-navigation a:focus {
           border-bottom: 2px solid #52b0cc; }
         .main-navigation a:hover {
           border-bottom: 2px solid #aacbd8; } }
+    @media (min-width: 1200px) {
+      .main-navigation a {
+        font-size: 1.5rem; } }
   .main-navigation ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -606,13 +606,14 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    display: none; } }
-
-@media screen and (min-width: 768px) and (min-width: 500px) {
+    display: none; }
   .main-navigation ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
+    display: none; } }
+  @media screen and (min-width: 768px) and (min-width: 500px) {
+    .main-navigation ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .sub-menu {
   display: -webkit-box;
@@ -833,8 +834,10 @@ a {
   width: 86%;
   margin: 0 auto; }
   .entry-content h2 {
-    font-weight: lighter;
+    font-weight: bolder;
     font-size: 27px; }
+    .entry-content h2 h2:nth-child(3) {
+      font-size: 36px; }
   .entry-content p:nth-child(1) {
     margin-top: -25px; }
 
@@ -903,7 +906,7 @@ object {
   padding-top: 1rem; }
   @media (min-width: 500px) {
     .site-header {
-      height: auto; } }
+      height: 160px; } }
 
 .logo-main {
   display: -webkit-box;
@@ -917,12 +920,10 @@ object {
   width: 150px; }
   @media (min-width: 500px) {
     .logo-main {
-      width: 350px; } }
+      width: 254px; } }
 
 .menu-header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }

@@ -56,8 +56,11 @@
   margin: 0 auto;
 
   h2 {
-    font-weight: lighter;
+    font-weight:bolder;
     font-size: 27px;
+    h2:nth-child(3){
+      font-size: 36px;
+    }
   }
 
   p:nth-child(1) {
