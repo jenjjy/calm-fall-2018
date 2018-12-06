@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="28px" viewBox="0 0 31 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page-Mobile" transform="translate(-21.000000, -2077.000000)" fill="#52B0CC">
+            <g id="Group" transform="translate(21.000000, 2075.000000)">
+                <path d="M10.5440239,30 C9.93086574,30 9.34116171,29.7601407 8.90960558,29.3300932 L0.652408916,21.0990625 C-0.230806893,20.2180533 -0.215394174,18.8063473 0.687255063,17.9449451 C1.5899043,17.0841966 3.03802977,17.0998822 3.92124558,17.9795842 L10.3175239,24.35579 L26.8861968,2.88936131 C27.6454408,1.90574203 29.0781535,1.70705747 30.0886918,2.44885673 C31.0972197,3.18934885 31.2995954,4.58798357 30.5403515,5.57160285 L12.3714363,29.1118016 C11.9700355,29.6307343 11.3568773,29.9535967 10.69212,29.9960786 C10.6418612,29.9986929 10.5929425,30 10.5440239,30 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
