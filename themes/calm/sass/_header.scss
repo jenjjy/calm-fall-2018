@@ -2,7 +2,7 @@
   height: 60px;
   padding-top: 1rem;
   @include tablet {
-    height: auto;
+    height: 160px;
   }
 }
 
@@ -13,12 +13,16 @@
   margin: auto;
   width: 150px;
   @include tablet {
-    width: 350px;
+    width: 254px;
   }
 }
 
+// .menu {
+//   display: none;
+// }
+
 .menu-header-container {
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
