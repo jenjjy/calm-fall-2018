@@ -19,6 +19,7 @@
 /* Footer */
 
 .site-footer {
+  border: solid red;
   background-color: $primary__color;
   @include flex(column, null, center);
   padding-top: 20px;
@@ -37,6 +38,7 @@
   }
 
   .footer-navigation {
+    border: green solid;
     text-align: center;
     letter-spacing: 2px;
   }
@@ -48,29 +50,24 @@
   }
 
   .social-media-icon {
+    border: pink solid;
     margin-right: 90px;
     padding-top: 10px;
-    display: flex;
-  }
 
-  li {
-    @include flex(flex-start, null, null);
 
-    li {
-      @include flex(flex-start, null, null);
-    }
 
-    a {
-      margin: 0px 25px;
-      font-size: 25px;
-    }
+    ul {
+      border: yellow solid;
+      @include flex(row, null, space-between);
 
-    a {
-      margin: 0px 25px;
+      a {
+        margin: 0px 25px;
+      }
     }
   }
 
   /*footer desttop*/
+
   @include desktop {
     .site-footer {
       border: red solid;
@@ -78,9 +75,6 @@
 
     .social-media-icon {
       border: green solid;
-
-      // Video for front page
-
 
       .footer-navigation {
         border: pink solid;

@@ -716,6 +716,7 @@ a {
 
 /* Footer */
 .site-footer {
+  border: solid red;
   background-color: #52b0cc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -739,6 +740,7 @@ a {
     display: block;
     margin: 5px; }
   .site-footer .footer-navigation {
+    border: green solid;
     text-align: center;
     letter-spacing: 2px; }
   .site-footer h6 {
@@ -746,32 +748,23 @@ a {
     margin: 0;
     letter-spacing: 0.5px; }
   .site-footer .social-media-icon {
+    border: pink solid;
     margin-right: 90px;
-    padding-top: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .site-footer li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: flex-start;
-            flex-flow: flex-start; }
-    .site-footer li li {
+    padding-top: 10px; }
+    .site-footer .social-media-icon ul {
+      border: yellow solid;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-flow: flex-start;
-              flex-flow: flex-start; }
-    .site-footer li a {
-      margin: 0px 25px;
-      font-size: 25px; }
-    .site-footer li a {
-      margin: 0px 25px; }
+          -ms-flex-flow: row;
+              flex-flow: row;
+      -webkit-box-align: space-between;
+          -ms-flex-align: space-between;
+              align-items: space-between; }
+      .site-footer .social-media-icon ul a {
+        margin: 0px 25px; }
   @media (min-width: 1200px) {
     .site-footer .site-footer {
       border: red solid; }
