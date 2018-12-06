@@ -21,9 +21,20 @@ get_header(); ?>
 
             <?php get_template_part('template-parts/content'); ?>
 
+
         <?php endwhile; ?>
+        <div class="checkmark-container">
+            <?php
 
+            $loop = CFS()->get('goal');
+            foreach ($loop as $row) : ?>
+                <div class="front-page-check-mark">
+                    <img src="<?php echo $row['goal_image']; ?>" alt="">
+                    <h2><?php echo $row['goal_text']; ?></h2>
+                </div>
+            <?php endforeach; ?>
 
+        </div>
         <?php /* Start Testimony Loop */ ?>
         <?php while (have_posts()) : the_post(); ?>
 
