@@ -125,6 +125,7 @@ a {
 /* Small menu. */
 
 .sub-menu {
+  border: 1px solid #52b0cc;
   display: flex;
   flex-direction: column;
 
@@ -140,9 +141,13 @@ a {
   }
 
   li {
-    border: 1px solid #52b0cc;
     &:last-child a {
       // border-bottom: 1px solid #52b0cc;
+    }
+    &:hover {
+      background: $primary__color;
+      color: $color__white;
+      width: 100%;
     }
   }
 }
