@@ -842,7 +842,10 @@ object {
   display: block; }
 
 .logo-main {
-  width: 200px; }
+  width: 150px; }
+  @media (min-width: 500px) {
+    .logo-main {
+      width: 500px; } }
 
 ul.menu {
   display: -webkit-box;
