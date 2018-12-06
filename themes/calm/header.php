@@ -24,10 +24,14 @@
         <div class="site-branding">
             <h1 class="site-title screen-reader-text"><a href="<?php echo esc_url(home_url('/')); ?>"
                                                          rel="home"><?php bloginfo('name'); ?></a></h1>
-        </div><!-- .site-branding -->
+            <a href="<?php echo home_url(); ?>">								
+                <img src="<?php echo get_template_directory_uri() . '/images/calmversation-logo.png' ?>"
+                    class="logo-main" alt="calmversation foundation" />
+            </a>
+       </div><!-- .site-branding -->
 
         <nav id="site-navigation" class="main-navigation" role="navigation">
-        
+    
             <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
         </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
