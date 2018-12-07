@@ -1200,29 +1200,7 @@ object {
     border: solid red; }
     .page-template-page-our-founder .site-content .entry-content .our-company,
     .page-template-page-our-company .site-content .entry-content .our-company {
-      height: 500px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row;
-              flex-flow: row;
       border: solid green; }
-      .page-template-page-our-founder .site-content .entry-content .our-company .wp-block-image,
-      .page-template-page-our-company .site-content .entry-content .our-company .wp-block-image {
-        border: solid #ff004c;
-        width: 500px; }
-        .page-template-page-our-founder .site-content .entry-content .our-company .wp-block-image img,
-        .page-template-page-our-company .site-content .entry-content .our-company .wp-block-image img {
-          width: 500px;
-          border: solid blue; }
-      .page-template-page-our-founder .site-content .entry-content .our-company h2,
-      .page-template-page-our-company .site-content .entry-content .our-company h2 {
-        border: solid blue; }
-      .page-template-page-our-founder .site-content .entry-content .our-company div,
-      .page-template-page-our-company .site-content .entry-content .our-company div {
-        border: solid #bfff00; }
     .page-template-page-our-founder .site-content .entry-content .our-mission-purpose-goals,
     .page-template-page-our-company .site-content .entry-content .our-mission-purpose-goals {
       display: -webkit-box;
