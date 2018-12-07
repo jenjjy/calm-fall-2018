@@ -24,14 +24,14 @@
   &:before {
     content: "";
     height: 1px;
-    width: 45%;
+    width: 50%;
     border-top: 2px solid $secondary__color;
   }
 
   &:after {
     content: "";
     height: 1px;
-    width: 45%;
+    width: 50%;
     border-bottom: 2px solid $secondary__color;
   }
 
@@ -53,6 +53,7 @@
 
 .campaign-container {
   @include flex(column wrap, center, center);
+  margin-bottom: 25px;
 
   p {
     text-align: center;
@@ -64,10 +65,17 @@
     font-size: 29px;
     width: 44%;
     font-weight: bolder;
+    margin-top: auto;
   }
 
   .campaign-logo {
     height: 150px;
     width: auto;
   }
+}
+
+
+.view-courses {
+  @include flex(column wrap, center, center);
+  margin-bottom: 25px;
 }

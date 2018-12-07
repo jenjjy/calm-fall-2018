@@ -1040,12 +1040,12 @@ object {
   .checkmark-container:before {
     content: "";
     height: 1px;
-    width: 45%;
+    width: 50%;
     border-top: 2px solid #b4de96; }
   .checkmark-container:after {
     content: "";
     height: 1px;
-    width: 45%;
+    width: 50%;
     border-bottom: 2px solid #b4de96; }
 
 .front-page-check-mark {
@@ -1084,7 +1084,8 @@ object {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 25px; }
   .campaign-container p {
     text-align: center;
     width: 58%; }
@@ -1092,10 +1093,27 @@ object {
     text-align: center;
     font-size: 29px;
     width: 44%;
-    font-weight: bolder; }
+    font-weight: bolder;
+    margin-top: auto; }
   .campaign-container .campaign-logo {
     height: 150px;
     width: auto; }
+
+.view-courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px; }
 
 /*--------------------------------------------------------------
 # our company  and our fonder
