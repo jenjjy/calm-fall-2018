@@ -71,19 +71,25 @@
   .social-media-icon {
     border: green solid;
     order: 1;
-    padding: 30px 40px;
-    font-size: 30px;
+    padding: 20px 50px;
+    font-size: 40px;
 
   }
 
   .footer-navigation {
     border: pink solid;
     order: 2;
+    margin-left: 80px;
 
     ul {
       @include flex(row, null, flex-start);
       width: 100%;
       padding: 20px;
+
+      a {
+        padding: 25px;
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -94,5 +100,6 @@
     bottom: 0px;
     text-align: center;
     width: 100%;
+    font-size: 16px;
   }
 }
