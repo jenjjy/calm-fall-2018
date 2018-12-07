@@ -24,18 +24,52 @@
 
             .entry-content {
                 border: solid red;
+                // @include flex(null, null, null);
+
+                .our-company {
+                    @include heightandwidth(500px, null);
+                    @include flex(row, null, null);
+                    border: solid green;
+
+                    .wp-block-image {
+                        border: solid rgb(255, 0, 76);
+                        @include heightandwidth(null, 500px);
+
+                        img {
+                            @include heightandwidth(null, 500px);
+                            border: solid blue;
+                        }
+                    }
+
+                    h2 {
+                        border: solid blue;
+
+                    }
+
+                    div {
+                        border: solid rgb(191, 255, 0);
+
+                    }
+                }
+
+                .our-mission-purpose-goals {
+                    @include flex(row, null, null);
+                }
+
+                .our-mission,
+                .our-purpose,
+                .our-goals {
+                    @include heightandwidth(null, 33.3333%);
+                    border: solid blue;
+
+
+                }
 
 
             }
 
 
-
-
-
         }
-
-
-
 
     }
 
