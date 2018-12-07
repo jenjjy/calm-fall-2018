@@ -15,9 +15,7 @@
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php calm_posted_on(); ?> / <?php calm_comment_count(); ?> / <?php calm_posted_by(); ?>
-		</div><!-- .entry-meta -->
+		
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
