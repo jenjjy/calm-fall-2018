@@ -476,7 +476,7 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-.button-purchase {
+.button-purchase, .cfs-hyperlink {
   background: #b4de96;
   border-color: #b4de96;
   border-radius: 25px;
@@ -488,7 +488,7 @@ table {
   font-weight: bold;
   list-style: none;
   text-decoration: none; }
-  .button-purchase:hover {
+  .button-purchase:hover, .cfs-hyperlink:hover {
     background: #1c88a8; }
 
 .button {
@@ -1026,8 +1026,34 @@ object {
           justify-content: center; }
   .front-page-check-mark h2 {
     margin-left: 10px;
-    width: 71%;
-    font-size: 23px; }
+    width: 54%;
+    font-size: 19px; }
+
+.campaign-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .campaign-container p {
+    text-align: center;
+    width: 58%; }
+  .campaign-container h2 {
+    text-align: center;
+    font-size: 29px;
+    width: 44%;
+    font-weight: bolder; }
+  .campaign-container .campaign-logo {
+    height: 150px;
+    width: auto; }
 
 /*--------------------------------------------------------------
 # our company  and our fonder

@@ -35,12 +35,36 @@ get_header(); ?>
             <?php endforeach; ?>
 
         </div>
+
+
+        <div class="campaign-container">
+            <h2>
+                <?php
+                echo CFS()->get('campaign_header');
+                ?>
+            </h2>
+
+
+            <img src="<?php
+            echo CFS()->get('campaign_logo');
+            ?>" alt="" class="campaign-logo">
+
+
+            <p>
+                <?php
+                echo CFS()->get('campaign_text');
+                ?>
+            </p>
+
+
+            <?php
+            echo CFS()->get('campaign_button');
+            ?>
+
+        </div>
         <?php /* Start Testimony Loop */ ?>
         <?php while (have_posts()) : the_post(); ?>
 
-            <?php get_template_part('template-parts/testimony'); ?>
-
-            <a href="https://calmversation.thinkific.com/" class="button-purchase">view courses</a>
 
         <?php endwhile; ?>
 

@@ -45,7 +45,29 @@
 
   h2 {
     margin-left: 10px;
-    width: 71%;
-    font-size: 23px;
+    width: 54%;
+    font-size: 19px;
+  }
+}
+
+
+.campaign-container {
+  @include flex(column wrap, center, center);
+
+  p {
+    text-align: center;
+    width: 58%;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 29px;
+    width: 44%;
+    font-weight: bolder;
+  }
+
+  .campaign-logo {
+    height: 150px;
+    width: auto;
   }
 }
