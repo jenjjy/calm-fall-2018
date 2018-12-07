@@ -17,6 +17,9 @@ embed,
 iframe,
 object {
   max-width: 100%;
+  @include desktop{
+    max-width: 60%;
+  }
 }
 
 /* Captions */

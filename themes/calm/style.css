@@ -573,7 +573,7 @@ a {
         padding-bottom: 2px; }
         .main-navigation a:hover {
           border-bottom: 2px solid #b5ccdb; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1024px) {
       .main-navigation a {
         font-size: 1.5rem; } }
   .main-navigation ul {
@@ -799,7 +799,7 @@ a {
         margin: 0px 25px; }
 
 /*footer desktop*/
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .site-footer {
     border: red solid;
     display: -webkit-box;
@@ -898,10 +898,16 @@ a {
   margin: 0 auto; }
   .entry-content h2 {
     font-weight: bolder;
-    font-size: 27px;
-    padding: 15px 0; }
-  .entry-content p:nth-child(1) {
-    margin-top: -25px; }
+    font-size: 42px;
+    padding: 35px 0; }
+    @media (min-width: 1024px) {
+      .entry-content h2 {
+        font-size: 48px; } }
+  .entry-content p {
+    font-size: 22px; }
+    @media (min-width: 1024px) {
+      .entry-content p {
+        font-size: 28px; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -919,6 +925,11 @@ embed,
 iframe,
 object {
   max-width: 100%; }
+  @media (min-width: 1024px) {
+    embed,
+    iframe,
+    object {
+      max-width: 60%; } }
 
 /* Captions */
 .wp-caption {
@@ -1093,6 +1104,23 @@ object {
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
     font-size: 2.7rem; }
+  @media (min-width: 1024px) {
+    .banner-header {
+      top: 37%;
+      left: 2%;
+      position: absolute;
+      color: #fff;
+      text-align: inherit; } }
+
+.founder-container, .solutions-container {
+  text-align: center;
+  margin-bottom: 2.2rem; }
+  .founder-container h1, .solutions-container h1 {
+    font-size: 35px; }
+  .founder-container img, .solutions-container img {
+    width: 91%; }
+  .founder-container p, .solutions-container p {
+    font-size: 22px; }
 
 .checkmark-container {
   display: -webkit-box;
@@ -1121,6 +1149,7 @@ object {
     border-bottom: 2px solid #b4de96; }
 
 .front-page-check-mark {
+  padding: 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1160,7 +1189,8 @@ object {
   margin-bottom: 25px; }
   .campaign-container p {
     text-align: center;
-    width: 58%; }
+    width: 69%;
+    font-size: 18px; }
   .campaign-container h2 {
     text-align: center;
     font-size: 29px;
@@ -1168,6 +1198,7 @@ object {
     font-weight: bolder;
     margin-top: auto; }
   .campaign-container .campaign-logo {
+    margin: 30px auto;
     height: 150px;
     width: auto; }
 
@@ -1186,6 +1217,19 @@ object {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px; }
+
+.banner-image-desktop {
+  display: none; }
+  @media (min-width: 1024px) {
+    .banner-image-desktop {
+      display: block; } }
+
+@media (min-width: 1024px) {
+  .banner-image-mobile {
+    display: none; } }
+
+.vp-video-wrapper, .transparent {
+  border-radius: 25px; }
 
 /*--------------------------------------------------------------
 # our company  and our fonder
