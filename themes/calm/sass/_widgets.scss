@@ -61,45 +61,47 @@
 
 @include desktop {
   .site-footer {
-    border: red solid;
+
     @include flex(row, null, center);
     position: relative;
-    height: 150px;
+    @include heightandwidth(120px, null);
 
   }
 
   .social-media-icon {
-    border: green solid;
     order: 1;
-    padding: 20px 50px;
+    padding: 20px 30px 40px 30px;
     font-size: 40px;
-
   }
 
   .footer-navigation {
-    border: pink solid;
     order: 2;
-    margin-left: 80px;
+    margin-left: 60px;
+    padding-left: 40px;
+
 
     ul {
       @include flex(row, null, flex-start);
-      width: 100%;
-      padding: 20px;
+      @include heightandwidth(null, 100%);
+      padding-bottom: 40px;
+    }
 
-      a {
-        padding: 25px;
-        text-transform: uppercase;
-      }
+    a {
+      padding: 20px;
+      text-transform: uppercase;
     }
   }
 
+
   h6 {
-    border: solid purple;
+
     order: 3;
     position: absolute;
     bottom: 0px;
     text-align: center;
-    width: 100%;
+    @include heightandwidth(null, 100%);
     font-size: 16px;
+    padding: 10px 0px 5px 0px;
   }
+
 }

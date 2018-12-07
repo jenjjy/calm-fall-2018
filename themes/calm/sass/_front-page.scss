@@ -12,6 +12,31 @@
     font-family: 'Quicksand-Light', sans-serif;
     font-size: 2.7rem;
   }
+
+  @include desktop {
+    top: 37%;
+    left: 2%;
+    position: absolute;
+    color: $color__white;
+    text-align: inherit;
+  }
+}
+
+.founder-container, .solutions-container {
+  text-align: center;
+  margin-bottom: 2.2rem;
+
+  h1 {
+    font-size: 35px;
+  }
+
+  img {
+    width: 91%;
+  }
+
+  p {
+    font-size: 22px;
+  }
 }
 
 .checkmark-container {
@@ -38,7 +63,7 @@
 }
 
 .front-page-check-mark {
-
+  padding: 16px 0;
   @include flex(row wrap, flex-start, center);
   width: 100%;
   justify-content: center;
@@ -57,7 +82,8 @@
 
   p {
     text-align: center;
-    width: 58%;
+    width: 69%;
+    font-size: 18px;
   }
 
   h2 {
@@ -69,6 +95,7 @@
   }
 
   .campaign-logo {
+    margin: 30px auto;
     height: 150px;
     width: auto;
   }
@@ -78,4 +105,21 @@
 .view-courses {
   @include flex(column wrap, center, center);
   margin-bottom: 25px;
+}
+
+.banner-image-desktop {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.banner-image-mobile {
+  @include desktop {
+    display: none;
+  }
+}
+
+.vp-video-wrapper, .transparent {
+  border-radius: 25px;
 }

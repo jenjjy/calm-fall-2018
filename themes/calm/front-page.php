@@ -9,25 +9,69 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+
+        <!--- BANNER -->
         <div class="banner-header">
             <h1>
                 <?php
                 echo CFS()->get('mobile_banner_header');
                 ?>
             </h1>
-            <div>
+            <div class="button-container">
                 <?php
                 echo CFS()->get('mobile_banner_button');
                 ?>
             </div>
         </div>
+        <!--- BANNER IMAGE -->
+        <div class="banner-image-container">
+            <img src="<?php
+            echo CFS()->get('banner_image_mobile');
+            ?>" alt="" class="banner-image-mobile">
+            <img src="<?php
+            echo CFS()->get('banner_image_desktop');
+            ?>" alt="" class="banner-image-desktop">
 
+        </div>
+
+
+        <!--- CONTENT -->
         <?php /* Start the Loop */ ?>
         <?php while (have_posts()) : the_post(); ?>
 
             <?php get_template_part('template-parts/content'); ?>
 
+            <div class="founder-container">
+                <h1>
+                    <?php
+                    echo CFS()->get('listen_to_founder_header');
+                    ?>
+                </h1>
+                <div class="button-container">
+                    <?php
+                    echo CFS()->get('listen_to_founder_button');
+                    ?>
+                </div>
 
+            </div>
+            <div class="solutions-container">
+                <h1>
+                    <?php
+                    echo CFS()->get('game_changing_solution_header');
+                    ?>
+                </h1>
+                <img src=" <?php
+                echo CFS()->get('game_changing_solution_image');
+                ?>" alt="game changing solution">
+                <p>
+                    <?php
+                    echo CFS()->get('game_changing_solution_text');
+                    ?>
+                </p>
+
+            </div>
+
+            <!--- GOALS -->
         <?php endwhile; ?>
         <div class="checkmark-container">
             <?php
@@ -42,13 +86,14 @@ get_header(); ?>
 
         </div>
 
+        <!--- COURSES -->
         <div class="view-courses">
             <?php
             echo CFS()->get('view_courses');
             ?>
         </div>
 
-
+        <!--- CAMPAIGN -->
         <div class="campaign-container">
             <h2>
                 <?php

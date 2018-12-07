@@ -20,6 +20,39 @@
 
         }
 
+        @include desktop {
+
+            .entry-content {
+                border: solid red;
+
+                .our-company {
+
+
+                    border: solid green;
+
+
+
+                }
+
+                .our-mission-purpose-goals {
+                    @include flex(row, null, null);
+                }
+
+                .our-mission,
+                .our-purpose,
+                .our-goals {
+                    @include heightandwidth(null, 33.3333%);
+                    border: solid blue;
+
+
+                }
+
+
+            }
+
+
+        }
+
     }
 
 }
