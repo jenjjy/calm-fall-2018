@@ -1197,7 +1197,27 @@ object {
 @media (min-width: 1200px) {
   .page-template-page-our-founder .site-content .entry-content,
   .page-template-page-our-company .site-content .entry-content {
-    border: solid red; } }
+    border: solid red; }
+    .page-template-page-our-founder .site-content .entry-content .our-company,
+    .page-template-page-our-company .site-content .entry-content .our-company {
+      border: solid green; }
+    .page-template-page-our-founder .site-content .entry-content .our-mission-purpose-goals,
+    .page-template-page-our-company .site-content .entry-content .our-mission-purpose-goals {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row;
+              flex-flow: row; }
+    .page-template-page-our-founder .site-content .entry-content .our-mission,
+    .page-template-page-our-founder .site-content .entry-content .our-purpose,
+    .page-template-page-our-founder .site-content .entry-content .our-goals,
+    .page-template-page-our-company .site-content .entry-content .our-mission,
+    .page-template-page-our-company .site-content .entry-content .our-purpose,
+    .page-template-page-our-company .site-content .entry-content .our-goals {
+      width: 33.3333%;
+      border: solid blue; } }
 
 /*--------------------------------------------------------------
 # our founder
