@@ -31,9 +31,9 @@ a {
 .main-navigation {
   letter-spacing: 1px;
   padding: 1rem 0;
-  width: 1155px;
 
   @include tablet {
+    width: 1155px;
     .current-menu-item {
       a {
         border-bottom: $border-active;
@@ -85,30 +85,32 @@ a {
       left: -999rem;
       z-index: 99999;
 
-      @include tablet {
-        border: $border-active;
-      }
-
       ul {
         left: -999rem;
         top: 0;
       }
 
       li {
-        &:hover {
-          background: $primary__color;
-          // width: 100%;
+        @include tablet {
+          border: $border-active;
+
+          &:hover {
+            background: $primary__color;
+            // width: 100%;
+          }
         }
       }
 
       a {
-        color: $color__text-main;
-        font-size: 1rem;
-        // padding: 0.5rem 1rem;
-        width: 200px;
-        &:hover {
-          background: $primary__color;
-          color: $color__white;
+        @include tablet {
+          color: $color__text-main;
+          font-size: 1rem;
+          // padding: 0.5rem 1rem;
+          width: 200px;
+          &:hover {
+            background: $primary__color;
+            color: $color__white;
+          }
         }
       }
     }

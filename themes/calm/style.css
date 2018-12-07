@@ -551,11 +551,12 @@ a {
 /* Menus */
 .main-navigation {
   letter-spacing: 1px;
-  padding: 1rem 0;
-  width: 1155px; }
+  padding: 1rem 0; }
   @media (min-width: 500px) {
-    .main-navigation .current-menu-item a {
-      border-bottom: 2px solid #52b0cc; } }
+    .main-navigation {
+      width: 1155px; }
+      .main-navigation .current-menu-item a {
+        border-bottom: 2px solid #52b0cc; } }
   .main-navigation a {
     background: #52b0cc;
     color: #fff;
@@ -626,21 +627,22 @@ a {
       top: 1.5rem;
       left: -999rem;
       z-index: 99999; }
-      @media (min-width: 500px) {
-        .main-navigation ul ul {
-          border: 2px solid #52b0cc; } }
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
-      .main-navigation ul ul li:hover {
-        background: #52b0cc; }
-      .main-navigation ul ul a {
-        color: #787878;
-        font-size: 1rem;
-        width: 200px; }
-        .main-navigation ul ul a:hover {
-          background: #52b0cc;
-          color: #fff; }
+      @media (min-width: 500px) {
+        .main-navigation ul ul li {
+          border: 2px solid #52b0cc; }
+          .main-navigation ul ul li:hover {
+            background: #52b0cc; } }
+      @media (min-width: 500px) {
+        .main-navigation ul ul a {
+          color: #787878;
+          font-size: 1rem;
+          width: 200px; }
+          .main-navigation ul ul a:hover {
+            background: #52b0cc;
+            color: #fff; } }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
