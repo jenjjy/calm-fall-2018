@@ -4,16 +4,44 @@
   @include tablet {
     height: 160px;
   }
-}
 
-.logo-main {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin: auto;
-  width: 150px;
+  .site-branding {
+    @include flex(null, flex-start, null);
+    letter-spacing: 1px;
+    @include tablet {
+      position: relative;
+    }
+    a {
+      width: 100%;
+      .logo-main {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        margin: auto;
+        width: 150px;
+        @include tablet {
+          width: 254px;
+        }
+      }
+    }
+  }
+}
+.login {
+  color: $color__white;
+  position: absolute;
+  a {
+    text-decoration: none;
+  }
   @include tablet {
-    width: 254px;
+    // position: absolute;
+    a {
+      color: $primary__color;
+      font-family: $font__sec-semibold;
+      text-transform: uppercase;
+      &:hover {
+        color: $color__link-hover;
+      }
+    }
   }
 }
 

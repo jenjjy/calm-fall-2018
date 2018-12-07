@@ -26,14 +26,18 @@ $color__text-screen: royalblue;
 $color__white: #fff;
 
 $color__link: #9ec284;
-$color__link-hover: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+$color__link-hover: #1c88a8;
+$button__hover: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 $color__link-visited: yellowgreen;
 
 // Typography
 
 $font__main: 'Quicksand', sans-serif;
+$font__main-bold: 'Quicksand-Bold', sans-serif;
 $font__main-light: 'Quicksand-Light', sans-serif;
+$font__main-med: 'Quicksand-Medium', sans-serif;
 $font__secondary: 'Muli', sans-serif;
+$font__sec-semibold: 'Muli-SemiBold', sans-serif;
 $font__code: 'Muli-Bold', 'Andale Mono', 'DejaVu Sans Mono', monospace;
 $font__pre: 'Quicksand', Courier, monospace;
 $font__line-height-body: 1.5;
