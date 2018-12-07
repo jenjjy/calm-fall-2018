@@ -1194,6 +1194,11 @@ object {
 .page-template-page-our-company .site-content .company-site-main .entry-header .entry-title {
   text-align: center; }
 
+@media (min-width: 1200px) {
+  .page-template-page-our-founder .site-content .entry-content,
+  .page-template-page-our-company .site-content .entry-content {
+    border: solid red; } }
+
 /*--------------------------------------------------------------
 # our founder
 --------------------------------------------------------------*/
