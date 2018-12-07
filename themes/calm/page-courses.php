@@ -46,14 +46,14 @@ get_header(); ?>
 						} 
 					?>
 					</div>
-					<div class="adventure-info">
+				
 					
 					<div class="permalink">
 						<a href="<?php echo get_the_permalink(); ?>">
 						<?php the_title();?>
 						</a>
 					</div>
-					</div>
+					
 				</article>
 				<?php endforeach; wp_reset_postdata(); ?>
 				</div>
