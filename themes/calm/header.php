@@ -32,12 +32,36 @@
        <div class="login">
             <a href="http://calmversation.thinkific.com">login</a>
         </div><!-- .login -->
-        <div class="hamburger"></div>
-        <nav id="site-navigation" class="main-navigation " role="navigation">
-        
+
+        <!-- navbar = main-navigation -->
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+
+            <span class="open-slide">
+                <a href="#" class="open-menu">
+                    <svg width="35" height="30">
+                        <path d="M0,5 30,5" stroke="#787878" stroke-width="3.5"/>
+                        <path d="M0,14 30,14" stroke="#787878" stroke-width="3.5"/>
+                        <path d="M0,23 30,23" stroke="#787878" stroke-width="3.5"/>
+                    </svg>
+                </a>
+            </span>
+
+            <!-- navbar-nav = menu -->
             <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+       
         </nav><!-- #site-navigation -->
       
+        <div id="side-menu" class="side-nav">
+        testing
+            <a href="#" class="btn-close">&#10006;</a>
+            
+            <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+        </div>
+
+        <div id="main">
+            <h1>example</h1>
+        </div>
+
     </header><!-- #masthead -->
 
     <div id="content" class="site-content">
