@@ -4,16 +4,35 @@
   @include tablet {
     height: 160px;
   }
-}
 
-.logo-main {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin: auto;
-  width: 150px;
+  .site-branding {
+    @include flex(null, flex-start, null);
+    letter-spacing: 1px;
+    @include tablet {
+      position: relative;
+    }
+    a {
+      width: 100%;
+      .logo-main {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        margin: auto;
+        width: 150px;
+        @include tablet {
+          width: 254px;
+        }
+      }
+    }
+  }
+}
+.login {
+  color: $color__white;
   @include tablet {
-    width: 254px;
+    color: $primary__color;
+    font-family: $font__sec-semibold;
+    postition: absolute;
+    text-transform: uppercase;
   }
 }
 

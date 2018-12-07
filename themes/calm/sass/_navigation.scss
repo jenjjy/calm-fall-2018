@@ -32,6 +32,7 @@ a {
   // clear: both;
   // display: block;
   // float: left;
+  letter-spacing: 1px;
   padding: 2rem 0;
   width: 100%;
 
@@ -46,6 +47,7 @@ a {
   a {
     background: $primary__color;
     color: $color__white;
+    font-family: $font__main-med;
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -53,6 +55,7 @@ a {
     @include tablet {
       color: $color__text-main;
       background: $color__background-body;
+      font-family: $font__secondary;
       padding: 0 1rem;
 
       &:hover {

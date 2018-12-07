@@ -552,6 +552,7 @@ a {
 
 /* Menus */
 .main-navigation {
+  letter-spacing: 1px;
   padding: 2rem 0;
   width: 100%; }
   @media (min-width: 500px) {
@@ -560,6 +561,7 @@ a {
   .main-navigation a {
     background: #52b0cc;
     color: #fff;
+    font-family: "Quicksand-Medium", sans-serif;
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase; }
@@ -567,6 +569,7 @@ a {
       .main-navigation a {
         color: #787878;
         background: #f0f3f8;
+        font-family: "Muli", sans-serif;
         padding: 0 1rem; }
         .main-navigation a:hover {
           border-bottom: 2px solid #b5ccdb; } }
@@ -886,20 +889,41 @@ object {
   @media (min-width: 500px) {
     .site-header {
       height: 160px; } }
+  .site-header .site-branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    letter-spacing: 1px; }
+    @media (min-width: 500px) {
+      .site-header .site-branding {
+        position: relative; } }
+    .site-header .site-branding a {
+      width: 100%; }
+      .site-header .site-branding a .logo-main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: auto;
+        margin: auto;
+        width: 150px; }
+        @media (min-width: 500px) {
+          .site-header .site-branding a .logo-main {
+            width: 254px; } }
 
-.logo-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: auto;
-  margin: auto;
-  width: 150px; }
+.login {
+  color: #fff; }
   @media (min-width: 500px) {
-    .logo-main {
-      width: 254px; } }
+    .login {
+      color: #52b0cc;
+      font-family: "Muli-SemiBold", sans-serif;
+      postition: absolute;
+      text-transform: uppercase; } }
 
 .menu-header-container {
   display: -webkit-box;
