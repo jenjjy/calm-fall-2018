@@ -981,8 +981,6 @@ object {
     font-size: 2.7rem; }
 
 .checkmark-container {
-  border-top: 2px solid #b4de96;
-  border-bottom: 2px solid #b4de96;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -997,6 +995,16 @@ object {
       -ms-flex-flow: column;
           flex-flow: column;
   margin-bottom: 25px; }
+  .checkmark-container:before {
+    content: "";
+    height: 1px;
+    width: 45%;
+    border-top: 2px solid #b4de96; }
+  .checkmark-container:after {
+    content: "";
+    height: 1px;
+    width: 45%;
+    border-bottom: 2px solid #b4de96; }
 
 .front-page-check-mark {
   display: -webkit-box;
@@ -1018,8 +1026,8 @@ object {
           justify-content: center; }
   .front-page-check-mark h2 {
     margin-left: 10px;
-    width: 50%;
-    font-size: 16px; }
+    width: 71%;
+    font-size: 23px; }
 
 /*--------------------------------------------------------------
 # our company  and our fonder
