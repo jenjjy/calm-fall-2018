@@ -31,53 +31,72 @@ a {
 .main-navigation {
   letter-spacing: 1px;
   padding: 1rem 0;
+  width: 100%;
 
   @include tablet {
-    width: 1155px;
-    .current-menu-item {
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    width: 900px;
+
+    li.current-menu-item {
       a {
         border-bottom: $border-active;
-      }
-    }
-  }
-
-  a {
-    background: $primary__color;
-    color: $color__white;
-    font-family: $font__main-med;
-    font-size: 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    @include tablet {
-      color: $color__text-main;
-      background: $color__background-body;
-      font-family: $font__secondary;
-      padding: 0 0.6rem;
-      padding-bottom: 2px;
-
-      &:hover {
-        border-bottom: $border-hover;
+        &:hover {
+          border-bottom: $border-active;
+        }
       }
     }
 
     @include desktop {
-      font-size: 1.5rem;
+      width: $text-width;
     }
-  }
 
-  ul {
-    @include flex(column nowrap, center, center);
-    list-style: none;
-    // margin: 0;
-    // padding-left: 0;
+    a {
+      // background: $primary__color;
+      // color: $color__white;
+      font-family: $font__main-med;
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
 
-    @include tablet {
-      @include flex(row nowrap, center, center);
+      @include tablet {
+        color: $color__text-main;
+        background: $color__background-body;
+        font-family: $font__secondary;
+        padding: 0 0.6rem;
+        padding-bottom: 2px;
+      }
+
+      @include desktop {
+        font-size: 1.5rem;
+      }
     }
 
     ul {
+      // @include flex(column nowrap, center, center);
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+
+      @include tablet {
+        @include flex(row nowrap, center, center);
+        li {
+          a {
+            &:hover {
+              border-bottom: $border-hover;
+            }
+          }
+        }
+      }
+    }
+
+    a {
       @include flex(column nowrap, center, center);
+    }
+
+    ul {
+      @include flex(row nowrap, center, center);
       border-bottom: none;
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       font-family: $font__main-light;
@@ -92,11 +111,14 @@ a {
 
       li {
         @include tablet {
-          border: $border-active;
+          // border: $border-active;
+          font-family: $font__main;
+          padding: 0.5rem 0.5rem;
 
-          &:hover {
+          &:hover a {
             background: $primary__color;
-            // width: 100%;
+            border-bottom: transparent;
+            color: $color__white;
           }
         }
       }
@@ -105,12 +127,7 @@ a {
         @include tablet {
           color: $color__text-main;
           font-size: 1rem;
-          // padding: 0.5rem 1rem;
           width: 200px;
-          &:hover {
-            background: $primary__color;
-            color: $color__white;
-          }
         }
       }
     }
@@ -128,33 +145,30 @@ a {
 
 /* Small menu. */
 
-// .sub-menu {
-//   display: none;
-//   border: 1px solid #52b0cc;
+.sub-menu {
+  @include tablet {
+    // display: none;
+    // border: 1px solid #52b0cc;
 
-//   // &:hover {
-//   //   display: flex;
-//   //   flex-direction: column;
-//   // }
-//   a {
-//     &:hover,
-//     &:focus {
-//       // background: $primary__color;
-//       border-bottom: transparent;
-//     }
-//   }
+    a {
+      width: 100%;
+      &:hover,
+      &:focus {
+        background: $primary__color;
+        border-bottom: transparent;
+      }
+    }
 
-//   li {
-//     &:last-child a {
-//       // border-bottom: 1px solid #52b0cc;
-//     }
-//     &:hover {
-//       background: $primary__color;
-//       color: $color__white;
-//       width: 100%;
-//     }
-//   }
-// }
+    li {
+      padding: 0.25rem 1rem;
+
+      &:hover {
+        background: $primary__color;
+        color: $color__white;
+      }
+    }
+  }
+}
 
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -167,7 +181,7 @@ a {
   }
 
   .main-navigation ul {
-    display: none;
+    // display: none;
 
     @include tablet {
       display: flex;
