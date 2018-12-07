@@ -552,7 +552,7 @@ a {
 .main-navigation {
   letter-spacing: 1px;
   padding: 1rem 0;
-  width: 100%; }
+  width: 1155px; }
   @media (min-width: 500px) {
     .main-navigation .current-menu-item a {
       border-bottom: 2px solid #52b0cc; } }
