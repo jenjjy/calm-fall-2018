@@ -55,23 +55,44 @@
     }
   }
 
-
 }
-
 
 /*footer desktop*/
 
 @include desktop {
   .site-footer {
     border: red solid;
+    @include flex(row, null, center);
+    position: relative;
+    height: 150px;
+
   }
 
   .social-media-icon {
     border: green solid;
+    order: 1;
+    padding: 30px 40px;
+    font-size: 30px;
+
   }
 
   .footer-navigation {
     border: pink solid;
+    order: 2;
+
+    ul {
+      @include flex(row, null, flex-start);
+      width: 100%;
+      padding: 20px;
+    }
   }
 
+  h6 {
+    border: solid purple;
+    order: 3;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+  }
 }
