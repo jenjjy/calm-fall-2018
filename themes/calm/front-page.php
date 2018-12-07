@@ -10,9 +10,15 @@ get_header(); ?>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
         <div class="banner-header">
-            <h1>innovation tools for teachers</h1>
+            <h1>
+                <?php
+                echo CFS()->get('mobile_banner_header');
+                ?>
+            </h1>
             <div>
-                <a href="https://calmversation.thinkific.com/" class="button-purchase">purchase now</a>
+                <?php
+                echo CFS()->get('mobile_banner_button');
+                ?>
             </div>
         </div>
 
@@ -34,6 +40,12 @@ get_header(); ?>
                 </div>
             <?php endforeach; ?>
 
+        </div>
+
+        <div class="view-courses">
+            <?php
+            echo CFS()->get('view_courses');
+            ?>
         </div>
 
 
