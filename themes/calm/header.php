@@ -32,9 +32,9 @@
        <div class="login">
             <a href="http://calmversation.thinkific.com">login</a>
         </div><!-- .login -->
-       
+        <div class="hamburger"></div>
         <nav id="site-navigation" class="main-navigation " role="navigation">
-            <div class="hamburger"></div>
+        
             <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
         </nav><!-- #site-navigation -->
       
