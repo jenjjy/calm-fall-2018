@@ -36,8 +36,8 @@ get_header(); ?>
 					$post_url = $post->guid;
 					?>
 					
-					<h2><?php echo CFS()->get('theme_title', $post_id);?></h2>
-					<p><?php echo CFS()->get('theme_description', $post_id);?> </p>
+					<h2><?php echo CFS()->get('course_theme_title', $post_id);?></h2>
+					<p><?php echo CFS()->get('course_theme_description', $post_id);?> </p>
 					<a href="<?php echo $post_url;?>">Learn More</a>
 					<div class="img-container">
 					<?php  /* Content from your array of post results goes here */ 
