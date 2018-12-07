@@ -489,8 +489,7 @@ table {
   list-style: none;
   text-decoration: none; }
   .button-purchase:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
+    background: #1c88a8; }
 
 .button {
   background: #b4de96;
@@ -505,8 +504,7 @@ table {
   list-style: none;
   text-decoration: none; }
   .button:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
+    background: #1c88a8; }
 
 /* Fields */
 input[type='text'],
@@ -544,7 +542,7 @@ textarea {
 a {
   color: #9ec284; }
   a:hover, a:focus, a:active {
-    color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
+    color: #1c88a8; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -553,7 +551,7 @@ a {
 /* Menus */
 .main-navigation {
   letter-spacing: 1px;
-  padding: 2rem 0;
+  padding: 1rem 0;
   width: 100%; }
   @media (min-width: 500px) {
     .main-navigation .current-menu-item a {
@@ -570,7 +568,8 @@ a {
         color: #787878;
         background: #f0f3f8;
         font-family: "Muli", sans-serif;
-        padding: 0 1rem; }
+        padding: 0 0.6rem;
+        padding-bottom: 2px; }
         .main-navigation a:hover {
           border-bottom: 2px solid #b5ccdb; } }
     @media (min-width: 1200px) {
@@ -916,13 +915,17 @@ object {
             width: 254px; } }
 
 .login {
-  color: #fff; }
+  color: #fff;
+  position: absolute; }
+  .login a {
+    text-decoration: none; }
   @media (min-width: 500px) {
-    .login {
+    .login a {
       color: #52b0cc;
       font-family: "Muli-SemiBold", sans-serif;
-      postition: absolute;
-      text-transform: uppercase; } }
+      text-transform: uppercase; }
+      .login a:hover {
+        color: #1c88a8; } }
 
 .menu-header-container {
   display: -webkit-box;

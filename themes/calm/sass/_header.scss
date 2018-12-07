@@ -28,11 +28,20 @@
 }
 .login {
   color: $color__white;
+  position: absolute;
+  a {
+    text-decoration: none;
+  }
   @include tablet {
-    color: $primary__color;
-    font-family: $font__sec-semibold;
-    postition: absolute;
-    text-transform: uppercase;
+    // position: absolute;
+    a {
+      color: $primary__color;
+      font-family: $font__sec-semibold;
+      text-transform: uppercase;
+      &:hover {
+        color: $color__link-hover;
+      }
+    }
   }
 }
 

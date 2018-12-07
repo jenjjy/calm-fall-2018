@@ -27,16 +27,17 @@
                 <img src="<?php echo get_template_directory_uri() . '/images/calmversation-logo.png' ?>"
                     class="logo-main" alt="calmversation foundation" />
             </a>
-           
        </div><!-- .site-branding -->
 
-        <div class="hamburger">
+       <div class="login">
+            <a href="http://calmversation.thinkific.com">login</a>
+        </div><!-- .login -->
+       
         <nav id="site-navigation" class="main-navigation " role="navigation">
-            
+            <div class="hamburger"></div>
             <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-            <div class="login">login</div>
         </nav><!-- #site-navigation -->
-        </div>
+      
     </header><!-- #masthead -->
 
     <div id="content" class="site-content">

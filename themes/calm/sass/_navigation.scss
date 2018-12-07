@@ -33,7 +33,7 @@ a {
   // display: block;
   // float: left;
   letter-spacing: 1px;
-  padding: 2rem 0;
+  padding: 1rem 0;
   width: 100%;
 
   @include tablet {
@@ -56,7 +56,8 @@ a {
       color: $color__text-main;
       background: $color__background-body;
       font-family: $font__secondary;
-      padding: 0 1rem;
+      padding: 0 0.6rem;
+      padding-bottom: 2px;
 
       &:hover {
         border-bottom: $border-hover;
