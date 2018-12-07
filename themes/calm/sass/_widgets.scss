@@ -55,19 +55,23 @@
     }
   }
 
-  /*footer desktop*/
 
-  @include desktop {
-    .site-footer {
-      border: red solid;
-    }
+}
 
-    .social-media-icon {
-      border: green solid;
 
-      .footer-navigation {
-        border: pink solid;
-      }
-    }
+/*footer desktop*/
+
+@include desktop {
+  .site-footer {
+    border: red solid;
   }
+
+  .social-media-icon {
+    border: green solid;
+  }
+
+  .footer-navigation {
+    border: pink solid;
+  }
+
 }
