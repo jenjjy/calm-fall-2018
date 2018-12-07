@@ -817,13 +817,14 @@ a {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    padding: 30px 40px;
-    font-size: 30px; }
+    padding: 20px 50px;
+    font-size: 40px; }
   .footer-navigation {
     border: pink solid;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-            order: 2; }
+            order: 2;
+    margin-left: 80px; }
     .footer-navigation ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -837,6 +838,9 @@ a {
               align-items: flex-start;
       width: 100%;
       padding: 20px; }
+      .footer-navigation ul a {
+        padding: 25px;
+        text-transform: uppercase; }
   h6 {
     border: solid purple;
     -webkit-box-ordinal-group: 4;
@@ -845,7 +849,8 @@ a {
     position: absolute;
     bottom: 0px;
     text-align: center;
-    width: 100%; } }
+    width: 100%;
+    font-size: 16px; } }
 
 /*--------------------------------------------------------------
 # Content
