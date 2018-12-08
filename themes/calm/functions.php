@@ -91,6 +91,9 @@ add_filter('stylesheet_uri', 'calm_minified_css', 10, 2);
  */
 function calm_scripts()
 {
+
+    wp_enqueue_script('flickity','https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js');
+    wp_enqueue_style('flickity','https://unpkg.com/flickity@2/dist/flickity.min.css');
     wp_enqueue_style('calm-style', get_stylesheet_uri());
     wp_enqueue_style('calm-fontawesome','https://use.fontawesome.com/releases/v5.5.0/css/all.css');
     wp_enqueue_script('calm-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true);

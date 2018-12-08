@@ -3,35 +3,41 @@
   padding-top: 1rem;
   @include tablet {
     height: 160px;
-    .hamburger {
-      display: none;
-    }
   }
 
   .site-branding {
     @include flex(null, flex-start, null);
     letter-spacing: 1px;
     @include tablet {
-      position: relative;
+      // position: relative;
     }
     a {
       width: 100%;
+
       .logo-main {
         display: flex;
         justify-content: center;
         height: auto;
         margin: auto;
         width: 150px;
+
         @include tablet {
           width: 254px;
         }
       }
     }
   }
+
+  .open-slide {
+    @include tablet {
+      display: none;
+    }
+  }
 }
 .login {
-  color: $color__white;
-  position: absolute;
+  // background: $primary__color;
+  // color: $color__white;
+  // position: absolute;
   a {
     text-decoration: none;
   }
@@ -48,92 +54,103 @@
   }
 }
 
-// .menu {
-//   display: none;
-// }
-.menu-header-container {
-  display: flex;
-  justify-content: center;
+.button-close {
+  background: $primary__color;
+  color: red;
+}
+
+.side-nav {
+  @include flex(column nowrap, center, center);
+
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+  z-index: 1;
+
+  overflow-x: hidden;
+  position: fixed;
+  transition: 0.5s;
 }
 
 /*  Hamburger  */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-.hamburger {
-  width: 60px;
-  height: 45px;
-  position: relative;
-  margin: 50px auto;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+// .hamburger {
+//   width: 60px;
+//   height: 45px;
+//   position: relative;
+//   margin: 50px auto;
+//   -webkit-transform: rotate(0deg);
+//   -moz-transform: rotate(0deg);
+//   -o-transform: rotate(0deg);
+//   transform: rotate(0deg);
+//   -webkit-transition: 0.5s ease-in-out;
+//   -moz-transition: 0.5s ease-in-out;
+//   -o-transition: 0.5s ease-in-out;
+//   transition: 0.5s ease-in-out;
+//   cursor: pointer;
+// }
 
-.hamburger span {
-  display: block;
-  position: absolute;
-  height: 9px;
-  width: 100%;
-  background: #d3531a;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
+// .hamburger span {
+//   display: block;
+//   position: absolute;
+//   height: 9px;
+//   width: 100%;
+//   background: #d3531a;
+//   border-radius: 9px;
+//   opacity: 1;
+//   left: 0;
+//   -webkit-transform: rotate(0deg);
+//   -moz-transform: rotate(0deg);
+//   -o-transform: rotate(0deg);
+//   transform: rotate(0deg);
+//   -webkit-transition: 0.25s ease-in-out;
+//   -moz-transition: 0.25s ease-in-out;
+//   -o-transition: 0.25s ease-in-out;
+//   transition: 0.25s ease-in-out;
+// }
 
-/* Icon 3 */
+// /* Icon 3 */
 
-.hamburger span:nth-child(1) {
-  top: 0px;
-}
+// .hamburger span:nth-child(1) {
+//   top: 0px;
+// }
 
-.hamburger span:nth-child(2),
-.hamburger span:nth-child(3) {
-  top: 18px;
-}
+// .hamburger span:nth-child(2),
+// .hamburger span:nth-child(3) {
+//   top: 18px;
+// }
 
-.hamburger span:nth-child(4) {
-  top: 36px;
-}
+// .hamburger span:nth-child(4) {
+//   top: 36px;
+// }
 
-.hamburger.open span:nth-child(1) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-}
+// .hamburger.open span:nth-child(1) {
+//   top: 18px;
+//   width: 0%;
+//   left: 50%;
+// }
 
-.hamburger.open span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+// .hamburger.open span:nth-child(2) {
+//   -webkit-transform: rotate(45deg);
+//   -moz-transform: rotate(45deg);
+//   -o-transform: rotate(45deg);
+//   transform: rotate(45deg);
+// }
 
-.hamburger.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
+// .hamburger.open span:nth-child(3) {
+//   -webkit-transform: rotate(-45deg);
+//   -moz-transform: rotate(-45deg);
+//   -o-transform: rotate(-45deg);
+//   transform: rotate(-45deg);
+// }
 
-.hamburger.open span:nth-child(4) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-}
+// .hamburger.open span:nth-child(4) {
+//   top: 18px;
+//   width: 0%;
+//   left: 50%;
+// }
