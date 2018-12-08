@@ -1116,9 +1116,12 @@ object {
   .founder-container h1, .solutions-container h1 {
     font-size: 35px; }
   .founder-container img, .solutions-container img {
-    width: 91%; }
+    width: 91%;
+    margin-bottom: 15px; }
   .founder-container p, .solutions-container p {
-    font-size: 22px; }
+    width: 86%;
+    font-size: 22px;
+    margin: 0 auto; }
 
 .checkmark-container {
   display: -webkit-box;
@@ -1167,8 +1170,8 @@ object {
           justify-content: center; }
   .front-page-check-mark h2 {
     margin-left: 10px;
-    width: 54%;
-    font-size: 19px; }
+    width: 60%;
+    font-size: 21px; }
 
 .campaign-container {
   display: -webkit-box;
@@ -1187,12 +1190,12 @@ object {
   margin-bottom: 25px; }
   .campaign-container p {
     text-align: center;
-    width: 69%;
-    font-size: 18px; }
+    width: 81%;
+    font-size: 22px; }
   .campaign-container h2 {
     text-align: center;
-    font-size: 29px;
-    width: 44%;
+    font-size: 42px;
+    width: 65%;
     font-weight: bolder;
     margin-top: auto; }
   .campaign-container .campaign-logo {
@@ -1228,6 +1231,10 @@ object {
 
 .vp-video-wrapper, .transparent {
   border-radius: 25px; }
+
+.front-page-video {
+  height: 380px;
+  width: 670px; }
 
 /*--------------------------------------------------------------
 # our company  and our fonder
