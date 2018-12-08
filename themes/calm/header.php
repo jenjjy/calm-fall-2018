@@ -59,7 +59,7 @@
         </div>
 
         <div id="main">
-            <h1>example</h1>
+            <h1>ignore me</h1>
         </div>
 
     </header><!-- #masthead -->
