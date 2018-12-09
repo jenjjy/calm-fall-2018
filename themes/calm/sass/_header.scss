@@ -39,10 +39,12 @@
 
 .login {
   // background: $primary__color;
-  // color: $color__white;
+
   position: absolute;
   a {
+    // color: $color__white;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   @include tablet {
@@ -53,7 +55,6 @@
     a {
       color: $primary__color;
       font-family: $font__sec-semibold;
-      text-transform: uppercase;
 
       &:hover {
         color: $color__link-hover;

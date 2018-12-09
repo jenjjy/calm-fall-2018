@@ -655,9 +655,8 @@ a {
 
 /* Small menu. */
 @media (min-width: 550px) {
-  ul.sub-menu {
+  ul .sub-menu {
     background: #f0f3f8;
-    border: 1px solid #52b0cc;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -665,17 +664,22 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    ul.sub-menu a {
+    ul .sub-menu a {
       width: 100%; }
-      ul.sub-menu a:hover, ul.sub-menu a:focus {
+      ul .sub-menu a:hover, ul .sub-menu a:focus {
         background: #52b0cc; }
-    ul.sub-menu li {
+    ul .sub-menu li {
+      border: 1px solid #52b0cc;
       padding: 0.25rem 1rem; }
-      ul.sub-menu li:hover {
+      ul .sub-menu li:hover {
         background: #52b0cc;
         color: #fff; }
-    ul.sub-menu .current-menu-item a:hover {
-      border-bottom: #fff; } }
+    ul .sub-menu .current-menu-item a {
+      border-bottom: transparent;
+      color: #52b0cc;
+      font-family: "Muli-SemiBold", sans-serif; }
+      ul .sub-menu .current-menu-item a:hover {
+        border-bottom: #fff; } }
 
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -1016,7 +1020,8 @@ a {
 .login {
   position: absolute; }
   .login a {
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: uppercase; }
   @media (min-width: 550px) {
     .login {
       padding-right: 1rem;
@@ -1025,8 +1030,7 @@ a {
       top: 0; }
       .login a {
         color: #52b0cc;
-        font-family: "Muli-SemiBold", sans-serif;
-        text-transform: uppercase; }
+        font-family: "Muli-SemiBold", sans-serif; }
         .login a:hover {
           color: #1c88a8; } }
 

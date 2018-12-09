@@ -21,23 +21,5 @@
       // event.preventDefault();
       closeSlideMenu();
     });
-
-    // Hover Sub Menu
-    $('li.menu-item').hover(
-      function() {
-        $(this)
-          .find(' > .sub-menu')
-          .show(); // display immediate child
-      },
-      function() {
-        // mouse leave
-        if (!$(this).hasClass('current_page_item')) {
-          // check if current page
-          $(this)
-            .find('.sub-menu')
-            .hide(); // hide if not current page
-        }
-      }
-    ); // end of sub-menu hover
   }); // end of document
 });

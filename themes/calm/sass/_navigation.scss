@@ -183,35 +183,41 @@ a {
 
 /* Small menu. */
 
-ul.sub-menu {
-  @include tablet {
-    background: $color__background-body;
-    border: 1px solid #52b0cc;
-    display: flex;
-    flex-direction: column;
+ul {
+  .sub-menu {
+    @include tablet {
+      background: $color__background-body;
 
-    a {
-      width: 100%;
-      &:hover,
-      &:focus {
-        background: $primary__color;
-      }
-    }
+      display: flex;
+      flex-direction: column;
 
-    li {
-      // border-bottom: transparent;
-      padding: 0.25rem 1rem;
-
-      &:hover {
-        background: $primary__color;
-        color: $color__white;
-      }
-    }
-
-    .current-menu-item {
       a {
+        width: 100%;
+        &:hover,
+        &:focus {
+          background: $primary__color;
+        }
+      }
+
+      li {
+        border: 1px solid #52b0cc;
+        // border-bottom: transparent;
+        padding: 0.25rem 1rem;
+
         &:hover {
-          border-bottom: $color__white;
+          background: $primary__color;
+          color: $color__white;
+        }
+      }
+
+      .current-menu-item {
+        a {
+          border-bottom: transparent;
+          color: $primary__color;
+          font-family: $font__sec-semibold;
+          &:hover {
+            border-bottom: $color__white;
+          }
         }
       }
     }
