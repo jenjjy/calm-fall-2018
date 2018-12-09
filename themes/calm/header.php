@@ -33,6 +33,12 @@
             <a href="http://calmversation.thinkific.com">login</a>
         </div><!-- .login -->
 
+
+<div id="nav-icon">
+
+</div>
+
+
         <!-- navbar = main-navigation -->
         <nav id="site-navigation" class="main-navigation" role="navigation">
 
