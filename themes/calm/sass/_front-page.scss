@@ -56,6 +56,9 @@
 }
 
 .solutions-container {
+  .solution-text-desktop{
+    display: none;
+  }
   @include desktop {
     width: 86%;
     margin: $margin__auto;
@@ -64,6 +67,15 @@
     }
     img{
       width: 50%;
+    }
+    .solution-text-desktop{
+      margin-left: 13px;
+      text-align: left;
+      font-size: 16px;
+      display: block;
+    }
+    .solution-text-mobile{
+      display: none;
     }
 
   }
@@ -88,6 +100,10 @@
     height: 1px;
     width: 50%;
     border-bottom: 2px solid $secondary__color;
+  }
+
+  @include desktop{
+    display: none;
   }
 
 }

@@ -40,7 +40,7 @@ get_header(); ?>
         <?php while (have_posts()) : the_post(); ?>
 
             <?php get_template_part('template-parts/content'); ?>
-
+            <!--- FOUNDER -->
             <div class="founder-container">
                 <h1>
                     <?php
@@ -54,6 +54,7 @@ get_header(); ?>
                 </div>
 
             </div>
+            <!--- SOLUTIONS -->
             <div class="solutions-container">
                 <h1>
                     <?php
@@ -64,7 +65,7 @@ get_header(); ?>
                     <img src=" <?php
                     echo CFS()->get('game_changing_solution_image');
                     ?>" alt="game changing solution">
-                    <p>
+                    <p class="solution-text-mobile">
                         <?php
                         echo CFS()->get('game_changing_solution_text');
                         ?>
@@ -90,6 +91,16 @@ get_header(); ?>
                 </div>
             <?php endforeach; ?>
 
+        </div>
+
+        <!--- GOALS DESKTOP -->
+        <div class="goals-desktop">
+            <?php
+            $loop = CFS()->get('goals_desktop');
+            foreach ($loop as $row) : ?>
+                <h2><?php echo $row['goals_header']; ?></h2>
+                <p><?php echo $row['goals_text_desktop']; ?></p>
+            <?php endforeach; ?>
         </div>
 
         <!--- COURSES -->

@@ -1155,6 +1155,9 @@ body {
     left: 6%;
     width: 36%; } }
 
+.solutions-container .solution-text-desktop {
+  display: none; }
+
 @media (min-width: 1024px) {
   .solutions-container {
     width: 86%;
@@ -1174,7 +1177,14 @@ body {
           -ms-flex-align: center;
               align-items: center; }
     .solutions-container img {
-      width: 50%; } }
+      width: 50%; }
+    .solutions-container .solution-text-desktop {
+      margin-left: 13px;
+      text-align: left;
+      font-size: 16px;
+      display: block; }
+    .solutions-container .solution-text-mobile {
+      display: none; } }
 
 .checkmark-container {
   display: -webkit-box;
@@ -1201,6 +1211,9 @@ body {
     height: 1px;
     width: 50%;
     border-bottom: 2px solid #b4de96; }
+  @media (min-width: 1024px) {
+    .checkmark-container {
+      display: none; } }
 
 .front-page-check-mark {
   display: -webkit-box;
