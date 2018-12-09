@@ -64,9 +64,9 @@
             <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
         </div>
 
-        <div id="main">
+        <!-- <div id="main">
             <h1>ignore me</h1>
-        </div>
+        </div> -->
 
     </header><!-- #masthead -->
 
