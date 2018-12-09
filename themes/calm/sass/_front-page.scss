@@ -22,6 +22,7 @@
   }
 }
 
+
 .founder-container, .solutions-container {
   text-align: center;
   margin-bottom: 2.2rem;
@@ -39,6 +40,32 @@
     width: 86%;
     font-size: 22px;
     margin: 0 auto;
+  }
+}
+
+
+.founder-container {
+  @include desktop {
+    text-align: inherit;
+    position: absolute;
+    top: 170%;
+    left: 6%;
+    width: 36%;
+  }
+
+}
+
+.solutions-container {
+  @include desktop {
+    width: 86%;
+    margin: $margin__auto;
+    div {
+      @include flex(row nowrap, center, center);
+    }
+    img{
+      width: 50%;
+    }
+
   }
 }
 
@@ -66,9 +93,8 @@
 }
 
 .front-page-check-mark {
-  padding: 16px 0;
   @include flex(row wrap, flex-start, center);
-  width: 100%;
+  width: 111%;
   justify-content: center;
 
   h2 {
@@ -92,7 +118,7 @@
   h2 {
     text-align: center;
     font-size: 42px;
-    width: 65%;
+    width: 72%;
     font-weight: bolder;
     margin-top: auto;
   }
@@ -127,7 +153,23 @@
   border-radius: 25px;
 }
 
-.front-page-video {
-  height: 380px;
-  width: 670px;
+.front-page-video-container {
+  @include flex(column wrap, center, center);
+  @include desktop {
+    @include flex(column wrap, flex-end, flex-end);
+  }
+
 }
+
+.front-page-video {
+  width: 285px;
+  height: 162px;
+  top: 0;
+  left: 0;
+  @include desktop {
+    height: 300px;
+    width: 500px;
+  }
+
+}
+

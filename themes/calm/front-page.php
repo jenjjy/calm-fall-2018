@@ -60,15 +60,21 @@ get_header(); ?>
                     echo CFS()->get('game_changing_solution_header');
                     ?>
                 </h1>
-                <img src=" <?php
-                echo CFS()->get('game_changing_solution_image');
-                ?>" alt="game changing solution">
-                <p>
-                    <?php
-                    echo CFS()->get('game_changing_solution_text');
-                    ?>
-                </p>
-
+                <div>
+                    <img src=" <?php
+                    echo CFS()->get('game_changing_solution_image');
+                    ?>" alt="game changing solution">
+                    <p>
+                        <?php
+                        echo CFS()->get('game_changing_solution_text');
+                        ?>
+                    </p>
+                    <p class="solution-text-desktop">
+                        <?php
+                        echo CFS()->get('game_changing_solution_text_desktop');
+                        ?>
+                    </p>
+                </div>
             </div>
 
             <!--- GOALS -->
