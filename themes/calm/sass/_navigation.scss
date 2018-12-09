@@ -36,8 +36,7 @@ a {
   @include tablet {
     margin: auto;
     padding-top: 1rem;
-    padding-bottom: 1.5rem;
-    width: 900px;
+    padding-bottom: 1rem;
 
     li.current-menu-item {
       a {
@@ -47,45 +46,49 @@ a {
         }
       }
     }
+    .menu-item-has-children {
+      &:active {
+        border-bottom: $border-active;
+      }
+    }
+  }
+
+  @include desktop {
+    // width: $text-width;
+  }
+
+  a {
+    // background: $primary__color;
+    // color: $color__white;
+    font-family: $font__main-med;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include tablet {
+      color: $color__text-main;
+      background: $color__background-body;
+      font-family: $font__secondary;
+      padding: 0 0.6rem;
+      padding-bottom: 2px;
+    }
 
     @include desktop {
-      width: $text-width;
+      // font-size: 18px;
     }
+  }
 
-    a {
-      // background: $primary__color;
-      // color: $color__white;
-      font-family: $font__main-med;
-      font-size: 1rem;
-      text-decoration: none;
-      text-transform: uppercase;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 
-      @include tablet {
-        color: $color__text-main;
-        background: $color__background-body;
-        font-family: $font__secondary;
-        padding: 0 0.6rem;
-        padding-bottom: 2px;
-      }
-
-      @include desktop {
-        font-size: 1.5rem;
-      }
-    }
-
-    ul {
-      // @include flex(column nowrap, center, center);
-      list-style: none;
-      margin: 0;
-      padding-left: 0;
-
-      @include tablet {
-        @include flex(row nowrap, center, center);
-        li {
-          a {
-            &:hover {
-              border-bottom: $border-hover;
-            }
+    @include tablet {
+      @include flex(row nowrap, space-between, center);
+      li {
+        a {
+          &:hover {
+            border-bottom: $border-hover;
           }
         }
       }
@@ -96,10 +99,11 @@ a {
     }
 
     ul {
-      @include flex(row nowrap, center, center);
-      border-bottom: none;
+      // @include flex(row nowrap, center, center);
+      // border-bottom: none;
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       font-family: $font__main-light;
+      position: absolute;
       top: $base__space-unit;
       left: -999rem;
       z-index: 99999;
@@ -110,6 +114,11 @@ a {
       }
 
       li {
+        &:hover > ul,
+        &.focus > ul {
+          left: 100%;
+        }
+
         @include tablet {
           // border: $border-active;
           font-family: $font__main;
@@ -130,6 +139,13 @@ a {
           width: 200px;
         }
       }
+      :hover > a,
+      .focus > a {
+      }
+
+      a:hover,
+      a.focus {
+      }
     }
 
     li:hover > ul,
@@ -137,34 +153,63 @@ a {
       left: auto;
     }
   }
-
   li {
-    padding: 0 1rem;
+    float: left;
+    position: relative;
+
+    &:hover > a,
+    &.focus > a {
+    }
+  }
+  // li {
+  //   padding: 0 1rem;
+  // }
+
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a {
+  }
+}
+
+.menu-header-container {
+  @include tablet {
+    margin: auto;
+    width: 975px;
   }
 }
 
 /* Small menu. */
 
-.sub-menu {
+ul.sub-menu {
   @include tablet {
-    // display: none;
-    // border: 1px solid #52b0cc;
+    background: $color__background-body;
+    border: 1px solid #52b0cc;
+    display: flex;
+    flex-direction: column;
 
     a {
       width: 100%;
       &:hover,
       &:focus {
         background: $primary__color;
-        border-bottom: transparent;
       }
     }
 
     li {
+      border-bottom: transparent;
       padding: 0.25rem 1rem;
 
       &:hover {
         background: $primary__color;
         color: $color__white;
+      }
+    }
+
+    .current-menu-item {
+      a {
+        &:hover {
+          border-bottom: $color__white;
+        }
       }
     }
   }
