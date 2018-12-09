@@ -36,8 +36,7 @@ a {
   @include tablet {
     margin: auto;
     padding-top: 1rem;
-    padding-bottom: 1.5rem;
-    // width: 900px;
+    padding-bottom: 1rem;
 
     li.current-menu-item {
       a {
@@ -47,7 +46,13 @@ a {
         }
       }
     }
+    .menu-item-has-children {
+      &:active {
+        border-bottom: $border-active;
+      }
+    }
   }
+
   @include desktop {
     // width: $text-width;
   }
@@ -69,7 +74,7 @@ a {
     }
 
     @include desktop {
-      font-size: 1.5rem;
+      // font-size: 18px;
     }
   }
 
@@ -79,7 +84,7 @@ a {
     padding-left: 0;
 
     @include tablet {
-      @include flex(row nowrap, center, center);
+      @include flex(row nowrap, space-between, center);
       li {
         a {
           &:hover {
@@ -95,9 +100,10 @@ a {
 
     ul {
       // @include flex(row nowrap, center, center);
-      border-bottom: none;
+      // border-bottom: none;
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       font-family: $font__main-light;
+      position: absolute;
       top: $base__space-unit;
       left: -999rem;
       z-index: 99999;
@@ -165,12 +171,19 @@ a {
   }
 }
 
+.menu-header-container {
+  @include tablet {
+    margin: auto;
+    width: 975px;
+  }
+}
+
 /* Small menu. */
 
 ul.sub-menu {
   @include tablet {
-    // display: none;
-    // border: 1px solid #52b0cc;
+    background: $color__background-body;
+    border: 1px solid #52b0cc;
     display: flex;
     flex-direction: column;
 
@@ -179,16 +192,24 @@ ul.sub-menu {
       &:hover,
       &:focus {
         background: $primary__color;
-        border-bottom: transparent;
       }
     }
 
     li {
+      border-bottom: transparent;
       padding: 0.25rem 1rem;
 
       &:hover {
         background: $primary__color;
         color: $color__white;
+      }
+    }
+
+    .current-menu-item {
+      a {
+        &:hover {
+          border-bottom: $color__white;
+        }
       }
     }
   }
@@ -230,75 +251,5 @@ ul.sub-menu {
     float: right;
     text-align: right;
     width: 50%;
-  }
-}
-
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%;
-
-  a {
-    display: block;
-    text-decoration: none;
-  }
-
-  ul {
-    // display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-
-    ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: $base__space-unit;
-      left: -999rem;
-      z-index: 99999;
-
-      ul {
-        left: -999rem;
-        top: 0;
-      }
-
-      li {
-        &:hover > ul,
-        &.focus > ul {
-          left: 100%;
-        }
-      }
-
-      a {
-        width: 200px;
-      }
-
-      :hover > a,
-      .focus > a {
-      }
-
-      a:hover,
-      a.focus {
-      }
-    }
-
-    li:hover > ul,
-    li.focus > ul {
-      left: auto;
-    }
-  }
-  li {
-    float: left;
-    position: relative;
-
-    &:hover > a,
-    &.focus > a {
-    }
-  }
-
-  .current_page_item > a,
-  .current-menu-item > a,
-  .current_page_ancestor > a {
   }
 }

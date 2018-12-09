@@ -1,10 +1,10 @@
 .site-header {
   height: 60px;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   position: relative;
 
   @include tablet {
-    height: 160px;
+    height: 120px;
   }
 
   .site-branding {
@@ -24,7 +24,7 @@
         width: 150px;
 
         @include tablet {
-          width: 254px;
+          width: 250px;
         }
       }
     }
@@ -61,6 +61,8 @@
     }
   }
 }
+
+/* Mobile Menu */
 
 .button-close {
   background: $primary__color;

@@ -557,11 +557,13 @@ a {
     .main-navigation {
       margin: auto;
       padding-top: 1rem;
-      padding-bottom: 1.5rem; }
+      padding-bottom: 1rem; }
       .main-navigation li.current-menu-item a {
         border-bottom: 2px solid #52b0cc; }
         .main-navigation li.current-menu-item a:hover {
-          border-bottom: 2px solid #52b0cc; } }
+          border-bottom: 2px solid #52b0cc; }
+      .main-navigation .menu-item-has-children:active {
+        border-bottom: 2px solid #52b0cc; } }
   .main-navigation a {
     font-family: "Quicksand-Medium", sans-serif;
     font-size: 1rem;
@@ -574,9 +576,6 @@ a {
         font-family: "Muli", sans-serif;
         padding: 0 0.6rem;
         padding-bottom: 2px; } }
-    @media (min-width: 1024px) {
-      .main-navigation a {
-        font-size: 1.5rem; } }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -590,9 +589,9 @@ a {
         -webkit-box-direction: normal;
             -ms-flex-flow: row nowrap;
                 flex-flow: row nowrap;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
@@ -613,10 +612,10 @@ a {
           -ms-flex-align: center;
               align-items: center; }
     .main-navigation ul ul {
-      border-bottom: none;
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       font-family: "Quicksand-Light", sans-serif;
+      position: absolute;
       top: 1.5rem;
       left: -999rem;
       z-index: 99999; }
@@ -646,9 +645,16 @@ a {
     float: left;
     position: relative; }
 
+@media (min-width: 500px) {
+  .menu-header-container {
+    margin: auto;
+    width: 975px; } }
+
 /* Small menu. */
 @media (min-width: 500px) {
   ul.sub-menu {
+    background: #f0f3f8;
+    border: 1px solid #52b0cc;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -659,13 +665,15 @@ a {
     ul.sub-menu a {
       width: 100%; }
       ul.sub-menu a:hover, ul.sub-menu a:focus {
-        background: #52b0cc;
-        border-bottom: transparent; }
+        background: #52b0cc; }
     ul.sub-menu li {
+      border-bottom: transparent;
       padding: 0.25rem 1rem; }
       ul.sub-menu li:hover {
         background: #52b0cc;
-        color: #fff; } }
+        color: #fff; }
+    ul.sub-menu .current-menu-item a:hover {
+      border-bottom: #fff; } }
 
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -699,41 +707,6 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
-
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
-  .main-navigation ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1016,11 +989,11 @@ a {
 
 .site-header {
   height: 60px;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   position: relative; }
   @media (min-width: 500px) {
     .site-header {
-      height: 160px; } }
+      height: 120px; } }
   .site-header .site-branding {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1043,7 +1016,7 @@ a {
         width: 150px; }
         @media (min-width: 500px) {
           .site-header .site-branding a .logo-main {
-            width: 254px; } }
+            width: 250px; } }
   @media (min-width: 500px) {
     .site-header .open-slide {
       display: none; } }
@@ -1065,6 +1038,7 @@ a {
         .login a:hover {
           color: #1c88a8; } }
 
+/* Mobile Menu */
 .button-close {
   background: #52b0cc;
   color: red; }
