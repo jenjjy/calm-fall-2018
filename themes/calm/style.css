@@ -917,16 +917,17 @@ a {
 
 .entry-content {
   text-align: center;
-  width: 86%;
   margin: 0 auto; }
   .entry-content h2 {
     font-weight: bolder;
-    font-size: 42px;
-    padding: 35px 0; }
+    font-size: 42px; }
     @media (min-width: 1024px) {
       .entry-content h2 {
         font-size: 48px; } }
   .entry-content p {
+    padding: 15px 0;
+    margin: 0 auto;
+    width: 86%;
     font-size: 22px; }
     @media (min-width: 1024px) {
       .entry-content p {
@@ -944,16 +945,6 @@ a {
   padding: 0; }
 
 /* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-  @media (min-width: 1024px) {
-    embed,
-    iframe,
-    object {
-      max-width: 60%; } }
-
 /* Captions */
 .wp-caption {
   margin-bottom: 1.5rem;
@@ -1071,7 +1062,6 @@ object {
 
 /*  Hamburger  */
 body {
-  font-family: 'Arial', Serif;
   background-color: #f4f4f4;
   overflow-x: hidden; }
 
@@ -1111,7 +1101,6 @@ body {
 #main {
   -webkit-transition: margin-left 0.5s;
   transition: margin-left 0.5s;
-  padding: 20px;
   overflow: hidden;
   width: 100%; }
 
@@ -1158,6 +1147,35 @@ body {
     font-size: 22px;
     margin: 0 auto; }
 
+@media (min-width: 1024px) {
+  .founder-container {
+    text-align: inherit;
+    position: absolute;
+    top: 170%;
+    left: 6%;
+    width: 36%; } }
+
+@media (min-width: 1024px) {
+  .solutions-container {
+    width: 86%;
+    margin: 0 auto; }
+    .solutions-container div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .solutions-container img {
+      width: 50%; } }
+
 .checkmark-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1185,7 +1203,6 @@ body {
     border-bottom: 2px solid #b4de96; }
 
 .front-page-check-mark {
-  padding: 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1199,7 +1216,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 111%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -1230,7 +1247,7 @@ body {
   .campaign-container h2 {
     text-align: center;
     font-size: 42px;
-    width: 65%;
+    width: 72%;
     font-weight: bolder;
     margin-top: auto; }
   .campaign-container .campaign-logo {
@@ -1267,9 +1284,45 @@ body {
 .vp-video-wrapper, .transparent {
   border-radius: 25px; }
 
+.front-page-video-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (min-width: 1024px) {
+    .front-page-video-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; } }
+
 .front-page-video {
-  height: 380px;
-  width: 670px; }
+  width: 285px;
+  height: 162px;
+  top: 0;
+  left: 0; }
+  @media (min-width: 1024px) {
+    .front-page-video {
+      height: 300px;
+      width: 500px; } }
 
 /*--------------------------------------------------------------
 # our company  and our fonder
