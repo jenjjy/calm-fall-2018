@@ -34,9 +34,7 @@
         </div><!-- .login -->
 
 
-<div id="nav-icon">
-
-</div>
+<!-- <div id="nav-icon"></div> -->
 
 
         <!-- navbar = main-navigation -->

@@ -37,7 +37,7 @@ a {
     margin: auto;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
-    width: 900px;
+    // width: 900px;
 
     li.current-menu-item {
       a {
@@ -49,7 +49,7 @@ a {
     }
   }
   @include desktop {
-    width: $text-width;
+    // width: $text-width;
   }
 
   a {
@@ -131,23 +131,25 @@ a {
       }
     }
   }
+}
 
-  li:hover > ul,
-  li.focus > ul {
-    left: auto;
-  }
+li:hover > ul,
+li.focus > ul {
+  left: auto;
+}
 
-  li {
-    padding: 0 1rem;
-  }
+li {
+  padding: 0 1rem;
 }
 
 /* Small menu. */
 
-.sub-menu {
+ul.sub-menu {
   @include tablet {
     // display: none;
     // border: 1px solid #52b0cc;
+    display: flex;
+    flex-direction: column;
 
     a {
       width: 100%;

@@ -1,6 +1,8 @@
 .site-header {
   height: 60px;
   padding-top: 1rem;
+  position: relative;
+
   @include tablet {
     height: 160px;
   }
@@ -9,7 +11,6 @@
     @include flex(null, flex-start, null);
     letter-spacing: 1px;
     @include tablet {
-      // position: relative;
     }
 
     a {
@@ -39,13 +40,16 @@
 .login {
   // background: $primary__color;
   // color: $color__white;
-  // position: absolute;
+  position: absolute;
   a {
     text-decoration: none;
   }
 
   @include tablet {
-    // position: absolute;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    right: 0;
+    top: 0;
     a {
       color: $primary__color;
       font-family: $font__sec-semibold;

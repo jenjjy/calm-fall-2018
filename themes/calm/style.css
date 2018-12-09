@@ -557,15 +557,11 @@ a {
     .main-navigation {
       margin: auto;
       padding-top: 1rem;
-      padding-bottom: 1.5rem;
-      width: 900px; }
+      padding-bottom: 1.5rem; }
       .main-navigation li.current-menu-item a {
         border-bottom: 2px solid #52b0cc; }
         .main-navigation li.current-menu-item a:hover {
           border-bottom: 2px solid #52b0cc; } }
-  @media (min-width: 1024px) {
-    .main-navigation {
-      width: 1040px; } }
   .main-navigation a {
     font-family: "Quicksand-Medium", sans-serif;
     font-size: 1rem;
@@ -640,24 +636,34 @@ a {
         color: #787878;
         font-size: 1rem;
         width: 200px; } }
-  .main-navigation li:hover > ul,
-  .main-navigation li.focus > ul {
-    left: auto; }
-  .main-navigation li {
-    padding: 0 1rem; }
+
+li:hover > ul,
+li.focus > ul {
+  left: auto; }
+
+li {
+  padding: 0 1rem; }
 
 /* Small menu. */
 @media (min-width: 500px) {
-  .sub-menu a {
-    width: 100%; }
-    .sub-menu a:hover, .sub-menu a:focus {
-      background: #52b0cc;
-      border-bottom: transparent; }
-  .sub-menu li {
-    padding: 0.25rem 1rem; }
-    .sub-menu li:hover {
-      background: #52b0cc;
-      color: #fff; } }
+  ul.sub-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    ul.sub-menu a {
+      width: 100%; }
+      ul.sub-menu a:hover, ul.sub-menu a:focus {
+        background: #52b0cc;
+        border-bottom: transparent; }
+    ul.sub-menu li {
+      padding: 0.25rem 1rem; }
+      ul.sub-menu li:hover {
+        background: #52b0cc;
+        color: #fff; } }
 
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -973,7 +979,8 @@ a {
 
 .site-header {
   height: 60px;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  position: relative; }
   @media (min-width: 500px) {
     .site-header {
       height: 160px; } }
@@ -1004,16 +1011,22 @@ a {
     .site-header .open-slide {
       display: none; } }
 
-.login a {
-  text-decoration: none; }
-
-@media (min-width: 500px) {
+.login {
+  position: absolute; }
   .login a {
-    color: #52b0cc;
-    font-family: "Muli-SemiBold", sans-serif;
-    text-transform: uppercase; }
-    .login a:hover {
-      color: #1c88a8; } }
+    text-decoration: none; }
+  @media (min-width: 500px) {
+    .login {
+      padding-right: 1rem;
+      padding-top: 1rem;
+      right: 0;
+      top: 0; }
+      .login a {
+        color: #52b0cc;
+        font-family: "Muli-SemiBold", sans-serif;
+        text-transform: uppercase; }
+        .login a:hover {
+          color: #1c88a8; } }
 
 .button-close {
   background: #52b0cc;
