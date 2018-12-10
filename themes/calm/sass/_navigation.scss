@@ -29,14 +29,14 @@ a {
 /* Menus */
 
 .main-navigation {
-  @include flex(column nowrap, space-around, center);
+  display: none;
   letter-spacing: 1px;
   height: 100%;
   width: 100%;
 
   @include tablet {
     background: transparent;
-    // display: block;
+    display: block;
     margin: auto;
     height: auto;
 
@@ -103,7 +103,6 @@ a {
       }
 
       li {
-        // display: inline;
         &:hover > ul,
         &.focus > ul {
           left: -100%;
@@ -145,9 +144,6 @@ a {
 
       a:hover,
       a.focus {
-      }
-      a.focus {
-        width: 100%;
       }
     } // end of ul ul
 

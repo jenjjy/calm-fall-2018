@@ -550,24 +550,14 @@ a {
 
 /* Menus */
 .main-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
   letter-spacing: 1px;
   height: 100%;
   width: 100%; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .main-navigation {
       background: transparent;
+      display: block;
       margin: auto;
       height: auto; }
       .main-navigation li.current-menu-item a {
@@ -580,7 +570,7 @@ a {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase; }
-    @media (min-width: 550px) {
+    @media (min-width: 600px) {
       .main-navigation a {
         color: #787878;
         background: #f0f3f8;
@@ -593,7 +583,7 @@ a {
     margin: 0;
     text-align: center;
     padding-left: 0; }
-    @media (min-width: 550px) {
+    @media (min-width: 600px) {
       .main-navigation ul {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -638,11 +628,11 @@ a {
       .main-navigation ul ul li a {
         font-size: 18px;
         text-transform: capitalize; }
-        @media (min-width: 550px) {
+        @media (min-width: 600px) {
           .main-navigation ul ul li a {
             font-size: 1rem;
             text-transform: uppercase; } }
-      @media (min-width: 550px) {
+      @media (min-width: 600px) {
         .main-navigation ul ul li {
           font-family: "Quicksand", sans-serif;
           padding: 0.5rem 0.5rem; }
@@ -650,12 +640,10 @@ a {
             background: #52b0cc;
             border-bottom: transparent;
             color: #fff; } }
-      @media (min-width: 550px) {
+      @media (min-width: 600px) {
         .main-navigation ul ul a {
           color: #787878;
           font-size: 1rem; } }
-      .main-navigation ul ul a.focus {
-        width: 100%; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -664,11 +652,11 @@ a {
     padding: 1rem 0; }
     .main-navigation li a:hover {
       border-bottom: 2px solid #b4de96; }
-      @media (min-width: 550px) {
+      @media (min-width: 600px) {
         .main-navigation li a:hover {
           border-bottom: 2px solid #b5ccdb; } }
 
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   .menu-header-container {
     margin: auto;
     width: 100%; } }
@@ -678,7 +666,7 @@ a {
     width: 975px; } }
 
 /* Small menu. */
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   ul .sub-menu {
     background: #f0f3f8;
     display: -webkit-box;
@@ -1012,7 +1000,7 @@ a {
 .site-header {
   height: 60px;
   position: relative; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .site-header {
       height: 140px; }
       .site-header .nav-icon {
@@ -1033,7 +1021,7 @@ a {
             align-items: center;
     letter-spacing: 1px;
     padding: 1rem; }
-    @media (min-width: 550px) {
+    @media (min-width: 600px) {
       .site-header .site-branding {
         padding-bottom: 0; } }
     .site-header .site-branding a {
@@ -1044,7 +1032,7 @@ a {
         display: flex;
         margin: auto;
         width: 150px; }
-        @media (min-width: 550px) {
+        @media (min-width: 600px) {
           .site-header .site-branding a .logo-main {
             width: 250px; } }
 
@@ -1055,7 +1043,7 @@ a {
     color: #fff;
     font-family: "Quicksand-Medium", sans-serif;
     font-size: 21px; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .login {
       font-size: 1rem;
       padding-right: 1rem;
@@ -1085,7 +1073,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: auto; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .menu {
       display: block; } }
 
@@ -1093,7 +1081,7 @@ a {
  * Mobile Menu Slide 
  */
 .menu-slide {
-  max-width: 550px;
+  max-width: 600px;
   width: 400px;
   left: -400px;
   margin: auto;
@@ -1104,6 +1092,19 @@ a {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   /* end of nav */ }
+  .menu-slide .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .menu-slide nav {
     /* end of ul */ }
     .menu-slide nav ul {
