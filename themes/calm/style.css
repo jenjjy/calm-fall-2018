@@ -1484,6 +1484,10 @@ a {
       width: 700px;
       -webkit-transform: translate(0%);
               transform: translate(0%); } }
+  @media (min-width: 1240px) {
+    .page-id-68 .wp-block-embed-vimeo iframe {
+      width: 1240px;
+      height: 700px; } }
 
 .page-id-68 .wp-block-button {
   margin: 3rem 0; }
@@ -1500,14 +1504,27 @@ a {
       background: #1c88a8; }
 
 .page-id-68 .wp-block-image {
-  margin-top: 0;
   display: none; }
   @media (min-width: 600px) {
     .page-id-68 .wp-block-image {
+      height: 1319px;
+      margin-top: 0;
+      margin-bottom: 0;
       display: block;
       position: relative;
       -webkit-transform: translate(-4.5%, 0);
               transform: translate(-4.5%, 0); } }
+  @media (min-width: 1240px) {
+    .page-id-68 .wp-block-image {
+      margin-left: 4%; } }
+  @media (min-width: 600px) {
+    .page-id-68 .wp-block-image img {
+      margin-left: 5%;
+      height: inherit; } }
+  @media (min-width: 1240px) {
+    .page-id-68 .wp-block-image img {
+      -webkit-transform: translateX(-40px);
+              transform: translateX(-40px); } }
 
 .page-id-68 .campaign-features {
   display: -webkit-box;
@@ -1519,7 +1536,10 @@ a {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (min-width: 600px) {
     .page-id-68 .campaign-features {
       position: absolute;
@@ -1553,25 +1573,148 @@ a {
     margin: 0 5% 2.5rem 5%;
     text-align: center; }
 
-.page-id-68 .campaign-features:nth-child(1) {
-  top: 940px;
-  left: 0; }
-  @media (min-width: 600px) {
-    .page-id-68 .campaign-features:nth-child(1) {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse; } }
-  @media (min-width: 600px) {
-    .page-id-68 .campaign-features:nth-child(1) img {
-      width: 20%;
-      margin-left: 30%;
-      margin-right: 3%; } }
-  @media (min-width: 600px) {
-    .page-id-68 .campaign-features:nth-child(1) .campaign-text {
-      -ms-flex-item-align: center;
-          align-self: center; } }
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(1) {
+    top: 940px;
+    left: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; } }
 
-.page-id-68 .campaign-features:nth-child(2) {
-  top: 1200px;
-  left: 0; }
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(1) {
+    top: 1340px;
+    left: 125px;
+    right: 340px; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(1) img {
+    width: 20%;
+    margin-left: 20%;
+    margin-right: 8%; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(1) img {
+    width: 16%;
+    margin-left: 20%;
+    margin-right: 8%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(1) .campaign-text h2 {
+    -ms-flex-item-align: left;
+        align-self: left;
+    margin-left: 5%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(2) {
+    top: 1180px;
+    left: 0; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(2) {
+    top: 1570px;
+    left: 310px;
+    right: 120px; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(2) img {
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 3%; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(2) img {
+    width: 16%;
+    margin-right: 5%;
+    margin-left: 3%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(2) .campaign-text h2 {
+    -ms-flex-item-align: center;
+        align-self: center; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(2) .campaign-text h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 5%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(3) {
+    top: 1470px;
+    left: 10px;
+    right: 60px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(3) {
+    top: 1860px;
+    left: 145px;
+    right: 410px; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(3) img {
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 3%; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(3) img {
+    width: 16%;
+    margin-left: 5%;
+    margin-right: 3%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(3) .campaign-text h2 {
+    -ms-flex-item-align: center;
+        align-self: center; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(3) .campaign-text h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 5%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(4) {
+    top: 1750px;
+    left: 40px;
+    right: 40px; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(4) {
+    top: 2140px;
+    left: 70px;
+    right: 0px; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(4) img {
+    width: 25%;
+    margin-right: 5%;
+    margin-left: 3%; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(4) img {
+    width: 12%;
+    margin-right: 5%;
+    margin-left: 3%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(4) .campaign-text h2 {
+    -ms-flex-item-align: center;
+        align-self: center; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(4) .campaign-text p {
+    width: 100%; } }
+
+.page-id-68 .button-bottom {
+  display: none; }
+  @media (min-width: 600px) {
+    .page-id-68 .button-bottom {
+      display: block;
+      margin-top: -10px; } }
