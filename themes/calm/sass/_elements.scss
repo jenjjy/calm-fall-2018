@@ -5,6 +5,8 @@
 html {
   box-sizing: border-box;
   @include font-size(1);
+  // max-width: 100%;
+  overflow-x: hidden;
 }
 
 *,

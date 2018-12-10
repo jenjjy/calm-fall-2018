@@ -46,13 +46,10 @@
 
 .founder-container {
   .border {
-    height: 411px;
-    width: 697px;
-    border: 16px solid #f0f3f8;
-    position: absolute;
+    overflow: hidden;
     border-radius: 25px;
-    left: 40%;
-    //background-color: rgba(240,243,248,0.58);
+    height: 382px;
+    width: 672px;
   }
 
   @include tablet {
