@@ -142,9 +142,10 @@
 }
 
 .nav-icon {
+  // background-color: rgba(255, 255, 255, 0.2);
+  height: 33px;
   width: 33px;
-  position: relative;
-  top: 0;
+  position: fixed;
   padding-top: 1rem;
   padding-left: 1rem;
   z-index: 1000;
@@ -178,19 +179,33 @@
   -moz-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
+
+  &:hover {
+    background: $primary__color;
+  }
 }
 
 .nav-icon span:nth-child(1) {
   top: 0px;
+  &:hover {
+    color: $primary__color;
+  }
 }
 
 .nav-icon span:nth-child(2),
 .nav-icon span:nth-child(3) {
   top: 9px;
+
+  &:hover {
+    color: $primary__color;
+  }
 }
 
 .nav-icon span:nth-child(4) {
   top: 18px;
+  &:hover {
+    color: $primary__color;
+  }
 }
 
 .nav-icon.open span:nth-child(1) {
