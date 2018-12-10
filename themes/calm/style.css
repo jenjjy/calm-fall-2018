@@ -1471,3 +1471,9 @@ a {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 25px; } }
+
+.page-id-68 .entry-title {
+  text-align: center; }
+
+.page-id-68 .wp-block-embed-vimeo iframe {
+  width: 400px; }
