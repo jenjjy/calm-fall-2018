@@ -919,18 +919,20 @@ a {
   margin: 0 auto; }
   .entry-content h2 {
     font-weight: bolder;
-    font-size: 42px; }
+    font-size: 42px;
+    padding: 25px 0; }
     @media (min-width: 1024px) {
       .entry-content h2 {
         font-size: 48px; } }
   .entry-content p {
     padding: 15px 0;
     margin: 0 auto;
-    width: 86%;
+    max-width: 1024px;
     font-size: 22px; }
     @media (min-width: 1024px) {
       .entry-content p {
-        font-size: 28px; } }
+        font-size: 28px;
+        max-width: 1024px; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1216,10 +1218,8 @@ body {
 @media (min-width: 1024px) {
   .founder-container {
     text-align: inherit;
-    position: absolute;
-    top: 170%;
-    left: 6%;
-    width: 36%; } }
+    max-width: 42%;
+    float: left; } }
 
 .solutions-container .solution-text-desktop {
   display: none; }
@@ -1282,6 +1282,7 @@ body {
       display: none; } }
 
 .front-page-check-mark {
+  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1319,6 +1320,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px; }
+  @media (min-width: 1024px) {
+    .campaign-container {
+      display: grid; } }
   .campaign-container p {
     text-align: center;
     width: 81%;
@@ -1349,6 +1353,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px; }
+  @media (min-width: 1024px) {
+    .view-courses {
+      margin: 25px; } }
 
 .banner-image-desktop {
   display: none; }
@@ -1391,7 +1398,8 @@ body {
               justify-content: flex-end;
       -webkit-box-align: end;
           -ms-flex-align: end;
-              align-items: flex-end; } }
+              align-items: flex-end;
+      float: right; } }
 
 .front-page-video {
   width: 285px;
@@ -1402,3 +1410,39 @@ body {
     .front-page-video {
       height: 300px;
       width: 500px; } }
+
+.goals-desktop {
+  display: none; }
+  .goals-desktop h2 {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Quicksand-Bold', sans-serif; }
+  .goals-desktop p {
+    max-width: 75%;
+    margin: 0 auto; }
+  .goals-desktop .goals-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fff;
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 5px 11px grey;
+            box-shadow: 5px 5px 11px grey;
+    padding: 30px 0; }
+  @media (min-width: 1024px) {
+    .goals-desktop {
+      max-width: 93%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 25px; } }

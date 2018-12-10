@@ -47,34 +47,33 @@
 .founder-container {
   @include desktop {
     text-align: inherit;
-    position: absolute;
-    top: 170%;
-    left: 6%;
-    width: 36%;
+    max-width: 42%;
+    float: left;
   }
 
 }
 
 .solutions-container {
-  .solution-text-desktop{
+  .solution-text-desktop {
     display: none;
   }
+
   @include desktop {
     width: 86%;
     margin: $margin__auto;
     div {
       @include flex(row nowrap, center, center);
     }
-    img{
+    img {
       width: 50%;
     }
-    .solution-text-desktop{
+    .solution-text-desktop {
       margin-left: 13px;
       text-align: left;
       font-size: 16px;
       display: block;
     }
-    .solution-text-mobile{
+    .solution-text-mobile {
       display: none;
     }
 
@@ -102,13 +101,14 @@
     border-bottom: 2px solid $secondary__color;
   }
 
-  @include desktop{
+  @include desktop {
     display: none;
   }
 
 }
 
 .front-page-check-mark {
+  margin: 10px 0;
   @include flex(row wrap, flex-start, center);
   width: 111%;
   justify-content: center;
@@ -124,6 +124,9 @@
 .campaign-container {
   @include flex(column wrap, center, center);
   margin-bottom: 25px;
+  @include desktop{
+    display: grid;
+  }
 
   p {
     text-align: center;
@@ -150,6 +153,9 @@
 .view-courses {
   @include flex(column wrap, center, center);
   margin-bottom: 25px;
+  @include desktop{
+    margin: 25px;
+  }
 }
 
 .banner-image-desktop {
@@ -173,6 +179,7 @@
   @include flex(column wrap, center, center);
   @include desktop {
     @include flex(column wrap, flex-end, flex-end);
+    float: right;
   }
 
 }
@@ -185,6 +192,40 @@
   @include desktop {
     height: 300px;
     width: 500px;
+  }
+
+}
+
+.goals-desktop {
+  display: none;
+
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Quicksand-Bold', sans-serif;
+  }
+
+  p {
+    max-width: 75%;
+    margin: $margin__auto;
+  }
+
+  .goals-boxes {
+    @include flex(column nowrap, center, center);
+    background: $color__white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 11px grey;
+    padding: 30px 0;
+
+
+  }
+
+  @include desktop {
+    max-width: 93%;
+    margin: $margin__auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
   }
 
 }
