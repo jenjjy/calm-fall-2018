@@ -14,8 +14,8 @@
   }
 
   @include desktop {
-    top: 37%;
-    left: 2%;
+    top: 45%;
+    left: 5%;
     position: absolute;
     color: $color__white;
     text-align: inherit;
@@ -28,7 +28,7 @@
   margin-bottom: 2.2rem;
 
   h1 {
-    font-size: 35px;
+    font-size: 36px;
   }
 
   img {
@@ -46,8 +46,10 @@
 
 .founder-container {
   @include desktop {
+    margin-top: 24%;
+    margin-left: 6%;
     text-align: inherit;
-    max-width: 42%;
+    max-width: 28%;
     float: left;
   }
 
@@ -61,6 +63,9 @@
   @include desktop {
     width: 86%;
     margin: $margin__auto;
+    h1 {
+      padding-top: 11%;
+    }
     div {
       @include flex(row nowrap, center, center);
     }
@@ -76,6 +81,7 @@
     .solution-text-mobile {
       display: none;
     }
+
 
   }
 }
@@ -124,7 +130,7 @@
 .campaign-container {
   @include flex(column wrap, center, center);
   margin-bottom: 25px;
-  @include desktop{
+  @include desktop {
     display: grid;
   }
 
@@ -153,7 +159,7 @@
 .view-courses {
   @include flex(column wrap, center, center);
   margin-bottom: 25px;
-  @include desktop{
+  @include desktop {
     margin: 25px;
   }
 }
@@ -180,6 +186,7 @@
   @include desktop {
     @include flex(column wrap, flex-end, flex-end);
     float: right;
+    padding-top: 9%;
   }
 
 }
@@ -190,8 +197,8 @@
   top: 0;
   left: 0;
   @include desktop {
-    height: 300px;
-    width: 500px;
+    height: 380px;
+    width: 670px;
   }
 
 }
