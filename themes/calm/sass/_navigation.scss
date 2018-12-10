@@ -26,7 +26,72 @@ a {
   }
 }
 
-/* Menus */
+/* 
+ * Mobile Menu Slide 
+ */
+
+.menu-slide {
+  max-width: 100%;
+  width: $tablet-width;
+  left: -400px;
+  margin: auto;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  transition: all 0.5s ease-in-out;
+  @include tablet {
+    display: none;
+  }
+
+  .main-navigation {
+    @include flex(column nowrap, space-around, center);
+  }
+
+  nav {
+    ul {
+      li {
+        height: 70px;
+        // list-style-type: none;
+        // text-align: center;
+        // line-height: 70px;
+        transition: all 0.5s ease;
+
+        &:hover {
+          // background-color: $red;
+          transition: all 0.5s ease;
+        }
+
+        a {
+          color: $color__white;
+          font-family: $font__main-med;
+          font-size: 26px;
+          text-decoration: none;
+        }
+      } /* end of li */
+    } /* end of ul */
+
+    .sub-menu {
+      padding-top: 0;
+      li {
+        height: 30px;
+      }
+      a {
+        font-size: 18px;
+      }
+    }
+  } /* end of nav */
+} /* end of menu-slide */
+
+.menu-slide.show {
+  left: 0px;
+  background-color: $primary__color;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 
+ * Menus 
+ */
 
 .main-navigation {
   display: none;
@@ -192,40 +257,39 @@ a {
 
 /* Small menu. */
 
-ul {
-  .sub-menu {
-    @include tablet {
-      background: $color__background-body;
-      display: flex;
-      flex-direction: column;
+ul.sub-menu {
+  @include tablet {
+    background: $color__background-body;
+    display: flex;
+    flex-direction: column;
 
+    a {
+      width: 100%;
+      &:hover,
+      &:focus {
+        background: $primary__color;
+      }
+    }
+
+    li {
+      border: 1px solid #52b0cc;
+      // border-bottom: transparent;
+      padding: 0.25rem 1rem;
+      width: 175px;
+
+      &:hover {
+        background: $primary__color;
+        color: $color__white;
+      }
+    }
+
+    .current-menu-item {
       a {
-        width: 100%;
-        &:hover,
-        &:focus {
-          background: $primary__color;
-        }
-      }
-
-      li {
-        border: 1px solid #52b0cc;
-        // border-bottom: transparent;
-        padding: 0.25rem 1rem;
-
+        border-bottom: transparent;
+        color: $primary__color;
+        font-family: $font__sec-semibold;
         &:hover {
-          background: $primary__color;
-          color: $color__white;
-        }
-      }
-
-      .current-menu-item {
-        a {
-          border-bottom: transparent;
-          color: $primary__color;
-          font-family: $font__sec-semibold;
-          &:hover {
-            border-bottom: $color__white;
-          }
+          border-bottom: $color__white;
         }
       }
     }

@@ -14,19 +14,21 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
-
+		<div class="campaign-features-wraper">
 			<?php
 				$loop = CFS()->get( 'campaign' );
 				foreach ( $loop as $row ) : ?>
 					<div class="campaign-features">
 						<img src="<?php echo $row['campaign_feature_icon']; ?>">
-						<h2><?php echo $row['campaign_feature_title']; ?></h2>
-						<p> 
-							<?php echo $row['campaign_feature_text']; ?>
-						</p>
+						<div class="campaign-text">
+							<h2><?php echo $row['campaign_feature_title']; ?></h2>
+							<p> 
+								<?php echo $row['campaign_feature_text']; ?>
+							</p>
+						</div>
 					</div>
 				<?php endforeach; ?> 
-
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
