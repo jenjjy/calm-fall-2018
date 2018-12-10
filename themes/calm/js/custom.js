@@ -5,15 +5,7 @@
     let mobileWidth = $('#page').width();
     let hamburger = $('#nav-icon');
 
-<<<<<<< HEAD
-    // if (mobileWidth > 600) {
-    //   console.log('hihihi');
-    //   mobileMenu.removeClass('menu-slide show');
-    //   mobileMenu.blur();
-    //   //   desktopHeader();
-    // }
-=======
-    console.log(mobileWidth);
+
 
     if (mobileWidth <= 600) {
       event.preventDefault();
@@ -21,7 +13,7 @@
       //add prevent default, toggle class, target parent of submenu
       $('.sub-menu')
         .parent()
-        .click(function() {
+        .click(function () {
           $(this).slideToggle('show');
           console.log('afternoon');
         });
@@ -33,7 +25,6 @@
       //         .slideToggle('show');
       //     });
     }
->>>>>>> 38867c64ce764a41d071257a95429333c3b2cb89
 
     hamburger.on('click', function () {
       $(this).toggleClass('open');

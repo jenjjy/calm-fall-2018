@@ -1674,3 +1674,37 @@ a {
 .page-id-68 .campaign-features:nth-child(2) {
   top: 1200px;
   left: 0; }
+
+/*--------------------------------------------------------------
+# our company  and our fonder
+--------------------------------------------------------------*/
+.page-template-page-our-company .site-content {
+  border: solid red; }
+  .page-template-page-our-company .site-content .main-carousel {
+    border: solid red; }
+    .page-template-page-our-company .site-content .main-carousel .carsousel-cell {
+      border: solid red;
+      width: 33.333%; }
+
+@media (min-width: 600px) {
+  .page-template-page-our-company .entry-content {
+    border: solid red; }
+    .page-template-page-our-company .entry-content .our-company {
+      border: solid green; }
+    .page-template-page-our-company .entry-content .our-mission-purpose-goals {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row;
+              flex-flow: row; }
+    .page-template-page-our-company .entry-content .our-mission,
+    .page-template-page-our-company .entry-content .our-purpose,
+    .page-template-page-our-company .entry-content .our-goals {
+      width: 33.3333%;
+      border: solid blue; } }
+
+/*--------------------------------------------------------------
+# our founder
+--------------------------------------------------------------*/

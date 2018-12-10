@@ -2,53 +2,72 @@
 # our company  and our fonder
 --------------------------------------------------------------*/
 
-.page-template-page-our-founder,
+
 .page-template-page-our-company {
+
     .site-content {
+        border: solid red;
 
-        .founder-site-main,
-        .company-site-main {
+        .main-carousel {
 
-            .entry-header {
+            border: solid red;
 
-                .entry-title {
-                    text-align: center;
-
-                }
-
-            }
-
-        }
-
-        @include tablet {
-
-            .entry-content {
+            .carsousel-cell {
                 border: solid red;
-
-                .our-company {
-                    border: solid green;
-                }
-
-                .our-mission-purpose-goals {
-                    @include flex(row, null, null);
-                }
-
-                .our-mission,
-                .our-purpose,
-                .our-goals {
-                    @include heightandwidth(null, 33.3333%);
-                    border: solid blue;
-                }
+                width: 33.333%;
+            }
 
 
+
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @include tablet {
+
+        .entry-content {
+            border: solid red;
+
+            .our-company {
+                border: solid green;
+            }
+
+            .our-mission-purpose-goals {
+                @include flex(row, null, null);
+            }
+
+            .our-mission,
+            .our-purpose,
+            .our-goals {
+                @include heightandwidth(null, 33.3333%);
+                border: solid blue;
             }
 
 
         }
+
 
     }
 
 }
+
+
 
 
 
