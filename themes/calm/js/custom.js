@@ -7,12 +7,12 @@
 
     console.log(mobileWidth);
 
-    if (mobileWidth > 600) {
-      console.log('hihihi');
-      mobileMenu.removeClass('menu-slide show');
-      mobileMenu.blur();
-      //   desktopHeader();
-    }
+    // if (mobileWidth > 600) {
+    //   console.log('hihihi');
+    //   mobileMenu.removeClass('menu-slide show');
+    //   mobileMenu.blur();
+    //   //   desktopHeader();
+    // }
 
     hamburger.on('click', function() {
       $(this).toggleClass('open');
@@ -22,5 +22,7 @@
     $('a').click(function() {
       mobileMenu.removeClass('menu-slide show');
     });
+
+    $('.sub-menu').toggle();
   }); // end of doc ready
 })(jQuery);
