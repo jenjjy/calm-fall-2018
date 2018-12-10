@@ -45,11 +45,13 @@
 
 
 .founder-container {
-  .border {
-    overflow: hidden;
-    border-radius: 25px;
-    height: 382px;
-    width: 672px;
+  @include tablet {
+    .border {
+      overflow: hidden;
+      border-radius: 25px;
+      height: 382px;
+      width: 672px;
+    }
   }
 
   @include tablet {
@@ -61,8 +63,10 @@
   }
 
   .founder-text-container {
-    text-align: left;
-    max-width: 36%;
+    @include tablet {
+      text-align: left;
+      max-width: 36%;
+    }
   }
 }
 
