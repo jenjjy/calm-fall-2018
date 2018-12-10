@@ -1847,20 +1847,38 @@ a {
 /*--------------------------------------------------------------
 # our company  and our fonder
 --------------------------------------------------------------*/
-.page-template-page-our-company .site-content {
-  border: solid red; }
-  .page-template-page-our-company .site-content .main-carousel {
-    border: solid red; }
-    .page-template-page-our-company .site-content .main-carousel .carsousel-cell {
-      border: solid red;
-      width: 33.333%; }
+.page-template-page-our-company .site-content,
+.page-template-page-our-founder .site-content {
+  padding: 10px 20px; }
+  .page-template-page-our-company .site-content h2,
+  .page-template-page-our-founder .site-content h2 {
+    color: black; }
+  .page-template-page-our-company .site-content .main-carousel ol,
+  .page-template-page-our-founder .site-content .main-carousel ol {
+    padding: 20px 0px; }
+  .page-template-page-our-company .site-content .main-carousel .carousel-cell,
+  .page-template-page-our-founder .site-content .main-carousel .carousel-cell {
+    width: 100%; }
+    .page-template-page-our-company .site-content .main-carousel .carousel-cell h3,
+    .page-template-page-our-founder .site-content .main-carousel .carousel-cell h3 {
+      font-size: 36px;
+      color: black; }
+    .page-template-page-our-company .site-content .main-carousel .carousel-cell p,
+    .page-template-page-our-founder .site-content .main-carousel .carousel-cell p {
+      padding-bottom: 30px; }
+  .page-template-page-our-company .site-content .main-carousel button,
+  .page-template-page-our-founder .site-content .main-carousel button {
+    display: none; }
 
 @media (min-width: 600px) {
-  .page-template-page-our-company .entry-content {
+  .page-template-page-our-company .entry-content,
+  .page-template-page-our-founder .entry-content {
     border: solid red; }
-    .page-template-page-our-company .entry-content .our-company {
+    .page-template-page-our-company .entry-content .our-company,
+    .page-template-page-our-founder .entry-content .our-company {
       border: solid green; }
-    .page-template-page-our-company .entry-content .our-mission-purpose-goals {
+    .page-template-page-our-company .entry-content .our-mission-purpose-goals,
+    .page-template-page-our-founder .entry-content .our-mission-purpose-goals {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1870,7 +1888,10 @@ a {
               flex-flow: row; }
     .page-template-page-our-company .entry-content .our-mission,
     .page-template-page-our-company .entry-content .our-purpose,
-    .page-template-page-our-company .entry-content .our-goals {
+    .page-template-page-our-company .entry-content .our-goals,
+    .page-template-page-our-founder .entry-content .our-mission,
+    .page-template-page-our-founder .entry-content .our-purpose,
+    .page-template-page-our-founder .entry-content .our-goals {
       width: 33.3333%;
       border: solid blue; } }
 
