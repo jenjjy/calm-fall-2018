@@ -59,7 +59,7 @@
 
 /*footer desktop*/
 
-@include desktop {
+@include tablet {
   .site-footer {
 
     @include flex(row, null, center);
@@ -76,7 +76,7 @@
 
   .footer-navigation {
     order: 2;
-    margin-left: 60px;
+    margin-left: 40px;
     padding-left: 40px;
 
 
