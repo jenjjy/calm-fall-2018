@@ -1245,13 +1245,36 @@ a {
     font-size: 22px;
     margin: 0 auto; }
 
+.founder-container .border {
+  height: 411px;
+  width: 697px;
+  border: 16px solid #f0f3f8;
+  position: absolute;
+  border-radius: 25px;
+  left: 40%; }
+
 @media (min-width: 600px) {
   .founder-container {
-    margin-top: 24%;
-    margin-left: 6%;
-    text-align: inherit;
-    max-width: 28%;
-    float: left; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse nowrap;
+            flex-flow: row-reverse nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .founder-container iframe {
+      height: 380px;
+      width: 670px; } }
+
+.founder-container .founder-text-container {
+  text-align: left;
+  max-width: 36%; }
 
 .solutions-container .solution-text-desktop {
   display: none; }
@@ -1386,7 +1409,9 @@ a {
     margin-top: auto; }
     @media (min-width: 600px) {
       .campaign-container h2 {
-        margin: 0 auto; } }
+        margin: 0 auto;
+        text-align: left;
+        padding: 8% 0; } }
   .campaign-container .campaign-logo {
     margin: 30px auto;
     height: 150px;
@@ -1396,13 +1421,16 @@ a {
       display: none; } }
   @media (min-width: 600px) {
     .campaign-container .campaign-button {
-      margin: 50px; } }
+      margin: 50px;
+      padding-left: 50px; } }
 
 .campaign-logo-container-desktop {
   display: none; }
   @media (min-width: 600px) {
     .campaign-logo-container-desktop {
-      display: inline-block; } }
+      display: inline-block; }
+      .campaign-logo-container-desktop img {
+        margin-bottom: 10%; } }
 
 .view-courses {
   display: -webkit-box;
