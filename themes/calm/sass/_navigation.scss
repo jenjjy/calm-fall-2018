@@ -27,69 +27,6 @@ a {
 }
 
 /* 
- * Mobile Menu Slide 
- */
-
-.menu-slide {
-  max-width: 100%;
-  width: $tablet-width;
-  left: -400px;
-  margin: auto;
-  height: 100vh;
-  position: fixed;
-  z-index: 10;
-  top: 0px;
-  transition: all 0.5s ease-in-out;
-  @include tablet {
-    display: none;
-  }
-
-  .main-navigation {
-    @include flex(column nowrap, space-around, center);
-  }
-
-  nav {
-    ul {
-      li {
-        height: 70px;
-        // list-style-type: none;
-        // text-align: center;
-        // line-height: 70px;
-        transition: all 0.5s ease;
-
-        &:hover {
-          // background-color: $red;
-          transition: all 0.5s ease;
-        }
-
-        a {
-          color: $color__white;
-          font-family: $font__main-med;
-          font-size: 26px;
-          text-decoration: none;
-        }
-      } /* end of li */
-    } /* end of ul */
-
-    .sub-menu {
-      padding-top: 0;
-      li {
-        height: 30px;
-      }
-      a {
-        font-size: 18px;
-      }
-    }
-  } /* end of nav */
-} /* end of menu-slide */
-
-.menu-slide.show {
-  left: 0px;
-  background-color: $primary__color;
-  transition: all 0.3s ease-in-out;
-}
-
-/* 
  * Menus 
  */
 
@@ -329,4 +266,67 @@ ul.sub-menu {
     text-align: right;
     width: 50%;
   }
+}
+
+/* 
+ * Mobile Menu Slide 
+ */
+
+.menu-slide {
+  max-width: 100%;
+  width: $tablet-width;
+  left: -400px;
+  margin: auto;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  transition: all 0.5s ease-in-out;
+  @include tablet {
+    display: none;
+  }
+
+  .main-navigation {
+    @include flex(column nowrap, space-around, center);
+  }
+
+  nav {
+    ul {
+      li {
+        height: 70px;
+        // list-style-type: none;
+        // text-align: center;
+        // line-height: 70px;
+        transition: all 0.5s ease;
+
+        &:hover {
+          // background-color: $red;
+          transition: all 0.5s ease;
+        }
+
+        a {
+          color: $color__white;
+          font-family: $font__main-med;
+          font-size: 26px;
+          text-decoration: none;
+        }
+      } /* end of li */
+    } /* end of ul */
+
+    .sub-menu {
+      padding-top: 0;
+      li {
+        height: 30px;
+      }
+      a {
+        font-size: 18px;
+      }
+    }
+  } /* end of nav */
+} /* end of menu-slide */
+
+.menu-slide.show {
+  left: 0px;
+  background-color: $primary__color;
+  transition: all 0.3s ease-in-out;
 }
