@@ -1,8 +1,6 @@
 // Structure
 
 $base__space-unit: 1.5rem;
-$border-active: 2px solid #52b0cc;
-$border-hover: 2px solid #b5ccdb;
 $color__border-abbr: 1px dotted black;
 $color__background-ins: purple;
 $color__background-hr: green;
@@ -10,7 +8,7 @@ $color__background-screen: red;
 $margin__auto: 0 auto;
 
 $desktop-width: 1024px;
-$tablet-width: 550px;
+$tablet-width: 600px;
 // $text-width: 1040px;
 
 // Main Colors
@@ -31,6 +29,9 @@ $color__link: #9ec284;
 $color__link-hover: #1c88a8;
 $button__hover: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 $color__link-visited: yellowgreen;
+
+$border-active: 2px solid #52b0cc;
+$border-hover: 2px solid #b5ccdb;
 
 // Typography
 

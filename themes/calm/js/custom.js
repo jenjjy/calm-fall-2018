@@ -1,32 +1,26 @@
-(function ($) {
-    $(function () {
-        console.log('hihi');
-        // slide menu
-        let mobileMenu = $('#side-menu');
+(function($) {
+  $(function() {
+    // slide menu
+    let mobileMenu = $('#menu-slide');
+    let mobileWidth = $('#page').width();
+    let hamburger = $('#nav-icon');
 
-        function openSlideMenu() {
-            mobileMenu.style.width = '100%';
-            // mainMenu.style.marginLeft = '250px';
-        }
+    console.log(mobileWidth);
 
-        function closeSlideMenu() {
-            mobileMenu.style.width = '0';
-            // mainMenu.style.marginLeft = '0';
-        }
+    if (mobileWidth > 600) {
+      console.log('hihihi');
+      mobileMenu.removeClass('menu-slide show');
+      mobileMenu.blur();
+      //   desktopHeader();
+    }
 
-        $('.open-menu').on('click', function () {
-            console.log('test!');
-            // event.preventDefault();
-            openSlideMenu();
-        });
-        $('.btn-close').on('click', function () {
-            // event.preventDefault();
-            closeSlideMenu();
-        });
+    hamburger.on('click', function() {
+      $(this).toggleClass('open');
+      mobileMenu.toggleClass('menu-slide show');
+    });
 
-        $('#nav-icon').on('click', function () {
-            console.log('working!');
-            $(this).toggleClass('open');
-        });
-    }); // end of doc ready
+    $('a').click(function() {
+      mobileMenu.removeClass('menu-slide show');
+    });
+  }); // end of doc ready
 })(jQuery);
