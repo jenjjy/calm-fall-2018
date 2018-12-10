@@ -1313,11 +1313,12 @@ a {
     font-size: 22px;
     margin: 0 auto; }
 
-.founder-container .border {
-  overflow: hidden;
-  border-radius: 25px;
-  height: 382px;
-  width: 672px; }
+@media (min-width: 600px) {
+  .founder-container .border {
+    overflow: hidden;
+    border-radius: 25px;
+    height: 382px;
+    width: 672px; } }
 
 @media (min-width: 600px) {
   .founder-container {
@@ -1338,9 +1339,10 @@ a {
       height: 380px;
       width: 670px; } }
 
-.founder-container .founder-text-container {
-  text-align: left;
-  max-width: 36%; }
+@media (min-width: 600px) {
+  .founder-container .founder-text-container {
+    text-align: left;
+    max-width: 36%; } }
 
 .solutions-container .solution-text-desktop {
   display: none; }
