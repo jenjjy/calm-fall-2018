@@ -1,16 +1,23 @@
 .site-header {
   height: 60px;
-  padding-top: 0.5rem;
+  // padding-top: 0.75rem;
   position: relative;
 
   @include tablet {
-    height: 120px;
+    height: 140px;
+
+    .nav-icon {
+      display: none;
+    }
   }
 
   .site-branding {
-    @include flex(null, flex-start, null);
+    @include flex(row nowrap, flex-start, center);
     letter-spacing: 1px;
+    padding: 1rem;
+
     @include tablet {
+      padding-bottom: 0;
     }
 
     a {
@@ -18,8 +25,6 @@
 
       .logo-main {
         display: flex;
-        justify-content: center;
-        height: auto;
         margin: auto;
         width: 150px;
 
@@ -29,20 +34,15 @@
       }
     }
   }
-
-  .open-slide {
-    @include tablet {
-      display: none;
-    }
-  }
 }
 
 .login {
   // background: $primary__color;
-  // color: $color__white;
   position: absolute;
   a {
+    // color: $color__white;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   @include tablet {
@@ -53,7 +53,6 @@
     a {
       color: $primary__color;
       font-family: $font__sec-semibold;
-      text-transform: uppercase;
 
       &:hover {
         color: $color__link-hover;
@@ -62,96 +61,23 @@
   }
 }
 
-/* Mobile Menu */
-
-.button-close {
-  background: $primary__color;
-  color: red;
-}
-
-.side-nav {
-  @include flex(column nowrap, center, center);
-
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0;
-  z-index: 1;
-
-  overflow-x: hidden;
-  position: fixed;
-  transition: 0.5s;
-}
-
-/*  Hamburger  */
-body {
-  background-color: #f4f4f4;
-  overflow-x: hidden;
-}
-
-.side-nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  opacity: 0.9;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-}
-
-.side-nav a {
-  padding: 10px 10px 10px 30px;
-  text-decoration: none;
-  font-size: 22px;
-  color: #ccc;
-  display: block;
-  transition: 0.3s;
-}
-
-.side-nav a:hover {
-  color: #fff;
-}
-
-.side-nav .btn-close {
-  position: absolute;
-  top: 0;
-  right: 22px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left 0.5s;
-  overflow: hidden;
-  width: 100%;
-}
-
-@media (max-width: 568px) {
-  .main-navigation-nav {
-    display: none;
-  }
-}
-
-@media (min-width: 568px) {
-  /*.open-slide{display:none}*/
-}
-
-/* Nav Icon */
+/* 
+ * Nav Icon 
+ */
 
 * {
   margin: 0;
   padding: 0;
 }
 
-#nav-icon {
-  width: 60px;
-  height: 45px;
+.nav-icon {
+  width: 33px;
   position: relative;
-  margin: 50px auto;
+  top: 0;
+  padding-top: 1rem;
+  padding-left: 1rem;
+
+  // margin: 50px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -163,12 +89,12 @@ body {
   cursor: pointer;
 }
 
-#nav-icon span {
+.nav-icon span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 3px;
   width: 100%;
-  background: #d3531a;
+  background: $color__text-main;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -182,42 +108,42 @@ body {
   transition: 0.25s ease-in-out;
 }
 
-/* Icon 3 */
-
-#nav-icon span:nth-child(1) {
+.nav-icon span:nth-child(1) {
   top: 0px;
 }
 
-#nav-icon span:nth-child(2),
-#nav-icon span:nth-child(3) {
+.nav-icon span:nth-child(2),
+.nav-icon span:nth-child(3) {
+  top: 9px;
+}
+
+.nav-icon span:nth-child(4) {
   top: 18px;
 }
 
-#nav-icon span:nth-child(4) {
-  top: 36px;
-}
-
-#nav-icon.open span:nth-child(1) {
-  top: 18px;
+.nav-icon.open span:nth-child(1) {
+  top: 9px;
   width: 0%;
   left: 50%;
 }
 
-#nav-icon.open span:nth-child(2) {
+.nav-icon.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
+  background: $primary__color;
 }
 
-#nav-icon.open span:nth-child(3) {
+.nav-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  background: $primary__color;
 }
 
-#nav-icon.open span:nth-child(4) {
+.nav-icon.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%;

@@ -30,13 +30,11 @@ a {
 
 .main-navigation {
   letter-spacing: 1px;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   width: 100%;
 
   @include tablet {
     margin: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 
     li.current-menu-item {
       a {
@@ -84,7 +82,7 @@ a {
     padding-left: 0;
 
     @include tablet {
-      @include flex(row nowrap, space-between, center);
+      @include flex(row nowrap, space-between, flex-start);
       li {
         a {
           &:hover {
@@ -154,7 +152,7 @@ a {
     }
   }
   li {
-    float: left;
+    // float: left;
     position: relative;
 
     &:hover > a,
@@ -174,41 +172,50 @@ a {
 .menu-header-container {
   @include tablet {
     margin: auto;
+  }
+
+  @include desktop {
     width: 975px;
   }
 }
 
 /* Small menu. */
 
-ul.sub-menu {
-  @include tablet {
-    background: $color__background-body;
-    border: 1px solid #52b0cc;
-    display: flex;
-    flex-direction: column;
+ul {
+  .sub-menu {
+    @include tablet {
+      background: $color__background-body;
 
-    a {
-      width: 100%;
-      &:hover,
-      &:focus {
-        background: $primary__color;
-      }
-    }
+      display: flex;
+      flex-direction: column;
 
-    li {
-      border-bottom: transparent;
-      padding: 0.25rem 1rem;
-
-      &:hover {
-        background: $primary__color;
-        color: $color__white;
-      }
-    }
-
-    .current-menu-item {
       a {
+        width: 100%;
+        &:hover,
+        &:focus {
+          background: $primary__color;
+        }
+      }
+
+      li {
+        border: 1px solid #52b0cc;
+        // border-bottom: transparent;
+        padding: 0.25rem 1rem;
+
         &:hover {
-          border-bottom: $color__white;
+          background: $primary__color;
+          color: $color__white;
+        }
+      }
+
+      .current-menu-item {
+        a {
+          border-bottom: transparent;
+          color: $primary__color;
+          font-family: $font__sec-semibold;
+          &:hover {
+            border-bottom: $color__white;
+          }
         }
       }
     }
@@ -222,15 +229,11 @@ ul.sub-menu {
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    display: none;
+    // display: none;
   }
 
   .main-navigation ul {
     // display: none;
-
-    @include tablet {
-      display: flex;
-    }
   }
 }
 
