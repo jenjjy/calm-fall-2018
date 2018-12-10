@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ *Template Name: Free Resources
  *
  * @package Calmversation_Theme
  */

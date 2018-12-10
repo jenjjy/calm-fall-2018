@@ -1,5 +1,6 @@
 (function($) {
-  $(document).ready(function() {
+  $(function() {
+    console.log('hihi');
     // slide menu
     let mobileMenu = $('#side-menu');
 
@@ -7,13 +8,12 @@
       mobileMenu.style.width = '100%';
       // mainMenu.style.marginLeft = '250px';
     }
-
     function closeSlideMenu() {
       mobileMenu.style.width = '0';
       // mainMenu.style.marginLeft = '0';
     }
-
     $('.open-menu').on('click', function() {
+      console.log('test!');
       // event.preventDefault();
       openSlideMenu();
     });
@@ -21,5 +21,10 @@
       // event.preventDefault();
       closeSlideMenu();
     });
-  }); // end of document
-});
+
+    $('#nav-icon').on('click', function() {
+      console.log('working!');
+      $(this).toggleClass('open');
+    });
+  }); // end of doc ready
+})(jQuery);
