@@ -65,6 +65,7 @@
     margin: $margin__auto;
     h1 {
       padding-top: 11%;
+      padding-bottom: 5%;
     }
     div {
       @include flex(row nowrap, center, center);
@@ -204,9 +205,11 @@
 }
 
 .goals-desktop {
+  padding-top: 10%;
   display: none;
 
   h2 {
+    padding: 25px 0;
     font-size: 36px;
     text-align: center;
     font-family: 'Quicksand-Bold', sans-serif;
@@ -218,7 +221,6 @@
   }
 
   .goals-boxes {
-    @include flex(column nowrap, center, center);
     background: $color__white;
     border-radius: 25px;
     box-shadow: 5px 5px 11px grey;
