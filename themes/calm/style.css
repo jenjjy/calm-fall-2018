@@ -931,7 +931,8 @@ a {
     padding: 25px 0; }
     @media (min-width: 1240px) {
       .entry-content h2 {
-        font-size: 48px; } }
+        font-size: 48px;
+        padding: 45px 0; } }
   .entry-content p {
     padding: 15px 0;
     margin: 0 auto;
@@ -1260,7 +1261,8 @@ a {
     width: 86%;
     margin: 0 auto; }
     .solutions-container h1 {
-      padding-top: 11%; }
+      padding-top: 11%;
+      padding-bottom: 5%; }
     .solutions-container div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1446,8 +1448,10 @@ a {
       width: 670px; } }
 
 .goals-desktop {
+  padding-top: 10%;
   display: none; }
   .goals-desktop h2 {
+    padding: 25px 0;
     font-size: 36px;
     text-align: center;
     font-family: 'Quicksand-Bold', sans-serif; }
@@ -1455,19 +1459,6 @@ a {
     max-width: 75%;
     margin: 0 auto; }
   .goals-desktop .goals-boxes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     background: #fff;
     border-radius: 25px;
     -webkit-box-shadow: 5px 5px 11px grey;
