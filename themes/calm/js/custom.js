@@ -1,30 +1,29 @@
 (function($) {
   $(function() {
-    console.log('hihi');
     // slide menu
-    let mobileMenu = $('#side-menu');
+    let mobileMenu = $('#menu-slide');
+    let mobileWidth = $('#page').width();
+    let hamburger = $('#nav-icon');
 
-    function openSlideMenu() {
-      mobileMenu.style.width = '100%';
-      // mainMenu.style.marginLeft = '250px';
-    }
-    function closeSlideMenu() {
-      mobileMenu.style.width = '0';
-      // mainMenu.style.marginLeft = '0';
-    }
-    $('.open-menu').on('click', function() {
-      console.log('test!');
-      // event.preventDefault();
-      openSlideMenu();
-    });
-    $('.btn-close').on('click', function() {
-      // event.preventDefault();
-      closeSlideMenu();
-    });
+    console.log(mobileWidth);
 
-    $('#nav-icon').on('click', function() {
-      console.log('working!');
+    hamburger.on('click', function() {
       $(this).toggleClass('open');
+      console.log('working?');
+      mobileMenu.toggleClass('menu-slide show');
     });
+
+    hamburger.on('blur', function() {
+      mobileMenu.removeClass('menu-slide show');
+    });
+
+    $('a').click(function() {
+      mobileMenu.removeClass('menu-slide show');
+    });
+
+    if (mobileWidth > 550) {
+      mobileMenu.removeClass('menu-slide show');
+      mobileMenu.blur();
+    }
   }); // end of doc ready
 })(jQuery);

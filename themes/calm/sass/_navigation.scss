@@ -29,12 +29,16 @@ a {
 /* Menus */
 
 .main-navigation {
+  @include flex(column nowrap, space-around, center);
   letter-spacing: 1px;
-  padding: 1.2rem 0;
+  height: 100%;
   width: 100%;
 
   @include tablet {
+    background: transparent;
+    // display: block;
     margin: auto;
+    height: auto;
 
     li.current-menu-item {
       a {
@@ -51,15 +55,11 @@ a {
     }
   }
 
-  @include desktop {
-    // width: $text-width;
-  }
-
   a {
-    // background: $primary__color;
     // color: $color__white;
-    font-family: $font__main-med;
-    font-size: 1rem;
+    // font-family: $font__main-med;
+    // font-size: 26px;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -67,29 +67,20 @@ a {
       color: $color__text-main;
       background: $color__background-body;
       font-family: $font__secondary;
+      font-size: 1rem;
       padding: 0 0.6rem;
       padding-bottom: 2px;
-    }
-
-    @include desktop {
-      // font-size: 18px;
     }
   }
 
   ul {
     list-style: none;
     margin: 0;
+    text-align: center;
     padding-left: 0;
 
     @include tablet {
       @include flex(row nowrap, space-between, flex-start);
-      li {
-        a {
-          &:hover {
-            border-bottom: $border-hover;
-          }
-        }
-      }
     }
 
     a {
@@ -97,14 +88,14 @@ a {
     }
 
     ul {
-      // @include flex(row nowrap, center, center);
+      // @include flex(column nowrap, center, center);
       // border-bottom: none;
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       font-family: $font__main-light;
       position: absolute;
-      top: $base__space-unit;
+      // top: $base__space-unit;
       left: -999rem;
-      z-index: 99999;
+      z-index: 1000;
 
       ul {
         left: -999rem;
@@ -112,9 +103,19 @@ a {
       }
 
       li {
+        // display: inline;
         &:hover > ul,
         &.focus > ul {
-          left: 100%;
+          left: -100%;
+        }
+
+        a {
+          font-size: 18px;
+          text-transform: capitalize;
+          @include tablet {
+            font-size: 1rem;
+            text-transform: uppercase;
+          }
         }
 
         @include tablet {
@@ -128,15 +129,16 @@ a {
             color: $color__white;
           }
         }
-      }
+      } // end of ul^3 li
 
       a {
         @include tablet {
           color: $color__text-main;
           font-size: 1rem;
-          width: 200px;
+          // width: 100%;
         }
       }
+
       :hover > a,
       .focus > a {
       }
@@ -144,34 +146,47 @@ a {
       a:hover,
       a.focus {
       }
-    }
+      a.focus {
+        width: 100%;
+      }
+    } // end of ul ul
 
     li:hover > ul,
     li.focus > ul {
       left: auto;
     }
-  }
+  } // end of ul
+
   li {
     // float: left;
     position: relative;
+    padding: 1rem 0;
 
     &:hover > a,
     &.focus > a {
     }
-  }
-  // li {
-  //   padding: 0 1rem;
-  // }
+
+    a {
+      &:hover {
+        border-bottom: 2px solid $secondary__color;
+
+        @include tablet {
+          border-bottom: $border-hover;
+        }
+      }
+    }
+  } // end of li
 
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
   }
-}
+} // end of .main-navigation
 
 .menu-header-container {
   @include tablet {
     margin: auto;
+    width: 100%;
   }
 
   @include desktop {
@@ -185,7 +200,6 @@ ul {
   .sub-menu {
     @include tablet {
       background: $color__background-body;
-
       display: flex;
       flex-direction: column;
 

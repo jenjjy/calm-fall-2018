@@ -40,18 +40,19 @@
 
         </div><!-- .site-branding -->
 
+        <div id="menu-slide">
 
-        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <nav id="site-navigation" class="main-navigation" role="navigation">
 
-            <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+                <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 
-            <div class="login">
+                <div class="login">
+                    <a href="http://calmversation.thinkific.com">login</a>
+                </div><!-- .login -->
 
-                <a href="http://calmversation.thinkific.com">login</a>
-                
-            </div><!-- .login -->
+            </nav><!-- #site-navigation -->
 
-        </nav><!-- #site-navigation -->
+        </div><!-- menu-slide -->
 
     </header><!-- #masthead -->
 

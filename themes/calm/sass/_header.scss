@@ -37,28 +37,96 @@
 }
 
 .login {
-  // background: $primary__color;
-  position: absolute;
+  align-self: center;
+
   a {
-    // color: $color__white;
-    text-decoration: none;
-    text-transform: uppercase;
+    color: $color__white;
+    font-family: $font__main-med;
+    font-size: 21px;
   }
 
   @include tablet {
+    font-size: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
+    position: absolute;
     right: 0;
     top: 0;
     a {
       color: $primary__color;
       font-family: $font__sec-semibold;
+      font-size: 1rem;
 
       &:hover {
         color: $color__link-hover;
       }
     }
   }
+} // end of .login
+
+.menu {
+  @include flex(column nowrap, space-between, center);
+  margin: auto;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+/* 
+ * Mobile Menu Slide 
+ */
+
+.menu-slide {
+  max-width: $tablet-width;
+  width: 400px;
+  left: -400px;
+  margin: auto;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  transition: all 0.5s ease-in-out;
+
+  nav {
+    ul {
+      li {
+        height: 70px;
+        // list-style-type: none;
+        // text-align: center;
+        // line-height: 70px;
+        transition: all 0.5s ease;
+
+        &:hover {
+          // background-color: $red;
+          transition: all 0.5s ease;
+        }
+
+        a {
+          color: $color__white;
+          font-family: $font__main-med;
+          font-size: 26px;
+          text-decoration: none;
+        }
+      } /* end of li */
+    } /* end of ul */
+
+    .sub-menu {
+      padding-top: 0;
+      li {
+        height: 30px;
+      }
+      a {
+        font-size: 18px;
+      }
+    }
+  } /* end of nav */
+} /* end of menu-slide */
+
+.menu-slide.show {
+  left: 0px;
+  background-color: $primary__color;
+  transition: all 0.3s ease-in-out;
 }
 
 /* 
@@ -76,6 +144,7 @@
   top: 0;
   padding-top: 1rem;
   padding-left: 1rem;
+  z-index: 1000;
 
   // margin: 50px auto;
   -webkit-transform: rotate(0deg);
@@ -132,7 +201,7 @@
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  background: $primary__color;
+  background: $color__white;
 }
 
 .nav-icon.open span:nth-child(3) {
@@ -140,7 +209,7 @@
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background: $primary__color;
+  background: $color__white;
 }
 
 .nav-icon.open span:nth-child(4) {
