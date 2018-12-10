@@ -122,23 +122,35 @@ get_header(); ?>
                 ?>
             </h2>
 
+            <div class="campaign-logo-container-mobile">
+                <img src="<?php
+                echo CFS()->get('campaign_logo');
+                ?>" alt="" class="campaign-logo">
+            </div>
 
-            <img src="<?php
-            echo CFS()->get('campaign_logo');
-            ?>" alt="" class="campaign-logo">
-
-
-            <p>
+            <p class="campaign-text-mobile">
                 <?php
                 echo CFS()->get('campaign_text');
                 ?>
             </p>
 
+            <p class="campaign-text-desktop">
+                <?php
+                echo CFS()->get('campaign_text_desktop');
+                ?>
+            </p>
 
-            <?php
-            echo CFS()->get('campaign_button');
-            ?>
+            <div class="campaign-button">
+                <?php
+                echo CFS()->get('campaign_button');
+                ?>
+            </div>
+        </div>
 
+        <div class="campaign-logo-container-desktop">
+            <img src="<?php
+            echo CFS()->get('campaign_logo');
+            ?>" alt="" class="campaign-logo">
         </div>
         <?php /* Start Testimony Loop */ ?>
         <?php while (have_posts()) : the_post(); ?>
