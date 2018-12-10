@@ -5,6 +5,89 @@
   .wp-block-embed-vimeo {
     iframe {
       width: 400px;
+      transform: translate(-7%, 0);
+      @include tablet {
+        width: 700px;
+        transform: translate(0%);
+      }
     }
   }
-}
+
+  .wp-block-button {
+    margin: 3rem 0;
+    @include tablet {
+      margin-bottom: 0;
+    }
+    a {
+      @include button;
+    }
+  }
+
+  .wp-block-image {
+    margin-top: 0;
+    display: none;
+    @include tablet {
+      display: block;
+      position: relative;
+      transform: translate(-4.5%, 0);
+    }
+  }
+  .campaign-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include tablet {
+      position: absolute;
+      flex-direction: row;
+    }
+    img {
+      margin-bottom: 1.5rem;
+      @include tablet {
+        width: 20%;
+      }
+    }
+    .campaign-text {
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      margin: 0 5% 2.5rem 5%;
+      text-align: center;
+    }
+  }
+
+  .campaign-features:nth-child(1) {
+    top: 940px;
+    left: 0;
+    @include tablet {
+      flex-direction: row-reverse;
+    }
+    img {
+      @include tablet {
+        width: 20%;
+        margin-left: 30%;
+        margin-right: 3%;
+      }
+    }
+    .campaign-text {
+      @include tablet {
+        align-self: center;
+      }
+    }
+  }
+  .campaign-features:nth-child(2) {
+    top: 1200px;
+    left: 0;
+  }
+} //page-id-68
