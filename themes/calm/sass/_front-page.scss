@@ -13,7 +13,7 @@
     font-size: 2.7rem;
   }
 
-  @include desktop {
+  @include tablet {
     top: 45%;
     left: 5%;
     position: absolute;
@@ -45,7 +45,7 @@
 
 
 .founder-container {
-  @include desktop {
+  @include tablet {
     margin-top: 24%;
     margin-left: 6%;
     text-align: inherit;
@@ -60,7 +60,7 @@
     display: none;
   }
 
-  @include desktop {
+  @include tablet {
     width: 86%;
     margin: $margin__auto;
     h1 {
@@ -108,7 +108,7 @@
     border-bottom: 2px solid $secondary__color;
   }
 
-  @include desktop {
+  @include tablet {
     display: none;
   }
 
@@ -132,13 +132,34 @@
   @include flex(column wrap, center, center);
   margin-bottom: 25px;
   @include desktop {
-    display: grid;
+    width: 55%;
+  }
+
+  .campaign-text-desktop {
+    display: none;
+  }
+
+  @include tablet {
+    display: inline-block;
+    .campaign-text-mobile {
+      display: none;
+    }
+    .campaign-text-desktop {
+      width: 71%;
+      display: block;
+      margin: 0 auto;
+    }
   }
 
   p {
     text-align: center;
     width: 81%;
     font-size: 22px;
+    @include tablet {
+      font-size: 16px;
+      width: 100%;
+      text-align: left;
+    }
   }
 
   h2 {
@@ -147,6 +168,9 @@
     width: 72%;
     font-weight: bolder;
     margin-top: auto;
+    @include tablet {
+      margin: $margin__auto;
+    }
   }
 
   .campaign-logo {
@@ -154,26 +178,48 @@
     height: 150px;
     width: auto;
   }
+
+  @include tablet {
+    .campaign-logo-container-mobile {
+      display: none;
+
+    }
+
+  }
+
+  .campaign-button {
+    @include tablet {
+      margin: 50px;
+    }
+  }
+
 }
 
+
+.campaign-logo-container-desktop {
+  display: none;
+  @include tablet {
+    display: inline-block;
+  }
+}
 
 .view-courses {
   @include flex(column wrap, center, center);
   margin-bottom: 25px;
-  @include desktop {
+  @include tablet {
     margin: 25px;
   }
 }
 
 .banner-image-desktop {
   display: none;
-  @include desktop {
+  @include tablet {
     display: block;
   }
 }
 
 .banner-image-mobile {
-  @include desktop {
+  @include tablet {
     display: none;
   }
 }
@@ -184,7 +230,7 @@
 
 .front-page-video-container {
   @include flex(column wrap, center, center);
-  @include desktop {
+  @include tablet {
     @include flex(column wrap, flex-end, flex-end);
     float: right;
     padding-top: 9%;
@@ -197,7 +243,7 @@
   height: 162px;
   top: 0;
   left: 0;
-  @include desktop {
+  @include tablet {
     height: 380px;
     width: 670px;
   }
@@ -229,7 +275,7 @@
 
   }
 
-  @include desktop {
+  @include tablet {
     max-width: 93%;
     margin: $margin__auto;
     display: grid;

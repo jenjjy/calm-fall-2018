@@ -1224,7 +1224,7 @@ a {
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
     font-size: 2.7rem; }
-  @media (min-width: 1240px) {
+  @media (min-width: 600px) {
     .banner-header {
       top: 45%;
       left: 5%;
@@ -1245,7 +1245,7 @@ a {
     font-size: 22px;
     margin: 0 auto; }
 
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .founder-container {
     margin-top: 24%;
     margin-left: 6%;
@@ -1256,7 +1256,7 @@ a {
 .solutions-container .solution-text-desktop {
   display: none; }
 
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .solutions-container {
     width: 86%;
     margin: 0 auto; }
@@ -1312,7 +1312,7 @@ a {
     height: 1px;
     width: 50%;
     border-bottom: 2px solid #b4de96; }
-  @media (min-width: 1240px) {
+  @media (min-width: 600px) {
     .checkmark-container {
       display: none; } }
 
@@ -1357,21 +1357,52 @@ a {
   margin-bottom: 25px; }
   @media (min-width: 1240px) {
     .campaign-container {
-      display: grid; } }
+      width: 55%; } }
+  .campaign-container .campaign-text-desktop {
+    display: none; }
+  @media (min-width: 600px) {
+    .campaign-container {
+      display: inline-block; }
+      .campaign-container .campaign-text-mobile {
+        display: none; }
+      .campaign-container .campaign-text-desktop {
+        width: 71%;
+        display: block;
+        margin: 0 auto; } }
   .campaign-container p {
     text-align: center;
     width: 81%;
     font-size: 22px; }
+    @media (min-width: 600px) {
+      .campaign-container p {
+        font-size: 16px;
+        width: 100%;
+        text-align: left; } }
   .campaign-container h2 {
     text-align: center;
     font-size: 42px;
     width: 72%;
     font-weight: bolder;
     margin-top: auto; }
+    @media (min-width: 600px) {
+      .campaign-container h2 {
+        margin: 0 auto; } }
   .campaign-container .campaign-logo {
     margin: 30px auto;
     height: 150px;
     width: auto; }
+  @media (min-width: 600px) {
+    .campaign-container .campaign-logo-container-mobile {
+      display: none; } }
+  @media (min-width: 600px) {
+    .campaign-container .campaign-button {
+      margin: 50px; } }
+
+.campaign-logo-container-desktop {
+  display: none; }
+  @media (min-width: 600px) {
+    .campaign-logo-container-desktop {
+      display: inline-block; } }
 
 .view-courses {
   display: -webkit-box;
@@ -1388,17 +1419,17 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px; }
-  @media (min-width: 1240px) {
+  @media (min-width: 600px) {
     .view-courses {
       margin: 25px; } }
 
 .banner-image-desktop {
   display: none; }
-  @media (min-width: 1240px) {
+  @media (min-width: 600px) {
     .banner-image-desktop {
       display: block; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .banner-image-mobile {
     display: none; } }
 
@@ -1419,7 +1450,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media (min-width: 1240px) {
+  @media (min-width: 600px) {
     .front-page-video-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1442,7 +1473,7 @@ a {
   height: 162px;
   top: 0;
   left: 0; }
-  @media (min-width: 1240px) {
+  @media (min-width: 600px) {
     .front-page-video {
       height: 380px;
       width: 670px; } }
@@ -1464,7 +1495,7 @@ a {
     -webkit-box-shadow: 5px 5px 11px grey;
             box-shadow: 5px 5px 11px grey;
     padding: 30px 0; }
-  @media (min-width: 1240px) {
+  @media (min-width: 600px) {
     .goals-desktop {
       max-width: 93%;
       margin: 0 auto;
