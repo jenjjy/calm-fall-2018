@@ -1,11 +1,9 @@
-(function($) {
-  $(function() {
+(function ($) {
+  $(function () {
     // slide menu
     let mobileMenu = $('#menu-slide');
     let mobileWidth = $('#page').width();
     let hamburger = $('#nav-icon');
-
-    console.log(mobileWidth);
 
     // if (mobileWidth > 600) {
     //   console.log('hihihi');
@@ -14,13 +12,21 @@
     //   //   desktopHeader();
     // }
 
-    hamburger.on('click', function() {
+    hamburger.on('click', function () {
       $(this).toggleClass('open');
       mobileMenu.toggleClass('menu-slide show');
     });
 
-    $('a').click(function() {
+    $('a').click(function () {
       mobileMenu.removeClass('menu-slide show');
     });
-  }); // end of doc ready
+
+
+    $('.our-company .main-carousel').flickity({
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true
+    }); //flickity for our-company and our-founder
+
+  }); // end of doc ready 
 })(jQuery);
