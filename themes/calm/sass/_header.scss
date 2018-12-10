@@ -1,10 +1,10 @@
 .site-header {
   height: 60px;
-  padding-top: 0.5rem;
+  // padding-top: 0.75rem;
   position: relative;
 
   @include tablet {
-    height: 120px;
+    height: 140px;
 
     .nav-icon {
       display: none;
@@ -14,8 +14,10 @@
   .site-branding {
     @include flex(row nowrap, flex-start, center);
     letter-spacing: 1px;
-    padding-left: 1rem;
+    padding: 1rem;
+
     @include tablet {
+      padding-bottom: 0;
     }
 
     a {
@@ -23,8 +25,6 @@
 
       .logo-main {
         display: flex;
-        justify-content: center;
-        height: auto;
         margin: auto;
         width: 150px;
 
@@ -132,6 +132,7 @@
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
+  background: $primary__color;
 }
 
 .nav-icon.open span:nth-child(3) {
@@ -139,6 +140,7 @@
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  background: $primary__color;
 }
 
 .nav-icon.open span:nth-child(4) {

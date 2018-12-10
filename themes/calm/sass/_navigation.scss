@@ -30,13 +30,11 @@ a {
 
 .main-navigation {
   letter-spacing: 1px;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   width: 100%;
 
   @include tablet {
     margin: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 
     li.current-menu-item {
       a {
@@ -154,7 +152,7 @@ a {
     }
   }
   li {
-    float: left;
+    // float: left;
     position: relative;
 
     &:hover > a,

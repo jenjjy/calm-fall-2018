@@ -40,13 +40,16 @@
 
         </div><!-- .site-branding -->
 
-        <div class="login">
-            <a href="http://calmversation.thinkific.com">login</a>
-        </div><!-- .login -->
 
         <nav id="site-navigation" class="main-navigation" role="navigation">
 
             <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+
+            <div class="login">
+
+                <a href="http://calmversation.thinkific.com">login</a>
+                
+            </div><!-- .login -->
 
         </nav><!-- #site-navigation -->
 
