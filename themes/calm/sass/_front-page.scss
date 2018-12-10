@@ -45,14 +45,25 @@
 
 
 .founder-container {
-  @include tablet {
-    margin-top: 24%;
-    margin-left: 6%;
-    text-align: inherit;
-    max-width: 28%;
-    float: left;
+  .border {
+    overflow: hidden;
+    border-radius: 25px;
+    height: 382px;
+    width: 672px;
   }
 
+  @include tablet {
+    @include flex(row-reverse nowrap, center, center);
+    iframe {
+      height: 380px;
+      width: 670px;
+    }
+  }
+
+  .founder-text-container {
+    text-align: left;
+    max-width: 36%;
+  }
 }
 
 .solutions-container {
@@ -85,6 +96,7 @@
 
 
   }
+
 }
 
 .checkmark-container {
@@ -137,6 +149,7 @@
 
   .campaign-text-desktop {
     display: none;
+
   }
 
   @include tablet {
@@ -148,6 +161,8 @@
       width: 71%;
       display: block;
       margin: 0 auto;
+
+
     }
   }
 
@@ -170,6 +185,8 @@
     margin-top: auto;
     @include tablet {
       margin: $margin__auto;
+      text-align: left;
+      padding: 8% 0;
     }
   }
 
@@ -190,6 +207,7 @@
   .campaign-button {
     @include tablet {
       margin: 50px;
+      padding-left: 50px;
     }
   }
 
@@ -200,6 +218,9 @@
   display: none;
   @include tablet {
     display: inline-block;
+    img {
+      margin-bottom: 10%;
+    }
   }
 }
 

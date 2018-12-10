@@ -3,21 +3,45 @@
 --------------------------------------------------------------*/
 
 
-.page-template-page-our-company {
+.page-template-page-our-company,
+.page-template-page-our-founder {
 
     .site-content {
-        border: solid red;
+
+        h2 {
+            color: black;
+        }
+
+        padding: 10px 20px;
 
         .main-carousel {
+            ol {
+                padding: 20px 0px;
 
-            border: solid red;
-
-            .carsousel-cell {
-                border: solid red;
-                width: 33.333%;
             }
 
 
+
+            .carousel-cell {
+                width: 100%;
+
+                h3 {
+                    font-size: 36px;
+                    color: black;
+                }
+
+                p {
+                    padding-bottom: 30px;
+
+                }
+
+
+            }
+
+            button {
+
+                display: none;
+            }
 
         }
 
