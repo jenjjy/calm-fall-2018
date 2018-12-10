@@ -661,7 +661,7 @@ a {
     margin: auto;
     width: 100%; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .menu-header-container {
     width: 975px; } }
 
@@ -831,7 +831,7 @@ a {
         margin: 0px 25px; }
 
 /*footer desktop*/
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .site-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -929,18 +929,18 @@ a {
     font-weight: bolder;
     font-size: 42px;
     padding: 25px 0; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1240px) {
       .entry-content h2 {
         font-size: 48px; } }
   .entry-content p {
     padding: 15px 0;
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 1240px;
     font-size: 22px; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1240px) {
       .entry-content p {
         font-size: 28px;
-        max-width: 1024px; } }
+        max-width: 78%; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1223,10 +1223,10 @@ a {
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
     font-size: 2.7rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1240px) {
     .banner-header {
-      top: 37%;
-      left: 2%;
+      top: 45%;
+      left: 5%;
       position: absolute;
       color: #fff;
       text-align: inherit; } }
@@ -1235,7 +1235,7 @@ a {
   text-align: center;
   margin-bottom: 2.2rem; }
   .founder-container h1, .solutions-container h1 {
-    font-size: 35px; }
+    font-size: 36px; }
   .founder-container img, .solutions-container img {
     width: 91%;
     margin-bottom: 15px; }
@@ -1244,19 +1244,23 @@ a {
     font-size: 22px;
     margin: 0 auto; }
 
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .founder-container {
+    margin-top: 24%;
+    margin-left: 6%;
     text-align: inherit;
-    max-width: 42%;
+    max-width: 28%;
     float: left; } }
 
 .solutions-container .solution-text-desktop {
   display: none; }
 
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .solutions-container {
     width: 86%;
     margin: 0 auto; }
+    .solutions-container h1 {
+      padding-top: 11%; }
     .solutions-container div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1306,7 +1310,7 @@ a {
     height: 1px;
     width: 50%;
     border-bottom: 2px solid #b4de96; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1240px) {
     .checkmark-container {
       display: none; } }
 
@@ -1349,7 +1353,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1240px) {
     .campaign-container {
       display: grid; } }
   .campaign-container p {
@@ -1382,17 +1386,17 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1240px) {
     .view-courses {
       margin: 25px; } }
 
 .banner-image-desktop {
   display: none; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1240px) {
     .banner-image-desktop {
       display: block; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .banner-image-mobile {
     display: none; } }
 
@@ -1413,7 +1417,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1240px) {
     .front-page-video-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1428,17 +1432,18 @@ a {
       -webkit-box-align: end;
           -ms-flex-align: end;
               align-items: flex-end;
-      float: right; } }
+      float: right;
+      padding-top: 9%; } }
 
 .front-page-video {
   width: 285px;
   height: 162px;
   top: 0;
   left: 0; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1240px) {
     .front-page-video {
-      height: 300px;
-      width: 500px; } }
+      height: 380px;
+      width: 670px; } }
 
 .goals-desktop {
   display: none; }
@@ -1468,10 +1473,16 @@ a {
     -webkit-box-shadow: 5px 5px 11px grey;
             box-shadow: 5px 5px 11px grey;
     padding: 30px 0; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1240px) {
     .goals-desktop {
       max-width: 93%;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 25px; } }
+
+.page-id-68 .entry-title {
+  text-align: center; }
+
+.page-id-68 .wp-block-embed-vimeo iframe {
+  width: 400px; }

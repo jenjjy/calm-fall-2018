@@ -2,4 +2,9 @@
   .entry-title {
     text-align: center;
   }
+  .wp-block-embed-vimeo {
+    iframe {
+      width: 400px;
+    }
+  }
 }
