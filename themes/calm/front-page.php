@@ -78,7 +78,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <!--- GOALS -->
+            <!--- GOALS  MOBILE -->
         <?php endwhile; ?>
         <div class="checkmark-container">
             <?php
@@ -98,8 +98,12 @@ get_header(); ?>
             <?php
             $loop = CFS()->get('goals_desktop');
             foreach ($loop as $row) : ?>
-                <h2><?php echo $row['goals_header']; ?></h2>
-                <p><?php echo $row['goals_text_desktop']; ?></p>
+                <div class="goals-boxes">
+                    <div class="goals-text">
+                        <h2><?php echo $row['goals_header']; ?></h2>
+                        <p><?php echo $row['goals_text_desktop']; ?></p>
+                    </div>
+                </div>
             <?php endforeach; ?>
         </div>
 

@@ -57,18 +57,21 @@
   h2 {
     font-weight: bolder;
     font-size: 42px;
+    padding: 25px 0;
     @include desktop {
       font-size: 48px;
+
     }
   }
 
   p {
     padding: 15px 0;
     margin: $margin__auto;
-    width: 86%;
+    max-width: $desktop-width;
     font-size: 22px;
     @include desktop {
       font-size: 28px;
+      max-width: $desktop-width;
     }
   }
 
