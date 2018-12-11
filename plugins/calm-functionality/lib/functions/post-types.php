@@ -128,7 +128,7 @@ function team_member_post_type() {
 		'name'                  => 'Team Members',
 		'singular_name'         => 'Team Member',
 		'menu_name'             => 'Team Member',
-		'name_admin_bar'        => 'Team Member',
+		'name_admin_bar'        => 'Team Members',
 		'archives'              => 'Team Member Archives',
 		'attributes'            => 'Team Member Attributes',
 		'parent_item_colon'     => 'Parent Team Member:',
