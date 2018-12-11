@@ -113,6 +113,9 @@ get_header(); ?>
             <?php endforeach; ?>
         </div>
 
+
+		<?php get_template_part( 'template-parts/testimony' ); ?>
+
         <!--- COURSES -->
         <div class="view-courses">
             <?php

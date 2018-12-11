@@ -1,21 +1,15 @@
-# RED Starter
+# Calmversation Theme
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+This is a customized theme uniquely for calmversationAlt 0153
 
 ## Installation
 
-### 1. Download me (don't clone me!)
+### Package managers
 
-Then add me to your `wp-content` directory.
+Install with npm: `npm install flickity`
 
-### 2. Rename the `redstarter-master` directory
+Install with Bower: `bower install flickity --save`
 
-Make sure that the theme directory name is project appropriate!
+## Techonologies Used
 
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+## Authors

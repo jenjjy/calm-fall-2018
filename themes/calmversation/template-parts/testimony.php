@@ -10,19 +10,44 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <header class="entry-header">
-        <?php if (has_post_thumbnail()) : ?>
-            <?php the_post_thumbnail('large'); ?>
-        <?php endif; ?>
-
-        <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
-
-        <?php if ('post' === get_post_type()) : ?>
-            <div class="entry-meta">
-                <?php calm_posted_on(); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?>
-                / <?php calm_posted_by(); ?>
-            </div><!-- .entry-meta -->
-        <?php endif; ?>
+        <h1 class="page-title">Testimonials</h1>
     </header><!-- .entry-header -->
+
+    <?php if (has_post_thumbnail()) : ?>
+		<?php the_post_thumbnail('large'); ?>
+    <?php endif; ?>
+         
+        <?php
+        $args = array(
+            'post_type' => 'testimony',
+            'post_status' => 'publish',
+        );
+
+        $testimony = new WP_Query($args);
+        if ($testimony->have_posts()) : ?>   
+
+        <section class="testimony-carousel">
+            <?php while ($testimony->have_posts()) : 
+            $testimony->the_post() ; ?>
+
+                <div class="testimony">
+
+                    <div class="testimony-img"><?php echo the_post_thumbnail('medium') ; ?></div>
+                    <div class="testimony-content"><?php echo get_the_content(); ?></div>
+
+                </div>
+
+            <?php endwhile; wp_reset_postdata(); ?>
+
+        </section>
+
+        <?php endif; ?>
+
+    </main><!-- #main -->
+</div><!-- #primary -->
+
+
+
 
     <div class="entry-content">
         <?php the_excerpt(); ?>
