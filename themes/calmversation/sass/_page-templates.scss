@@ -3,3 +3,9 @@
 --------------------------------------------------------------*/
 
 /* Testimony */
+.page-title {
+  text-align: center;
+}
+.testimony {
+  @include flex(column nowrap, center, center);
+}

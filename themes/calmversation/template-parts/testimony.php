@@ -23,22 +23,22 @@
             'post_status' => 'publish',
         );
 
-        $testimonials = new WP_Query($args);
-        if ($testimonials->have_posts()) : ?>   
+        $testimony = new WP_Query($args);
+        if ($testimony->have_posts()) : ?>   
 
-            <?php while ($testimonials->have_posts()) : 
-            $testimonials->the_post() ; ?>
+            <?php while ($testimony->have_posts()) : 
+            $testimony->the_post() ; ?>
 
              <div class="testimony">
 
-                <div><?php echo the_post_thumbnail('medium') ; ?></div>
+                <div class="testimony-img"><?php echo the_post_thumbnail('medium') ; ?></div>
                 <div class="testimony-content"><?php echo get_the_content(); ?></div>
 
             </div>
 
             <?php endwhile; wp_reset_postdata(); ?>
 
-        <?php else : esc_html_e('No testimonials in the diving taxonomy!', 'text-domain'); endif ; ?>
+        <?php endif; ?>
 
     </main><!-- #main -->
 </div><!-- #primary -->
