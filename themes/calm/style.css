@@ -1887,6 +1887,25 @@ a {
 .single-course .site-content header h1 {
   text-align: center; }
 
+.single-course .site-content .entry-content figure img {
+  border-radius: 50%;
+  width: 60%; }
+
+.single-course .site-content .entry-content p {
+  font-size: 16px;
+  width: 90%; }
+
+.single-course .site-content .entry-content h3 {
+  text-transform: capitalize; }
+
+.single-course .site-content .entry-content hr {
+  width: 46%;
+  margin-left: 27%; }
+
+.single-course .site-content .entry-content ul {
+  list-style: none;
+  margin: 0; }
+
 /*--------------------------------------------------------------
 # Free Resources
 --------------------------------------------------------------*/
