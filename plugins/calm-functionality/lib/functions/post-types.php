@@ -156,7 +156,7 @@ function team_member_post_type() {
 		'label'                 => 'Team Member',
 		'description'           => 'Team member\'s for \"Our Team Page\"',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor'),
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -170,6 +170,7 @@ function team_member_post_type() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => false,
 		'capability_type'       => 'page',
+		
 	);
 	register_post_type( 'team_member', $args );
 
