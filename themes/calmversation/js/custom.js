@@ -15,12 +15,11 @@
 
     if (mobileWidth < 600) {
       subMenu.parent().click(function() {
-        console.log('less than 600');
-        subMenu.empty();
-        event.preventDefault();
-
-        subMenu.children().slideToggle('show');
-        console.log('sliding yet?');
+        // console.log('less than 600');
+        // subMenu.empty();
+        // event.preventDefault();
+        // subMenu.children().slideToggle('show');
+        // console.log('sliding yet?');
       }); // end of .sub-menu
     } else {
     }
@@ -34,24 +33,16 @@
       mobileMenu.removeClass('menu-slide show');
     });
 
-    $('.entry-content .main-carousel').flickity({
+    $('.testimony-carousel').flickity({
       cellAlign: 'left',
       contain: true,
       wrapAround: true
-<<<<<<< HEAD
-    }); //flickity for our-company & our-founder
-
-
-
-
-=======
-    }); //flickity for our-company
+    }); //carousel testimony
 
     $('.entry-content .main-carousel').flickity({
       cellAlign: 'left',
       contain: true,
       wrapAround: true
     }); //flickity for our-founder
->>>>>>> b53eee92b46b52c4eba5d79ff136bb171dc37474
   }); // end of doc ready
 })(jQuery);
