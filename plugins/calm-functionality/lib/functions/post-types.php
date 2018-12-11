@@ -121,14 +121,14 @@ function Calm_course() {
 add_action( 'init', 'Calm_course', 0 );
 
 
-// Register Custom Post Type
+// Register "Our Team" Custom Post Type
 function team_member_post_type() {
 
 	$labels = array(
 		'name'                  => 'Team Members',
 		'singular_name'         => 'Team Member',
 		'menu_name'             => 'Team Member',
-		'name_admin_bar'        => 'Team Members',
+		'name_admin_bar'        => 'Team Member',
 		'archives'              => 'Team Member Archives',
 		'attributes'            => 'Team Member Attributes',
 		'parent_item_colon'     => 'Parent Team Member:',
@@ -157,7 +157,7 @@ function team_member_post_type() {
 		'label'                 => 'Team Member',
 		'description'           => 'Team member\'s for \"Our Team Page\"',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+		'supports'              => array( 'title', 'editor', 'revisions', 'custom-fields' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
