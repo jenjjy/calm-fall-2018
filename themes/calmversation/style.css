@@ -1899,10 +1899,22 @@ a {
 .single-course .site-content header h1 {
   text-align: center;
   font-family: "Quicksand-Bold", sans-serif; }
+  @media (min-width: 600px) {
+    .single-course .site-content header h1 {
+      text-align: left;
+      margin-left: 3%;
+      margin-bottom: 0; } }
+
+@media (min-width: 600px) {
+  .single-course .site-content .entry-content h2 {
+    padding-top: 0; } }
 
 .single-course .site-content .entry-content figure img {
   border-radius: 50%;
   width: 60%; }
+  @media (min-width: 600px) {
+    .single-course .site-content .entry-content figure img {
+      width: 25%; } }
 
 .single-course .site-content .entry-content p {
   font-size: 16px;
@@ -1917,7 +1929,8 @@ a {
 
 .single-course .site-content .entry-content ul {
   list-style: none;
-  margin: 0; }
+  margin: 0;
+  line-height: 3; }
 
 .single-course .site-content .entry-content .course-theme-icon img {
   width: 100%; }
