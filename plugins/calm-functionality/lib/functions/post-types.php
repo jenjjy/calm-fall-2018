@@ -157,7 +157,7 @@ function team_member_post_type() {
 		'label'                 => 'Team Member',
 		'description'           => 'Team member\'s for \"Our Team Page\"',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'revisions', 'custom-fields' ),
+		'supports'              => array( 'title', 'editor', 'revisions'),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
