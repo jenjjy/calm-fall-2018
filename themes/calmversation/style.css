@@ -1962,4 +1962,36 @@ a {
     margin-bottom: 25px; }
   .free-resource-banner a {
     font-size: 24px;
-    padding: 0.8rem 2rem; }
+    padding: .4rem 1rem; }
+
+.free-resource-header-desktop {
+  display: none; }
+
+.free-resource-text-desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .free-resource-text-desktop h2 {
+    display: none; }
+  .free-resource-text-desktop p {
+    display: none; }
+
+.free-resource-info {
+  text-align: center; }
+  .free-resource-info h2 {
+    display: none; }
+  .free-resource-info p:nth-child(odd) {
+    display: none; }
+
+.space-thought-header-desktop {
+  display: none; }

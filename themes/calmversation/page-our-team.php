@@ -1,24 +1,65 @@
 <?php
 /**
- * The template for displaying all pages.
  *
+ * Template Name: Our Founder
  * @package Calmversation_Theme
  */
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
+<div id="primary" class="founder-content-area">
+    <main id="main" class="founder-site-main" role="main">
+
+        <?php the_title('<h1 class="page-title">', '</h1>'); ?>
+
+        <?php
+        $args = array(
+            'order' => 'ASC',
+            'post_type' => 'team_member',
+            'post_status' => 'publish',
+        );
+
+        $testimonials = new WP_Query($args);
+        if ($testimonials->have_posts()) :
+            ?>
+            <ul>
+                <?php
+                while ($testimonials->have_posts()) :
+                    $testimonials->the_post();
+                    ?>
+
+                    <li><?php printf('%1$s - %2$s', get_the_title(), get_the_content()); ?></li>
+
+                <?php endwhile;
+                wp_reset_postdata(); ?>
+
+            </ul>
 
 
-            <?php while (have_posts()) : the_post(); ?>
+            <div class="tedx-video">
+                <iframe src="  <?php
+                echo CFS()->get('our_team_video');
+                ?>" frameborder="0"></iframe>
+                <h1>
+                    <?php
+                    echo CFS()->get('our_team_header');
+                    ?>
+                </h1>
+                <p>
+                    <?php
+                    echo CFS()->get('our_team_text');
+                    ?>
+                </p>
+            </div>
 
-                <?php get_template_part('template-parts/content', 'page'); ?>
+        <?php else :
+            esc_html_e('No testimonials in the diving taxonomy!', 'text-domain');
+        endif;
+        ?>
 
-            <?php endwhile; // End of the loop. ?>
 
-        </main><!-- #main -->
-    </div><!-- #primary -->
+    </main><!-- #main -->
+</div><!-- #primary -->
 
 
 <?php get_footer(); ?>
