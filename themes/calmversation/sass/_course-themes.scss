@@ -3,11 +3,14 @@
     header {
       h1 {
         text-align: center;
+        @include font__main-bold;
       }
     }
+
     .entry-content {
       h2 {
       }
+
       figure {
         img {
           border-radius: 50%;
@@ -28,10 +31,21 @@
         width: 46%;
         margin-left: 27%;
       }
+
       ul {
         list-style: none;
         margin: 0;
       }
-    } //entry-content
-  } //site-content
-} //the page end
+
+      .course-theme-icon img {
+        width: 100%;
+      }
+    }
+
+    //entry-content
+  }
+
+  //site-content
+}
+
+//the page end

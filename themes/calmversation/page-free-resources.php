@@ -43,6 +43,13 @@ get_header(); ?>
 
 
         </div>
+
+        <div class="free-resource-info">
+            <?php
+            echo CFS()->get('space_thought_header');
+            ?>
+
+        </div>
         <?php while (have_posts()) : the_post(); ?>
 
             <?php get_template_part('template-parts/content', 'page'); ?>

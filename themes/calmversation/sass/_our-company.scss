@@ -12,7 +12,7 @@
         padding: 10px 20px;
 
         .main-carousel {
-            border: solid green;
+
 
             ol {
 
@@ -41,36 +41,36 @@
 
 
 
-// @include tablet {
+@include tablet {
 
-//     .our-company {
-//         border: green solid;
-//         display: flex;
-//     }
+    .our-company {
+        border: green solid;
+        display: flex;
+    }
 
-//     .founder-img {
-//         border: solid red;
-//         @include heightandwidth(null, 30%);
-//     }
+    .founder-img {
+        border: solid red;
+        @include heightandwidth(null, 30%);
+    }
 
-//     .our-company-text {
-//         border: solid blue;
-//         @include heightandwidth(null, 70%);
-//     }
+    .our-company-text {
+        border: solid blue;
+        @include heightandwidth(null, 70%);
+    }
 
-//     .main-carousel {
-//         display: flex;
+    .main-carousel {
 
-//         .carousel-cell {
-//             border: solid blue;
-//             @include heightandwidth(null, 33.3333%);
-//         }
-//     }
+        .carousel-cell {
 
-//     ol {
-//         display: none;
-//     }
-// }
+            @include heightandwidth(null, 33.3333%);
+        }
+
+
+
+    }
+
+
+}
 
 
 /*--------------------------------------------------------------
