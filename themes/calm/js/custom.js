@@ -5,6 +5,7 @@
       let mobileWidth = $('#page').width();
       let hamburger = $('#nav-icon');
 
+<<<<<<< HEAD
       console.log(mobileWidth);
 
       if (location.href.indexOf('#') != -1) {
@@ -43,6 +44,23 @@
       //         .slideToggle('show');
       //     });
     }
+=======
+    console.log(mobileWidth);
+
+    if (location.href.indexOf('#') != -1) {
+      event.preventDefault();
+      console.log('dog');
+      //   navBar();
+    }
+
+    //add prevent default, toggle class, target parent of submenu
+    $('.sub-menu')
+      .parent()
+      .click(function() {
+        $(this).slideToggle('show');
+        console.log('afternoon');
+      }); // end of .sub-menu
+>>>>>>> ef7bcce0063a840923e3c86ac1c0d214e52db17d
 
     $('.sub-menu').slideToggle('show'); console.log('afternoon');
   }

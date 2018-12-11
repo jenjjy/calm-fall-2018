@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+# Free Resources
+--------------------------------------------------------------*/
+
+.free-resource-banner {
+  @include flex(column nowrap, center, center);
+
+  img {
+    width: 268.52px;
+    height: 167px;
+    border-radius: 25px;
+  }
+}
