@@ -1880,7 +1880,9 @@ a {
 
 @media (min-width: 600px) {
   .page-template-page-our-company .entry-content .our-company,
-  .page-template-page-our-founder .entry-content .our-company {
+  .page-template-page-our-company .entry-content .our-founder,
+  .page-template-page-our-founder .entry-content .our-company,
+  .page-template-page-our-founder .entry-content .our-founder {
     border: green solid;
     display: -webkit-box;
     display: -ms-flexbox;
