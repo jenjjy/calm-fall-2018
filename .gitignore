@@ -34,14 +34,14 @@ plugins/*
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*
-!themes/calm/
+!themes/calmversation/
 
 # Ignore npm packages #
 # =================== #
-themes/calm/node_modules/*
+themes/calmversation/node_modules/*
 
 # Ignore build files #
 # ================== #
-themes/calm/.idea/*
-themes/calm/gulpfile.js
-themes/calm/build/*
+themes/calmversation/.idea/*
+themes/calmversation/gulpfile.js
+themes/calmversation/build/*
