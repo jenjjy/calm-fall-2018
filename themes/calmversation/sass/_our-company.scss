@@ -9,7 +9,9 @@
             color: black;
         }
 
-        padding: 10px 20px;
+
+
+
 
         .main-carousel {
 
@@ -39,38 +41,60 @@
     }
 }
 
-
-
 @include tablet {
+    .site-content {
 
-    .our-company {
-        border: green solid;
-        display: flex;
-    }
 
-    .founder-img {
-        border: solid red;
-        @include heightandwidth(null, 30%);
-    }
 
-    .our-company-text {
-        border: solid blue;
-        @include heightandwidth(null, 70%);
-    }
+        .our-company {
 
-    .main-carousel {
+            display: flex;
+            margin: 60px;
 
-        .carousel-cell {
+            h2 {
+                text-align: left;
+                font-size: 30px;
 
-            @include heightandwidth(null, 33.3333%);
+                height: auto;
+
+            }
+        }
+
+        .founder-img {
+
+            @include heightandwidth(null, 50%);
+            margin: 0px;
+        }
+
+        .our-company-text {
+
+
+            @include heightandwidth(null, 70%);
+
+            p {
+                text-align: left;
+                font-size: 16px;
+
+                margin: 0px;
+            }
         }
 
 
 
+        .main-carousel {
+            border: solid blue;
+
+            .carousel-cell {
+                @include heightandwidth(null, 33.3333%);
+            }
+        }
+
+
     }
-
-
 }
+
+
+
 
 
 /*--------------------------------------------------------------
