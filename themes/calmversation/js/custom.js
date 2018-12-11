@@ -34,13 +34,9 @@
       cellAlign: 'left',
       contain: true,
       wrapAround: true
-    }); //flickity for our-company 
+    }); //flickity for our-company & our-founder
 
-    $('.entry-content .main-carousel').flickity({
-      cellAlign: 'left',
-      contain: true,
-      wrapAround: true
-    }); //flickity for our-founder
+
 
 
   }); // end of doc ready

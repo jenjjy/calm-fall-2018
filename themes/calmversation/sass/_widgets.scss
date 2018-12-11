@@ -19,6 +19,7 @@
   @include flex(column, null, center);
   padding-top: 20px;
 
+
   ul {
     list-style: none;
     margin: 0;
@@ -35,6 +36,7 @@
   .footer-navigation {
     text-align: center;
     letter-spacing: 2px;
+
   }
 
   h6 {
@@ -57,37 +59,48 @@
 
 }
 
-/*footer desktop*/
+/*footer tablet*/
 
 @include tablet {
   .site-footer {
 
     @include flex(row, null, center);
     position: relative;
-    @include heightandwidth(120px, null);
+    @include heightandwidth(120px, 100%);
 
   }
 
-  .social-media-icon {
+  .site-footer .social-media-icon {
     order: 1;
-    padding: 20px 30px 40px 30px;
+    @include flex(row, null, flex-start);
     font-size: 40px;
+    @include heightandwidth(100%, auto);
+
+    ul {
+      a {
+
+        margin: 0px 15px;
+      }
+    }
   }
 
   .footer-navigation {
     order: 2;
-    margin-left: 40px;
-    padding-left: 40px;
+    @include heightandwidth(100%, 100%);
+
+
 
 
     ul {
-      @include flex(row, null, flex-start);
-      @include heightandwidth(null, 100%);
+      @include flex(row, space-evenly, flex-start);
+      @include heightandwidth(100%, 100%);
       padding-bottom: 40px;
+
+
     }
 
     a {
-      padding: 20px;
+
       text-transform: uppercase;
     }
   }
@@ -103,5 +116,38 @@
     font-size: 16px;
     padding: 10px 0px 5px 0px;
   }
+
+}
+
+/*footer desktop*/
+@include desktop {
+  .site-footer {
+
+    .social-media-icon {
+
+      padding: 10px 40px;
+      width: 20%;
+      margin-left: 30px;
+
+
+    }
+
+    .footer-navigation {
+      padding-top: 10px;
+      position: relative;
+      left: 30px;
+      width: 50%;
+      margin-left: 20px;
+
+    }
+
+
+  }
+
+
+
+
+
+
 
 }

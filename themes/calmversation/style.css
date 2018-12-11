@@ -901,7 +901,7 @@ a {
       .site-footer .social-media-icon ul a {
         margin: 0px 25px; }
 
-/*footer desktop*/
+/*footer tablet*/
 @media (min-width: 600px) {
   .site-footer {
     display: -webkit-box;
@@ -915,19 +915,33 @@ a {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    height: 120px; }
-  .social-media-icon {
+    height: 120px;
+    width: 100%; }
+  .site-footer .social-media-icon {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    padding: 20px 30px 40px 30px;
-    font-size: 40px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 40px;
+    height: 100%;
+    width: auto; }
+    .site-footer .social-media-icon ul a {
+      margin: 0px 15px; }
   .footer-navigation {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin-left: 40px;
-    padding-left: 40px; }
+    height: 100%;
+    width: 100%; }
     .footer-navigation ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -936,13 +950,16 @@ a {
       -webkit-box-direction: normal;
           -ms-flex-flow: row;
               flex-flow: row;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
+      height: 100%;
       width: 100%;
       padding-bottom: 40px; }
     .footer-navigation a {
-      padding: 20px;
       text-transform: uppercase; }
   h6 {
     -webkit-box-ordinal-group: 4;
@@ -954,6 +971,19 @@ a {
     width: 100%;
     font-size: 16px;
     padding: 10px 0px 5px 0px; } }
+
+/*footer desktop*/
+@media (min-width: 1240px) {
+  .site-footer .social-media-icon {
+    padding: 10px 40px;
+    width: 20%;
+    margin-left: 30px; }
+  .site-footer .footer-navigation {
+    padding-top: 10px;
+    position: relative;
+    left: 30px;
+    width: 50%;
+    margin-left: 20px; } }
 
 /*--------------------------------------------------------------
 # Content
