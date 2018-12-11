@@ -21,7 +21,7 @@ get_header(); ?>
                 ?>
             </h1>
 
-            <div>
+            <div class="free-resource-text-desktop">
                 <h2>
                     <?php
                     echo CFS()->get('free_resources_text_header_desktop');
@@ -45,9 +45,44 @@ get_header(); ?>
         </div>
 
         <div class="free-resource-info">
+            <h1 class="space-thought-header-desktop">
+                <?php
+                echo CFS()->get('space_thought_header_desktop');
+                ?>
+            </h1>
+            <h1>
+                <?php
+                echo CFS()->get('space_thought_header');
+                ?>
+            </h1>
+            <h2>
+                <?php
+                echo CFS()->get('space_thought_text_header_desktop');
+                ?>
+            </h2>
+            <p>
+                <?php
+                echo CFS()->get('space_thought_text');
+                ?>
+            </p>
+            <p>
+                <?php
+                echo CFS()->get('space_thought_text_desktop');
+                ?>
+
+            </p>
+
+        </div>
+
+        <div class="free-resource-video-container">
             <?php
-            echo CFS()->get('space_thought_header');
-            ?>
+            $loop = CFS()->get('free_resources_video');
+            foreach ($loop as $row) : ?>
+                <div class="free-resource-video">
+                    <iframe src="<?php echo $row['free_resources_video_input']; ?>" frameborder="0"></iframe>
+                    <h2><?php echo $row['free_resources_header']; ?></h2>
+                </div>
+            <?php endforeach; ?>
 
         </div>
         <?php while (have_posts()) : the_post(); ?>
