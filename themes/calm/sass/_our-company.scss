@@ -20,10 +20,8 @@
 
             }
 
-
-
             .carousel-cell {
-                width: 100%;
+                @include heightandwidth (null, 100%);
 
                 h3 {
                     font-size: 36px;
@@ -35,7 +33,6 @@
 
                 }
 
-
             }
 
             button {
@@ -45,18 +42,7 @@
 
         }
 
-
-
-
     }
-
-
-
-
-
-
-
-
 
 
 

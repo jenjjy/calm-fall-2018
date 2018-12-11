@@ -697,6 +697,12 @@ a {
       ul.sub-menu .current-menu-item a:hover {
         border-bottom: #fff; } }
 
+.sub-menu.show {
+  background-color: #52b0cc;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block; }
@@ -760,8 +766,8 @@ a {
         -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease; }
         .menu-slide nav ul li:hover {
-          -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease; }
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
         .menu-slide nav ul li a {
           color: #fff;
           font-family: "Quicksand-Medium", sans-serif;
