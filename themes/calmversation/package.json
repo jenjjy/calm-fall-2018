@@ -2,7 +2,9 @@
   "name": "calmversation",
   "version": "1.1.0",
   "description": "A theme for Calmversation",
-  "dependencies": {},
+  "dependencies": {
+    "sass": "^1.15.2"
+  },
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^4.0.0",
