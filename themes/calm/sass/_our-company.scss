@@ -48,23 +48,35 @@
     @include tablet {
 
         .entry-content {
-            border: solid red;
-
             .our-company {
-                border: solid green;
+
+                border: green solid;
+                display: flex;
             }
 
-            .our-mission-purpose-goals {
-                @include flex(row, null, null);
+            .founder-img {
+
+                border: solid red;
+                @include heightandwidth(null, 30%);
             }
 
-            .our-mission,
-            .our-purpose,
-            .our-goals {
-                @include heightandwidth(null, 33.3333%);
-                border: solid blue;
+            .our-company-text {
+                @include heightandwidth(null, 70%);
             }
 
+            .main-carousel {
+                display: flex;
+
+                .carousel-cell {
+                    border: solid blue;
+                    @include heightandwidth(null, 33.3333%);
+                }
+
+            }
+
+            ol {
+                display: none;
+            }
 
         }
 
