@@ -1904,7 +1904,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .free-resource-banner h1 {
+    font-size: 42px;
+    text-align: center; }
   .free-resource-banner img {
-    width: 268.52px;
-    height: 167px;
-    border-radius: 25px; }
+    width: 328px;
+    height: 200px;
+    border-radius: 25px;
+    margin-bottom: 25px; }
+  .free-resource-banner a {
+    font-size: 24px;
+    padding: 0.8rem 2rem; }
