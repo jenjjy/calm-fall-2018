@@ -978,6 +978,8 @@ a {
     padding: 10px 40px;
     width: 20%;
     margin-left: 30px; }
+    .site-footer .social-media-icon ul a {
+      margin: 0px 25px; }
   .site-footer .footer-navigation {
     padding-top: 10px;
     position: relative;
