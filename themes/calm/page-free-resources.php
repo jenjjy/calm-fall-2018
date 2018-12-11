@@ -7,24 +7,50 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+        <div class="free-resource-banner">
+            <h1>
+                <?php
+                echo CFS()->get('free_resources_header');
+                ?>
+            </h1>
+            <h1 class="free-resource-header-desktop">
+                <?php
+                echo CFS()->get('free_resources_header_desktop');
+                ?>
+            </h1>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+            <div>
+                <h2>
+                    <?php
+                    echo CFS()->get('free_resources_text_header_desktop');
+                    ?>
+                </h2>
+                <p>
+                    <?php
+                    echo CFS()->get('free_resources_text_desktop');
+                    ?>
+                </p>
+                <img src=" <?php
+                echo CFS()->get('free_resources_image');
+                ?>" alt="">
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-				
-
-
-			<?php endwhile; // End of the loop. ?>
-		<?php echo CFS()->get(‘tool_kit_button’); ?>
+                <?php
+                echo CFS()->get('free_resources_button');
+                ?>
+            </div>
 
 
+        </div>
+        <?php while (have_posts()) : the_post(); ?>
+
+            <?php get_template_part('template-parts/content', 'page'); ?>
+
+        <?php endwhile; // End of the loop. ?>
+
+    </main><!-- #main -->
+</div><!-- #primary -->
 
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
- 
 <?php get_footer(); ?>
