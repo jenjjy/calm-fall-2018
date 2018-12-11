@@ -30,13 +30,13 @@
       mobileMenu.removeClass('menu-slide show');
     });
 
-    $('.our-company .main-carousel').flickity({
+    $('.entry-content .our-company .main-carousel').flickity({
       cellAlign: 'left',
       contain: true,
       wrapAround: true
     }); //flickity for our-company 
 
-    $('.our-founder .main-carousel').flickity({
+    $('.entry-content .our-founder .main-carousel').flickity({
       cellAlign: 'left',
       contain: true,
       wrapAround: true
