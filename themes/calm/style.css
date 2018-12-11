@@ -1885,7 +1885,8 @@ a {
 # our founder
 --------------------------------------------------------------*/
 .single-course .site-content header h1 {
-  text-align: center; }
+  text-align: center;
+  font-family: "Quicksand-Bold", sans-serif; }
 
 .single-course .site-content .entry-content figure img {
   border-radius: 50%;
@@ -1905,6 +1906,9 @@ a {
 .single-course .site-content .entry-content ul {
   list-style: none;
   margin: 0; }
+
+.single-course .site-content .entry-content .course-theme-icon img {
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Free Resources

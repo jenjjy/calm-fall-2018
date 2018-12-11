@@ -3,6 +3,7 @@
     header {
       h1 {
         text-align: center;
+        font-family: @includefont__main-bold;
       }
     }
     .entry-content {
@@ -31,6 +32,10 @@
       ul {
         list-style: none;
         margin: 0;
+      }
+
+      .course-theme-icon img {
+        width: 100%;
       }
     } //entry-content
   } //site-content
