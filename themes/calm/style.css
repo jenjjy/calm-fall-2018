@@ -1861,53 +1861,50 @@ a {
   .page-template-page-our-company .site-content h2,
   .page-template-page-our-founder .site-content h2 {
     color: black; }
-  .page-template-page-our-company .site-content .main-carousel ol,
-  .page-template-page-our-founder .site-content .main-carousel ol {
-    padding: 20px 0px; }
-  .page-template-page-our-company .site-content .main-carousel .carousel-cell,
-  .page-template-page-our-founder .site-content .main-carousel .carousel-cell {
-    width: 100%; }
-    .page-template-page-our-company .site-content .main-carousel .carousel-cell h3,
-    .page-template-page-our-founder .site-content .main-carousel .carousel-cell h3 {
-      font-size: 36px;
-      color: black; }
-    .page-template-page-our-company .site-content .main-carousel .carousel-cell p,
-    .page-template-page-our-founder .site-content .main-carousel .carousel-cell p {
-      padding-bottom: 30px; }
-  .page-template-page-our-company .site-content .main-carousel button,
-  .page-template-page-our-founder .site-content .main-carousel button {
-    display: none; }
-
-@media (min-width: 600px) {
-  .page-template-page-our-company .entry-content,
-  .page-template-page-our-founder .entry-content {
-    border: solid red; }
-    .page-template-page-our-company .entry-content .our-company,
-    .page-template-page-our-founder .entry-content .our-company {
-      border: solid green; }
-    .page-template-page-our-company .entry-content .our-mission-purpose-goals,
-    .page-template-page-our-founder .entry-content .our-mission-purpose-goals {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row;
-              flex-flow: row; }
-    .page-template-page-our-company .entry-content .our-mission,
-    .page-template-page-our-company .entry-content .our-purpose,
-    .page-template-page-our-company .entry-content .our-goals,
-    .page-template-page-our-founder .entry-content .our-mission,
-    .page-template-page-our-founder .entry-content .our-purpose,
-    .page-template-page-our-founder .entry-content .our-goals {
-      width: 33.3333%;
-      border: solid blue; } }
+  .page-template-page-our-company .site-content .main-carousel,
+  .page-template-page-our-founder .site-content .main-carousel {
+    border: solid green; }
+    .page-template-page-our-company .site-content .main-carousel ol,
+    .page-template-page-our-founder .site-content .main-carousel ol {
+      padding: 20px 0px; }
+    .page-template-page-our-company .site-content .main-carousel .carousel-cell,
+    .page-template-page-our-founder .site-content .main-carousel .carousel-cell {
+      width: 100%; }
+      .page-template-page-our-company .site-content .main-carousel .carousel-cell h3,
+      .page-template-page-our-founder .site-content .main-carousel .carousel-cell h3 {
+        font-size: 36px;
+        color: black; }
+      .page-template-page-our-company .site-content .main-carousel .carousel-cell p,
+      .page-template-page-our-founder .site-content .main-carousel .carousel-cell p {
+        padding-bottom: 30px; }
+    .page-template-page-our-company .site-content .main-carousel button,
+    .page-template-page-our-founder .site-content .main-carousel button {
+      display: none; }
 
 /*--------------------------------------------------------------
 # our founder
 --------------------------------------------------------------*/
 .single-course .site-content header h1 {
   text-align: center; }
+
+.single-course .site-content .entry-content figure img {
+  border-radius: 50%;
+  width: 60%; }
+
+.single-course .site-content .entry-content p {
+  font-size: 16px;
+  width: 90%; }
+
+.single-course .site-content .entry-content h3 {
+  text-transform: capitalize; }
+
+.single-course .site-content .entry-content hr {
+  width: 46%;
+  margin-left: 27%; }
+
+.single-course .site-content .entry-content ul {
+  list-style: none;
+  margin: 0; }
 
 /*--------------------------------------------------------------
 # Free Resources
@@ -1926,7 +1923,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .free-resource-banner h1 {
+    font-size: 42px;
+    text-align: center; }
   .free-resource-banner img {
-    width: 268.52px;
-    height: 167px;
-    border-radius: 25px; }
+    width: 328px;
+    height: 200px;
+    border-radius: 25px;
+    margin-bottom: 25px; }
+  .free-resource-banner a {
+    font-size: 24px;
+    padding: 0.8rem 2rem; }

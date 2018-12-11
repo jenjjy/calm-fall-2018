@@ -2,12 +2,9 @@
 # our company  and our fonder
 --------------------------------------------------------------*/
 
-
 .page-template-page-our-company,
 .page-template-page-our-founder {
-
     .site-content {
-
         h2 {
             color: black;
         }
@@ -15,9 +12,11 @@
         padding: 10px 20px;
 
         .main-carousel {
-            ol {
-                padding: 20px 0px;
+            border: solid green;
 
+            ol {
+
+                padding: 20px 0px;
             }
 
             .carousel-cell {
@@ -30,70 +29,48 @@
 
                 p {
                     padding-bottom: 30px;
-
                 }
-
             }
 
             button {
-
                 display: none;
             }
-
         }
-
     }
-
-
-    @include tablet {
-
-        .entry-content {
-            border: solid red;
-
-            .our-company {
-                border: solid green;
-            }
-
-            .our-mission-purpose-goals {
-                @include flex(row, null, null);
-            }
-
-            .our-mission,
-            .our-purpose,
-            .our-goals {
-                @include heightandwidth(null, 33.3333%);
-                border: solid blue;
-            }
-
-
-        }
-
-
-    }
-
 }
 
 
 
+// @include tablet {
 
+//     .our-company {
+//         border: green solid;
+//         display: flex;
+//     }
 
+//     .founder-img {
+//         border: solid red;
+//         @include heightandwidth(null, 30%);
+//     }
 
+//     .our-company-text {
+//         border: solid blue;
+//         @include heightandwidth(null, 70%);
+//     }
 
+//     .main-carousel {
+//         display: flex;
 
+//         .carousel-cell {
+//             border: solid blue;
+//             @include heightandwidth(null, 33.3333%);
+//         }
+//     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+//     ol {
+//         display: none;
+//     }
+// }
 
 
 /*--------------------------------------------------------------
