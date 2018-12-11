@@ -10,6 +10,10 @@
         width: 700px;
         transform: translate(0%);
       }
+      @include desktop {
+        width: 1240px;
+        height: 700px;
+      }
     }
   }
 
@@ -24,18 +28,36 @@
   }
 
   .wp-block-image {
-    margin-top: 0;
     display: none;
     @include tablet {
+      height: 1319px;
+      margin-top: 0;
+      margin-bottom: 0;
       display: block;
       position: relative;
       transform: translate(-4.5%, 0);
     }
+    @include desktop {
+      margin-left: 4%;
+    }
+
+    img {
+      @include tablet {
+        margin-left: 5%;
+        // transform: scale(0.8) translateY(-206px);
+        height: inherit;
+      }
+      @include desktop {
+        transform: translateX(-40px);
+      }
+    }
   }
+
   .campaign-features {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     @include tablet {
       position: absolute;
       flex-direction: row;
@@ -68,26 +90,151 @@
   }
 
   .campaign-features:nth-child(1) {
-    top: 940px;
-    left: 0;
     @include tablet {
+      top: 940px;
+      left: 0;
       flex-direction: row-reverse;
+    }
+    @include desktop {
+      top: 1340px;
+      left: 125px;
+      right: 340px;
     }
     img {
       @include tablet {
         width: 20%;
-        margin-left: 30%;
-        margin-right: 3%;
+        margin-left: 20%;
+        margin-right: 8%;
+      }
+      @include desktop {
+        width: 16%;
+        margin-left: 20%;
+        margin-right: 8%;
       }
     }
     .campaign-text {
-      @include tablet {
-        align-self: center;
+      h2 {
+        @include tablet {
+          align-self: left;
+          margin-left: 5%;
+        }
       }
     }
   }
   .campaign-features:nth-child(2) {
-    top: 1200px;
-    left: 0;
+    @include tablet {
+      top: 1180px;
+      left: 0;
+    }
+    @include desktop {
+      top: 1570px;
+      left: 310px;
+      right: 120px;
+    }
+    img {
+      @include tablet {
+        width: 20%;
+        margin-right: 5%;
+        margin-left: 3%;
+      }
+      @include desktop {
+        width: 16%;
+        margin-right: 5%;
+        margin-left: 3%;
+      }
+    }
+    .campaign-text {
+      h2 {
+        @include tablet {
+          align-self: center;
+        }
+        @include desktop {
+          align-self: flex-start;
+          margin-left: 5%;
+        }
+      }
+    }
+  }
+
+  .campaign-features:nth-child(3) {
+    @include tablet {
+      top: 1470px;
+      left: 10px;
+      right: 60px;
+      flex-direction: row-reverse;
+    }
+    @include desktop {
+      top: 1860px;
+      left: 120px;
+      right: 410px;
+    }
+    img {
+      @include tablet {
+        width: 20%;
+        margin-left: 5%;
+        margin-right: 3%;
+      }
+      @include desktop {
+        width: 17%;
+        margin-left: 5%;
+        margin-right: 3%;
+      }
+    }
+    .campaign-text {
+      h2 {
+        @include tablet {
+          align-self: center;
+        }
+        @include desktop {
+          align-self: flex-start;
+          margin-left: 5%;
+        }
+      }
+    }
+  }
+
+  .campaign-features:nth-child(4) {
+    @include tablet {
+      top: 1750px;
+      left: 40px;
+      right: 40px;
+    }
+    @include desktop {
+      top: 2140px;
+      left: 70px;
+      right: 0px;
+    }
+    img {
+      @include tablet {
+        width: 25%;
+        margin-right: 5%;
+        margin-left: 3%;
+      }
+      @include desktop {
+        width: 12%;
+        margin-right: 5%;
+        margin-left: 3%;
+      }
+    }
+    .campaign-text {
+      h2 {
+        @include tablet {
+          align-self: center;
+        }
+      }
+      p {
+        @include desktop {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .button-bottom {
+    display: none;
+    @include tablet {
+      display: block;
+      margin-top: -10px;
+    }
   }
 } //page-id-68

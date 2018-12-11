@@ -2,53 +2,82 @@
 # our company  and our fonder
 --------------------------------------------------------------*/
 
-.page-template-page-our-founder,
-.page-template-page-our-company {
+
+.page-template-page-our-company,
+.page-template-page-our-founder {
+
     .site-content {
 
-        .founder-site-main,
-        .company-site-main {
-
-            .entry-header {
-
-                .entry-title {
-                    text-align: center;
-
-                }
-
-            }
-
+        h2 {
+            color: black;
         }
 
-        @include tablet {
+        padding: 10px 20px;
 
-            .entry-content {
-                border: solid red;
-
-                .our-company {
-                    border: solid green;
-                }
-
-                .our-mission-purpose-goals {
-                    @include flex(row, null, null);
-                }
-
-                .our-mission,
-                .our-purpose,
-                .our-goals {
-                    @include heightandwidth(null, 33.3333%);
-                    border: solid blue;
-                }
-
+        .main-carousel {
+            ol {
+                padding: 20px 0px;
 
             }
 
+            .carousel-cell {
+                @include heightandwidth (null, 100%);
+
+                h3 {
+                    font-size: 36px;
+                    color: black;
+                }
+
+                p {
+                    padding-bottom: 30px;
+
+                }
+
+            }
+
+            button {
+
+                display: none;
+            }
 
         }
 
     }
 
+
+
+
+
+
+    @include tablet {
+
+        .entry-content {
+            border: solid red;
+
+            .our-company {
+                border: solid green;
+            }
+
+            .our-mission-purpose-goals {
+                @include flex(row, null, null);
+            }
+
+            .our-mission,
+            .our-purpose,
+            .our-goals {
+                @include heightandwidth(null, 33.3333%);
+                border: solid blue;
+            }
+
+
+        }
+
+
+    }
+
 }
+
+
 
 
 

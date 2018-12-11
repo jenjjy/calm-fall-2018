@@ -37,17 +37,23 @@ get_header(); ?>
 
         <!--- CONTENT -->
         <?php /* Start the Loop */ ?>
-        <?php while (have_posts()) : the_post(); ?>
+        <?php while (have_posts()) :
+            the_post(); ?>
 
             <?php get_template_part('template-parts/content'); ?>
             <!--- FOUNDER -->
             <div class="founder-container">
-                <h1>
-                    <?php
-                    echo CFS()->get('listen_to_founder_header');
-                    ?>
-                </h1>
-                <div class="button-container">
+                <div class="border">
+                    <iframe src=" <?php
+                    echo CFS()->get('listen_to_founder_video');
+                    ?>" frameborder="0"></iframe>
+                </div>
+                <div class="founder-text-container">
+                    <h1>
+                        <?php
+                        echo CFS()->get('listen_to_founder_header');
+                        ?>
+                    </h1>
                     <?php
                     echo CFS()->get('listen_to_founder_button');
                     ?>

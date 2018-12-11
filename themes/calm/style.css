@@ -1320,12 +1320,35 @@ a {
     margin: 0 auto; }
 
 @media (min-width: 600px) {
+  .founder-container .border {
+    overflow: hidden;
+    border-radius: 25px;
+    height: 382px;
+    width: 672px; } }
+
+@media (min-width: 600px) {
   .founder-container {
-    margin-top: 24%;
-    margin-left: 6%;
-    text-align: inherit;
-    max-width: 28%;
-    float: left; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse nowrap;
+            flex-flow: row-reverse nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .founder-container iframe {
+      height: 380px;
+      width: 670px; } }
+
+@media (min-width: 600px) {
+  .founder-container .founder-text-container {
+    text-align: left;
+    max-width: 36%; } }
 
 .solutions-container .solution-text-desktop {
   display: none; }
@@ -1460,7 +1483,9 @@ a {
     margin-top: auto; }
     @media (min-width: 600px) {
       .campaign-container h2 {
-        margin: 0 auto; } }
+        margin: 0 auto;
+        text-align: left;
+        padding: 8% 0; } }
   .campaign-container .campaign-logo {
     margin: 30px auto;
     height: 150px;
@@ -1470,13 +1495,16 @@ a {
       display: none; } }
   @media (min-width: 600px) {
     .campaign-container .campaign-button {
-      margin: 50px; } }
+      margin: 50px;
+      padding-left: 50px; } }
 
 .campaign-logo-container-desktop {
   display: none; }
   @media (min-width: 600px) {
     .campaign-logo-container-desktop {
-      display: inline-block; } }
+      display: inline-block; }
+      .campaign-logo-container-desktop img {
+        margin-bottom: 10%; } }
 
 .view-courses {
   display: -webkit-box;
@@ -1589,6 +1617,10 @@ a {
       width: 700px;
       -webkit-transform: translate(0%);
               transform: translate(0%); } }
+  @media (min-width: 1240px) {
+    .page-id-68 .wp-block-embed-vimeo iframe {
+      width: 1240px;
+      height: 700px; } }
 
 .page-id-68 .wp-block-button {
   margin: 3rem 0; }
@@ -1605,14 +1637,27 @@ a {
       background: #1c88a8; }
 
 .page-id-68 .wp-block-image {
-  margin-top: 0;
   display: none; }
   @media (min-width: 600px) {
     .page-id-68 .wp-block-image {
+      height: 1319px;
+      margin-top: 0;
+      margin-bottom: 0;
       display: block;
       position: relative;
       -webkit-transform: translate(-4.5%, 0);
               transform: translate(-4.5%, 0); } }
+  @media (min-width: 1240px) {
+    .page-id-68 .wp-block-image {
+      margin-left: 4%; } }
+  @media (min-width: 600px) {
+    .page-id-68 .wp-block-image img {
+      margin-left: 5%;
+      height: inherit; } }
+  @media (min-width: 1240px) {
+    .page-id-68 .wp-block-image img {
+      -webkit-transform: translateX(-40px);
+              transform: translateX(-40px); } }
 
 .page-id-68 .campaign-features {
   display: -webkit-box;
@@ -1624,7 +1669,10 @@ a {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (min-width: 600px) {
     .page-id-68 .campaign-features {
       position: absolute;
@@ -1658,25 +1706,203 @@ a {
     margin: 0 5% 2.5rem 5%;
     text-align: center; }
 
-.page-id-68 .campaign-features:nth-child(1) {
-  top: 940px;
-  left: 0; }
-  @media (min-width: 600px) {
-    .page-id-68 .campaign-features:nth-child(1) {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse; } }
-  @media (min-width: 600px) {
-    .page-id-68 .campaign-features:nth-child(1) img {
-      width: 20%;
-      margin-left: 30%;
-      margin-right: 3%; } }
-  @media (min-width: 600px) {
-    .page-id-68 .campaign-features:nth-child(1) .campaign-text {
-      -ms-flex-item-align: center;
-          align-self: center; } }
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(1) {
+    top: 940px;
+    left: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; } }
 
-.page-id-68 .campaign-features:nth-child(2) {
-  top: 1200px;
-  left: 0; }
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(1) {
+    top: 1340px;
+    left: 125px;
+    right: 340px; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(1) img {
+    width: 20%;
+    margin-left: 20%;
+    margin-right: 8%; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(1) img {
+    width: 16%;
+    margin-left: 20%;
+    margin-right: 8%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(1) .campaign-text h2 {
+    -ms-flex-item-align: left;
+        align-self: left;
+    margin-left: 5%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(2) {
+    top: 1180px;
+    left: 0; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(2) {
+    top: 1570px;
+    left: 310px;
+    right: 120px; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(2) img {
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 3%; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(2) img {
+    width: 16%;
+    margin-right: 5%;
+    margin-left: 3%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(2) .campaign-text h2 {
+    -ms-flex-item-align: center;
+        align-self: center; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(2) .campaign-text h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 5%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(3) {
+    top: 1470px;
+    left: 10px;
+    right: 60px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(3) {
+    top: 1860px;
+    left: 120px;
+    right: 410px; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(3) img {
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 3%; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(3) img {
+    width: 17%;
+    margin-left: 5%;
+    margin-right: 3%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(3) .campaign-text h2 {
+    -ms-flex-item-align: center;
+        align-self: center; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(3) .campaign-text h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 5%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(4) {
+    top: 1750px;
+    left: 40px;
+    right: 40px; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(4) {
+    top: 2140px;
+    left: 70px;
+    right: 0px; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(4) img {
+    width: 25%;
+    margin-right: 5%;
+    margin-left: 3%; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(4) img {
+    width: 12%;
+    margin-right: 5%;
+    margin-left: 3%; } }
+
+@media (min-width: 600px) {
+  .page-id-68 .campaign-features:nth-child(4) .campaign-text h2 {
+    -ms-flex-item-align: center;
+        align-self: center; } }
+
+@media (min-width: 1240px) {
+  .page-id-68 .campaign-features:nth-child(4) .campaign-text p {
+    width: 100%; } }
+
+.page-id-68 .button-bottom {
+  display: none; }
+  @media (min-width: 600px) {
+    .page-id-68 .button-bottom {
+      display: block;
+      margin-top: -10px; } }
+
+/*--------------------------------------------------------------
+# our company  and our fonder
+--------------------------------------------------------------*/
+.page-template-page-our-company .site-content,
+.page-template-page-our-founder .site-content {
+  padding: 10px 20px; }
+  .page-template-page-our-company .site-content h2,
+  .page-template-page-our-founder .site-content h2 {
+    color: black; }
+  .page-template-page-our-company .site-content .main-carousel ol,
+  .page-template-page-our-founder .site-content .main-carousel ol {
+    padding: 20px 0px; }
+  .page-template-page-our-company .site-content .main-carousel .carousel-cell,
+  .page-template-page-our-founder .site-content .main-carousel .carousel-cell {
+    width: 100%; }
+    .page-template-page-our-company .site-content .main-carousel .carousel-cell h3,
+    .page-template-page-our-founder .site-content .main-carousel .carousel-cell h3 {
+      font-size: 36px;
+      color: black; }
+    .page-template-page-our-company .site-content .main-carousel .carousel-cell p,
+    .page-template-page-our-founder .site-content .main-carousel .carousel-cell p {
+      padding-bottom: 30px; }
+  .page-template-page-our-company .site-content .main-carousel button,
+  .page-template-page-our-founder .site-content .main-carousel button {
+    display: none; }
+
+@media (min-width: 600px) {
+  .page-template-page-our-company .entry-content,
+  .page-template-page-our-founder .entry-content {
+    border: solid red; }
+    .page-template-page-our-company .entry-content .our-company,
+    .page-template-page-our-founder .entry-content .our-company {
+      border: solid green; }
+    .page-template-page-our-company .entry-content .our-mission-purpose-goals,
+    .page-template-page-our-founder .entry-content .our-mission-purpose-goals {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row;
+              flex-flow: row; }
+    .page-template-page-our-company .entry-content .our-mission,
+    .page-template-page-our-company .entry-content .our-purpose,
+    .page-template-page-our-company .entry-content .our-goals,
+    .page-template-page-our-founder .entry-content .our-mission,
+    .page-template-page-our-founder .entry-content .our-purpose,
+    .page-template-page-our-founder .entry-content .our-goals {
+      width: 33.3333%;
+      border: solid blue; } }
+
+/*--------------------------------------------------------------
+# our founder
+--------------------------------------------------------------*/
