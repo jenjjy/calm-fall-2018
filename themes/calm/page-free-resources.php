@@ -15,14 +15,33 @@ get_header(); ?>
                 echo CFS()->get('free_resources_header');
                 ?>
             </h1>
+            <h1 class="free-resource-header-desktop">
+                <?php
+                echo CFS()->get('free_resources_header_desktop');
+                ?>
+            </h1>
 
-            <img src=" <?php
-            echo CFS()->get('free_resources_image');
-            ?>" alt="">
+            <div>
+                <h2>
+                    <?php
+                    echo CFS()->get('free_resources_text_header_desktop');
+                    ?>
+                </h2>
+                <p>
+                    <?php
+                    echo CFS()->get('free_resources_text_desktop');
+                    ?>
+                </p>
+                <img src=" <?php
+                echo CFS()->get('free_resources_image');
+                ?>" alt="">
 
-            <?php
-            echo CFS()->get('free_resources_button');
-            ?>
+                <?php
+                echo CFS()->get('free_resources_button');
+                ?>
+            </div>
+
+
         </div>
         <?php while (have_posts()) : the_post(); ?>
 
