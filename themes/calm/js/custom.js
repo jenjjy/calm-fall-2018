@@ -1,7 +1,5 @@
 (function($) {
   $(function() {
-    event.preventDefault();
-
     // slide menu
     let mobileMenu = $('#menu-slide');
     let mobileWidth = $('#page').width();
@@ -9,16 +7,25 @@
 
     console.log(mobileWidth);
 
-    $('.sub-menu')
-      .parent()
-      .click(function() {
-        if (mobileWidth <= 600) {
-          //add prevent default, toggle class, target parent of submenu
+    if (location.href.indexOf('#') != -1) {
+      event.preventDefault();
+      console.log('dog');
+      navBar();
+    }
 
-          $('.sub-menu').slideToggle('show');
-          console.log('afternoon');
-        }
-      }); // end of .sub-menu
+    function navBar() {
+      $('.sub-menu')
+        .parent()
+        .click(function() {
+          if (mobileWidth <= 600) {
+            event.preventDefault();
+
+            //add prevent default, toggle class, target parent of submenu
+            $(this).slideToggle('show');
+            console.log('afternoon');
+          }
+        }); // end of .sub-z
+    }
 
     hamburger.on('click', function() {
       $(this).toggleClass('open');
