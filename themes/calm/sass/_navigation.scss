@@ -233,6 +233,12 @@ ul.sub-menu {
   }
 }
 
+.sub-menu.show {
+  background-color: $primary__color;
+  color: $color__white;
+  transition: all 0.3s ease-in-out;
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
@@ -282,6 +288,7 @@ ul.sub-menu {
   z-index: 10;
   top: 0px;
   transition: all 0.5s ease-in-out;
+
   @include tablet {
     display: none;
   }
@@ -301,7 +308,7 @@ ul.sub-menu {
 
         &:hover {
           // background-color: $red;
-          transition: all 0.5s ease;
+          transition: all 0.2s ease;
         }
 
         a {
