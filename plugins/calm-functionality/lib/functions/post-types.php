@@ -5,7 +5,6 @@
  * @link  http://codex.wordpress.org/Function_Reference/register_post_type
  */
 
-// Add your custom post types here...
 // Register Testimony Post Type
 function calm_testimony() {
 
@@ -55,7 +54,7 @@ function calm_testimony() {
 		'can_export'            => true,
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
+		'publicly_queryable'    => false,
 		'capability_type'       => 'page',
 	);
 	register_post_type( 'testimony', $args );
@@ -63,7 +62,7 @@ function calm_testimony() {
 }
 add_action( 'init', 'calm_testimony', 0 );
 
-// Register Custom Post Type
+// Register Courses Custom Post Type
 function Calm_course() {
 
 	$labels = array(
@@ -169,7 +168,7 @@ function team_member_post_type() {
 		'can_export'            => true,
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
+		'publicly_queryable'    => false,
 		'capability_type'       => 'page',
 	);
 	register_post_type( 'team_member', $args );
