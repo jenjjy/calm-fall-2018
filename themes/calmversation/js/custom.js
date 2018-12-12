@@ -61,5 +61,14 @@
         wrapAround: true
       }); //flickity for our-company & our-founder
     }
+
+    //course-page readmore
+    let extraText = $('.course-text-more');
+    let readMore = $('.readmore .wp-block-button__link');
+
+    readMore.click(function() {
+      console.log('asdf');
+      extraText.toggleClass('hide-text');
+    });
   }); // end of doc ready
 })(jQuery);

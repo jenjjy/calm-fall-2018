@@ -2192,3 +2192,20 @@ a {
 
 .space-thought-header-desktop {
   display: none; }
+
+.page-id-80 .hide-text {
+  display: none; }
+
+.page-id-80 .readmore {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  background: none;
+  color: black; }
+
+.page-id-80 .wp-block-button {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  background: none;
+  color: white; }
