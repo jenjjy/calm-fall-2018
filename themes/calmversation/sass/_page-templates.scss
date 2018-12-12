@@ -2,4 +2,44 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* Testimony */
+.page-title {
+  text-align: center;
+}
+.testimony {
+  @include flex(column nowrap, flex-start, center);
+  padding: 0 1rem;
+  height: 430px;
+  width: 100%;
+
+  @include tablet {
+    @include flex(row nowrap, center, center);
+  }
+
+  .testimony-img {
+    height: auto;
+    // margin: auto;
+  }
+  img {
+    border-radius: 20%;
+    max-height: 410px;
+    width: auto;
+  }
+
+  .testimony-content {
+    font-size: 1rem;
+    text-align: center;
+    width: 280px;
+
+    @include tablet {
+      max-width: 669px;
+    }
+  }
+}
+
+.testimony-carousel {
+  .flickity-page-dots {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}

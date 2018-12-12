@@ -34,16 +34,32 @@
       mobileMenu.removeClass('menu-slide show');
     });
 
-    $('.entry-content .main-carousel').flickity({
+    $('.testimony-carousel').flickity({
       cellAlign: 'left',
       contain: true,
-      wrapAround: true
-    }); //flickity for our-company
+      wrapAround: true,
+      prevNextButtons: false,
+      autoPlay: 8000
+    }); //carousel testimony
 
     $('.entry-content .main-carousel').flickity({
       cellAlign: 'left',
       contain: true,
-      wrapAround: true
+      wrapAround: true,
+      prevNextButtons: false,
+      autoPlay: 8000
     }); //flickity for our-founder
+
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      $('.main-carousel').flickity({
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true
+      }); //flickity for our-company & our-founder
+    }
   }); // end of doc ready
 })(jQuery);
