@@ -478,34 +478,86 @@ table {
 --------------------------------------------------------------*/
 /* Buttons */
 .button-purchase, .cfs-hyperlink {
-  background: #b4de96;
-  border-color: #b4de96;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #b4de96;
+  color: white;
   border-radius: 25px;
-  color: #fff;
+  background: #b4de96;
+  text-align: center;
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
   font-family: "Muli", sans-serif;
   padding: 0.8rem 6rem;
   font-size: 17px;
   font-weight: bold;
   list-style: none;
   text-decoration: none; }
+  .button-purchase:after, .cfs-hyperlink:after {
+    position: absolute;
+    -webkit-transition: .3s;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #f7f7f7; }
   .button-purchase:hover, .cfs-hyperlink:hover {
-    background: #1c88a8; }
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 0px 8px #9FC984;
+            box-shadow: 0px 0px 0px 8px #9FC984;
+    background-color: #9FC984;
+    border: #9FC984; }
+    .button-purchase:hover:after, .cfs-hyperlink:hover:after {
+      width: 0%; }
 
 .button {
-  background: #b4de96;
-  border-color: #b4de96;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #b4de96;
+  color: white;
   border-radius: 25px;
-  color: #fff;
+  background: #b4de96;
+  text-align: center;
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
   font-family: "Muli", sans-serif;
   padding: 0.8rem 6rem;
   font-size: 17px;
   font-weight: bold;
   list-style: none;
   text-decoration: none; }
+  .button:after {
+    position: absolute;
+    -webkit-transition: .3s;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #f7f7f7; }
   .button:hover {
-    background: #1c88a8; }
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 0px 8px #9FC984;
+            box-shadow: 0px 0px 0px 8px #9FC984;
+    background-color: #9FC984;
+    border: #9FC984; }
+    .button:hover:after {
+      width: 0%; }
 
 /* Fields */
 input[type='text'],
@@ -543,7 +595,7 @@ textarea {
 a {
   color: #9ec284; }
   a:hover, a:focus, a:active {
-    color: #1c88a8; }
+    color: white; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1167,7 +1219,7 @@ object {
         font-family: "Muli-SemiBold", sans-serif;
         font-size: 1rem; }
         .login a:hover {
-          color: #1c88a8; } }
+          color: white; } }
 
 .menu {
   display: -webkit-box;
@@ -1720,13 +1772,39 @@ object {
     .page-id-68 .wp-block-button {
       margin-bottom: 0; } }
   .page-id-68 .wp-block-button a {
-    background: #b4de96;
-    border-color: #b4de96;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #b4de96;
+    color: white;
     border-radius: 25px;
-    color: #fff;
-    text-transform: uppercase; }
+    background: #b4de96;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: 1s;
+    transition: 1s; }
+    .page-id-68 .wp-block-button a:after {
+      position: absolute;
+      -webkit-transition: .3s;
+      transition: .3s;
+      content: '';
+      width: 0;
+      left: 50%;
+      bottom: 0;
+      height: 3px;
+      background: #f7f7f7; }
     .page-id-68 .wp-block-button a:hover {
-      background: #1c88a8; }
+      cursor: pointer;
+      -webkit-box-shadow: 0px 0px 0px 8px #9FC984;
+              box-shadow: 0px 0px 0px 8px #9FC984;
+      background-color: #9FC984;
+      border: #9FC984; }
+      .page-id-68 .wp-block-button a:hover:after {
+        width: 0%; }
 
 .page-id-68 .wp-block-image {
   display: none; }
