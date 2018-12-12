@@ -1948,9 +1948,18 @@ a {
       font-size: 16px;
       margin: 0px; }
   .site-content .main-carousel {
-    border: solid blue; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 150px 40px 40px 40px; }
     .site-content .main-carousel .carousel-cell {
-      width: 33.3333%; } }
+      width: 33.3333%;
+      padding: 50px; }
+      .site-content .main-carousel .carousel-cell h3 {
+        text-transform: capitalize;
+        font-family: "Quicksand-Bold", sans-serif; }
+      .site-content .main-carousel .carousel-cell p {
+        font-size: 16px; } }
 
 /*--------------------------------------------------------------
 # our founder
