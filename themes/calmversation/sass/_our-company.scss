@@ -9,10 +9,6 @@
             color: black;
         }
 
-
-
-
-
         .main-carousel {
 
 
@@ -115,3 +111,85 @@
 /*--------------------------------------------------------------
 # our founder
 --------------------------------------------------------------*/
+@include tablet {
+    .site-content {
+
+
+        .our-founder {
+
+            display: flex;
+            margin: 60px;
+
+            h2 {
+                text-align: left;
+                font-size: 35px;
+            }
+        }
+
+        .our-founder .founder-img {
+
+            @include heightandwidth(null, 50%);
+
+
+
+            img {
+
+                @include heightandwidth(auto, auto);
+            }
+        }
+
+        .our-founder-text {
+
+
+            padding-top: 30px;
+
+            h2 {
+                margin: 0px;
+                padding: 0px;
+
+
+            }
+
+
+            @include heightandwidth(null, 70%);
+
+
+            p {
+                text-align: left;
+                font-size: 16px;
+
+                margin: 0px;
+
+
+            }
+        }
+
+        .main-carousel {
+            display: flex;
+            margin: 150px 40px 40px 40px;
+
+
+            .carousel-cell {
+                @include heightandwidth(null, 33.3333%);
+
+                padding: 50px;
+
+                h3 {
+
+                    text-transform: capitalize;
+                    font-family: $font__main-bold, $font__sec-semibold;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+
+
+
+            }
+        }
+
+
+    }
+}
