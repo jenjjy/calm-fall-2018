@@ -7,10 +7,15 @@
 
 get_header(); ?>
 
-<div id="primary" class="founder-content-area">
-    <main id="main" class="founder-site-main" role="main">
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
 
         <?php the_title('<h1 class="page-title">', '</h1>'); ?>
+
+	<?php if (has_post_thumbnail()) : ?>
+				<?php the_post_thumbnail('large'); ?>
+			<?php endif; ?>
+
 
         <?php
         $args = array(
@@ -22,18 +27,26 @@ get_header(); ?>
         $testimonials = new WP_Query($args);
         if ($testimonials->have_posts()) :
             ?>
-            <ul>
+
+            <section class="team-page">
+
                 <?php
                 while ($testimonials->have_posts()) :
                     $testimonials->the_post();
                     ?>
 
-                    <li><?php printf('%1$s - %2$s', get_the_title(), get_the_content()); ?></li>
+					<div class="team-member">
+
+						<div><?php echo the_post_thumbnail('medium') ; ?></div>
+						<div class="member-name"><?php echo get_the_title() ; ?></div>
+						<div class="member-role"><?php echo get_the_content(); ?></div>
+
+					</div>
 
                 <?php endwhile;
                 wp_reset_postdata(); ?>
 
-            </ul>
+            </section>
 
 
             <div class="tedx-video">
