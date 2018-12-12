@@ -1940,43 +1940,61 @@ a {
 /*--------------------------------------------------------------
 # our company  and our fonder
 --------------------------------------------------------------*/
-.page-template-page-our-company .site-content,
-.page-template-page-our-founder .site-content {
-  padding: 10px 20px; }
-  .page-template-page-our-company .site-content h2,
-  .page-template-page-our-founder .site-content h2 {
+.page-template-page-our-company .site-content h2,
+.page-template-page-our-founder .site-content h2 {
+  color: black; }
+
+.page-template-page-our-company .site-content .main-carousel ol,
+.page-template-page-our-founder .site-content .main-carousel ol {
+  padding: 20px 0px; }
+
+.page-template-page-our-company .site-content .main-carousel .carousel-cell,
+.page-template-page-our-founder .site-content .main-carousel .carousel-cell {
+  width: 100%; }
+  .page-template-page-our-company .site-content .main-carousel .carousel-cell h3,
+  .page-template-page-our-founder .site-content .main-carousel .carousel-cell h3 {
+    font-size: 36px;
     color: black; }
-  .page-template-page-our-company .site-content .main-carousel ol,
-  .page-template-page-our-founder .site-content .main-carousel ol {
-    padding: 20px 0px; }
-  .page-template-page-our-company .site-content .main-carousel .carousel-cell,
-  .page-template-page-our-founder .site-content .main-carousel .carousel-cell {
-    width: 100%; }
-    .page-template-page-our-company .site-content .main-carousel .carousel-cell h3,
-    .page-template-page-our-founder .site-content .main-carousel .carousel-cell h3 {
-      font-size: 36px;
-      color: black; }
-    .page-template-page-our-company .site-content .main-carousel .carousel-cell p,
-    .page-template-page-our-founder .site-content .main-carousel .carousel-cell p {
-      padding-bottom: 30px; }
-  .page-template-page-our-company .site-content .main-carousel button,
-  .page-template-page-our-founder .site-content .main-carousel button {
-    display: none; }
+  .page-template-page-our-company .site-content .main-carousel .carousel-cell p,
+  .page-template-page-our-founder .site-content .main-carousel .carousel-cell p {
+    padding-bottom: 30px; }
+
+.page-template-page-our-company .site-content .main-carousel button,
+.page-template-page-our-founder .site-content .main-carousel button {
+  display: none; }
 
 @media (min-width: 600px) {
-  .our-company {
-    border: green solid;
+  .site-content .our-company {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-  .founder-img {
-    border: solid red;
-    width: 30%; }
-  .our-company-text {
-    border: solid blue;
+    display: flex;
+    margin: 60px; }
+    .site-content .our-company h2 {
+      text-align: left;
+      font-size: 30px;
+      height: auto; }
+  .site-content .founder-img {
+    width: 50%;
+    margin: 0px; }
+  .site-content .our-company-text {
     width: 70%; }
-  .main-carousel .carousel-cell {
-    width: 33.3333%; } }
+    .site-content .our-company-text p {
+      text-align: left;
+      font-size: 16px;
+      margin: 0px; }
+  .site-content .main-carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 150px 40px 40px 40px; }
+    .site-content .main-carousel .carousel-cell {
+      width: 33.3333%;
+      padding: 50px; }
+      .site-content .main-carousel .carousel-cell h3 {
+        text-transform: capitalize;
+        font-family: "Quicksand-Bold", sans-serif; }
+      .site-content .main-carousel .carousel-cell p {
+        font-size: 16px; } }
 
 /*--------------------------------------------------------------
 # our founder
