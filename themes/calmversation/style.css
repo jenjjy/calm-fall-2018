@@ -1957,7 +1957,7 @@ a {
       padding: 50px; }
       .site-content .main-carousel .carousel-cell h3 {
         text-transform: capitalize;
-        font-family: "Quicksand-Bold", sans-serif; }
+        font-family: "Quicksand-Bold", sans-serif, "Muli-SemiBold", sans-serif; }
       .site-content .main-carousel .carousel-cell p {
         font-size: 16px; } }
 
