@@ -19,6 +19,36 @@
         }
       }
 
+      .theme-bar img {
+        display: none;
+        @include tablet {
+          display: block;
+          position: relative;
+          left: 120px;
+          top: 140px;
+          z-index: -3;
+          width: 520px;
+          border-radius: 0;
+        }
+        @include desktop {
+          width: 1100px;
+        }
+      }
+
+      .wp-block-columns {
+        flex-direction: row;
+        @include tablet {
+          display: flex;
+          flex-flow: row nowrap;
+          width: 100%;
+        }
+
+        .course-theme-image img {
+          @include tablet {
+            width: 75%;
+          }
+        }
+      }
       figure {
         img {
           border-radius: 50%;

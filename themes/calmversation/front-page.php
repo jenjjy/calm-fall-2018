@@ -43,11 +43,9 @@ get_header(); ?>
             <?php get_template_part('template-parts/content'); ?>
             <!--- FOUNDER -->
             <div class="founder-container">
-                <div class="border">
-                    <iframe src=" <?php
-                    echo CFS()->get('listen_to_founder_video');
-                    ?>" frameborder="0"></iframe>
-                </div>
+                <iframe src=" <?php
+                echo CFS()->get('listen_to_founder_video');
+                ?>" frameborder="0"></iframe>
                 <div class="founder-text-container">
                     <h1>
                         <?php
