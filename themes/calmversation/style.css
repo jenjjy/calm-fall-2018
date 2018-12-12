@@ -1909,6 +1909,40 @@ a {
   .single-course .site-content .entry-content h2 {
     padding-top: 0; } }
 
+.single-course .site-content .entry-content .theme-bar img {
+  display: none; }
+  @media (min-width: 600px) {
+    .single-course .site-content .entry-content .theme-bar img {
+      display: block;
+      position: relative;
+      left: 120px;
+      top: 140px;
+      z-index: -3;
+      width: 520px;
+      border-radius: 0; } }
+  @media (min-width: 1240px) {
+    .single-course .site-content .entry-content .theme-bar img {
+      width: 1100px; } }
+
+.single-course .site-content .entry-content .wp-block-columns {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  @media (min-width: 600px) {
+    .single-course .site-content .entry-content .wp-block-columns {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      width: 100%; } }
+  @media (min-width: 600px) {
+    .single-course .site-content .entry-content .wp-block-columns .course-theme-image img {
+      width: 75%; } }
+
 .single-course .site-content .entry-content figure img {
   border-radius: 50%;
   width: 60%; }
