@@ -36,13 +36,17 @@
     $('.testimony-carousel').flickity({
       cellAlign: 'left',
       contain: true,
-      wrapAround: true
+      wrapAround: true,
+      prevNextButtons: false,
+      autoPlay: 8000
     }); //carousel testimony
 
     $('.entry-content .main-carousel').flickity({
       cellAlign: 'left',
       contain: true,
-      wrapAround: true
+      wrapAround: true,
+      prevNextButtons: false,
+      autoPlay: 8000
     }); //flickity for our-founder
   }); // end of doc ready
 })(jQuery);
