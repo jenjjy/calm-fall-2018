@@ -68,27 +68,27 @@
             }
         }
 
-        // .main-carousel {
-        //     display: flex;
-        //     margin: 150px 40px 40px 40px;
+        .main-carousel {
+            display: flex;
+            margin: 150px 40px 40px 40px;
 
 
-        //     .carousel-cell {
-        //         @include heightandwidth(null, 33.3333%);
+            .carousel-cell {
+                @include heightandwidth(null, 33.3333%);
 
-        //         padding: 50px;
+                padding: 50px;
 
-        //         h3 {
-        //             text-transform: capitalize;
-        //             font-family: $font__main-bold, $font__sec-semibold;
-        //         }
+                h3 {
+                    text-transform: capitalize;
+                    font-family: $font__main-bold, $font__sec-semibold;
+                }
 
-        //         p {
-        //             font-size: 16px;
-        //         }
+                p {
+                    font-size: 16px;
+                }
 
-        //     }
-        // }
+            }
+        }
 
 
     }
