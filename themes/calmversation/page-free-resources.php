@@ -34,15 +34,19 @@ get_header(); ?>
                 </p>
                 <img src=" <?php
                 echo CFS()->get('free_resources_image');
-                ?>" alt="">
+                ?>" alt="" class="free-resource-image-mobile">
 
                 <?php
                 echo CFS()->get('free_resources_button');
                 ?>
             </div>
 
+            <img src=" <?php
+            echo CFS()->get('free_resources_image');
+            ?>" alt="" class="free-resource-image-desktop">
 
         </div>
+
 
         <div class="free-resource-info">
             <h1 class="space-thought-header-desktop">
@@ -80,7 +84,10 @@ get_header(); ?>
             foreach ($loop as $row) : ?>
                 <div class="free-resource-video">
                     <iframe src="<?php echo $row['free_resources_video_input']; ?>" frameborder="0"></iframe>
-                    <h2><?php echo $row['free_resources_header']; ?></h2>
+                    <div class="free-resource-video-description">
+                        <h2><?php echo $row['free_resources_header']; ?></h2>
+                        <p><?php echo $row['free_resources_text_desktop']; ?></p>
+                    </div>
                 </div>
             <?php endforeach; ?>
 
