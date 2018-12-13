@@ -699,6 +699,8 @@ a {
         .main-navigation ul ul a {
           color: #787878;
           font-size: 1rem; } }
+    .main-navigation ul li:focus > ul {
+      left: -30%; }
     @media (min-width: 600px) {
       .main-navigation ul li:hover > ul,
       .main-navigation ul li.focus > ul {
@@ -707,7 +709,7 @@ a {
     position: relative;
     padding: 1rem 0; }
     .main-navigation li a:hover {
-      border-bottom: 2px solid #b4de96; }
+      border-bottom: 2.5px solid #b4de96; }
       @media (min-width: 600px) {
         .main-navigation li a:hover {
           border-bottom: 2px solid #b5ccdb; } }
@@ -1208,6 +1210,9 @@ a {
     color: #fff;
     font-family: "Quicksand-Medium", sans-serif;
     font-size: 21px; }
+    .login a:hover {
+      color: #b4de96;
+      font-size: 22.5px; }
   @media (min-width: 600px) {
     .login {
       font-size: 1rem;

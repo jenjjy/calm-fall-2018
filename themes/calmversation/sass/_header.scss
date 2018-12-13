@@ -43,6 +43,11 @@
     color: $color__white;
     font-family: $font__main-med;
     font-size: 21px;
+
+    &:hover {
+      color: $secondary__color;
+      font-size: 22.5px;
+    }
   }
 
   @include tablet {

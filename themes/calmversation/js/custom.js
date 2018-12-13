@@ -1,35 +1,34 @@
-(function ($) {
-  $(function () {
+(function($) {
+  $(function() {
     // slide menu
     let mobileMenu = $('#menu-slide');
     let mobileWidth = $('#page').width();
     let hamburger = $('#nav-icon');
-    let subMenu = $('.sub-menu');
 
     console.log(mobileWidth);
 
-    if ($('#site-navigation') && location.href.indexOf('#') != -1) {
-      event.preventDefault();
-      console.log('dog');
-    }
+    // Sub-Menu toggle
+    $('.menu-item a').on('click', function(event) {
+      let $select = $(this);
+      let hasLink = $select.attr('href');
 
-    if (mobileWidth < 600) {
-      subMenu.parent().click(function () {
-        console.log('less than 600');
-        subMenu.empty();
+      if (hasLink === '#') {
         event.preventDefault();
+        console.log('link exists');
+        $select.slideToggle('fast');
 
-        subMenu.children().slideToggle('show');
-        console.log('sliding yet?');
-      }); // end of .sub-menu
-    } else {}
+        console.log('menu toggling yet?');
+      } else {
+        return true;
+      }
+    }); // end of sub-menu toggle
 
-    hamburger.on('click', function () {
+    hamburger.on('click', function() {
       $(this).toggleClass('open');
       mobileMenu.toggleClass('menu-slide show');
     });
 
-    $('a').click(function () {
+    $('a').click(function() {
       mobileMenu.removeClass('menu-slide show');
     });
 
@@ -51,9 +50,7 @@
       });
     } //carousel testimony
 
-
-
-    $(window).resize(function () {
+    $(window).resize(function() {
       if ($(window).width() < 600) {
         $('.main-carousel').flickity({
           cellAlign: 'left',
@@ -62,8 +59,5 @@
         });
       }
     }); //flickity for our-company & our-founder
-
-
-
   }); // end of doc ready
 })(jQuery);
