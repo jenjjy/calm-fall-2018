@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area site-container">
     <main id="main" class="site-main" role="main">
 
         <?php the_title('<h1 class="page-title">', '</h1>'); ?>
