@@ -113,6 +113,7 @@ a {
         a {
           font-size: 18px;
           text-transform: capitalize;
+
           @include tablet {
             font-size: 1rem;
             text-transform: uppercase;
@@ -151,7 +152,9 @@ a {
 
     li:hover > ul,
     li.focus > ul {
-      left: auto;
+      @include tablet {
+        left: auto;
+      }
     }
   } // end of ul
 

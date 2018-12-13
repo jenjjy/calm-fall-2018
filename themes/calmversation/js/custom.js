@@ -33,13 +33,23 @@
       mobileMenu.removeClass('menu-slide show');
     });
 
-    $('.testimony-carousel').flickity({
-      cellAlign: 'left',
-      contain: true,
-      wrapAround: true,
-      prevNextButtons: false
-      // autoPlay: 8000
-    }); //carousel testimony
+    if (mobileWidth > 600) {
+      $('.testimony-carousel').flickity({
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true
+        // prevNextButtons: false
+        // autoPlay: 8000
+      });
+    } else {
+      $('.testimony-carousel').flickity({
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true,
+        prevNextButtons: false
+        // autoPlay: 8000
+      });
+    } //carousel testimony
 
 
 
