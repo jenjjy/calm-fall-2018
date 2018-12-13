@@ -7,27 +7,33 @@
 .team-page {
   @include tablet {
     @include flex(row wrap, flex-start, flex-start);
-    // align-content: flex-start;
-  }
-
-  .tedx-video {
-    iframe {
-      width: 100vw;
-    }
+    margin: auto;
+    padding-bottom: 3rem;
+    max-width: 1240px;
   }
 }
 
 .team-member {
   @include flex(column nowrap, flex-start, center);
+  margin: 0 auto;
 
-  img {
-    border: 5px solid $primary__color;
-    border-radius: 50%;
-    // height: 64px;
-    margin-right: 1.5rem;
-    overflow: hidden;
-    // width: 64px;
+  height: 445px;
+  width: 265px;
+
+  .member-img {
+    height: auto;
+
+    img {
+      border: 5px solid $primary__color;
+      border-radius: 50%;
+      overflow: hidden;
+
+      //   height: 100%;
+      // margin-right: 1.5rem;
+      width: auto;
+    }
   }
+
   .member-name {
     color: $black;
     font-family: $font__main-bold;
@@ -42,11 +48,50 @@
     font-family: $font__main;
     font-size: 16px;
     text-align: center;
+    text-decoration: none;
     text-transform: capitalize;
+    font-weight: 100;
 
     @include tablet {
-      font-size: 28px;
-      max-width: 270px;
+      font-size: 22px;
+      max-width: 300px;
     }
   }
+}
+
+.tedx-video {
+  @include flex(column nowrap, center, center);
+  margin-bottom: 4rem;
+
+  @include tablet {
+    @include flex(row-reverse nowrap, center, center);
+    margin-bottom: 5rem;
+    // height: 670px;
+    //   width: auto;
+  }
+
+  iframe {
+    //   box-shadow: none;
+    height: 100%;
+    width: 100vw;
+
+    @include tablet {
+      width: 670px;
+      height: auto;
+    }
+  }
+
+  .tedx-content {
+    text-align: center;
+    width: 270px;
+
+    @include tablet {
+      text-align: left;
+      padding-right: 1rem;
+      width: 470px;
+    }
+  }
+}
+.ytp-icon-large-play-button {
+  display: none;
 }
