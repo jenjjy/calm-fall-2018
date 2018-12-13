@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+form {
+  width: 80%;
+}
+
+.contact-us-container {
+  h2 {
+    text-align: center;
+  }
+}
+
+.gf_browser_safari, .gf_browser_iphone, .gform_wrapper {
+  border-radius: 15px;
+  border: 2px solid $primary__color;
+  width: 90%;
+  margin: 25px auto !important;
+}
+
+.gfield_label {
+  text-align: center;
+}
+
+.ginput_container, .ginput_container_text {
+  input {
+    background: transparent;
+  }
+
+
+  .medium {
+    border: none;
+    border-bottom: 2px solid $secondary__color;
+  }
+}
+
+.gf_progressbar_wrapper {
+  display: none;
+}
+
+textarea {
+  background: transparent;
+  border: 2px solid $secondary__color !important;
+  border-radius: 15px;
+}
+
+.gform_page_footer {
+  border-top: none !important;
+}
+
+.gform_next_button {
+  padding: .2rem 3rem !important;
+}
+
+.gform_previous_button {
+  display: none !important;
+}
+
+.gform_confirmation_wrapper{
+  padding: 25px;
+}
+
+.gform_confirmation_message_1, .gform_confirmation_message{
+  width: 80%;
+  @include flex(column nowrap, center, center);
+  text-align: center;
+  margin: $margin__auto;
+  border: 2px solid $secondary__color;
+  padding: 25px;
+  border-radius: 15px;
+}

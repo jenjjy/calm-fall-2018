@@ -33,8 +33,11 @@
 
     @include tablet {
       display: inline-block;
-      height: 350px;
-      width: 600px;
+      @include desktop {
+
+        height: 350px;
+        width: 600px;
+      }
     }
 
   }
@@ -50,7 +53,9 @@
   display: none;
   @include tablet {
     display: block;
-    font-size: 48px;
+    @include desktop {
+      font-size: 48px;
+    }
   }
 }
 
@@ -59,10 +64,13 @@
   @include flex(column nowrap, center, center);
   @include tablet {
     display: inline-block;
-    width: 37%;
+    width: 50%;
     padding-bottom: 36px;
     h2 {
       font-size: 36px;
+    }
+    @include desktop{
+      width: 37%;
     }
   }
 
