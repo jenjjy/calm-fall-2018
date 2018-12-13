@@ -42,28 +42,18 @@
     }); //carousel testimony
 
 
-    // if (screen.width <= 600) {
-    //   $('.main-carousel').flickity({
-    //     cellAlign: 'left',
-    //     contain: true,
-    //     wrapAround: true
-    //   });
-    // } else {
-    //   //do something else
-    // }
+
+    $(window).resize(function () {
+      if ($(window).width() < 600) {
+        $('.main-carousel').flickity({
+          cellAlign: 'left',
+          contain: true,
+          wrapAround: true
+        });
+      }
+    }); //flickity for our-company & our-founder
 
 
 
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
-      $('.main-carousel').flickity({
-        cellAlign: 'left',
-        contain: true,
-        wrapAround: true
-      }); //flickity for our-company & our-founder
-    }
   }); // end of doc ready
 })(jQuery);

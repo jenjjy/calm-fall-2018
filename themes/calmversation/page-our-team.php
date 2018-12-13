@@ -37,7 +37,7 @@ get_header(); ?>
 
 					<div class="team-member">
 
-						<div><?php echo the_post_thumbnail('medium') ; ?></div>
+						<div class="member-img"><?php echo the_post_thumbnail('medium') ; ?></div>
 						<div class="member-name"><?php echo get_the_title() ; ?></div>
 						<div class="member-role"><?php echo get_the_content(); ?></div>
 
@@ -49,22 +49,23 @@ get_header(); ?>
             </section>
 
 
-            <div class="tedx-video">
+            <section class="tedx-video">
 
                 <iframe src="  <?php
-                echo CFS()->get('our_team_video');
-                ?>" frameborder="0"></iframe>
-                <h1>
-                    <?php
-                    echo CFS()->get('our_team_header');
-                    ?>
-                </h1>
-                <p>
-                    <?php
-                    echo CFS()->get('our_team_text');
-                    ?>
-                </p>
-            </div>
+					echo CFS()->get('our_team_video');
+					?>" frameborder="0">
+				</iframe>
+
+				<div class="tedx-content">
+					<h1>
+						<?php echo CFS()->get('our_team_header'); ?>
+					</h1>
+					<p>
+						<?php echo CFS()->get('our_team_text'); ?>
+					</p>
+				</div>
+
+			</section>
 
         <?php else :
             esc_html_e('No testimonials in the diving taxonomy!', 'text-domain');
