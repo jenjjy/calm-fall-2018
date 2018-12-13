@@ -34,7 +34,7 @@ get_header(); ?>
 
         </div>
 
-        <div class="container">
+        <div class="site-container">
 
             <!--- CONTENT -->
             <?php /* Start the Loop */ ?>
