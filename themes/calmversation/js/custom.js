@@ -1,5 +1,5 @@
-(function($) {
-  $(function() {
+(function ($) {
+  $(function () {
     // slide menu
     let mobileMenu = $('#menu-slide');
     let mobileWidth = $('#page').width();
@@ -14,7 +14,7 @@
     }
 
     if (mobileWidth < 600) {
-      subMenu.parent().click(function() {
+      subMenu.parent().click(function () {
         console.log('less than 600');
         subMenu.empty();
         event.preventDefault();
@@ -22,15 +22,14 @@
         subMenu.children().slideToggle('show');
         console.log('sliding yet?');
       }); // end of .sub-menu
-    } else {
-    }
+    } else {}
 
-    hamburger.on('click', function() {
+    hamburger.on('click', function () {
       $(this).toggleClass('open');
       mobileMenu.toggleClass('menu-slide show');
     });
 
-    $('a').click(function() {
+    $('a').click(function () {
       mobileMenu.removeClass('menu-slide show');
     });
 
@@ -38,18 +37,12 @@
       cellAlign: 'left',
       contain: true,
       wrapAround: true,
-      prevNextButtons: false,
-      autoPlay: 8000
+      prevNextButtons: false
+      // autoPlay: 8000
     }); //carousel testimony
 
-    $('.entry-content .main-carousel').flickity({
-      cellAlign: 'left',
-      contain: true,
-      wrapAround: true,
-      prevNextButtons: false,
-      autoPlay: 8000
-    }); //flickity for our-founder
 
+<<<<<<< HEAD
     if (
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent
@@ -70,5 +63,20 @@
       console.log('asdf');
       extraText.toggleClass('hide-text');
     });
+=======
+
+    $(window).resize(function () {
+      if ($(window).width() < 600) {
+        $('.main-carousel').flickity({
+          cellAlign: 'left',
+          contain: true,
+          wrapAround: true
+        });
+      }
+    }); //flickity for our-company & our-founder
+
+
+
+>>>>>>> cfb883b596a284ac4217ab6d2c5aff58513eb29d
   }); // end of doc ready
 })(jQuery);

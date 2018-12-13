@@ -7,17 +7,16 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+        <div class="contact-us-container">
+            <?php while (have_posts()) : the_post(); ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+                <?php the_content(); ?>
+            <?php endwhile; // End of the loop. ?>
+        </div>
+    </main><!-- #main -->
+</div><!-- #primary -->
 
-				<?php get_template_part( 'template-parts/testimony' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
- 
 <?php get_footer(); ?>
