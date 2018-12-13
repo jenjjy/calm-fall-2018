@@ -38,8 +38,8 @@
       cellAlign: 'left',
       contain: true,
       wrapAround: true,
-      prevNextButtons: false,
-      autoPlay: 8000
+      prevNextButtons: false
+      // autoPlay: 8000
     }); //carousel testimony
 
     $('.entry-content .main-carousel').flickity({

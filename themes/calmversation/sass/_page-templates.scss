@@ -4,42 +4,95 @@
 
 /* Testimony */
 .page-title {
+  font-size: 32px;
+  padding-top: 3rem;
   text-align: center;
+  @include tablet {
+    font-size: 48px;
+  }
 }
 .testimony {
+  font-size: 18px;
   @include flex(column nowrap, flex-start, center);
   padding: 0 1rem;
-  height: 430px;
+  height: 424px;
   width: 100%;
 
   @include tablet {
-    @include flex(row nowrap, center, center);
+    @include flex(row nowrap, space-around, center);
+    background-color: $box__background;
+    border-radius: 25px;
+    color: $color__white;
+    font-size: 28px;
+    padding: 0 3rem;
+    // width: 975px;
+  }
+
+  @include desktop {
+    padding: 0 5rem;
   }
 
   .testimony-img {
     height: auto;
-    // margin: auto;
+    padding-bottom: 1rem;
+    width: 215px;
+
+    @include tablet {
+      padding-bottom: 0;
+      padding-right: 3rem;
+      width: auto;
+    }
+
+    @include desktop {
+      //   padding-right: 0;
+    }
   }
   img {
-    border-radius: 20%;
-    max-height: 410px;
-    width: auto;
+    border-radius: 27px;
   }
 
   .testimony-content {
-    font-size: 1rem;
+    padding: 0 1rem;
     text-align: center;
-    width: 280px;
+    min-width: 280px;
+    max-width: 669px;
 
     @include tablet {
-      max-width: 669px;
+      padding: 0;
+      text-align: left;
+      width: 500px;
+    }
+
+    @include desktop {
+      width: 669px;
     }
   }
 }
 
 .testimony-carousel {
+  margin: auto;
+
+  @include tablet {
+    max-width: 1240px;
+  }
+
   .flickity-page-dots {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    top: 95%;
+    // margin-top: 1rem;
+    // margin-bottom: 1rem;
+
+    @include tablet {
+      top: 90%;
+      //   margin-top: 0;
+      //   margin-bottom: 3.5rem;
+    }
+
+    @include desktop {
+      top: 85%;
+    }
+
+    .is-selected {
+      background: $primary__color;
+    }
   }
 }
