@@ -9,10 +9,6 @@
             color: black;
         }
 
-
-
-
-
         .main-carousel {
 
 
@@ -44,8 +40,6 @@
 @include tablet {
     .site-content {
 
-
-
         .our-company {
 
             display: flex;
@@ -54,27 +48,22 @@
             h2 {
                 text-align: left;
                 font-size: 30px;
-
                 height: auto;
 
             }
         }
 
         .founder-img {
-
             @include heightandwidth(null, 50%);
             margin: 0px;
         }
 
         .our-company-text {
-
-
             @include heightandwidth(null, 70%);
 
             p {
                 text-align: left;
                 font-size: 16px;
-
                 margin: 0px;
             }
         }
@@ -91,15 +80,12 @@
 
                 h3 {
                     text-transform: capitalize;
-                    font-family: $font__main-bold;
+                    font-family: $font__main-bold, $font__sec-semibold;
                 }
 
                 p {
                     font-size: 16px;
                 }
-
-
-
 
             }
         }
@@ -109,9 +95,57 @@
 }
 
 
-
-
-
 /*--------------------------------------------------------------
 # our founder
 --------------------------------------------------------------*/
+@include tablet {
+    .site-content {
+
+
+        .our-founder {
+
+            display: flex;
+            margin: 60px;
+
+            h2 {
+                text-align: left;
+                font-size: 35px;
+            }
+
+
+            .our-founder .founder-img {
+
+                @include heightandwidth(null, 50%);
+
+                img {
+
+                    @include heightandwidth(auto, auto);
+                }
+            }
+
+            .our-founder-text {
+
+
+                padding-top: 30px;
+
+                h2 {
+                    margin: 0px;
+                    padding: 0px;
+
+                }
+
+                @include heightandwidth(null, 70%);
+
+                p {
+                    text-align: left;
+                    font-size: 16px;
+                    margin: 0px;
+
+                }
+            }
+
+
+        }
+
+    }
+}

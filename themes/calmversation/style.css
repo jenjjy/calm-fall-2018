@@ -2130,13 +2130,38 @@ a {
       padding: 50px; }
       .site-content .main-carousel .carousel-cell h3 {
         text-transform: capitalize;
-        font-family: "Quicksand-Bold", sans-serif; }
+        font-family: "Quicksand-Bold", sans-serif, "Muli-SemiBold", sans-serif; }
       .site-content .main-carousel .carousel-cell p {
         font-size: 16px; } }
 
 /*--------------------------------------------------------------
 # our founder
 --------------------------------------------------------------*/
+@media (min-width: 600px) {
+  .site-content .our-founder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 60px; }
+    .site-content .our-founder h2 {
+      text-align: left;
+      font-size: 35px; }
+    .site-content .our-founder .our-founder .founder-img {
+      width: 50%; }
+      .site-content .our-founder .our-founder .founder-img img {
+        height: auto;
+        width: auto; }
+    .site-content .our-founder .our-founder-text {
+      padding-top: 30px;
+      width: 70%; }
+      .site-content .our-founder .our-founder-text h2 {
+        margin: 0px;
+        padding: 0px; }
+      .site-content .our-founder .our-founder-text p {
+        text-align: left;
+        font-size: 16px;
+        margin: 0px; } }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -2548,6 +2573,30 @@ a {
   @media (min-width: 600px) {
     .free-resource-video-description p {
       display: block; } }
+
+/*      404    */
+.error-404 ul {
+  list-style: none; }
+
+.error-404 a {
+  padding: 10px;
+  text-decoration: none; }
+
+.error-404 .page-header h1 {
+  padding: 10px; }
+
+.error-404 .page-content {
+  padding: 20px; }
+  .error-404 .page-content p {
+    padding: 20px;
+    text-align: center; }
+
+@media (min-width: 600px) {
+  .error-404 .page-content {
+    margin: 50px; }
+  .error-404 .widget p {
+    text-align: left;
+    padding-left: 70px; } }
 
 /*--------------------------------------------------------------
 # Contact Us
