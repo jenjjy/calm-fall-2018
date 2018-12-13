@@ -482,7 +482,6 @@ table {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   letter-spacing: 2px;
-  margin: 10px;
   padding: 20px;
   border: 2px solid #b4de96;
   color: white;
@@ -495,7 +494,7 @@ table {
   -webkit-transition: 1s;
   transition: 1s;
   font-family: "Muli", sans-serif;
-  padding: 0.8rem 6rem;
+  padding: 0.8rem 3rem;
   font-size: 17px;
   font-weight: bold;
   list-style: none;
@@ -524,7 +523,6 @@ table {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   letter-spacing: 2px;
-  margin: 10px;
   padding: 20px;
   border: 2px solid #b4de96;
   color: white;
@@ -718,7 +716,7 @@ a {
     margin: auto;
     width: 100%; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .menu-header-container {
     width: 975px; } }
 
@@ -1027,7 +1025,7 @@ a {
     padding: 10px 0px 5px 0px; } }
 
 /*footer desktop*/
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .site-footer .social-media-icon {
     padding: 10px 40px;
     width: 20%;
@@ -1086,16 +1084,16 @@ a {
     font-weight: bolder;
     font-size: 42px;
     padding: 25px 0; }
-    @media (min-width: 1240px) {
+    @media (min-width: 1024px) {
       .entry-content h2 {
         font-size: 48px;
         padding: 45px 0; } }
   .entry-content p {
     padding: 15px 0;
     margin: 0 auto;
-    max-width: 1240px;
+    max-width: 1024px;
     font-size: 22px; }
-    @media (min-width: 1240px) {
+    @media (min-width: 1024px) {
       .entry-content p {
         font-size: 28px;
         max-width: 78%; } }
@@ -1417,7 +1415,7 @@ a {
       color: #fff;
       font-size: 28px;
       padding: 0 3rem; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1024px) {
     .testimony {
       padding: 0 5rem; } }
   .testimony .testimony-img {
@@ -1441,7 +1439,7 @@ a {
         padding: 0;
         text-align: left;
         width: 500px; } }
-    @media (min-width: 1240px) {
+    @media (min-width: 1024px) {
       .testimony .testimony-content {
         width: 669px; } }
 
@@ -1455,7 +1453,7 @@ a {
     @media (min-width: 600px) {
       .testimony-carousel .flickity-page-dots {
         top: 90%; } }
-    @media (min-width: 1240px) {
+    @media (min-width: 1024px) {
       .testimony-carousel .flickity-page-dots {
         top: 85%; } }
     .testimony-carousel .flickity-page-dots .is-selected {
@@ -1482,7 +1480,7 @@ a {
       .banner-header h1 {
         font-size: 35px;
         padding-left: 10px; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1024px) {
     .banner-header {
       top: 37%;
       left: 5%;
@@ -1531,7 +1529,7 @@ a {
       height: 380px;
       width: 670px; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .founder-container .founder-text-container {
     text-align: left;
     max-width: 36%; } }
@@ -1634,27 +1632,26 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   margin-bottom: 25px; }
   @media (min-width: 600px) {
     .campaign-container {
-      margin-left: 35px;
-      display: inline-block; } }
-  .campaign-container h2 {
-    text-align: center; }
-  @media (min-width: 1240px) {
+      width: 80%;
+      display: inline-block; }
+      .campaign-container h2 {
+        text-align: left; } }
+  @media (min-width: 1024px) {
     .campaign-container {
-      width: 55%; } }
+      width: 44%;
+      margin-left: 10%; } }
   .campaign-container .campaign-text-desktop {
     display: none; }
-  @media (min-width: 1240px) {
+  @media (min-width: 1024px) {
     .campaign-container {
       display: inline-block; }
       .campaign-container .campaign-text-mobile {
         display: none; } }
-  @media (min-width: 1240px) and (min-width: 1240px) {
+  @media (min-width: 1024px) and (min-width: 1024px) {
     .campaign-container .campaign-text-desktop {
-      width: 71%;
       display: block;
       margin: 0 auto; } }
   .campaign-container p {
@@ -1664,18 +1661,22 @@ a {
     margin: 25px auto; }
     @media (min-width: 600px) {
       .campaign-container p {
+        line-height: 24px;
+        text-align: left;
+        width: 100%;
+        font-style: italic; } }
+    @media (min-width: 1024px) {
+      .campaign-container p {
         font-size: 16px;
         width: 100%;
         text-align: left; } }
   .campaign-container h2 {
-    text-align: center;
     font-size: 42px;
     font-weight: bolder;
     margin-top: auto; }
-    @media (min-width: 600px) {
+    @media (min-width: 1024px) {
       .campaign-container h2 {
-        font-size: 25px;
-        padding-right: 13%;
+        font-size: 48px;
         margin: 8% 0; } }
   .campaign-container .campaign-logo {
     margin: 30px auto;
@@ -1684,10 +1685,9 @@ a {
   @media (min-width: 600px) {
     .campaign-container .campaign-logo-container-mobile {
       display: none; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1024px) {
     .campaign-container .campaign-button {
-      margin: 50px;
-      padding-right: 26%; } }
+      margin-top: 50px; } }
 
 .campaign-logo-container-desktop {
   display: none; }
@@ -1695,11 +1695,12 @@ a {
     .campaign-logo-container-desktop {
       display: inline-block;
       width: 35%; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1024px) {
     .campaign-logo-container-desktop {
       display: inline-block; }
       .campaign-logo-container-desktop img {
-        margin-bottom: 10%; } }
+        margin-bottom: 10%;
+        margin-left: 35px; } }
 
 .view-courses {
   display: -webkit-box;
@@ -1812,7 +1813,7 @@ a {
       width: 700px;
       -webkit-transform: translate(0%);
               transform: translate(0%); } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1024px) {
     .page-id-68 .wp-block-embed-vimeo iframe {
       width: 1240px;
       height: 700px; } }
@@ -1827,7 +1828,6 @@ a {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     letter-spacing: 2px;
-    margin: 10px;
     padding: 20px;
     border: 2px solid #b4de96;
     color: white;
@@ -1869,14 +1869,14 @@ a {
       position: relative;
       -webkit-transform: translate(-4.5%, 0);
               transform: translate(-4.5%, 0); } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1024px) {
     .page-id-68 .wp-block-image {
       margin-left: 4%; } }
   @media (min-width: 600px) {
     .page-id-68 .wp-block-image img {
       margin-left: 5%;
       height: inherit; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1024px) {
     .page-id-68 .wp-block-image img {
       -webkit-transform: translateX(-40px);
               transform: translateX(-40px); } }
@@ -1937,7 +1937,7 @@ a {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(1) {
     top: 1340px;
     left: 125px;
@@ -1949,7 +1949,7 @@ a {
     margin-left: 20%;
     margin-right: 8%; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(1) img {
     width: 16%;
     margin-left: 20%;
@@ -1966,7 +1966,7 @@ a {
     top: 1180px;
     left: 0; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(2) {
     top: 1570px;
     left: 310px;
@@ -1978,7 +1978,7 @@ a {
     margin-right: 5%;
     margin-left: 3%; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(2) img {
     width: 16%;
     margin-right: 5%;
@@ -1989,7 +1989,7 @@ a {
     -ms-flex-item-align: center;
         align-self: center; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(2) .campaign-text h2 {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -2005,7 +2005,7 @@ a {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(3) {
     top: 1860px;
     left: 120px;
@@ -2017,7 +2017,7 @@ a {
     margin-left: 5%;
     margin-right: 3%; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(3) img {
     width: 17%;
     margin-left: 5%;
@@ -2028,7 +2028,7 @@ a {
     -ms-flex-item-align: center;
         align-self: center; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(3) .campaign-text h2 {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -2040,7 +2040,7 @@ a {
     left: 40px;
     right: 40px; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(4) {
     top: 2140px;
     left: 70px;
@@ -2052,7 +2052,7 @@ a {
     margin-right: 5%;
     margin-left: 3%; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(4) img {
     width: 12%;
     margin-right: 5%;
@@ -2063,7 +2063,7 @@ a {
     -ms-flex-item-align: center;
         align-self: center; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(4) .campaign-text p {
     width: 100%; } }
 
@@ -2302,7 +2302,7 @@ a {
       z-index: -3;
       width: 520px;
       border-radius: 0; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1024px) {
     .single-course .site-content .entry-content .theme-bar img {
       width: 1100px; } }
 
@@ -2402,7 +2402,7 @@ a {
     @media (min-width: 600px) {
       .free-resource-banner .free-resource-image-desktop {
         display: inline-block; } }
-  @media (min-width: 600px) and (min-width: 1240px) {
+  @media (min-width: 600px) and (min-width: 1024px) {
     .free-resource-banner .free-resource-image-desktop {
       height: 350px;
       width: 600px; } }
@@ -2416,7 +2416,7 @@ a {
   @media (min-width: 600px) {
     .free-resource-header-desktop {
       display: block; } }
-  @media (min-width: 600px) and (min-width: 1240px) {
+  @media (min-width: 600px) and (min-width: 1024px) {
     .free-resource-header-desktop {
       font-size: 48px; } }
 
@@ -2441,7 +2441,7 @@ a {
       padding-bottom: 36px; }
       .free-resource-text-desktop h2 {
         font-size: 36px; } }
-  @media (min-width: 600px) and (min-width: 1240px) {
+  @media (min-width: 600px) and (min-width: 1024px) {
     .free-resource-text-desktop {
       width: 37%; } }
   .free-resource-text-desktop h2 {

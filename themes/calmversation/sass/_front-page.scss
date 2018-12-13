@@ -160,19 +160,18 @@
 
 .campaign-container {
   @include flex(column wrap, center, null);
-  text-align: center;
   margin-bottom: 25px;
-  @include tablet{
-    margin-left: 35px;
+  @include tablet {
+    width: 80%;
     display: inline-block;
-  }
-
-  h2 {
-    text-align: center;
+    h2 {
+      text-align: left;
+    }
   }
 
   @include desktop {
-    width: 55%;
+    width: 44%;
+    margin-left: 10%;
   }
 
   .campaign-text-desktop {
@@ -187,7 +186,6 @@
     }
     @include desktop {
       .campaign-text-desktop {
-        width: 71%;
         display: block;
         margin: 0 auto;
 
@@ -202,7 +200,13 @@
     font-size: 22px;
     width: 85%;
     margin: 25px auto;
-    @include tablet {
+    @include tablet{
+      line-height: 24px;
+      text-align: left;
+      width: 100%;
+      font-style: italic;
+    }
+    @include desktop {
       font-size: 16px;
       width: 100%;
       text-align: left;
@@ -210,13 +214,11 @@
   }
 
   h2 {
-    text-align: center;
     font-size: 42px;
     font-weight: bolder;
     margin-top: auto;
-    @include tablet {
-      font-size: 25px;
-      padding-right: 13%;
+    @include desktop {
+      font-size: 48px;
       margin: 8% 0;
     }
   }
@@ -237,8 +239,7 @@
 
   .campaign-button {
     @include desktop {
-      margin: 50px;
-      padding-right: 26%;
+      margin-top: 50px;
     }
   }
 
@@ -247,7 +248,7 @@
 
 .campaign-logo-container-desktop {
   display: none;
-  @include tablet{
+  @include tablet {
     display: inline-block;
     width: 35%;
   }
@@ -255,6 +256,8 @@
     display: inline-block;
     img {
       margin-bottom: 10%;
+      margin-left: 35px;
+
     }
   }
 }
