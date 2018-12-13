@@ -3,7 +3,15 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
+.site-container {
+  max-width: $container-width-mobile;
+  margin: $margin__auto;
+  @include desktop {
+    max-width: $container-width-desktop;
+  }
+}
 
+.b
 .sticky {
   display: block;
 }
