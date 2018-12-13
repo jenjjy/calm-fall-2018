@@ -1044,6 +1044,14 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.site-container {
+  max-width: 90%;
+  margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .site-container {
+      max-width: 85%; } }
+
+.b
 .sticky {
   display: block; }
 
@@ -1463,32 +1471,32 @@ a {
 /*--------------------------------------------------------------
 # Front Page
 --------------------------------------------------------------*/
-.banner-header {
+banner-header {
   text-align: center;
   margin-bottom: 2.2rem; }
-  .banner-header h1 {
+  banner-header h1 {
     padding-bottom: 25px;
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
     font-size: 2.7rem; }
   @media (min-width: 600px) {
-    .banner-header {
+    banner-header {
       top: 28%;
       left: 0;
       position: absolute;
       color: #fff;
       text-align: inherit; }
-      .banner-header h1 {
+      banner-header h1 {
         font-size: 35px;
         padding-left: 10px; } }
   @media (min-width: 1024px) {
-    .banner-header {
+    banner-header {
       top: 37%;
       left: 5%;
       position: absolute;
       color: #fff;
       text-align: inherit; }
-      .banner-header h1 {
+      banner-header h1 {
         font-size: 2.7rem; } }
 
 .founder-container, .solutions-container {
