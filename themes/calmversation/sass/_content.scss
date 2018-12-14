@@ -61,6 +61,11 @@
 .entry-content {
   text-align: center;
   margin: 0 auto;
+  @include desktop {
+    margin: 55px auto;
+  }
+;
+
 
   h2 {
     font-weight: bolder;
@@ -75,12 +80,12 @@
 
   p {
     padding: 15px 0;
-    margin: $margin__auto;
-    max-width: $desktop-width;
     font-size: 22px;
+    @include tablet {
+      padding: 0;
+    }
     @include desktop {
       font-size: 28px;
-      max-width: 78%;
     }
   }
 
