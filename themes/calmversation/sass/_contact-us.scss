@@ -136,16 +136,6 @@ textarea {
 }
 
 
-ul {
-  padding: 0px;
-}
-
-li {
-  list-style: none;
-  display: block;
-  padding: 5px;
-}
-
 .gfield_checkbox {
   @include tablet {
     display: grid;
