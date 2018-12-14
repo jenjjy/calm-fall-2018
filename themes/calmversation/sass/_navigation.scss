@@ -167,7 +167,7 @@ a {
   li {
     // float: left;
     position: relative;
-    padding: 1rem 0;
+    padding: 0.6rem 0;
 
     &:hover > a,
     &.focus > a {
@@ -204,9 +204,9 @@ a {
 .about-us-border {
   border-bottom: $border-sec;
 
-  // @include tablet {
-  //   border-bottom: none;
-  // }
+  @include tablet {
+    border-bottom: none;
+  }
 }
 
 .about-us-padding {
@@ -356,7 +356,7 @@ ul.sub-menu {
     .sub-menu {
       padding-top: 0;
       li {
-        height: 30px;
+        height: 35px;
       }
       a {
         font-size: 18px;
