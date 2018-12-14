@@ -76,6 +76,7 @@
 
   @include tablet {
     display: block;
+    padding-top: 1rem;
   }
 }
 
@@ -143,27 +144,6 @@
   left: 0px;
   background-color: $primary__color;
   transition: all 0.3s ease-in-out;
-}
-
-.about-us-border {
-  border-bottom: $border-sec;
-  padding-bottom: 0.5rem;
-  // width: 250px;
-
-  @include tablet {
-    border-bottom: transparent;
-    padding-bottom: 0;
-  }
-}
-
-.about-us-padding {
-  border-bottom: $border-sec;
-  padding-bottom: 140px;
-
-  @include tablet {
-    border-bottom: transparent;
-    padding-bottom: transparent;
-  }
 }
 
 /* 

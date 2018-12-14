@@ -1213,7 +1213,8 @@ object {
   margin: auto; }
   @media (min-width: 600px) {
     .menu {
-      display: block; } }
+      display: block;
+      padding-top: 1rem; } }
 
 /* 
  * Mobile Menu Slide 
@@ -1277,22 +1278,6 @@ object {
   background-color: #52b0cc;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-
-.about-us-border {
-  border-bottom: 2px solid #b4de96;
-  padding-bottom: 0.5rem; }
-  @media (min-width: 600px) {
-    .about-us-border {
-      border-bottom: transparent;
-      padding-bottom: 0; } }
-
-.about-us-padding {
-  border-bottom: 2px solid #b4de96;
-  padding-bottom: 140px; }
-  @media (min-width: 600px) {
-    .about-us-padding {
-      border-bottom: transparent;
-      padding-bottom: transparent; } }
 
 /* 
  * Nav Icon 
