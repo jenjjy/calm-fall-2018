@@ -98,13 +98,13 @@
   }
 
   .main-navigation {
-    @include flex(column nowrap, space-around, center);
+    @include flex(column nowrap, space-evenly, center);
   }
 
   nav {
     ul {
       li {
-        // height: 70px;
+        min-height: 75px;
         // list-style-type: none;
         // text-align: center;
         // line-height: 70px;
@@ -127,7 +127,7 @@
     .sub-menu {
       padding-top: 0;
       li {
-        height: 30px;
+        min-height: 25px;
       }
       a {
         font-size: 18px;
