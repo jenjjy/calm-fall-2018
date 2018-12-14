@@ -150,6 +150,10 @@ a {
       }
     } // end of ul ul
 
+    li:focus > ul {
+      left: -30%;
+    }
+
     li:hover > ul,
     li.focus > ul {
       @include tablet {
@@ -169,7 +173,7 @@ a {
 
     a {
       &:hover {
-        border-bottom: 2px solid $secondary__color;
+        border-bottom: 2.5px solid $secondary__color;
 
         @include tablet {
           border-bottom: $border-hover;
