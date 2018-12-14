@@ -135,25 +135,6 @@ textarea {
   }
 }
 
-//
-//.gfield_checkbox {
-//  display: grid;
-//  grid-template-columns: 1fr 1fr;
-//  grid-template-rows: 1fr 1fr;
-//
-//  li {
-//    margin: 25px !important;
-//    width: 100%;
-//  }
-//
-//
-//}
-//
-//.gfield_checkbox, ul li label {
-//  font-size: 22px !important;
-//}
-//
-
 
 ul {
   padding: 0px;
@@ -166,14 +147,25 @@ li {
 }
 
 .gfield_checkbox {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+
   li {
     position: relative;
     padding-left: 40px;
 
     label {
+      font-size: 22px !important;
+      padding-left: 50px !important;
+
       &:after {
         content: "";
-        background: #333;
+        background: transparent;
+        border: 2px solid $primary__color;
         width: 27px;
         height: 27px;
         display: block;
@@ -190,7 +182,7 @@ li {
         position: absolute;
         width: 6px;
         height: 15px;
-        border: solid #fff;
+        border: solid $secondary__color;
         border-width: 0 3px 3px 0;
         left: 9px;
         top: 4px;
