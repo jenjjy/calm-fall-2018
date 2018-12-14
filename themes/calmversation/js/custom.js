@@ -67,5 +67,14 @@
       console.log('asdf');
       extraText.toggleClass('hide-text');
     });
+
+    $(".themes").on("click", function() {
+      $(".course-theme").removeClass("active");
+      $(this).addClass("active");
+      let id = $(this).attr('data-id');
+      console.log(id);
+      $('.theme').hide();
+      $(`[data-id=${id}]`).show();
+    });
   }); // end of doc ready
 })(jQuery);
