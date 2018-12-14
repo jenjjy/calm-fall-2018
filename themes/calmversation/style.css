@@ -608,7 +608,8 @@ a {
   display: none;
   letter-spacing: 1px;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  max-width: 1024px; }
   @media (min-width: 600px) {
     .main-navigation {
       background: transparent;
@@ -1006,7 +1007,7 @@ ul.sub-menu {
 /* Posts and pages */
 .site-container {
   padding-bottom: 5rem;
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto; }
   @media (min-width: 1024px) {
     .site-container {
@@ -2176,8 +2177,7 @@ object {
           -ms-flex-align: start;
               align-items: flex-start;
       margin: auto;
-      padding-bottom: 4rem;
-      max-width: 1170px; } }
+      padding-bottom: 4rem; } }
 
 .team-member {
   display: -webkit-box;
@@ -2194,30 +2194,34 @@ object {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  padding: 0 1rem;
   height: 325px;
   width: 265px; }
   @media (min-width: 600px) {
     .team-member {
-      height: 445px;
-      margin: 0; } }
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+      margin: 0;
+      height: 360px;
+      min-width: 200px; } }
   .team-member .member-img {
     height: auto;
     width: 200px; }
     @media (min-width: 600px) {
       .team-member .member-img {
-        width: auto; } }
+        min-width: 200px;
+        max-width: 300px; } }
     .team-member .member-img img {
       border: 5px solid #52b0cc;
       border-radius: 50%;
-      overflow: hidden;
-      width: auto; }
+      overflow: hidden; }
   .team-member .member-name {
     color: #000;
     font-family: "Quicksand-Bold", sans-serif;
     font-size: 22px; }
-    @media (min-width: 600px) {
+    @media (min-width: 1024px) {
       .team-member .member-name {
-        font-size: 28px; } }
+        font-size: 26px; } }
   .team-member .member-role {
     color: #787878;
     font-family: "Quicksand", sans-serif;
@@ -2227,7 +2231,10 @@ object {
     text-transform: capitalize; }
     @media (min-width: 600px) {
       .team-member .member-role {
-        font-size: 22px;
+        font-size: 18px; } }
+    @media (min-width: 1024px) {
+      .team-member .member-role {
+        font-size: 20px;
         max-width: 300px; } }
 
 .tedx-video {
@@ -2244,8 +2251,7 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
-  padding: 4rem 0; }
+  margin: auto; }
   @media (min-width: 600px) {
     .tedx-video {
       display: -webkit-box;
@@ -2263,25 +2269,26 @@ object {
               align-items: center;
       padding-bottom: 5rem; } }
   .tedx-video iframe {
-    height: 220px;
-    width: 100vw; }
-    @media (min-width: 600px) {
-      .tedx-video iframe {
-        padding-right: 1rem;
-        height: 300px; } }
+    height: 270px;
+    width: 100%; }
     @media (min-width: 1024px) {
       .tedx-video iframe {
         padding: 0;
-        height: 420px;
+        height: 370px;
         width: 670px; } }
   .tedx-video .tedx-content {
     text-align: center;
-    padding: 0 1rem; }
+    padding-right: 0 1rem; }
+    .tedx-video .tedx-content h1 {
+      margin: 1rem 0; }
     @media (min-width: 600px) {
       .tedx-video .tedx-content {
         text-align: left;
         padding-right: 1rem;
         width: 470px; } }
+    @media (min-width: 1024px) {
+      .tedx-video .tedx-content {
+        padding-right: 2rem; } }
 
 .ytp-icon-large-play-button {
   display: none; }
