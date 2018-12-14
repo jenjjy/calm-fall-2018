@@ -26,6 +26,9 @@
   a {
     font-size: 20px;
     padding: .8rem 3rem;
+    @include tablet {
+      font-size: 13px;
+    }
   }
 
   .free-resource-image-desktop {
@@ -34,7 +37,6 @@
     @include tablet {
       display: inline-block;
       @include desktop {
-
         height: 350px;
         width: 600px;
       }
@@ -54,6 +56,7 @@
   @include tablet {
     display: block;
     @include desktop {
+      padding: 3% 0;
       font-size: 48px;
     }
   }
@@ -67,9 +70,17 @@
     width: 50%;
     padding-bottom: 36px;
     h2 {
+      font-size: 30px;
+    }
+  }
+  @include desktop {
+    display: inline-block;
+    width: 50%;
+    padding-bottom: 36px;
+    h2 {
       font-size: 36px;
     }
-    @include desktop{
+    @include desktop {
       width: 37%;
     }
   }
@@ -88,8 +99,13 @@
     display: none;
     @include tablet {
       display: block;
+      margin-right: 10px;
+    }
+    @include desktop {
+      display: block;
       margin-bottom: 10%;
       line-height: 17px;
+      margin-right: 0;
 
     }
   }
@@ -109,7 +125,10 @@
   h2 {
     display: none;
     @include tablet {
+      font-size: 26px;
       display: block;
+    }
+    @include desktop {
       font-size: 36px;
 
     }
@@ -128,10 +147,14 @@
   p:nth-child(odd) {
     display: none;
     @include tablet {
+      display: block;
+      padding-top: 20px;
+      font-size: 16px;
+
+    }
+    @include desktop {
       width: 90%;
       margin: $margin__auto;
-      padding-top: 20px;
-      display: block;
       font-size: 18px;
     }
   }
@@ -141,6 +164,10 @@
   display: none;
   @include tablet {
     display: block;
+    font-size: 36px;
+  }
+  @include desktop {
+    display: block;
     font-size: 48px;
 
 
@@ -148,19 +175,13 @@
 }
 
 .free-resource-video-container, .free-resource-video {
+  margin: 0 auto;
+  padding: 25px;
   @include flex(column nowrap, center, center);
-
-  .border {
-    border: 2px solid black;
-    border-radius: 25px;
-    height: 222px;
-    overflow: hidden;
-  }
-
   @include tablet {
     padding: 25px 0;
-
   }
+
 
   h2 {
     padding: 10px 0;
@@ -168,6 +189,9 @@
     margin: 0 auto;
     text-align: center;
     @include tablet {
+      font-size: 22px;
+    }
+    @include desktop {
       width: 100%;
       font-size: 36px;
     }
@@ -176,7 +200,7 @@
   iframe {
     width: 335px;
     height: 198px;
-    @include tablet {
+    @include desktop {
       height: 402px;
       width: 710px;
 
@@ -196,7 +220,7 @@
       flex-flow: row-reverse nowrap;
     }
     .free-resource-video-description {
-      padding: 69px;
+      padding: 57px;
 
       p {
         font-size: 18px;
