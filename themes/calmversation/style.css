@@ -730,13 +730,14 @@ a {
       border-bottom: none; } }
 
 .about-us-padding {
-  padding: 150px; }
+  padding-bottom: 150px; }
 
 /* Small menu. */
 ul.sub-menu {
   display: none; }
-  ul.sub-menu a:hover {
-    border-bottom: 2px solid #b4de96; }
+  ul.sub-menu li a:hover {
+    border-bottom: none;
+    color: #b4de96; }
   @media (min-width: 600px) {
     ul.sub-menu {
       background: #f0f3f8;
@@ -788,67 +789,6 @@ ul.sub-menu {
   float: right;
   text-align: right;
   width: 50%; }
-
-/* 
- * Mobile Menu Slide 
- */
-.menu-slide {
-  max-width: 100%;
-  width: 600px;
-  left: -400px;
-  margin: auto;
-  height: 100vh;
-  position: fixed;
-  z-index: 10;
-  top: 0px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  /* end of nav */ }
-  @media (min-width: 600px) {
-    .menu-slide {
-      display: none; } }
-  .menu-slide .main-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .menu-slide nav {
-    /* end of ul */ }
-    .menu-slide nav ul {
-      /* end of li */ }
-      .menu-slide nav ul li {
-        height: 70px;
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease; }
-        .menu-slide nav ul li:hover {
-          -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
-        .menu-slide nav ul li a {
-          color: #fff;
-          font-family: "Quicksand-Medium", sans-serif;
-          font-size: 26px;
-          text-decoration: none; }
-    .menu-slide nav .sub-menu {
-      padding-top: 0; }
-      .menu-slide nav .sub-menu li {
-        height: 35px; }
-      .menu-slide nav .sub-menu a {
-        font-size: 18px; }
-
-/* end of menu-slide */
-.menu-slide.show {
-  left: 0px;
-  background-color: #52b0cc;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1291,8 +1231,9 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
@@ -1301,6 +1242,7 @@ object {
     .menu-slide nav ul {
       /* end of li */ }
       .menu-slide nav ul li {
+        min-height: 75px;
         -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease; }
         .menu-slide nav ul li:hover {
@@ -1314,7 +1256,7 @@ object {
     .menu-slide nav .sub-menu {
       padding-top: 0; }
       .menu-slide nav .sub-menu li {
-        height: 30px; }
+        min-height: 25px; }
       .menu-slide nav .sub-menu a {
         font-size: 18px; }
 

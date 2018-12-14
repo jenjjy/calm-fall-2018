@@ -15,20 +15,16 @@
       if (hasLink === '#' && mobileWidth < 600) {
         event.preventDefault();
         // return subMenuToggle();
-        console.log('yakyakyak');
+
         subMenu.slideToggle('fast');
         $select.toggleClass('about-us-border');
-        $select.parent().toggleClass('about-us-padding');
-        // $select.blur().removeClass('about-us-border');
-
-        // return false;
+        subMenu.parent().toggleClass('about-us-padding');
+        console.log('yakyakyak');
+        console.log($select);
       } else {
         return true;
       }
     }); // end of sub-menu toggle
-    // subMenu.on('blur', function(){
-    //   $select.removeClass('about-us-border');
-    // }
 
     hamburger.on('click', function() {
       $(this).toggleClass('open');
