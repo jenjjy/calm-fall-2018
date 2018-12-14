@@ -28,7 +28,31 @@ get_header(); ?>
             $course_posts = get_posts($args); // returns an array of posts
             ?>
             <section class="course-themes">
-                <div class="course-theme-blocks">
+
+
+                <div class="course-theme-bubble">
+                    <?php foreach ($course_posts as $post) : setup_postdata($post); ?>
+                        <article class="themes">
+                            <?php
+                            $post_id = $post->ID;
+                            ?>
+
+                            <div class="course-title" data-id='<?php echo $post_id; ?>'>
+                                <h2><?php echo CFS()->get('course_theme_title', $post_id); ?>
+                                </h2>
+                            </div>
+                            
+                            
+
+
+                      
+
+                        </article>
+                    <?php endforeach;
+                    wp_reset_postdata(); ?>
+                </div>
+
+                <div class="course-theme-text">
                     <?php foreach ($course_posts as $post) : setup_postdata($post); ?>
                         <article class="themes">
                             <?php
@@ -36,16 +60,10 @@ get_header(); ?>
                             $post_url = $post->guid;
                             ?>
 
-                            <h2><?php echo CFS()->get('course_theme_title', $post_id); ?></h2>
+                            
                             <p><?php echo CFS()->get('course_theme_description', $post_id); ?> </p>
                             <a href="<?php echo $post_url; ?>">Learn More</a>
-                            <div class="img-container">
-                                <?php /* Content from your array of post results goes here */
-                                if (has_post_thumbnail()) {
-                                    the_post_thumbnail('large');
-                                }
-                                ?>
-                            </div>
+                            
 
 
                             <div class="permalink">
@@ -58,6 +76,10 @@ get_header(); ?>
                     <?php endforeach;
                     wp_reset_postdata(); ?>
                 </div>
+
+
+
+
             </section>
             <section class="course-features">
                 <h2>

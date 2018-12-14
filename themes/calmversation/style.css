@@ -1931,7 +1931,7 @@ object {
 
 @media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(1) {
-    top: 1340px;
+    top: 1400px;
     left: 125px;
     right: 340px; } }
 
@@ -1960,7 +1960,7 @@ object {
 
 @media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(2) {
-    top: 1570px;
+    top: 1650px;
     left: 310px;
     right: 120px; } }
 
@@ -1999,7 +1999,7 @@ object {
 
 @media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(3) {
-    top: 1860px;
+    top: 1950px;
     left: 120px;
     right: 410px; } }
 
@@ -2034,7 +2034,7 @@ object {
 
 @media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(4) {
-    top: 2140px;
+    top: 2220px;
     left: 70px;
     right: 0px; } }
 
@@ -2624,7 +2624,7 @@ object {
 .page-id-80 .hide-text {
   display: none; }
 
-.page-id-80 .readmore {
+.page-id-80 .readmore a {
   padding: 0;
   border-radius: 0;
   border: none;
