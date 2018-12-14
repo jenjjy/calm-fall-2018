@@ -4,6 +4,7 @@
 
 /* Posts and pages */
 .site-container {
+  padding-bottom: 5rem;
   max-width: $container-width-mobile;
   margin: $margin__auto;
   @include desktop {
