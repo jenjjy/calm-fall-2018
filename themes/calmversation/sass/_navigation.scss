@@ -90,14 +90,16 @@ a {
     }
 
     ul {
-      // @include flex(column nowrap, center, center);
-      // border-bottom: none;
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       font-family: $font__main-light;
       position: absolute;
       // top: $base__space-unit;
-      left: -999rem;
+      // left: -999rem;
       z-index: 1000;
+
+      @include tablet {
+        left: -999rem;
+      }
 
       ul {
         left: -999rem;
@@ -173,7 +175,7 @@ a {
 
     a {
       &:hover {
-        border-bottom: 2.5px solid $secondary__color;
+        border-bottom: $border-sec;
 
         @include tablet {
           border-bottom: $border-hover;
@@ -199,13 +201,33 @@ a {
   }
 }
 
+.about-us-border {
+  border-bottom: $border-sec;
+
+  // @include tablet {
+  //   border-bottom: none;
+  // }
+}
+
+.about-us-padding {
+  padding: 150px;
+
+  // @include tablet {
+  //   padding-bottom: none;
+  // }
+}
+
 /* Small menu. */
 
 ul.sub-menu {
+  display: none;
+  padding-bottom: 5rem;
+
   @include tablet {
     background: $color__background-body;
     display: flex;
     flex-direction: column;
+    padding-bottom: none;
 
     a {
       width: 100%;
@@ -217,7 +239,6 @@ ul.sub-menu {
 
     li {
       border: 1px solid #52b0cc;
-      // border-bottom: transparent;
       padding: 0.25rem 1rem;
       width: 175px;
 
