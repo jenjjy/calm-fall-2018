@@ -8,15 +8,17 @@
 get_header(); ?>
 
 	<div id="primary" class="founder-content-area">
-		<main id="main" class="founder-site-main" role="main">
+	   <div class="site-container">
+		    <main id="main" class="founder-site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			 	<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
+				<?php endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
+			</main><!-- #main -->
+		</div>
 	</div><!-- #primary -->
 
  

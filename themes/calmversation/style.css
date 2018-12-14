@@ -707,7 +707,7 @@ a {
         left: -30%; } }
   .main-navigation li {
     position: relative;
-    padding: 1rem 0; }
+    padding: 0.6rem 0; }
     .main-navigation li a:hover {
       border-bottom: 2.5px solid #b4de96; }
       @media (min-width: 600px) {
@@ -725,6 +725,9 @@ a {
 
 .about-us-border {
   border-bottom: 2.5px solid #b4de96; }
+  @media (min-width: 600px) {
+    .about-us-border {
+      border-bottom: none; } }
 
 .about-us-padding {
   padding: 150px; }
@@ -836,7 +839,7 @@ ul.sub-menu {
     .menu-slide nav .sub-menu {
       padding-top: 0; }
       .menu-slide nav .sub-menu li {
-        height: 30px; }
+        height: 35px; }
       .menu-slide nav .sub-menu a {
         font-size: 18px; }
 
@@ -1298,7 +1301,6 @@ object {
     .menu-slide nav ul {
       /* end of li */ }
       .menu-slide nav ul li {
-        height: 70px;
         -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease; }
         .menu-slide nav ul li:hover {

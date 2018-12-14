@@ -15,12 +15,12 @@
       if (hasLink === '#' && mobileWidth < 600) {
         event.preventDefault();
         // return subMenuToggle();
-
+        console.log('yakyakyak');
         subMenu.slideToggle('fast');
-        $select.addClass('about-us-border');
-        $select.parent().addClass('about-us-padding');
+        $select.toggleClass('about-us-border');
+        $select.parent().toggleClass('about-us-padding');
         // $select.blur().removeClass('about-us-border');
-        console.log('false');
+
         // return false;
       } else {
         return true;
@@ -53,6 +53,7 @@
     } //carousel testimony
 
     $(window).resize(function() {
+      console.log('carousel');
       if ($(window).width() < 600) {
         $('.main-carousel').flickity({
           cellAlign: 'left',
