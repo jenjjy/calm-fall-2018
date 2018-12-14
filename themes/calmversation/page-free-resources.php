@@ -85,7 +85,7 @@ get_header(); ?>
                 $loop = CFS()->get('free_resources_video');
                 foreach ($loop as $row) : ?>
                     <div class="free-resource-video">
-                        <iframe src="<?php echo $row['free_resources_video_input']; ?>" frameborder="0"></iframe>
+                        <iframe src="<?php echo $row['free_resources_video_input']; ?>"></iframe>
                         <div class="free-resource-video-description">
                             <h2><?php echo $row['free_resources_header']; ?></h2>
                             <p><?php echo $row['free_resources_text_desktop']; ?></p>

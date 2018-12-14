@@ -48,7 +48,7 @@ get_header(); ?>
                 <div class="founder-container">
                     <iframe src=" <?php
                     echo CFS()->get('listen_to_founder_video');
-                    ?>" frameborder="0"></iframe>
+                    ?>"></iframe>
                     <div class="founder-text-container">
                         <h1>
                             <?php

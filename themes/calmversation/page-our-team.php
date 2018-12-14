@@ -53,7 +53,7 @@ get_header(); ?>
 
                 <iframe src="  <?php
 					echo CFS()->get('our_team_video');
-					?>" frameborder="0">
+					?>" >
 				</iframe>
 
 				<div class="tedx-content">
