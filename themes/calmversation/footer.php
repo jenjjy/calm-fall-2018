@@ -45,7 +45,7 @@
 
 			      <li>  
 				       <a href="https://www.facebook.com/calmversation/">
-                          <i class="fab fa-facebook"></i>
+					   <i class="fab fa-facebook-square"></i>
 			           </a>
 				 </li> 
 				  <li> 
