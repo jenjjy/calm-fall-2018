@@ -86,13 +86,15 @@
 .menu-slide {
   max-width: 100%;
   width: $tablet-width;
+  position: fixed;
+
   left: -400px;
   margin: auto;
   height: 100vh;
-  position: fixed;
-  z-index: 10;
   top: 0px;
   transition: all 0.5s ease-in-out;
+  z-index: 10;
+
   @include tablet {
     display: none;
   }
@@ -131,6 +133,7 @@
       }
       a {
         font-size: 18px;
+        padding-top: 0.3rem;
       }
     }
   } /* end of nav */
@@ -140,6 +143,27 @@
   left: 0px;
   background-color: $primary__color;
   transition: all 0.3s ease-in-out;
+}
+
+.about-us-border {
+  border-bottom: $border-sec;
+  padding-bottom: 0.5rem;
+  // width: 250px;
+
+  @include tablet {
+    border-bottom: transparent;
+    padding-bottom: 0;
+  }
+}
+
+.about-us-padding {
+  border-bottom: $border-sec;
+  padding-bottom: 140px;
+
+  @include tablet {
+    border-bottom: transparent;
+    padding-bottom: transparent;
+  }
 }
 
 /* 

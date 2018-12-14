@@ -706,10 +706,9 @@ a {
       .main-navigation ul li.focus > ul {
         left: -30%; } }
   .main-navigation li {
-    position: relative;
-    padding: 0.6rem 0; }
+    position: relative; }
     .main-navigation li a:hover {
-      border-bottom: 2.5px solid #b4de96; }
+      border-bottom: 2px solid #b4de96; }
       @media (min-width: 600px) {
         .main-navigation li a:hover {
           border-bottom: 2px solid #b5ccdb; } }
@@ -724,13 +723,24 @@ a {
     width: 975px; } }
 
 .about-us-border {
-  border-bottom: 2.5px solid #b4de96; }
+  border-bottom: 2px solid #b4de96;
+  padding-bottom: 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
   @media (min-width: 600px) {
     .about-us-border {
-      border-bottom: none; } }
+      border-bottom: transparent;
+      padding-bottom: transparent; } }
 
 .about-us-padding {
-  padding-bottom: 150px; }
+  border-bottom: 2px solid #b4de96;
+  padding-bottom: 140px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  @media (min-width: 600px) {
+    .about-us-padding {
+      border-bottom: transparent;
+      padding-bottom: transparent; } }
 
 /* Small menu. */
 ul.sub-menu {
@@ -1211,14 +1221,14 @@ object {
 .menu-slide {
   max-width: 100%;
   width: 600px;
+  position: fixed;
   left: -400px;
   margin: auto;
   height: 100vh;
-  position: fixed;
-  z-index: 10;
   top: 0px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  z-index: 10;
   /* end of nav */ }
   @media (min-width: 600px) {
     .menu-slide {
@@ -1258,7 +1268,8 @@ object {
       .menu-slide nav .sub-menu li {
         min-height: 25px; }
       .menu-slide nav .sub-menu a {
-        font-size: 18px; }
+        font-size: 18px;
+        padding-top: 0.3rem; }
 
 /* end of menu-slide */
 .menu-slide.show {
@@ -1266,6 +1277,22 @@ object {
   background-color: #52b0cc;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
+
+.about-us-border {
+  border-bottom: 2px solid #b4de96;
+  padding-bottom: 0.5rem; }
+  @media (min-width: 600px) {
+    .about-us-border {
+      border-bottom: transparent;
+      padding-bottom: 0; } }
+
+.about-us-padding {
+  border-bottom: 2px solid #b4de96;
+  padding-bottom: 140px; }
+  @media (min-width: 600px) {
+    .about-us-padding {
+      border-bottom: transparent;
+      padding-bottom: transparent; } }
 
 /* 
  * Nav Icon 
