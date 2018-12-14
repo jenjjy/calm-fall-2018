@@ -28,9 +28,11 @@ get_header(); ?>
             <img src="<?php
             echo CFS()->get('banner_image_mobile');
             ?>" alt="" class="banner-image-mobile">
-            <img src="<?php
-            echo CFS()->get('banner_image_desktop');
-            ?>" alt="" class="banner-image-desktop">
+            <div>
+                <img src="<?php
+                echo CFS()->get('banner_image_desktop');
+                ?>" alt="" class="banner-image-desktop">
+            </div>
 
         </div>
 

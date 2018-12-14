@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Front Page
 --------------------------------------------------------------*/
-banner-header {
+.banner-header {
   text-align: center;
   margin-bottom: 2.2rem;
 
@@ -14,17 +14,16 @@ banner-header {
 
   @include tablet {
     top: 28%;
-    left: 0;
+    left: 2%;
     position: absolute;
     color: $color__white;
     text-align: inherit;
     h1 {
       font-size: 35px;
-      padding-left: 10px;
     }
   }
   @include desktop {
-    top: 37%;
+    top: 55%;
     left: 5%;
     position: absolute;
     color: $color__white;
@@ -45,12 +44,10 @@ banner-header {
   }
 
   img {
-    width: 91%;
     margin-bottom: 15px;
   }
 
   p {
-    width: 86%;
     font-size: 22px;
     margin: 0 auto;
   }
@@ -58,15 +55,6 @@ banner-header {
 
 
 .founder-container {
-  @include tablet {
-    .border {
-      overflow: hidden;
-      border-radius: 25px;
-      height: 382px;
-      width: 672px;
-    }
-  }
-
   @include tablet {
     @include flex(row-reverse nowrap, center, center);
     iframe {
@@ -144,10 +132,9 @@ banner-header {
 }
 
 .front-page-check-mark {
-  margin: 10px 0;
-  @include flex(row wrap, flex-start, center);
-  width: 100%;
-  justify-content: center;
+  margin: 15px 0;
+  @include flex(row wrap, center, center);
+  width: 110%;
 
   h2 {
     margin-left: 10px;
@@ -161,7 +148,6 @@ banner-header {
   @include flex(column wrap, center, null);
   margin-bottom: 25px;
   @include tablet {
-    width: 80%;
     display: inline-block;
     h2 {
       text-align: left;
@@ -169,8 +155,7 @@ banner-header {
   }
 
   @include desktop {
-    width: 44%;
-    margin-left: 10%;
+    width: 55%;
   }
 
   .campaign-text-desktop {
@@ -197,15 +182,16 @@ banner-header {
   p {
     text-align: center;
     font-size: 22px;
-    width: 85%;
     margin: 25px auto;
-    @include tablet{
+    @include tablet {
+      padding-bottom: 25px;
       line-height: 24px;
       text-align: left;
       width: 100%;
-      font-style: italic;
+      font-size: 16px;
     }
     @include desktop {
+      padding-bottom: 0;
       font-size: 16px;
       width: 100%;
       text-align: left;
@@ -213,9 +199,13 @@ banner-header {
   }
 
   h2 {
+    text-align: center;
     font-size: 42px;
     font-weight: bolder;
     margin-top: auto;
+    @include tablet {
+      text-align: left;
+    }
     @include desktop {
       font-size: 48px;
       margin: 8% 0;
@@ -228,17 +218,23 @@ banner-header {
     width: auto;
   }
 
-  @include tablet {
-    .campaign-logo-container-mobile {
+  .campaign-logo-container-mobile {
+    text-align: center;
+    @include tablet {
       display: none;
-
     }
 
   }
 
+
   .campaign-button {
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
     @include desktop {
-      margin-top: 50px;
+      margin: 50px 0;
+      text-align: left;
     }
   }
 
@@ -250,13 +246,15 @@ banner-header {
   @include tablet {
     display: inline-block;
     width: 35%;
+    img {
+      margin-bottom: 27%;
+    }
   }
   @include desktop {
     display: inline-block;
     img {
-      margin-bottom: 10%;
+      margin-bottom: 15%;
       margin-left: 35px;
-
     }
   }
 }

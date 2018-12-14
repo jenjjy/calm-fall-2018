@@ -491,8 +491,8 @@ table {
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-family: "Muli", sans-serif;
   padding: 0.8rem 3rem;
   font-size: 17px;
@@ -532,8 +532,8 @@ table {
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-family: "Muli", sans-serif;
   padding: 0.8rem 6rem;
   font-size: 17px;
@@ -1091,6 +1091,9 @@ a {
 .entry-content {
   text-align: center;
   margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .entry-content {
+      margin: 55px auto; } }
   .entry-content h2 {
     font-weight: bolder;
     font-size: 42px;
@@ -1101,13 +1104,13 @@ a {
         padding: 45px 0; } }
   .entry-content p {
     padding: 15px 0;
-    margin: 0 auto;
-    max-width: 1024px;
     font-size: 22px; }
+    @media (min-width: 600px) {
+      .entry-content p {
+        padding: 0; } }
     @media (min-width: 1024px) {
       .entry-content p {
-        font-size: 28px;
-        max-width: 78%; } }
+        font-size: 28px; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1476,32 +1479,31 @@ a {
 /*--------------------------------------------------------------
 # Front Page
 --------------------------------------------------------------*/
-banner-header {
+.banner-header {
   text-align: center;
   margin-bottom: 2.2rem; }
-  banner-header h1 {
+  .banner-header h1 {
     padding-bottom: 25px;
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
     font-size: 2.7rem; }
   @media (min-width: 600px) {
-    banner-header {
+    .banner-header {
       top: 28%;
-      left: 0;
+      left: 2%;
       position: absolute;
       color: #fff;
       text-align: inherit; }
-      banner-header h1 {
-        font-size: 35px;
-        padding-left: 10px; } }
+      .banner-header h1 {
+        font-size: 35px; } }
   @media (min-width: 1024px) {
-    banner-header {
-      top: 37%;
+    .banner-header {
+      top: 55%;
       left: 5%;
       position: absolute;
       color: #fff;
       text-align: inherit; }
-      banner-header h1 {
+      .banner-header h1 {
         font-size: 2.7rem; } }
 
 .founder-container, .solutions-container {
@@ -1510,19 +1512,10 @@ banner-header {
   .founder-container h1, .solutions-container h1 {
     font-size: 36px; }
   .founder-container img, .solutions-container img {
-    width: 91%;
     margin-bottom: 15px; }
   .founder-container p, .solutions-container p {
-    width: 86%;
     font-size: 22px;
     margin: 0 auto; }
-
-@media (min-width: 600px) {
-  .founder-container .border {
-    overflow: hidden;
-    border-radius: 25px;
-    height: 382px;
-    width: 672px; } }
 
 @media (min-width: 600px) {
   .founder-container {
@@ -1612,7 +1605,7 @@ banner-header {
       display: none; } }
 
 .front-page-check-mark {
-  margin: 10px 0;
+  margin: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1620,16 +1613,13 @@ banner-header {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  width: 110%; }
   .front-page-check-mark h2 {
     margin-left: 10px;
     width: 60%;
@@ -1649,14 +1639,12 @@ banner-header {
   margin-bottom: 25px; }
   @media (min-width: 600px) {
     .campaign-container {
-      width: 80%;
       display: inline-block; }
       .campaign-container h2 {
         text-align: left; } }
   @media (min-width: 1024px) {
     .campaign-container {
-      width: 44%;
-      margin-left: 10%; } }
+      width: 55%; } }
   .campaign-container .campaign-text-desktop {
     display: none; }
   @media (min-width: 1024px) {
@@ -1671,23 +1659,28 @@ banner-header {
   .campaign-container p {
     text-align: center;
     font-size: 22px;
-    width: 85%;
     margin: 25px auto; }
     @media (min-width: 600px) {
       .campaign-container p {
+        padding-bottom: 25px;
         line-height: 24px;
         text-align: left;
         width: 100%;
-        font-style: italic; } }
+        font-size: 16px; } }
     @media (min-width: 1024px) {
       .campaign-container p {
+        padding-bottom: 0;
         font-size: 16px;
         width: 100%;
         text-align: left; } }
   .campaign-container h2 {
+    text-align: center;
     font-size: 42px;
     font-weight: bolder;
     margin-top: auto; }
+    @media (min-width: 600px) {
+      .campaign-container h2 {
+        text-align: left; } }
     @media (min-width: 1024px) {
       .campaign-container h2 {
         font-size: 48px;
@@ -1696,24 +1689,34 @@ banner-header {
     margin: 30px auto;
     height: 150px;
     width: auto; }
-  @media (min-width: 600px) {
-    .campaign-container .campaign-logo-container-mobile {
-      display: none; } }
-  @media (min-width: 1024px) {
-    .campaign-container .campaign-button {
-      margin-top: 50px; } }
+  .campaign-container .campaign-logo-container-mobile {
+    text-align: center; }
+    @media (min-width: 600px) {
+      .campaign-container .campaign-logo-container-mobile {
+        display: none; } }
+  .campaign-container .campaign-button {
+    text-align: center; }
+    @media (min-width: 600px) {
+      .campaign-container .campaign-button {
+        text-align: left; } }
+    @media (min-width: 1024px) {
+      .campaign-container .campaign-button {
+        margin: 50px 0;
+        text-align: left; } }
 
 .campaign-logo-container-desktop {
   display: none; }
   @media (min-width: 600px) {
     .campaign-logo-container-desktop {
       display: inline-block;
-      width: 35%; } }
+      width: 35%; }
+      .campaign-logo-container-desktop img {
+        margin-bottom: 27%; } }
   @media (min-width: 1024px) {
     .campaign-logo-container-desktop {
       display: inline-block; }
       .campaign-logo-container-desktop img {
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         margin-left: 35px; } }
 
 .view-courses {
@@ -1851,8 +1854,8 @@ banner-header {
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
-    -webkit-transition: 1s;
-    transition: 1s; }
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
     .page-id-68 .wp-block-button a:after {
       position: absolute;
       -webkit-transition: 0.3s;
@@ -2637,15 +2640,35 @@ form {
 
 .contact-us-container h2 {
   text-align: center; }
+  @media (min-width: 600px) {
+    .contact-us-container h2 {
+      font-size: 48px; } }
+
+.contact-us-container h3 {
+  font-size: 36px;
+  display: none; }
+  @media (min-width: 600px) {
+    .contact-us-container h3 {
+      display: block;
+      text-align: center; } }
 
 .gf_browser_safari, .gf_browser_iphone, .gform_wrapper {
   border-radius: 15px;
   border: 2px solid #52b0cc;
-  width: 90%;
   margin: 25px auto !important; }
+  @media (min-width: 600px) {
+    .gf_browser_safari, .gf_browser_iphone, .gform_wrapper {
+      width: 82%;
+      border: 11px solid #52b0cc;
+      border-radius: 35px; } }
 
 .gfield_label {
   text-align: center; }
+  @media (min-width: 600px) {
+    .gfield_label {
+      width: 100%;
+      margin-bottom: 11%;
+      font-size: 36px !important; } }
 
 .ginput_container input, .ginput_container_text input {
   background: transparent; }
@@ -2653,6 +2676,10 @@ form {
 .ginput_container .medium, .ginput_container_text .medium {
   border: none;
   border-bottom: 2px solid #b4de96; }
+  @media (min-width: 600px) {
+    .ginput_container .medium, .ginput_container_text .medium {
+      width: 100% !important;
+      border-bottom: 5px solid #b4de96; } }
 
 .gf_progressbar_wrapper {
   display: none; }
@@ -2664,12 +2691,34 @@ textarea {
 
 .gform_page_footer {
   border-top: none !important; }
+  @media (min-width: 600px) {
+    .gform_page_footer {
+      margin: 0 auto !important;
+      width: 29% !important;
+      padding: 25px 0 !important;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .gform_next_button {
   padding: .2rem 3rem !important; }
+  @media (min-width: 600px) {
+    .gform_next_button {
+      padding: .8rem 6rem !important;
+      overflow: inherit !important; } }
 
 .gform_previous_button {
   display: none !important; }
+
+@media (min-width: 600px) {
+  .gform_button {
+    overflow: inherit !important; } }
 
 .gform_confirmation_wrapper {
   padding: 25px; }
@@ -2694,4 +2743,88 @@ textarea {
   border: 2px solid #b4de96;
   padding: 25px;
   border-radius: 15px; }
+<<<<<<< HEAD
 >>>>>>> cfb883b596a284ac4217ab6d2c5aff58513eb29d
+=======
+
+@media (min-width: 600px) {
+  .gform_body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
+.gfield_description {
+  text-align: center; }
+
+@media (min-width: 600px) {
+  .gform_page {
+    margin: 2% 5% 2% 5%; } }
+
+ul {
+  padding: 0px; }
+
+li {
+  list-style: none;
+  display: block;
+  padding: 5px; }
+
+.gfield_checkbox li {
+  position: relative;
+  padding-left: 40px; }
+  .gfield_checkbox li label:after {
+    content: "";
+    background: #333;
+    width: 27px;
+    height: 27px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+    z-index: 0; }
+  .gfield_checkbox li label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 15px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    left: 9px;
+    top: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 100ms;
+    transition: all 100ms; }
+
+input[type="checkbox"] {
+  opacity: 0;
+  outline: none;
+  z-index: 100;
+  width: 27px;
+  height: 27px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer; }
+  input[type="checkbox"] + label {
+    cursor: pointer; }
+  input[type="checkbox"]:checked + label:before {
+    opacity: 1;
+    top: 3px; }
+>>>>>>> 5e9896d77854aa9b8bdb288af86b85905c341ff0
