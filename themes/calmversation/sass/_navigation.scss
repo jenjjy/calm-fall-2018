@@ -221,7 +221,12 @@ a {
 
 ul.sub-menu {
   display: none;
-  padding-bottom: 5rem;
+
+  a {
+    &:hover {
+      border-bottom: 2px solid #b4de96;
+    }
+  }
 
   @include tablet {
     background: $color__background-body;
@@ -261,11 +266,11 @@ ul.sub-menu {
   }
 }
 
-.sub-menu.show {
-  background-color: $primary__color;
-  color: $color__white;
-  transition: all 0.3s ease-in-out;
-}
+// .sub-menu.show {
+//   background-color: $primary__color;
+//   color: $color__white;
+//   transition: all 0.3s ease-in-out;
+// }
 
 .menu-toggle,
 .main-navigation.toggled ul {

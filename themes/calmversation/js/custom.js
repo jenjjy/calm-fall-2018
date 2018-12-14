@@ -11,19 +11,24 @@
     $('.menu-item a').on('click', function(event) {
       let $select = $(this);
       let hasLink = $select.attr('href');
+
       if (hasLink === '#' && mobileWidth < 600) {
         event.preventDefault();
+        // return subMenuToggle();
 
         subMenu.slideToggle('fast');
         $select.addClass('about-us-border');
         $select.parent().addClass('about-us-padding');
-
+        // $select.blur().removeClass('about-us-border');
         console.log('false');
         // return false;
       } else {
         return true;
       }
     }); // end of sub-menu toggle
+    // subMenu.on('blur', function(){
+    //   $select.removeClass('about-us-border');
+    // }
 
     hamburger.on('click', function() {
       $(this).toggleClass('open');

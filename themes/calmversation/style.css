@@ -731,8 +731,9 @@ a {
 
 /* Small menu. */
 ul.sub-menu {
-  display: none;
-  padding-bottom: 5rem; }
+  display: none; }
+  ul.sub-menu a:hover {
+    border-bottom: 2px solid #b4de96; }
   @media (min-width: 600px) {
     ul.sub-menu {
       background: #f0f3f8;
@@ -761,12 +762,6 @@ ul.sub-menu {
         font-family: "Muli-SemiBold", sans-serif; }
         ul.sub-menu .current-menu-item a:hover {
           border-bottom: #fff; } }
-
-.sub-menu.show {
-  background-color: #52b0cc;
-  color: #fff;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
 
 .menu-toggle,
 .main-navigation.toggled ul {
