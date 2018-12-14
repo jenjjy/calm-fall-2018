@@ -61,7 +61,10 @@
         .our-company-text {
             @include heightandwidth(null, 70%);
 
+            margin-left: 40px;
+
             p {
+
                 text-align: left;
                 font-size: 16px;
                 margin: 0px;
@@ -122,7 +125,7 @@
             }
 
             .our-founder-text {
-
+                margin-left: 40px;
 
                 padding-top: 30px;
 
