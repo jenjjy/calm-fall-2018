@@ -7,20 +7,16 @@
     let subMenu = $('.sub-menu');
 
     // Sub-Menu toggle
-
     $('.menu-item a').on('click', function(event) {
       let $select = $(this);
       let hasLink = $select.attr('href');
 
       if (hasLink === '#' && mobileWidth < 600) {
         event.preventDefault();
-        // return subMenuToggle();
 
         subMenu.slideToggle('fast');
         $select.toggleClass('about-us-border');
         subMenu.parent().toggleClass('about-us-padding');
-        console.log('yakyakyak');
-        console.log($select);
       } else {
         return true;
       }
@@ -35,16 +31,16 @@
       $('.testimony-carousel').flickity({
         cellAlign: 'left',
         contain: true,
-        wrapAround: true
-        // autoPlay: 8000
+        wrapAround: true,
+        autoPlay: 8000
       });
     } else {
       $('.testimony-carousel').flickity({
         cellAlign: 'left',
         contain: true,
         wrapAround: true,
-        prevNextButtons: false
-        // autoPlay: 8000
+        prevNextButtons: false,
+        autoPlay: 8000
       });
     } //carousel testimony
 

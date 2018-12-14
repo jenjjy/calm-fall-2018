@@ -167,7 +167,6 @@ a {
   li {
     // float: left;
     position: relative;
-    padding: 0.6rem 0;
 
     &:hover > a,
     &.focus > a {
@@ -203,18 +202,29 @@ a {
 
 .about-us-border {
   border-bottom: $border-sec;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  // width: 250px;
 
   @include tablet {
-    border-bottom: none;
+    border-bottom: transparent;
+    padding-bottom: transparent;
   }
 }
 
 .about-us-padding {
-  padding-bottom: 150px;
+  border-bottom: $border-sec;
+  padding-bottom: 140px;
+  transition: all 0.3s ease-in-out;
 
-  // @include tablet {
-  //   padding-bottom: none;
-  // }
+  li:last-child a {
+    // padding-bottom: 0.5rem;
+  }
+
+  @include tablet {
+    border-bottom: transparent;
+    padding-bottom: transparent;
+  }
 }
 
 /* Small menu. */
