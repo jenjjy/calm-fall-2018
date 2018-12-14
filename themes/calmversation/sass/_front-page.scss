@@ -13,8 +13,8 @@
   }
 
   @include tablet {
-    top: 28%;
-    left: 2%;
+    top: 43vh;
+    left: 5vh;
     position: absolute;
     color: $color__white;
     text-align: inherit;
@@ -23,8 +23,8 @@
     }
   }
   @include desktop {
-    top: 55%;
-    left: 5%;
+    top: 55vh;
+    left: 5vh;
     position: absolute;
     color: $color__white;
     text-align: inherit;
