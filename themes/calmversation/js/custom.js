@@ -52,15 +52,20 @@
       });
     } //carousel testimony
 
-    $(window).resize(function() {
-      if ($(window).width() < 600) {
-        $('.main-carousel').flickity({
-          cellAlign: 'left',
-          contain: true,
-          wrapAround: true
-        });
-      }
-    }); //flickity for our-company & our-founder
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      $('.main-carousel').flickity({
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true
+      }); //flickity for our-company & our-founder
+    }
 
     //course-page readmore
     let extraText = $('.course-text-more');
@@ -70,5 +75,38 @@
       console.log('asdf');
       extraText.toggleClass('hide-text');
     });
+=======
+
+    $(window).resize(function () {
+=======
+    $(window).resize(function() {
+>>>>>>> f8ad1f30b9772943aabcd1cc07a8baf251c8b716
+      if ($(window).width() < 600) {
+        $('.main-carousel').flickity({
+          cellAlign: 'left',
+          contain: true,
+          wrapAround: true
+        });
+      }
+    }); //flickity for our-company & our-founder
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+
+>>>>>>> cfb883b596a284ac4217ab6d2c5aff58513eb29d
+=======
+>>>>>>> f8ad1f30b9772943aabcd1cc07a8baf251c8b716
+=======
+
+    //course-page readmore
+    let extraText = $('.course-text-more');
+    let readMore = $('.readmore .wp-block-button__link');
+
+    readMore.click(function() {
+      console.log('asdf');
+      extraText.toggleClass('hide-text');
+    });
+>>>>>>> c9dae1cf2e738c5407f3150b26161e0bb60a7e50
   }); // end of doc ready
 })(jQuery);
