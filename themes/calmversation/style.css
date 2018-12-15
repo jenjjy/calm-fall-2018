@@ -945,11 +945,17 @@ ul.sub-menu {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    font-size: 40px;
+    font-size: 30px;
     height: 100%;
     width: auto; }
     .site-footer .social-media-icon ul a {
       margin: 0px 15px; }
+      .site-footer .social-media-icon ul a .far,
+      .site-footer .social-media-icon ul a .fab {
+        border: white solid 1px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #52b0cc; }
   .footer-navigation {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
