@@ -2102,8 +2102,7 @@ object {
   .site-content .our-company {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    margin: 60px; }
+    display: flex; }
     .site-content .our-company h2 {
       text-align: left;
       font-size: 30px;
@@ -2139,8 +2138,7 @@ object {
   .site-content .our-founder {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    margin: 60px; }
+    display: flex; }
     .site-content .our-founder h2 {
       text-align: left;
       font-size: 35px; }
