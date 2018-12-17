@@ -1013,7 +1013,7 @@ ul.sub-menu {
 /* Posts and pages */
 .site-container {
   padding-bottom: 5rem;
-  max-width: 100%;
+  max-width: 90%;
   margin: 0 auto; }
   @media (min-width: 1024px) {
     .site-container {
@@ -1519,6 +1519,9 @@ object {
   .founder-container .founder-text-container {
     text-align: left;
     max-width: 36%; } }
+
+.founder-button-container {
+  padding: 25px 0; }
 
 .solutions-container .solution-text-desktop {
   display: none; }
