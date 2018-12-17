@@ -4,96 +4,96 @@
 
 .page-template-page-our-company,
 .page-template-page-our-founder {
-    .site-content {
-        h2 {
-            color: black;
-        }
-
-        .main-carousel {
-
-
-            ol {
-
-                padding: 20px 0px;
-            }
-
-            .carousel-cell {
-                @include heightandwidth (null, 100%);
-
-                h3 {
-                    font-size: 36px;
-                    color: black;
-                }
-
-                p {
-                    padding-bottom: 30px;
-                }
-            }
-
-            button {
-                display: none;
-            }
-        }
+  .site-content {
+    h2 {
+      color: black;
     }
+
+    .main-carousel {
+
+
+      ol {
+
+        padding: 20px 0px;
+      }
+
+      .carousel-cell {
+        @include heightandwidth (null, 100%);
+
+        h3 {
+          font-size: 36px;
+          color: black;
+        }
+
+        p {
+          padding-bottom: 30px;
+        }
+      }
+
+      button {
+        display: none;
+      }
+    }
+  }
 }
 
 @include tablet {
-    .site-content {
+  .site-content {
 
-        .our-company {
+    .our-company {
 
-            display: flex;
-
-
-            h2 {
-                text-align: left;
-                font-size: 30px;
-                height: auto;
-
-            }
-        }
-
-        .founder-img {
-            @include heightandwidth(null, 50%);
-            margin: 0px;
-        }
-
-        .our-company-text {
-            @include heightandwidth(null, 70%);
-
-            margin-left: 40px;
-
-            p {
-
-                text-align: left;
-                font-size: 16px;
-                margin: 0px;
-            }
-        }
-
-        .main-carousel {
-            display: flex;
-            margin: 150px 40px 40px 40px;
+      display: flex;
 
 
-            .carousel-cell {
-                @include heightandwidth(null, 33.3333%);
+      h2 {
+        text-align: left;
+        font-size: 30px;
+        height: auto;
 
-                padding: 50px;
-
-                h3 {
-                    text-transform: capitalize;
-                    font-family: $font__main-bold, $font__sec-semibold;
-                }
-
-                p {
-                    font-size: 16px;
-                }
-
-            }
-        }
-
+      }
     }
+
+    .founder-img {
+      @include heightandwidth(null, 50%);
+      margin: 0px;
+    }
+
+    .our-company-text {
+      @include heightandwidth(null, 70%);
+      margin-left: 40px;
+
+
+      p {
+
+        text-align: left;
+        font-size: 16px;
+        margin: 0px;
+      }
+    }
+
+    .main-carousel {
+      display: flex;
+      margin: 150px 40px 40px 40px;
+
+
+      .carousel-cell {
+        @include heightandwidth(null, 33.3333%);
+
+        padding: 50px;
+
+        h3 {
+          text-transform: capitalize;
+          font-family: $font__main-bold, $font__sec-semibold;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+      }
+    }
+
+  }
 }
 
 
@@ -101,52 +101,52 @@
 # our founder
 --------------------------------------------------------------*/
 @include tablet {
-    .site-content {
+  .site-content {
 
-        .our-founder {
+    .our-founder {
 
-            display: flex;
-
-
-            h2 {
-                text-align: left;
-                font-size: 35px;
-            }
+      display: flex;
 
 
-            .our-founder .founder-img {
+      h2 {
+        text-align: left;
+        font-size: 35px;
+      }
 
-                @include heightandwidth(null, 50%);
 
-                img {
+      .our-founder .founder-img {
 
-                    @include heightandwidth(auto, auto);
-                }
-            }
+        @include heightandwidth(null, 50%);
 
-            .our-founder-text {
-                margin-left: 40px;
+        img {
 
-                padding-top: 30px;
+          @include heightandwidth(auto, auto);
+        }
+      }
 
-                h2 {
-                    margin: 0px;
-                    padding: 0px;
+      .our-founder-text {
+        margin-left: 40px;
 
-                }
+        padding-top: 30px;
 
-                @include heightandwidth(null, 70%);
-
-                p {
-                    text-align: left;
-                    font-size: 16px;
-                    margin: 0px;
-
-                }
-            }
-
+        h2 {
+          margin: 0px;
+          padding: 0px;
 
         }
 
+        @include heightandwidth(null, 70%);
+
+        p {
+          text-align: left;
+          font-size: 16px;
+          margin: 0px;
+
+        }
+      }
+
+
     }
+
+  }
 }
