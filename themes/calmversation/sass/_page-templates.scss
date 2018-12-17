@@ -5,11 +5,11 @@
 /* Testimony */
 .page-title {
   font-size: 32px;
-  //   padding-top: 1.5rem;
+  padding-top: 1.5rem;
   text-align: center;
   @include tablet {
     font-size: 48px;
-    // padding-top: 3rem;
+    padding-top: 3rem;
   }
 }
 .testimony {
@@ -26,6 +26,8 @@
     color: $color__white;
     font-size: 28px;
     padding: 0 3rem;
+
+    overflow: hidden;
     // width: 975px;
   }
 
