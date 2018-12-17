@@ -5,7 +5,7 @@
 .free-resource-banner {
   @include flex(column nowrap, center, center);
   @include tablet {
-    @include flex(row wrap, center, center);
+    @include flex(row wrap, space-around, center);
   }
 
   h1:nth-child(odd) {
@@ -25,7 +25,7 @@
 
   a {
     font-size: 20px;
-    padding: .8rem 3rem;
+    padding: 0.8rem 3rem;
     @include tablet {
       font-size: 13px;
     }
@@ -37,11 +37,10 @@
     @include tablet {
       display: inline-block;
       @include desktop {
-        height: 350px;
-        width: 600px;
+        height: auto;
+        width: 450px;
       }
     }
-
   }
 }
 
@@ -57,31 +56,27 @@
     display: block;
     @include desktop {
       padding: 3% 0;
-      font-size: 48px;
+      font-size: 3rem;
     }
   }
 }
-
 
 .free-resource-text-desktop {
   @include flex(column nowrap, center, center);
   @include tablet {
     display: inline-block;
     width: 50%;
-    padding-bottom: 36px;
+    padding-bottom: 3rem;
     h2 {
-      font-size: 30px;
+      font-size: 1.6rem;
     }
   }
   @include desktop {
-    display: inline-block;
-    width: 50%;
-    padding-bottom: 36px;
     h2 {
-      font-size: 36px;
+      font-size: 2rem;
     }
     @include desktop {
-      width: 37%;
+      width: 40%;
     }
   }
 
@@ -91,22 +86,17 @@
       display: block;
       margin: 20px 0;
     }
-
-
   }
 
   p {
     display: none;
     @include tablet {
       display: block;
-      margin-right: 10px;
     }
     @include desktop {
       display: block;
       margin-bottom: 10%;
       line-height: 17px;
-      margin-right: 0;
-
     }
   }
 }
@@ -129,8 +119,7 @@
       display: block;
     }
     @include desktop {
-      font-size: 36px;
-
+      font-size: 2rem;
     }
   }
 
@@ -150,7 +139,6 @@
       display: block;
       padding-top: 20px;
       font-size: 16px;
-
     }
     @include desktop {
       width: 90%;
@@ -164,24 +152,22 @@
   display: none;
   @include tablet {
     display: block;
-    font-size: 36px;
+    font-size: 2rem;
   }
   @include desktop {
     display: block;
-    font-size: 48px;
-
-
+    font-size: 3rem;
   }
 }
 
-.free-resource-video-container, .free-resource-video {
+.free-resource-video-container,
+.free-resource-video {
   margin: 0 auto;
-  padding: 25px;
+  padding: 25px 0;
   @include flex(column nowrap, center, center);
   @include tablet {
     padding: 25px 0;
   }
-
 
   h2 {
     padding: 10px 0;
@@ -193,7 +179,7 @@
     }
     @include desktop {
       width: 100%;
-      font-size: 36px;
+      font-size: 30px;
     }
   }
 
@@ -201,17 +187,13 @@
     width: 335px;
     height: 198px;
     @include desktop {
-      height: 402px;
-      width: 710px;
-
+      height: 370px;
+      width: 670px;
     }
   }
-
 }
 
-
 .free-resource-video-container {
-
   @include tablet {
     div:nth-child(even) {
       flex-flow: row nowrap;
@@ -220,7 +202,12 @@
       flex-flow: row-reverse nowrap;
     }
     .free-resource-video-description {
-      padding: 57px;
+      div:nth-child(even) {
+        padding-left: 1rem;
+      }
+      div:nth-child(odd) {
+        padding-right: 1rem;
+      }
 
       p {
         font-size: 18px;
@@ -228,7 +215,6 @@
     }
   }
 }
-
 
 .free-resource-video-description {
   p {
@@ -238,4 +224,3 @@
     }
   }
 }
-
