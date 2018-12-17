@@ -908,7 +908,7 @@ ul.sub-menu {
       .site-footer .footer-navigation ul {
         width: 800px; } }
     .site-footer .footer-navigation ul a:hover {
-      color: #b4de96; }
+      border-bottom: 2px solid #b5ccdb; }
   .site-footer h6 {
     color: #fff;
     letter-spacing: 0.5px;
@@ -1512,14 +1512,18 @@ object {
       .banner-header h1 {
         font-size: 2.7rem; } }
 
-.founder-container, .solutions-container {
+.founder-container,
+.solutions-container {
   text-align: center;
   margin-bottom: 2.2rem; }
-  .founder-container h1, .solutions-container h1 {
+  .founder-container h1,
+  .solutions-container h1 {
     font-size: 36px; }
-  .founder-container img, .solutions-container img {
+  .founder-container img,
+  .solutions-container img {
     margin-bottom: 15px; }
-  .founder-container p, .solutions-container p {
+  .founder-container p,
+  .solutions-container p {
     font-size: 22px;
     margin: 0 auto; }
 
@@ -1604,12 +1608,12 @@ object {
           flex-flow: column;
   margin-bottom: 25px; }
   .checkmark-container:before {
-    content: "";
+    content: '';
     height: 1px;
     width: 50%;
     border-top: 2px solid #b4de96; }
   .checkmark-container:after {
-    content: "";
+    content: '';
     height: 1px;
     width: 50%;
     border-bottom: 2px solid #b4de96; }
@@ -1655,20 +1659,19 @@ object {
       display: inline-block; }
       .campaign-container h2 {
         text-align: left; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 600px) {
     .campaign-container {
       width: 55%; } }
   .campaign-container .campaign-text-desktop {
     display: none; }
-  @media (min-width: 1240px) {
+  @media (min-width: 600px) {
     .campaign-container {
       display: inline-block; }
       .campaign-container .campaign-text-mobile {
-        display: none; } }
-  @media (min-width: 1240px) and (min-width: 1240px) {
-    .campaign-container .campaign-text-desktop {
-      display: block;
-      margin: 0 auto; } }
+        display: none; }
+      .campaign-container .campaign-text-desktop {
+        display: block;
+        margin: 0 auto; } }
   .campaign-container p {
     text-align: center;
     font-size: 22px;
@@ -1731,7 +1734,6 @@ object {
       display: inline-block;
       width: 44%; }
       .campaign-logo-container-desktop img {
-        margin-bottom: 11%;
         margin-left: 35px; } }
 
 .view-courses {
@@ -1763,7 +1765,8 @@ object {
   .banner-image-mobile {
     display: none; } }
 
-.vp-video-wrapper, .transparent {
+.vp-video-wrapper,
+.transparent {
   border-radius: 25px; }
 
 .front-page-video-container {

@@ -49,7 +49,7 @@
 
       a {
         &:hover {
-          color: $secondary__color;
+          border-bottom: $border-hover;
         }
       }
     }
@@ -133,7 +133,6 @@
 
     .social-media-icon {
       order: 1;
-      // @include flex(row nowrap, flex-start, center);
       font-size: 30px;
       // @include heightandwidth(100%, auto);
       position: absolute;
