@@ -30,45 +30,38 @@ get_header(); ?>
             <section class="course-themes">
 
 
-                <div class="course-theme-bubble">
+                <div class="course-bubbles">
                     <?php foreach ($course_posts as $post) : setup_postdata($post); ?>
-                        <article class="themes">
+                        <div class="bubble" data-id='<?php echo $post_id; ?>'>
                             <?php
                             $post_id = $post->ID;
                             ?>
-
-                            <div class="course-title" data-id='<?php echo $post_id; ?>'>
+                            <div class="course-title" >
                                 <h2><?php echo CFS()->get('course_theme_title', $post_id); ?>
                                 </h2>
                             </div>
-                            
-                            
-
-
-                      
-
-                        </article>
+        </div>
                     <?php endforeach;
                     wp_reset_postdata(); ?>
                 </div>
 
                 <div class="course-theme-text">
                     <?php foreach ($course_posts as $post) : setup_postdata($post); ?>
-                        <article class="themes">
+                        <article class="themes" data-id='<?php echo $post_id; ?>'>
                             <?php
                             $post_id = $post->ID;
                             $post_url = $post->guid;
                             ?>
 
-                            
-                            <p><?php echo CFS()->get('course_theme_description', $post_id); ?> </p>
-                            <a href="<?php echo $post_url; ?>">Learn More</a>
-                            
+                            <div class="themes-text">
+                                <p><?php echo CFS()->get('course_theme_description', $post_id); ?> </p>
+                                <a href="<?php echo $post_url; ?>">Learn More</a>
+                            </div>
 
 
                             <div class="permalink">
                                 <a href="<?php echo get_the_permalink(); ?>">
-                                    <?php the_title(); ?>
+                                    <!-- <?php the_title(); ?>  Todo:change this to learn more -->
                                 </a>
                             </div>
 

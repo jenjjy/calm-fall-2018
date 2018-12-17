@@ -2631,6 +2631,39 @@ object {
   background: none;
   color: white; }
 
+.page-id-80 .course-themes .course-bubbles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: scroll; }
+  .page-id-80 .course-themes .course-bubbles .bubble {
+    background: skyblue;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    .page-id-80 .course-themes .course-bubbles .bubble.active {
+      background: coral; }
+
+.page-id-80 .course-themes .themes-text.active {
+  display: block; }
+
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
