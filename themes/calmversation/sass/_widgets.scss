@@ -73,13 +73,24 @@
   .site-footer .social-media-icon {
     order: 1;
     @include flex(row, null, flex-start);
-    font-size: 40px;
+    font-size: 30px;
     @include heightandwidth(100%, auto);
 
     ul {
       a {
 
         margin: 0px 15px;
+
+        .far,
+        .fab {
+          border: white solid 1px;
+          padding: 10px;
+          border-radius: 50%;
+          background-color: $primary__color;
+        }
+
+
+
       }
     }
   }
