@@ -1,17 +1,22 @@
 // Button#
 @mixin button {
+  background: $secondary__color;
+  border: 2px solid $secondary__color;
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
   flex: 1 1 auto;
   letter-spacing: 2px;
   padding: 20px;
-  border: 2px solid $secondary__color;
-  color: white;
-  border-radius: 25px;
-  background: $secondary__color;
   text-align: center;
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
   transition: 0.5s;
+
+  @include tablet {
+  }
+
   &:after {
     position: absolute;
     transition: 0.3s;

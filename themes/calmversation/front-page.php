@@ -164,6 +164,8 @@ get_header(); ?>
                 echo CFS()->get('campaign_logo');
                 ?>" alt="" class="campaign-logo">
             </div>
+
+            
             <?php /* Start Testimony Loop */ ?>
             <?php while (have_posts()) : the_post(); ?>
 

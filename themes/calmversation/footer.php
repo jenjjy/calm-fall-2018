@@ -7,7 +7,7 @@
 
 ?>
 
-	<body><!-- #content -->
+
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 		  
@@ -34,7 +34,8 @@
 						</a>
 					</li>
 				</ul>
-            </div><!--.footer-navigation -->
+			</div><!--.footer-navigation -->
+			
 			<div class="social-media-icon">
 				<ul>
 				  <li>  

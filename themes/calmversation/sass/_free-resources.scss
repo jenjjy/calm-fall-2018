@@ -4,8 +4,15 @@
 
 .free-resource-banner {
   @include flex(column nowrap, center, center);
+  width: 100%;
+
   @include tablet {
-    @include flex(row wrap, space-around, center);
+    @include flex(row wrap, space-between, center);
+  }
+
+  h1 {
+    text-align: center;
+    width: 100%;
   }
 
   h1:nth-child(odd) {
@@ -24,7 +31,7 @@
 
     @include tablet {
       height: auto;
-      width: 450px;
+      width: 55%;
     }
   }
 
@@ -44,7 +51,7 @@
 
       @include desktop {
         height: auto;
-        width: 450px;
+        // width: 450px;
       }
     }
   }
@@ -58,31 +65,34 @@
 
 .free-resource-header-desktop {
   display: none;
+  text-align: center;
   @include tablet {
     padding: 2rem 0;
     display: block;
-    @include desktop {
-      padding: 2rem 0;
-      font-size: 3rem;
-    }
+  }
+
+  @include desktop {
+    padding: 2rem 0;
+    font-size: 3rem;
   }
 }
 
 .free-resource-text-desktop {
   @include flex(column nowrap, center, center);
+  width: 100%;
+
   @include tablet {
     display: inline-block;
-    width: 50%;
+    width: 42%;
     padding-bottom: 3rem;
     h2 {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
     }
   }
+
   @include desktop {
     h2 {
       font-size: 2rem;
-    }
-    @include desktop {
       width: 40%;
     }
   }
@@ -92,6 +102,7 @@
     @include tablet {
       display: block;
       margin: 20px 0;
+      width: 100%;
     }
   }
 
@@ -99,10 +110,11 @@
     display: none;
     @include tablet {
       display: block;
+      margin-bottom: 3rem;
     }
     @include desktop {
       display: block;
-      margin-bottom: 10%;
+      // margin-bottom: 10%;
       line-height: 17px;
     }
   }
@@ -182,11 +194,11 @@
     margin: 0 auto;
     text-align: center;
     @include tablet {
-      width: 300px;
+      width: 45vw;
       font-size: 1.7rem;
     }
     @include desktop {
-      width: 350px;
+      width: 450px;
       font-size: 2rem;
     }
   }
