@@ -37,7 +37,7 @@
 .founder-container,
 .solutions-container {
   text-align: center;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.5rem;
 
   h1 {
     font-size: 36px;
@@ -50,10 +50,16 @@
   p {
     font-size: 22px;
     margin: 0 auto;
+    padding: 0 1rem;
   }
 }
 
 .founder-container {
+  iframe {
+    height: 220px;
+    width: 380px;
+  }
+
   @include tablet {
     @include flex(row-reverse nowrap, center, center);
     iframe {
@@ -137,6 +143,7 @@
   margin: 15px 0;
   @include flex(row wrap, center, center);
   width: 110%;
+
   h2 {
     margin-left: 10px;
     width: 60%;
@@ -147,15 +154,15 @@
 .campaign-container {
   @include flex(column wrap, center, null);
   margin-bottom: 25px;
-  @include tablet {
-    display: inline-block;
-    h2 {
-      text-align: left;
-    }
-  }
 
   @include tablet {
+    display: inline-block;
     width: 55%;
+
+    h2 {
+      text-align: left;
+      margin: 2rem 0;
+    }
   }
 
   .campaign-text-desktop {
@@ -171,13 +178,15 @@
     .campaign-text-desktop {
       display: block;
       margin: 0 auto;
+      // width: 450px;
     }
   }
 
   p {
     text-align: center;
-    font-size: 22px;
+    font-size: 1rem;
     margin: 25px auto;
+    padding: 0 1rem;
 
     @include tablet {
       padding-bottom: 25px;
@@ -196,9 +205,11 @@
 
   h2 {
     text-align: center;
-    font-size: 42px;
+    font-size: 2rem;
     font-weight: bolder;
     margin-top: auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 
     @include tablet {
       text-align: left;
@@ -211,14 +222,23 @@
   }
 
   .campaign-logo {
-    margin: 30px auto;
-    height: 150px;
+    margin: 10px auto;
+    height: 130px;
     width: auto;
+
+    @include tablet {
+      height: 200px;
+    }
   }
 
   .campaign-logo-container-mobile {
     text-align: center;
+
     @include tablet {
+      position: absolute;
+      right: 5%;
+    }
+    @include desktop {
       display: none;
     }
   }
@@ -239,12 +259,14 @@
 .campaign-logo-container-desktop {
   display: none;
   @include tablet {
-    display: inline-block;
+    // display: inline-block;
     width: 35%;
+
     img {
-      margin-bottom: 27%;
+      margin-bottom: 15%;
     }
   }
+
   @include desktop {
     display: inline-block;
     width: 44%;

@@ -1515,7 +1515,7 @@ object {
 .founder-container,
 .solutions-container {
   text-align: center;
-  margin-bottom: 2.2rem; }
+  margin-bottom: 2.5rem; }
   .founder-container h1,
   .solutions-container h1 {
     font-size: 36px; }
@@ -1525,7 +1525,12 @@ object {
   .founder-container p,
   .solutions-container p {
     font-size: 22px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0 1rem; }
+
+.founder-container iframe {
+  height: 220px;
+  width: 380px; }
 
 @media (min-width: 600px) {
   .founder-container {
@@ -1656,12 +1661,11 @@ object {
   margin-bottom: 25px; }
   @media (min-width: 600px) {
     .campaign-container {
-      display: inline-block; }
+      display: inline-block;
+      width: 55%; }
       .campaign-container h2 {
-        text-align: left; } }
-  @media (min-width: 600px) {
-    .campaign-container {
-      width: 55%; } }
+        text-align: left;
+        margin: 2rem 0; } }
   .campaign-container .campaign-text-desktop {
     display: none; }
   @media (min-width: 600px) {
@@ -1674,8 +1678,9 @@ object {
         margin: 0 auto; } }
   .campaign-container p {
     text-align: center;
-    font-size: 22px;
-    margin: 25px auto; }
+    font-size: 1rem;
+    margin: 25px auto;
+    padding: 0 1rem; }
     @media (min-width: 600px) {
       .campaign-container p {
         padding-bottom: 25px;
@@ -1691,9 +1696,11 @@ object {
         text-align: left; } }
   .campaign-container h2 {
     text-align: center;
-    font-size: 42px;
+    font-size: 2rem;
     font-weight: bolder;
-    margin-top: auto; }
+    margin-top: auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem; }
     @media (min-width: 600px) {
       .campaign-container h2 {
         text-align: left; } }
@@ -1702,12 +1709,19 @@ object {
         font-size: 48px;
         margin: 8% 0; } }
   .campaign-container .campaign-logo {
-    margin: 30px auto;
-    height: 150px;
+    margin: 10px auto;
+    height: 130px;
     width: auto; }
+    @media (min-width: 600px) {
+      .campaign-container .campaign-logo {
+        height: 200px; } }
   .campaign-container .campaign-logo-container-mobile {
     text-align: center; }
     @media (min-width: 600px) {
+      .campaign-container .campaign-logo-container-mobile {
+        position: absolute;
+        right: 5%; } }
+    @media (min-width: 1240px) {
       .campaign-container .campaign-logo-container-mobile {
         display: none; } }
   .campaign-container .campaign-button {
@@ -1725,10 +1739,9 @@ object {
   display: none; }
   @media (min-width: 600px) {
     .campaign-logo-container-desktop {
-      display: inline-block;
       width: 35%; }
       .campaign-logo-container-desktop img {
-        margin-bottom: 27%; } }
+        margin-bottom: 15%; } }
   @media (min-width: 1240px) {
     .campaign-logo-container-desktop {
       display: inline-block;
@@ -2245,7 +2258,10 @@ object {
           flex-basis: auto;
       margin: 0;
       height: 360px;
-      min-width: 200px; } }
+      min-width: 300px; } }
+  @media (min-width: 1240px) {
+    .team-member {
+      width: 300px; } }
   .team-member .member-img {
     height: auto;
     width: 200px; }
@@ -2313,6 +2329,9 @@ object {
   .tedx-video iframe {
     height: 270px;
     width: 100%; }
+    @media (min-width: 600px) {
+      .tedx-video iframe {
+        height: 350px; } }
     @media (min-width: 1240px) {
       .tedx-video iframe {
         padding: 0;
