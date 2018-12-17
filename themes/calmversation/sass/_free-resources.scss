@@ -5,7 +5,7 @@
 .free-resource-banner {
   @include flex(column nowrap, center, center);
   @include tablet {
-    @include flex(row wrap, center, center);
+    @include flex(row wrap, space-around, center);
   }
 
   h1:nth-child(odd) {
@@ -21,11 +21,16 @@
     height: 200px;
     border-radius: 25px;
     margin-bottom: 25px;
+
+    @include tablet {
+      height: auto;
+      width: 450px;
+    }
   }
 
   a {
     font-size: 20px;
-    padding: .8rem 3rem;
+    padding: 0.8rem 3rem;
     @include tablet {
       font-size: 13px;
     }
@@ -36,12 +41,12 @@
 
     @include tablet {
       display: inline-block;
+
       @include desktop {
-        height: 350px;
-        width: 600px;
+        height: auto;
+        width: 450px;
       }
     }
-
   }
 }
 
@@ -54,34 +59,31 @@
 .free-resource-header-desktop {
   display: none;
   @include tablet {
+    padding: 2rem 0;
     display: block;
     @include desktop {
-      padding: 3% 0;
-      font-size: 48px;
+      padding: 2rem 0;
+      font-size: 3rem;
     }
   }
 }
-
 
 .free-resource-text-desktop {
   @include flex(column nowrap, center, center);
   @include tablet {
     display: inline-block;
     width: 50%;
-    padding-bottom: 36px;
+    padding-bottom: 3rem;
     h2 {
-      font-size: 30px;
+      font-size: 1.6rem;
     }
   }
   @include desktop {
-    display: inline-block;
-    width: 50%;
-    padding-bottom: 36px;
     h2 {
-      font-size: 36px;
+      font-size: 2rem;
     }
     @include desktop {
-      width: 37%;
+      width: 40%;
     }
   }
 
@@ -91,22 +93,17 @@
       display: block;
       margin: 20px 0;
     }
-
-
   }
 
   p {
     display: none;
     @include tablet {
       display: block;
-      margin-right: 10px;
     }
     @include desktop {
       display: block;
       margin-bottom: 10%;
       line-height: 17px;
-      margin-right: 0;
-
     }
   }
 }
@@ -129,8 +126,7 @@
       display: block;
     }
     @include desktop {
-      font-size: 36px;
-
+      font-size: 2rem;
     }
   }
 
@@ -150,7 +146,6 @@
       display: block;
       padding-top: 20px;
       font-size: 16px;
-
     }
     @include desktop {
       width: 90%;
@@ -164,24 +159,22 @@
   display: none;
   @include tablet {
     display: block;
-    font-size: 36px;
+    font-size: 2rem;
   }
   @include desktop {
     display: block;
-    font-size: 48px;
-
-
+    font-size: 3rem;
   }
 }
 
-.free-resource-video-container, .free-resource-video {
+.free-resource-video-container,
+.free-resource-video {
   margin: 0 auto;
-  padding: 25px;
+  padding: 2rem 0;
   @include flex(column nowrap, center, center);
   @include tablet {
-    padding: 25px 0;
+    // padding: 25px 0;
   }
-
 
   h2 {
     padding: 10px 0;
@@ -189,53 +182,83 @@
     margin: 0 auto;
     text-align: center;
     @include tablet {
-      font-size: 22px;
+      width: 300px;
+      font-size: 1.7rem;
     }
     @include desktop {
-      width: 100%;
-      font-size: 36px;
+      width: 350px;
+      font-size: 2rem;
     }
   }
 
   iframe {
-    width: 335px;
     height: 198px;
-    @include desktop {
-      height: 402px;
-      width: 710px;
+    width: 335px;
 
+    @include tablet {
+      height: 370px;
+      width: 600px;
+    }
+
+    @include desktop {
+      max-height: 400px;
+      max-width: 710px;
     }
   }
-
 }
 
-
 .free-resource-video-container {
-
   @include tablet {
-    div:nth-child(even) {
-      flex-flow: row nowrap;
-    }
+    // padding: 2rem 0;
+    width: 100%;
+
     div:nth-child(odd) {
       flex-flow: row-reverse nowrap;
+      // justify-content: space-between;
     }
+
+    div:nth-child(even) {
+      flex-flow: row nowrap;
+      // justify-content: space-between;
+    }
+
     .free-resource-video-description {
-      padding: 57px;
+      div:nth-child(odd) {
+        padding-right: 1rem;
+      }
+
+      div:nth-child(even) {
+        padding-left: 1rem;
+      }
 
       p {
-        font-size: 18px;
+        font-size: 1rem;
+        text-align: right;
       }
     }
   }
-}
 
+  @include desktop {
+    div:nth-child(odd) {
+      justify-content: space-evenly;
+    }
+
+    div:nth-child(even) {
+      justify-content: space-evenly;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
 
 .free-resource-video-description {
   p {
     display: none;
     @include tablet {
       display: block;
+      padding: 0 2rem;
     }
   }
 }
-

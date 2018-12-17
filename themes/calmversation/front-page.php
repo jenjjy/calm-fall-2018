@@ -55,9 +55,11 @@ get_header(); ?>
                             echo CFS()->get('listen_to_founder_header');
                             ?>
                         </h1>
-                        <?php
-                        echo CFS()->get('listen_to_founder_button');
-                        ?>
+                        <div class="founder-button-container">
+                            <?php
+                            echo CFS()->get('listen_to_founder_button');
+                            ?>
+                        </div>
                     </div>
 
                 </div>

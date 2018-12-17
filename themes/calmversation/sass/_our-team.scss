@@ -11,36 +11,45 @@
     @include flex(row wrap, space-evenly, flex-start);
     margin: auto;
     padding-bottom: 4rem;
-    max-width: 1170px;
+    // max-width: 1170px;
   }
 }
 
 .team-member {
   @include flex(column nowrap, flex-start, center);
+
   margin: 0 auto;
+  padding: 0 1rem;
+
   height: 325px;
   width: 265px;
 
   @include tablet {
-    height: 445px;
+    flex-basis: auto;
     margin: 0;
+
+    height: 360px;
+    min-width: 200px;
+  }
+
+  @include desktop {
+    // height: 450px;
   }
 
   .member-img {
     height: auto;
     width: 200px;
+
     @include tablet {
-      width: auto;
+      min-width: 200px;
+      max-width: 300px;
     }
 
     img {
       border: 5px solid $primary__color;
       border-radius: 50%;
       overflow: hidden;
-
-      //   height: 100%;
-      // margin-right: 1.5rem;
-      width: auto;
+      //   width: auto;
     }
   }
 
@@ -49,8 +58,8 @@
     font-family: $font__main-bold;
     font-size: 22px;
 
-    @include tablet {
-      font-size: 28px;
+    @include desktop {
+      font-size: 26px;
     }
   }
   .member-role {
@@ -62,7 +71,11 @@
     text-transform: capitalize;
 
     @include tablet {
-      font-size: 22px;
+      font-size: 18px;
+    }
+
+    @include desktop {
+      font-size: 20px;
       max-width: 300px;
     }
   }
@@ -71,8 +84,7 @@
 .tedx-video {
   @include flex(column nowrap, space-between, center);
   margin: auto;
-  padding: 4rem 0;
-  //   max-width: 1080px;
+  //   padding-top: 4rem;
 
   @include tablet {
     @include flex(row-reverse nowrap, center, center);
@@ -83,31 +95,38 @@
 
   iframe {
     //   box-shadow: none;
-    height: 220px;
-    width: 100vw;
+    height: 270px;
+    width: 100%;
 
     @include tablet {
-      padding-right: 1rem;
-
-      height: 300px;
+      //   padding-right: 1rem;
+      //   height: 300px;
     }
 
     @include desktop {
       padding: 0;
-      height: 420px;
+      height: 370px;
       width: 670px;
     }
   }
 
   .tedx-content {
     text-align: center;
-    padding: 0 1rem;
+    padding-right: 0 1rem;
     // width: 270px;
+
+    h1 {
+      margin: 1rem 0;
+    }
 
     @include tablet {
       text-align: left;
       padding-right: 1rem;
       width: 470px;
+    }
+
+    @include desktop {
+      padding-right: 2rem;
     }
   }
 }

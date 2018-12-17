@@ -7,9 +7,9 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area site-container">
+<div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-
+<div class="site-container">
         <?php the_title('<h1 class="page-title">', '</h1>'); ?>
 
 	<?php if (has_post_thumbnail()) : ?>
@@ -72,7 +72,7 @@ get_header(); ?>
         endif;
         ?>
 
-
+		</div><!-- site-container -->
     </main><!-- #main -->
 </div><!-- #primary -->
 
