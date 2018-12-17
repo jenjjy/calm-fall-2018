@@ -19,4 +19,42 @@
     background: none;
     color: white;
   }
+
+  .course-themes {
+    .course-bubbles {
+      display: flex;
+      justify-content: space-around;
+      overflow: scroll;
+      .bubble {
+        background: skyblue;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.5s;
+        &.active {
+          background: coral;
+        }
+        .course-title {
+          h2 {
+          }
+        }
+      }
+    }
+
+    .themes-text {
+      // display: none;
+      &.active {
+        display: block;
+      }
+      .permalink {
+        a {
+        }
+      }
+    }
+  }
 }

@@ -45,7 +45,7 @@
     } //carousel testimony
 
     $(window).resize(function() {
-      console.log('carousel');
+      // console.log('carousel');
       if ($(window).width() < 600) {
         $('.main-carousel').flickity({
           cellAlign: 'left',
@@ -60,16 +60,17 @@
     let readMore = $('.readmore .wp-block-button__link');
 
     readMore.click(function() {
-      console.log('asdf');
+      // console.log('asdf');
       extraText.toggleClass('hide-text');
     });
 
-    $(".themes").on("click", function() {
-      $(".course-theme").removeClass("active");
-      $(this).addClass("active");
+    $('.bubble').on('click', function() {
+      $('.bubble').removeClass('active');
+      $(this).addClass('active');
       let id = $(this).attr('data-id');
-      console.log(id);
-      $('.theme').hide();
+      // console.log(id);
+      $('.themes').hide();
+
       $(`[data-id=${id}]`).show();
     });
   }); // end of doc ready
