@@ -108,13 +108,19 @@ textarea {
 }
 
 .gform_confirmation_message_1, .gform_confirmation_message {
+  font-weight: bolder;
   width: 80%;
+  height: 200px;
   @include flex(column nowrap, center, center);
   text-align: center;
   margin: $margin__auto;
-  border: 2px solid $secondary__color;
+  border: 5px solid $primary__color;
   padding: 25px;
-  border-radius: 15px;
+  border-radius: 30px;
+  @include desktop {
+    font-size: 48px;
+    height: 500px;
+  }
 }
 
 
