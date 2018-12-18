@@ -3,13 +3,57 @@
   .hide-text {
     display: none;
   }
-
-  .readmore a {
-    padding: 0;
-    border-radius: 0;
-    border: none;
-    background: none;
-    color: black;
+  .entry-content {
+    h2 {
+      @include desktop {
+        text-align: left;
+        margin-left: 2%;
+        margin-bottom: -5%;
+        font-weight: 400;
+      }
+    }
+    .themes-title {
+      @include desktop {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 10%;
+      }
+    }
+  }
+  .wp-block-columns {
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+    }
+    figure {
+      img {
+        @include desktop {
+          border-radius: 25px;
+        }
+      }
+    }
+    .wp-block-column:nth-child(2) {
+      margin-top: 2%;
+      margin-right: 3%;
+    }
+    .wp-block-column p {
+      @include desktop {
+        font-size: 18px;
+        text-align: left;
+      }
+    }
+    .readmore a {
+      padding: 0;
+      border-radius: 0;
+      border: none;
+      background: none;
+      color: black;
+      @include desktop {
+        display: none;
+      }
+    }
   }
 
   .wp-block-button {
@@ -18,14 +62,35 @@
     border: none;
     background: none;
     color: white;
+    @include desktop {
+      text-align: left;
+      margin-left: 2%;
+    }
+    a {
+      @include desktop {
+        width: 33%;
+      }
+    }
   }
 
+  .course-lines {
+    display: none;
+    @include desktop {
+      display: block;
+      position: relative;
+    }
+  }
   .course-themes {
     .course-bubbles {
       display: flex;
+      height: 200px;
       justify-content: space-around;
       overflow: scroll;
+      @include desktop {
+        height: 50px;
+      }
       .bubble {
+        margin-right: 5%;
         background: skyblue;
         width: 200px;
         height: 200px;
@@ -36,6 +101,12 @@
         align-items: center;
         cursor: pointer;
         transition: 0.5s;
+        .course-title {
+          text-align: center;
+        }
+        @include desktop {
+          margin-right: 0;
+        }
         &.active {
           background: coral;
         }
@@ -44,17 +115,137 @@
           }
         }
       }
-    }
 
-    .themes-text {
-      // display: none;
-      &.active {
-        display: block;
-      }
-      .permalink {
-        a {
+      .bubble41 {
+        order: 1;
+        @include desktop {
+          position: absolute;
+          top: 1030px;
+          left: 140px;
         }
       }
+      .bubble109 {
+        order: 2;
+        @include desktop {
+          position: absolute;
+          top: 1230px;
+          left: 390px;
+        }
+      }
+      .bubble111 {
+        order: 3;
+        @include desktop {
+          position: absolute;
+          top: 1030px;
+          left: 630px;
+        }
+      }
+      .bubble113 {
+        order: 4;
+        @include desktop {
+          position: absolute;
+          top: 1230px;
+          left: 860px;
+        }
+      }
+      .bubble115 {
+        order: 5;
+        @include desktop {
+          position: absolute;
+          top: 1030px;
+          left: 1090px;
+        }
+      }
+
+      .themes {
+        display: none;
+      }
+      .themes-text {
+        &.active {
+          display: block;
+        }
+        .permalink {
+          a {
+          }
+        }
+      }
+    }
+  }
+  .course-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    h2 {
+      width: 100%;
+      text-align: center;
+      margin: 1.5rem 0;
+      font-size: 2rem;
+      @include desktop {
+        display: none;
+      }
+    }
+    .feature-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include desktop {
+        padding: 2rem;
+        width: 28%;
+        border: 3px solid $primary__color;
+        border-radius: 25px;
+        margin-right: 5%;
+      }
+      img {
+        width: 110px;
+      }
+      h3 {
+        margin: 1rem 0;
+        font-weight: bold;
+      }
+      p {
+        display: none;
+        @include tablet {
+          display: block;
+        }
+      }
+    }
+
+    .feature-block:nth-child(5) {
+      margin-left: 10%;
+      margin-top: 8%;
+    }
+    .feature-block:nth-child(6) {
+      margin-left: 10%;
+      margin-top: 8%;
+    }
+  }
+
+  .course-pack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    @include desktop {
+      display: none;
+    }
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .course-banner {
+    display: none;
+    @include desktop {
+      margin: 8% 0;
+      display: flex;
+      flex-direction: row;
     }
   }
 }
