@@ -44,6 +44,18 @@
       });
     } //carousel testimony
 
+    let fixedHeader = $('.menu-header-container');
+    let headerHeight = $('.site-header').height();
+
+    $(window).on('scroll', function() {
+      console.log('working?');
+      if ($(window).scrollTop() > headerHeight) {
+        fixedHeader.addClass('fixed-header');
+      } else {
+        fixedHeader.removeClass('fixed-header');
+      }
+    }); // end of fixed-header
+
     if (mobileWidth < 600) {
       $('.main-carousel').flickity({
         cellAlign: 'left',

@@ -166,11 +166,6 @@ get_header(); ?>
             </div>
 
             
-            <?php /* Start Testimony Loop */ ?>
-            <?php while (have_posts()) : the_post(); ?>
-
-
-            <?php endwhile; ?>
 
         </div>
     </main><!-- #main -->

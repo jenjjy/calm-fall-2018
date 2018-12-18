@@ -715,13 +715,19 @@ a {
           border-bottom: 2px solid #b5ccdb; } }
 
 @media (min-width: 600px) {
-  .menu-header-container {
+  .menu {
     margin: auto;
-    width: 100%; } }
-
-@media (min-width: 1240px) {
-  .menu-header-container {
     width: 975px; } }
+
+@media (min-width: 600px) {
+  .fixed-header {
+    background-color: #f0f3f8;
+    opacity: 0.85;
+    padding: 1rem 0;
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    z-index: 1000; } }
 
 .about-us-border {
   border-bottom: 2px solid #b4de96;
@@ -1230,25 +1236,12 @@ object {
           color: #b4de96;
           font-size: 1rem; } }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.main-navigation .menu {
   margin: auto; }
   @media (min-width: 600px) {
-    .menu {
-      display: block;
-      padding-top: 1rem; } }
+    .main-navigation .menu {
+      margin: auto;
+      width: 975px; } }
 
 /* 
  * Mobile Menu Slide 
