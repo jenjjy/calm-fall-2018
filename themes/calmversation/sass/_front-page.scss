@@ -9,17 +9,17 @@
     padding: 30px 0;
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
-    font-size: 2.7rem;
+    font-size: $main-header__mobile + 6;
   }
 
   @include tablet {
-    top: 43vh;
+    top: 26vh;
     left: 5vh;
     position: absolute;
     color: $color__white;
     text-align: inherit;
     h1 {
-      font-size: 35px;
+      font-size: $main-header__mobile - 10;
     }
   }
   @include desktop {
@@ -29,7 +29,7 @@
     color: $color__white;
     text-align: inherit;
     h1 {
-      font-size: 2.7rem;
+      font-size: $main-header__desktop;
     }
   }
 }

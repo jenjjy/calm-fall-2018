@@ -1092,7 +1092,7 @@ ul.sub-menu {
     @media (min-width: 1240px) {
       .entry-content h2 {
         font-size: 48px;
-        padding: 45px 0; } }
+        padding: 25px 0; } }
   .entry-content p {
     padding: 15px 0;
     font-size: 22px; }
@@ -1101,7 +1101,9 @@ ul.sub-menu {
         padding: 0; } }
     @media (min-width: 1240px) {
       .entry-content p {
-        font-size: 28px; } }
+        margin: 25px auto;
+        width: 85%;
+        font-size: 20px; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1501,16 +1503,16 @@ object {
     padding: 30px 0;
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
-    font-size: 2.7rem; }
+    font-size: 48px; }
   @media (min-width: 600px) {
     .banner-header {
-      top: 43vh;
+      top: 26vh;
       left: 5vh;
       position: absolute;
       color: #fff;
       text-align: inherit; }
       .banner-header h1 {
-        font-size: 35px; } }
+        font-size: 32px; } }
   @media (min-width: 1240px) {
     .banner-header {
       top: 50vh;
@@ -1519,7 +1521,7 @@ object {
       color: #fff;
       text-align: inherit; }
       .banner-header h1 {
-        font-size: 2.7rem; } }
+        font-size: 48px; } }
 
 .founder-container,
 .solutions-container {
