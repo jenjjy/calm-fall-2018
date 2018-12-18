@@ -2682,28 +2682,65 @@ object {
     .page-id-80 .wp-block-columns .wp-block-column p {
       font-size: 18px;
       text-align: left; } }
-  .page-id-80 .wp-block-columns .readmore a {
+  .page-id-80 .wp-block-columns .readmore .wp-block-button__link {
     padding: 0;
     border-radius: 0;
     border: none;
     background: none;
     color: black; }
     @media (min-width: 1240px) {
-      .page-id-80 .wp-block-columns .readmore a {
+      .page-id-80 .wp-block-columns .readmore .wp-block-button__link {
         display: none; } }
+  .page-id-80 .wp-block-columns:hover {
+    background-color: transparent; }
 
-.page-id-80 .wp-block-button {
-  padding: 0;
-  border-radius: 0;
-  border: none;
-  background: none;
-  color: white; }
+@media (min-width: 1240px) {
+  .page-id-80 .wp-block-button {
+    text-align: left;
+    margin-left: 2%; } }
+
+.page-id-80 .wp-block-button .wp-block-button__link {
+  background: #b4de96;
+  border: 2px solid #b4de96;
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Muli", sans-serif;
+  padding: 0.8rem 3rem;
+  font-size: 17px;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none; }
+  .page-id-80 .wp-block-button .wp-block-button__link:after {
+    position: absolute;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #f7f7f7; }
+  .page-id-80 .wp-block-button .wp-block-button__link:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 0px 8px #9fc984;
+            box-shadow: 0px 0px 0px 8px #9fc984;
+    background-color: #9fc984;
+    border: #9fc984; }
+    .page-id-80 .wp-block-button .wp-block-button__link:hover:after {
+      width: 0%; }
   @media (min-width: 1240px) {
-    .page-id-80 .wp-block-button {
-      text-align: left;
-      margin-left: 2%; } }
-  @media (min-width: 1240px) {
-    .page-id-80 .wp-block-button a {
+    .page-id-80 .wp-block-button .wp-block-button__link {
       width: 33%; } }
 
 .page-id-80 .course-lines {
@@ -2799,6 +2836,8 @@ object {
         left: 1090px; } }
   .page-id-80 .course-themes .course-bubbles .themes {
     display: none; }
+  .page-id-80 .course-themes .course-bubbles .themes-text .learn-more {
+    text-align: center; }
   .page-id-80 .course-themes .course-bubbles .themes-text.active {
     display: block; }
 
