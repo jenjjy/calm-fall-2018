@@ -23,11 +23,11 @@ This website was designed by RED Academy UX / UI team and brought to life by the
 ## screenshots
 
 
-####desktop
+#### Desktop
 
 <img src="themes/calmversation/screenshots/desktop-ss.png"  width="1000" height="500">
 
-####mobile
+#### Mobile
 
 <img src="themes/calmversation/screenshots/mobile-ss.png"  width="375" height="625">
 
