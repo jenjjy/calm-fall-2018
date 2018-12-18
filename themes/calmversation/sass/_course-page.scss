@@ -1,9 +1,8 @@
 .page-id-80 {
   //for js toggle
-  .hide-text {
-    display: none;
+  .show-text {
+    display: block;
   }
-
   .entry-content {
     h2 {
       @include desktop {
@@ -38,6 +37,13 @@
     .wp-block-column:nth-child(2) {
       margin-top: 2%;
       margin-right: 3%;
+
+      .course-text-more {
+        display: none;
+        @include desktop {
+          display: block;
+        }
+      }
     }
     .wp-block-column p {
       @include desktop {
@@ -45,19 +51,37 @@
         text-align: left;
       }
     }
-    .readmore .wp-block-button__link {
-      padding: 0;
-      border-radius: 0;
-      border: none;
-      background: none;
-      color: black;
-      &:hover {
-        background-color: transparent;
+    .readmore {
+      margin-bottom: 0;
+      .wp-block-button__link {
+        padding: 0;
+        border-radius: 0;
         border: none;
-        box-shadow: none;
+        background: none;
+        color: black;
+        &:hover {
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+        }
+        @include desktop {
+          display: none;
+        }
       }
-      @include desktop {
+    }
+    .readmore-arrows {
+      position: relative;
+
+      .fa-caret-down {
+        position: absolute;
+        left: 179px;
+        top: -10px;
+      }
+      .fa-caret-up {
         display: none;
+        position: absolute;
+        left: 179px;
+        top: -20px;
       }
     }
   } //end of wp columns

@@ -68,10 +68,13 @@
     //course-page readmore
     let extraText = $('.course-text-more');
     let readMore = $('.readmore .wp-block-button__link');
+    let arrowDown = $('.fa-caret-down');
+    let arrowUp = $('.fa-caret-up)');
 
     readMore.click(function() {
-      extraText.toggleClass('hide-text');
-      readMore.toggleClass('readmore-up');
+      extraText.toggleClass('show-text');
+      arrowDown.toggleclass('hide-text');
+      arrowUp.toggleclass('show-text');
     });
 
     // $('.themes').hide();
