@@ -608,13 +608,11 @@ a {
   display: none;
   letter-spacing: 1px;
   height: 100%;
-  width: 100%;
-  max-width: 1024px; }
+  width: 100%; }
   @media (min-width: 600px) {
     .main-navigation {
       background: transparent;
       display: block;
-      margin: auto;
       height: auto; }
       .main-navigation li.current-menu-item a {
         border-bottom: 2px solid #52b0cc; }
@@ -715,17 +713,12 @@ a {
           border-bottom: 2px solid #b5ccdb; } }
 
 @media (min-width: 600px) {
-  .menu {
-    margin: auto;
-    width: 975px; } }
-
-@media (min-width: 600px) {
   .fixed-header {
     background-color: #f0f3f8;
     opacity: 0.85;
     padding: 1rem 0;
     position: fixed;
-    top: 30px;
+    top: 0;
     width: 100%;
     z-index: 1000; } }
 
@@ -1099,7 +1092,7 @@ ul.sub-menu {
     @media (min-width: 1240px) {
       .entry-content h2 {
         font-size: 48px;
-        padding: 45px 0; } }
+        padding: 25px 0; } }
   .entry-content p {
     padding: 15px 0;
     font-size: 22px; }
@@ -1108,7 +1101,9 @@ ul.sub-menu {
         padding: 0; } }
     @media (min-width: 1240px) {
       .entry-content p {
-        font-size: 28px; } }
+        margin: 25px auto;
+        width: 85%;
+        font-size: 20px; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1237,9 +1232,35 @@ object {
           font-size: 1rem; } }
 
 .main-navigation .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto; }
   @media (min-width: 600px) {
     .main-navigation .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin: auto;
       max-width: 975px; } }
 
@@ -1384,13 +1405,12 @@ object {
 --------------------------------------------------------------*/
 /* Testimony */
 .page-title {
-  font-size: 32px;
+  font-size: 35px;
   padding-top: 1.5rem;
   text-align: center; }
   @media (min-width: 600px) {
     .page-title {
-      font-size: 48px;
-      padding-top: 3rem; } }
+      font-size: 48px; } }
 
 .testimony {
   font-size: 18px;
@@ -1483,16 +1503,16 @@ object {
     padding: 30px 0;
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
-    font-size: 2.7rem; }
+    font-size: 48px; }
   @media (min-width: 600px) {
     .banner-header {
-      top: 43vh;
+      top: 26vh;
       left: 5vh;
       position: absolute;
       color: #fff;
       text-align: inherit; }
       .banner-header h1 {
-        font-size: 35px; } }
+        font-size: 32px; } }
   @media (min-width: 1240px) {
     .banner-header {
       top: 50vh;
@@ -1501,7 +1521,7 @@ object {
       color: #fff;
       text-align: inherit; }
       .banner-header h1 {
-        font-size: 2.7rem; } }
+        font-size: 48px; } }
 
 .founder-container,
 .solutions-container {
@@ -1509,7 +1529,7 @@ object {
   margin-bottom: 2.5rem; }
   .founder-container h1,
   .solutions-container h1 {
-    font-size: 36px; }
+    font-size: 35px; }
   .founder-container img,
   .solutions-container img {
     margin-bottom: 15px; }
@@ -1635,8 +1655,8 @@ object {
   width: 110%; }
   .front-page-check-mark h2 {
     margin-left: 10px;
-    width: 60%;
-    font-size: 21px; }
+    width: 63%;
+    font-size: 22px; }
 
 .campaign-container {
   display: -webkit-box;
@@ -1654,7 +1674,7 @@ object {
     .campaign-container {
       display: inline-block;
       width: 55%; }
-      .campaign-container h2 {
+      .campaign-container h1 {
         text-align: left;
         margin: 2rem 0; } }
   .campaign-container .campaign-text-desktop {
@@ -1669,33 +1689,35 @@ object {
         margin: 0 auto; } }
   .campaign-container p {
     text-align: center;
-    font-size: 1rem;
+    font-size: 22px;
     margin: 25px auto; }
     @media (min-width: 600px) {
       .campaign-container p {
         padding-bottom: 25px;
-        line-height: 24px;
+        line-height: 17px;
         text-align: left;
         width: 100%;
         font-size: 14px; } }
     @media (min-width: 1240px) {
       .campaign-container p {
+        line-height: 22px;
         padding-bottom: 0;
         font-size: 16px;
         width: 100%;
-        text-align: left; } }
-  .campaign-container h2 {
+        text-align: left;
+        padding-right: 10%; } }
+  .campaign-container h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 35px;
     font-weight: bolder;
     margin-top: auto;
     padding-top: 2rem;
     padding-bottom: 1rem; }
     @media (min-width: 600px) {
-      .campaign-container h2 {
+      .campaign-container h1 {
         text-align: left; } }
     @media (min-width: 1240px) {
-      .campaign-container h2 {
+      .campaign-container h1 {
         font-size: 48px;
         margin: 8% 0; } }
   .campaign-container .campaign-logo {
@@ -1704,7 +1726,7 @@ object {
     width: auto; }
     @media (min-width: 600px) {
       .campaign-container .campaign-logo {
-        height: 200px; } }
+        height: 160px; } }
   .campaign-container .campaign-logo-container-mobile {
     text-align: center; }
     @media (min-width: 600px) {
@@ -2142,7 +2164,7 @@ object {
 --------------------------------------------------------------*/
 /* Our Team */
 .team-page {
-  padding-bottom: 2rem; }
+  padding-bottom: 3rem; }
   @media (min-width: 600px) {
     .team-page {
       display: -webkit-box;
@@ -2158,8 +2180,7 @@ object {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      margin: auto;
-      padding-bottom: 4rem; } }
+      margin: auto; } }
 
 .team-member {
   display: -webkit-box;
@@ -2177,25 +2198,24 @@ object {
           align-items: center;
   margin: 0 auto;
   padding: 0 1rem;
-  height: 325px;
+  height: 350px;
   width: 265px; }
   @media (min-width: 600px) {
     .team-member {
       -ms-flex-preferred-size: auto;
           flex-basis: auto;
       margin: 0;
-      height: 360px;
-      min-width: 300px; } }
+      height: 360px; } }
   @media (min-width: 1240px) {
     .team-member {
-      width: 300px; } }
+      width: 300px;
+      height: 400px; } }
   .team-member .member-img {
     height: auto;
-    width: 200px; }
+    max-width: 250px; }
     @media (min-width: 600px) {
       .team-member .member-img {
-        min-width: 200px;
-        max-width: 300px; } }
+        min-width: 200px; } }
     .team-member .member-img img {
       border: 5px solid #52b0cc;
       border-radius: 50%;
@@ -2251,19 +2271,22 @@ object {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      padding-bottom: 5rem; } }
+              align-items: center; } }
   .tedx-video iframe {
-    height: 270px;
+    min-height: 230px;
+    max-height: 260px;
     width: 100%; }
     @media (min-width: 600px) {
       .tedx-video iframe {
-        height: 350px; } }
+        min-height: 290px;
+        max-height: 500px;
+        width: 550px; } }
     @media (min-width: 1240px) {
       .tedx-video iframe {
         padding: 0;
-        height: 370px;
-        width: 670px; } }
+        min-height: 300px;
+        max-height: 400px;
+        max-width: 670px; } }
   .tedx-video .tedx-content {
     text-align: center;
     padding-right: 0 1rem; }
@@ -2964,7 +2987,7 @@ form {
       font-size: 48px; } }
 
 .contact-us-container h3 {
-  font-size: 36px;
+  font-size: 35px;
   display: none; }
   @media (min-width: 600px) {
     .contact-us-container h3 {
@@ -2982,12 +3005,13 @@ form {
       border-radius: 35px; } }
 
 .gfield_label {
+  font-size: 20px !important;
   text-align: center; }
   @media (min-width: 600px) {
     .gfield_label {
       width: 100%;
       margin-bottom: 11%;
-      font-size: 36px !important; } }
+      font-size: 35px !important; } }
 
 .ginput_container input, .ginput_container_text input {
   background: transparent; }
@@ -3104,7 +3128,7 @@ textarea {
   position: relative;
   padding-left: 40px; }
   .gfield_checkbox li label {
-    font-size: 22px !important;
+    font-size: 15px !important;
     padding-left: 50px !important; }
     .gfield_checkbox li label:after {
       content: "";
@@ -3153,3 +3177,6 @@ input[type="checkbox"] {
   input[type="checkbox"]:checked + label:before {
     opacity: 1;
     top: 3px; }
+
+.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+  overflow: inherit !important; }

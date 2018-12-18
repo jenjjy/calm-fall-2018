@@ -9,17 +9,17 @@
     padding: 30px 0;
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
-    font-size: 2.7rem;
+    font-size: $main-header__mobile + 6;
   }
 
   @include tablet {
-    top: 43vh;
+    top: 26vh;
     left: 5vh;
     position: absolute;
     color: $color__white;
     text-align: inherit;
     h1 {
-      font-size: 35px;
+      font-size: $main-header__mobile - 10;
     }
   }
   @include desktop {
@@ -29,7 +29,7 @@
     color: $color__white;
     text-align: inherit;
     h1 {
-      font-size: 2.7rem;
+      font-size: $main-header__desktop;
     }
   }
 }
@@ -40,7 +40,7 @@
   margin-bottom: 2.5rem;
 
   h1 {
-    font-size: 36px;
+    font-size: $main-header__mobile - 7;
   }
 
   img {
@@ -48,7 +48,7 @@
   }
 
   p {
-    font-size: 22px;
+    font-size: $main-paragraph__mobile;
     margin: 0 auto;
     padding: 0 1rem;
   }
@@ -104,7 +104,7 @@
     .solution-text-desktop {
       margin-left: 13px;
       text-align: left;
-      font-size: 16px;
+      font-size: $main-paragraph__mobile - 6;
       display: block;
     }
     .solution-text-mobile {
@@ -146,8 +146,8 @@
 
   h2 {
     margin-left: 10px;
-    width: 60%;
-    font-size: 21px;
+    width: 63%;
+    font-size: $main-paragraph__mobile;
   }
 }
 
@@ -159,7 +159,7 @@
     display: inline-block;
     width: 55%;
 
-    h2 {
+    h1 {
       text-align: left;
       margin: 2rem 0;
     }
@@ -178,33 +178,35 @@
     .campaign-text-desktop {
       display: block;
       margin: 0 auto;
-      // width: 450px;
     }
   }
 
   p {
     text-align: center;
-    font-size: 1rem;
+    font-size: $main-paragraph__mobile;
     margin: 25px auto;
 
     @include tablet {
       padding-bottom: 25px;
-      line-height: 24px;
+      line-height: 17px;
       text-align: left;
       width: 100%;
-      font-size: 14px;
+      font-size: $main-paragraph__mobile - 8;
     }
     @include desktop {
+      line-height: 22px;
       padding-bottom: 0;
-      font-size: 16px;
+      font-size: $main-paragraph__mobile  - 6;
       width: 100%;
       text-align: left;
+      padding-right: 10%;
+
     }
   }
 
-  h2 {
+  h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: $main-header__mobile - 7;
     font-weight: bolder;
     margin-top: auto;
     padding-top: 2rem;
@@ -215,7 +217,7 @@
     }
 
     @include desktop {
-      font-size: 48px;
+      font-size: $main-header__desktop;
       margin: 8% 0;
     }
   }
@@ -226,7 +228,7 @@
     width: auto;
 
     @include tablet {
-      height: 200px;
+      height: 160px;
     }
   }
 

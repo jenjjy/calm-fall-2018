@@ -4,12 +4,12 @@
 
 /* Testimony */
 .page-title {
-  font-size: 32px;
+  font-size: $main-header__mobile - 7;
   padding-top: 1.5rem;
   text-align: center;
   @include tablet {
     font-size: 48px;
-    padding-top: 3rem;
+    // padding-top: 3rem;
   }
 }
 .testimony {

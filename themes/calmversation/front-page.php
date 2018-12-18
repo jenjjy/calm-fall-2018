@@ -128,11 +128,11 @@ get_header(); ?>
 
             <!--- CAMPAIGN -->
             <div class="campaign-container">
-                <h2>
+                <h1>
                     <?php
                     echo CFS()->get('campaign_header');
                     ?>
-                </h2>
+                </h1>
 
                 <div class="campaign-logo-container-mobile">
                     <img src="<?php
