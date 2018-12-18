@@ -1200,7 +1200,8 @@ object {
         display: -ms-flexbox;
         display: flex;
         margin: auto;
-        width: 150px; }
+        padding-bottom: 1rem;
+        width: 200px; }
         @media (min-width: 600px) {
           .site-header .site-branding a .logo-main {
             width: 250px; } }
@@ -1489,7 +1490,7 @@ object {
   text-align: center;
   margin-bottom: 2.2rem; }
   .banner-header h1 {
-    padding-bottom: 25px;
+    padding: 30px 0;
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
     font-size: 2.7rem; }
