@@ -7,7 +7,7 @@
     h2 {
       @include desktop {
         text-align: left;
-        margin-left: 2%;
+        margin-left: 6%;
         margin-bottom: -5%;
         font-weight: 400;
       }
@@ -31,6 +31,7 @@
       img {
         @include desktop {
           border-radius: 25px;
+          margin-top: 5%;
         }
       }
     }
@@ -69,240 +70,266 @@
         }
       }
     }
-    .readmore-arrows {
-      position: relative;
 
-      .fa-caret-down {
-        position: absolute;
-        left: 179px;
-        top: -10px;
-      }
-      .fa-caret-up {
-        display: none;
-        position: absolute;
-        left: 179px;
-        top: -20px;
-      }
-    }
-  } //end of wp columns
-
-  .wp-block-button {
-    @include desktop {
-      text-align: left;
-      margin-left: 2%;
-    }
-    .wp-block-button__link {
-      @include button;
-      font-family: $font__secondary;
-      padding: 0.8rem 3rem;
-      font-size: 17px;
-      font-weight: bold;
-      list-style: none;
-      text-decoration: none;
+    .fa-caret-down {
       @include desktop {
-        width: 33%;
+        display: none;
+      }
+      transition-property: transform;
+      transition-duration: 0.5s;
+      &.transform {
+        transform: rotate(180deg);
       }
     }
   }
+} //end of wp columns
 
-  .course-lines {
-    display: none;
+.wp-block-button {
+  @include desktop {
+    text-align: left;
+    margin-left: 6%;
+  }
+  .wp-block-button__link {
+    @include button;
+    font-family: $font__secondary;
+    padding: 0.8rem 3rem;
+    font-size: 17px;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
     @include desktop {
-      display: block;
-      position: relative;
+      width: 33%;
     }
   }
-  .course-themes {
-    .course-bubbles {
-      display: flex;
+}
+
+.course-lines {
+  display: none;
+  @include desktop {
+    display: block;
+    position: relative;
+  }
+}
+.course-themes {
+  .course-bubbles {
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+    overflow: scroll;
+    @include desktop {
+      height: 50px;
+    }
+    .bubble {
+      margin-right: 5%;
+      background: skyblue;
+      width: 200px;
       height: 200px;
-      justify-content: space-around;
-      overflow: scroll;
-      @include desktop {
-        height: 50px;
-      }
-      .bubble {
-        margin-right: 5%;
-        background: skyblue;
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: 0.5s;
-        .course-title {
-          text-align: center;
-        }
-        @include desktop {
-          margin-right: 0;
-        }
-        &.active {
-          background: coral;
-        }
-        .course-title {
-          h2 {
-          }
-        }
-      }
-
-      .bubble41 {
-        order: 3;
-        @include desktop {
-          position: absolute;
-          top: 1030px;
-          left: 140px;
-        }
-      }
-      .bubble109 {
-        order: 4;
-        @include desktop {
-          position: absolute;
-          top: 1230px;
-          left: 390px;
-        }
-      }
-      .bubble111 {
-        order: 5;
-        @include desktop {
-          position: absolute;
-          top: 1030px;
-          left: 630px;
-        }
-      }
-      .bubble113 {
-        order: 1;
-        @include desktop {
-          position: absolute;
-          top: 1230px;
-          left: 860px;
-        }
-      }
-      .bubble115 {
-        order: 2;
-        @include desktop {
-          position: absolute;
-          top: 1030px;
-          left: 1090px;
-        }
-      }
-
-      .themes {
-        display: none;
-      }
-      .themes-text {
-        .learn-more {
-          text-align: center;
-          @include desktop {
-          }
-        }
-        &.active {
-          display: block;
-        }
-        .permalink {
-          a {
-          }
-        }
-      }
-    }
-  }
-  .course-features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @include desktop {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    h2 {
-      width: 100%;
-      text-align: center;
-      margin: 1.5rem 0;
-      font-size: 2rem;
-      @include desktop {
-        display: none;
-      }
-    }
-    .feature-block {
+      border-radius: 100%;
       display: flex;
-      flex-direction: column;
+      flex: 0 0 auto;
+      justify-content: center;
       align-items: center;
+      cursor: pointer;
+      transition: 0.5s;
+      @include tablet {
+        margin-right: 4.5%;
+      }
+      .course-title {
+        text-align: center;
+        color: white;
+      }
       @include desktop {
-        padding: 2rem;
-        width: 28%;
-        border: 3px solid $primary__color;
-        border-radius: 25px;
-        // margin-right: 5%;
+        margin-right: 0;
       }
-      img {
-        width: 110px;
+      &.active {
+        background: $secondary__color;
       }
-      h3 {
-        margin: 1rem 0;
-        font-weight: bold;
+      &:hover {
+        background: $secondary__color;
       }
-      p {
-        display: none;
-        @include tablet {
-          display: block;
+      .course-title {
+        h2 {
         }
       }
     }
 
-    .feature-block:nth-child(5) {
+    .bubble41 {
+      order: 3;
       @include desktop {
-        margin-left: 18%;
-        margin-top: 8%;
+        @include positionAbsolute(1030px, 160px);
       }
     }
-    .feature-block:nth-child(6) {
+    .bubble109 {
+      order: 4;
       @include desktop {
-        margin-right: 18%;
-        margin-top: 8%;
+        @include positionAbsolute(1230px, 390px);
+      }
+    }
+
+    .bubble111 {
+      order: 5;
+      @include desktop {
+        @include positionAbsolute(1030px, 630px);
+      }
+    }
+    .bubble113 {
+      order: 1;
+      @include desktop {
+        @include positionAbsolute(1230px, 860px);
+      }
+    }
+    .bubble115 {
+      order: 2;
+      @include desktop {
+        @include positionAbsolute(1030px, 1090px);
       }
     }
   }
+  .course-theme-text {
+    margin: 2rem 0;
+    @include desktop {
+      margin: 10% 0 10% 10%;
+    }
+    .themes {
+      display: none;
+      .course-title {
+        display: none;
+        @include desktop {
+          font-weight: bold;
+          display: block;
+          margin-left: 2%;
+        }
+      }
+    }
+    .themes-text {
+      margin: 2rem 1rem;
+      text-align: center;
+      @include desktop {
+        width: 80%;
+        text-align: left;
+      }
+    }
+    .learn-more {
+      text-align: center;
+      margin-left: 18%;
+      @include tablet {
+        margin-left: 33%;
+      }
+      @include desktop {
+        margin-left: 2%;
+      }
+    }
+    &.active {
+      display: block;
+    }
+  }
+}
+.course-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+  }
 
-  .course-pack {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1.5rem;
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 2rem;
     @include desktop {
       display: none;
     }
-    h2 {
-      margin-bottom: 1rem;
-    }
-    p {
-      text-align: center;
-    }
   }
-  .course-banner {
-    display: none;
+  .feature-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include desktop {
-      margin: 8% 0;
-      display: flex;
-      flex-direction: row;
-    }
-    .banner-info {
-      width: 50%;
-      h2 {
-        font-size: 2rem;
-        margin: 1.5rem 0;
-      }
-      p {
-        margin-bottom: 1.5rem;
-        margin-right: 4rem;
-      }
+      padding: 2rem;
+      width: 31%;
+      border: 3px solid $primary__color;
+      border-radius: 25px;
+      height: 572px;
+      // margin-right: 5%;
     }
     img {
-      width: 540px;
-      height: 220px;
+      width: 110px;
     }
+    h3 {
+      margin: 1rem 0;
+      font-weight: bold;
+    }
+    p {
+      display: none;
+      @include tablet {
+        display: block;
+        text-align: left;
+        width: 70%;
+      }
+      @include desktop {
+        display: block;
+        text-align: left;
+        width: 98%;
+      }
+    }
+  }
+
+  .feature-block:nth-child(5) {
+    @include desktop {
+      margin-left: 18%;
+      margin-top: 8%;
+      height: 450px;
+    }
+  }
+  .feature-block:nth-child(6) {
+    @include desktop {
+      margin-right: 18%;
+      margin-top: 8%;
+      height: 450px;
+    }
+  }
+}
+
+.course-pack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  @include desktop {
+    display: none;
+  }
+  h2 {
+    margin-bottom: 1rem;
+  }
+  p {
+    text-align: center;
+  }
+}
+.course-banner {
+  display: none;
+  @include desktop {
+    margin: 8% 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .banner-info {
+    width: 50%;
+    h2 {
+      font-size: 2rem;
+      margin: 1.5rem 0;
+    }
+    p {
+      margin-bottom: 1.5rem;
+      margin-right: 4rem;
+    }
+  }
+  img {
+    width: 540px;
+    height: 220px;
   }
 }

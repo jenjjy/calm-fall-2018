@@ -13,7 +13,6 @@
   overflow: hidden;
   transition: 0.5s;
 
-
   &:after {
     position: absolute;
     transition: 0.3s;
@@ -77,4 +76,10 @@
 @mixin heightandwidth($height, $width) {
   height: $height;
   width: $width;
+}
+
+@mixin positionAbsolute($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
 }

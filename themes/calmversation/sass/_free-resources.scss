@@ -38,7 +38,7 @@
   a {
     padding: 0.8rem 3rem;
     @include tablet {
-      font-size: $main-paragraph__desktop - 6;
+      font-size: $main-paragraph__desktop - 8;
     }
   }
 
@@ -108,6 +108,7 @@
   p {
     display: none;
     @include tablet {
+      line-height: 20px;
       display: block;
       margin-bottom: 3rem;
     }
@@ -170,7 +171,7 @@
   display: none;
   @include tablet {
     display: block;
-    font-size: $main-header__desktop - 6;
+    font-size: $main-header__desktop - 11;
   }
   @include desktop {
     display: block;
@@ -184,7 +185,7 @@
   padding: 2rem 0;
   @include flex(column nowrap, center, center);
   @include tablet {
-    // padding: 25px 0;
+    max-width: $container-width-desktop;
   }
 
   h2 {
@@ -207,8 +208,7 @@
     width: 335px;
 
     @include tablet {
-      height: 370px;
-      width: 600px;
+      width: 500px;
     }
 
     @include desktop {
