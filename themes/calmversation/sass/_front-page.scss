@@ -344,7 +344,6 @@
   }
 
   @include tablet {
-    max-width: 93%;
     margin: $margin__auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
