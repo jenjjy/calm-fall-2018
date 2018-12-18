@@ -22,6 +22,7 @@ get_header(); ?>
             'order' => 'ASC',
             'post_type' => 'team_member',
             'post_status' => 'publish',
+            'posts_per_page' => -1
         );
 
         $testimonials = new WP_Query($args);

@@ -3,6 +3,7 @@
   .hide-text {
     display: none;
   }
+
   .entry-content {
     h2 {
       @include desktop {
@@ -44,29 +45,36 @@
         text-align: left;
       }
     }
-    .readmore a {
+    .readmore .wp-block-button__link {
       padding: 0;
       border-radius: 0;
       border: none;
       background: none;
       color: black;
+      &:hover {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+      }
       @include desktop {
         display: none;
       }
     }
-  }
+  } //end of wp columns
 
   .wp-block-button {
-    padding: 0;
-    border-radius: 0;
-    border: none;
-    background: none;
-    color: white;
     @include desktop {
       text-align: left;
       margin-left: 2%;
     }
-    a {
+    .wp-block-button__link {
+      @include button;
+      font-family: $font__secondary;
+      padding: 0.8rem 3rem;
+      font-size: 17px;
+      font-weight: bold;
+      list-style: none;
+      text-decoration: none;
       @include desktop {
         width: 33%;
       }
@@ -161,6 +169,11 @@
         display: none;
       }
       .themes-text {
+        .learn-more {
+          text-align: center;
+          @include desktop {
+          }
+        }
         &.active {
           display: block;
         }
