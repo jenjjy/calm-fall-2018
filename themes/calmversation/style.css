@@ -593,7 +593,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #9ec284; }
+  color: #52b0cc;
+  text-decoration: none; }
   a:hover, a:focus, a:active {
     color: #fff; }
   a:focus {
