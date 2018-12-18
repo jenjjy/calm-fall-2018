@@ -9,12 +9,12 @@ form {
   h2 {
     text-align: center;
     @include tablet {
-      font-size: 48px;
+      font-size: $main-header__desktop;
     }
   }
 
   h3 {
-    font-size: 36px;
+    font-size: $main-header__mobile - 7;
     display: none;
     @include tablet {
       display: block;
@@ -25,7 +25,6 @@ form {
 }
 
 .gf_browser_safari, .gf_browser_iphone, .gform_wrapper {
-
   border-radius: 15px;
   border: 2px solid $primary__color;
   margin: 25px auto !important;
@@ -39,11 +38,12 @@ form {
 }
 
 .gfield_label {
+  font-size: $main-paragraph__desktop !important;
   text-align: center;
   @include tablet {
     width: 100%;
     margin-bottom: 11%;
-    font-size: 36px !important;
+    font-size: $main-header__mobile - 7 !important;
   }
 }
 
@@ -54,11 +54,11 @@ form {
 
 
   .medium {
-    font-size: 16px !important;
+    font-size: $main-paragraph__desktop - 4 !important;
     border: none;
     border-bottom: 2px solid $secondary__color;
     @include tablet {
-      font-size: 35px !important;
+      font-size: $main-header__mobile - 7 !important;
       width: 100% !important;
       border-bottom: 5px solid $secondary__color;
     }
@@ -120,7 +120,7 @@ textarea {
   border-radius: 30px;
   @include desktop {
     width: 80%;
-    font-size: 48px;
+    font-size: $main-header__desktop;
     height: 500px;
   }
 }
@@ -157,7 +157,7 @@ textarea {
     padding-left: 40px;
 
     label {
-      font-size: 22px !important;
+      font-size: $main-paragraph__mobile - 7 !important;
       padding-left: 50px !important;
 
       &:after {
@@ -216,4 +216,8 @@ input[type="checkbox"] {
       top: 3px;
     }
   }
+}
+
+.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li{
+  overflow: inherit !important;
 }
