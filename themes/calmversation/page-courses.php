@@ -41,7 +41,7 @@ get_header(); ?>
                                 <h2><?php echo CFS()->get('course_theme_title', $post_id); ?>
                                 </h2>
                             </div>
-        </div>
+                    </div>
                     <?php endforeach;
                     wp_reset_postdata(); ?>
                 </div>
@@ -54,7 +54,10 @@ get_header(); ?>
                             ?>
     
                     <article class="themes" data-id='<?php echo $post_id; ?>'>
-                            
+                            <div class="course-title" >
+                                <h2><?php echo CFS()->get('course_theme_title', $post_id); ?>
+                                </h2>
+                            </div>
                             <div class="themes-text">
                                 <p><?php echo CFS()->get('course_theme_description', $post_id); ?> </p>
                                 <a href="<?php echo $post_url; ?>">Learn More</a>
@@ -102,7 +105,14 @@ get_header(); ?>
                 <?php echo CFS()->get('course_pack_button'); ?>
 
             </section>
-        </div>
+            <section class="course-banner">
+                <div class="banner-info">
+                <h2><?php echo CFS()->get('banner_title'); ?></h2>
+                <p><?php echo CFS()->get('banner_text'); ?></p>
+                </div>
+                <img src="<?php echo CFS()->get('banner_image'); ?>" alt="banner image courses page">
+            </section>
+        </div><!--site container -->
     </main><!-- #main -->
 </div><!-- #primary -->
 <?php get_footer(); ?>
