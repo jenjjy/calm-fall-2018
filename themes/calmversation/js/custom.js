@@ -64,6 +64,7 @@
       extraText.toggleClass('hide-text');
     });
 
+    //course-page bubbles on click
     $('.bubble').on('click', function() {
       $('.bubble').removeClass('active');
       $(this).addClass('active');
@@ -73,5 +74,9 @@
 
       $(`[data-id=${id}]`).show();
     });
+
+  
+
+
   }); // end of doc ready
 })(jQuery);

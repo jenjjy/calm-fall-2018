@@ -2660,12 +2660,48 @@ object {
 .page-id-80 .hide-text {
   display: none; }
 
-.page-id-80 .readmore a {
-  padding: 0;
-  border-radius: 0;
-  border: none;
-  background: none;
-  color: black; }
+@media (min-width: 1240px) {
+  .page-id-80 .entry-content h2 {
+    text-align: left;
+    margin-left: 2%;
+    margin-bottom: -5%;
+    font-weight: 400; } }
+
+.page-id-80 .wp-block-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 1240px) {
+    .page-id-80 .wp-block-columns {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
+  @media (min-width: 1240px) {
+    .page-id-80 .wp-block-columns figure img {
+      border-radius: 25px; } }
+  .page-id-80 .wp-block-columns .wp-block-column:nth-child(2) {
+    margin-top: 2%;
+    margin-right: 3%; }
+  @media (min-width: 1240px) {
+    .page-id-80 .wp-block-columns .wp-block-column p {
+      font-size: 18px;
+      text-align: left; } }
+  .page-id-80 .wp-block-columns .readmore a {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background: none;
+    color: black; }
+    @media (min-width: 1240px) {
+      .page-id-80 .wp-block-columns .readmore a {
+        display: none; } }
 
 .page-id-80 .wp-block-button {
   padding: 0;
@@ -2673,15 +2709,31 @@ object {
   border: none;
   background: none;
   color: white; }
+  @media (min-width: 1240px) {
+    .page-id-80 .wp-block-button {
+      text-align: left;
+      margin-left: 2%; } }
+  @media (min-width: 1240px) {
+    .page-id-80 .wp-block-button a {
+      width: 33%; } }
+
+.page-id-80 .course-lines {
+  display: none; }
+  @media (min-width: 1240px) {
+    .page-id-80 .course-lines {
+      display: block;
+      position: relative; } }
 
 .page-id-80 .course-themes .course-bubbles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 200px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   overflow: scroll; }
   .page-id-80 .course-themes .course-bubbles .bubble {
+    margin-right: 5%;
     background: skyblue;
     width: 200px;
     height: 200px;
@@ -2704,8 +2756,66 @@ object {
     .page-id-80 .course-themes .course-bubbles .bubble.active {
       background: coral; }
 
+.page-id-80 .course-themes .themes {
+  display: none; }
+
 .page-id-80 .course-themes .themes-text.active {
   display: block; }
+
+.page-id-80 .course-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-id-80 .course-features h2 {
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 2rem; }
+  .page-id-80 .course-features .feature-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-id-80 .course-features .feature-block img {
+      width: 110px; }
+    .page-id-80 .course-features .feature-block h3 {
+      margin: 1rem 0;
+      font-weight: bold; }
+    .page-id-80 .course-features .feature-block p {
+      display: none; }
+      @media (min-width: 600px) {
+        .page-id-80 .course-features .feature-block p {
+          display: block; } }
+
+.page-id-80 .course-pack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem; }
+  .page-id-80 .course-pack h2 {
+    margin-bottom: 1rem; }
+  .page-id-80 .course-pack p {
+    text-align: center; }
 
 /*--------------------------------------------------------------
 # Contact Us

@@ -3,13 +3,50 @@
   .hide-text {
     display: none;
   }
-
-  .readmore a {
-    padding: 0;
-    border-radius: 0;
-    border: none;
-    background: none;
-    color: black;
+  .entry-content {
+    h2 {
+      @include desktop {
+        text-align: left;
+        margin-left: 2%;
+        margin-bottom: -5%;
+        font-weight: 400;
+      }
+    }
+  }
+  .wp-block-columns {
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+    }
+    figure {
+      img {
+        @include desktop {
+          border-radius: 25px;
+        }
+      }
+    }
+    .wp-block-column:nth-child(2) {
+      margin-top: 2%;
+      margin-right: 3%;
+    }
+    .wp-block-column p {
+      @include desktop {
+        font-size: 18px;
+        text-align: left;
+      }
+    }
+    .readmore a {
+      padding: 0;
+      border-radius: 0;
+      border: none;
+      background: none;
+      color: black;
+      @include desktop {
+        display: none;
+      }
+    }
   }
 
   .wp-block-button {
@@ -18,14 +55,31 @@
     border: none;
     background: none;
     color: white;
+    @include desktop {
+      text-align: left;
+      margin-left: 2%;
+    }
+    a {
+      @include desktop {
+        width: 33%;
+      }
+    }
   }
-
+  .course-lines {
+    display: none;
+    @include desktop {
+      display: block;
+      position: relative;
+    }
+  }
   .course-themes {
     .course-bubbles {
       display: flex;
+      height: 200px;
       justify-content: space-around;
       overflow: scroll;
       .bubble {
+        margin-right: 5%;
         background: skyblue;
         width: 200px;
         height: 200px;
@@ -46,8 +100,10 @@
       }
     }
 
+    .themes {
+      display: none;
+    }
     .themes-text {
-      // display: none;
       &.active {
         display: block;
       }
@@ -55,6 +111,50 @@
         a {
         }
       }
+    }
+  }
+
+  .course-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      width: 100%;
+      text-align: center;
+      margin: 1.5rem 0;
+      font-size: 2rem;
+    }
+    .feature-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 110px;
+      }
+      h3 {
+        margin: 1rem 0;
+        font-weight: bold;
+      }
+      p {
+        display: none;
+        @include tablet {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .course-pack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      text-align: center;
     }
   }
 }

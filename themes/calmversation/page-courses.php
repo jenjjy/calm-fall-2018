@@ -32,10 +32,11 @@ get_header(); ?>
 
                 <div class="course-bubbles">
                     <?php foreach ($course_posts as $post) : setup_postdata($post); ?>
-                        <div class="bubble" data-id='<?php echo $post_id; ?>'>
-                            <?php
+                    <?php
                             $post_id = $post->ID;
                             ?>
+                    <div class="bubble bubble<?php echo $post_id; ?>" data-id='<?php echo $post_id; ?>'>
+                          
                             <div class="course-title" >
                                 <h2><?php echo CFS()->get('course_theme_title', $post_id); ?>
                                 </h2>
@@ -47,12 +48,13 @@ get_header(); ?>
 
                 <div class="course-theme-text">
                     <?php foreach ($course_posts as $post) : setup_postdata($post); ?>
-                        <article class="themes" data-id='<?php echo $post_id; ?>'>
-                            <?php
+                    <?php
                             $post_id = $post->ID;
                             $post_url = $post->guid;
                             ?>
-
+    
+                    <article class="themes" data-id='<?php echo $post_id; ?>'>
+                            
                             <div class="themes-text">
                                 <p><?php echo CFS()->get('course_theme_description', $post_id); ?> </p>
                                 <a href="<?php echo $post_url; ?>">Learn More</a>
@@ -84,9 +86,13 @@ get_header(); ?>
                 foreach ($loop as $row) : ?>
                     <div class="feature-block">
                         <img src="<?php echo $row['feature_image']; ?>">
+                        <h3>
+                            <?php echo $row['feature_text_mobile']; ?>
+                        </h3>
                         <p>
-                            <?php echo $row['feature_text']; ?>
+                        <?php echo $row['feature_text_desktop']; ?>
                         </p>
+                        
                     </div>
                 <?php endforeach; ?>
             </section>
