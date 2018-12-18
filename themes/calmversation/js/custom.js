@@ -73,6 +73,17 @@
       extraText.toggleClass('hide-text');
     });
 
+    // $('.themes').hide();
+    $('.bubble')
+      .first()
+      .addClass('active');
+
+    $('.themes').hide();
+
+    $('.themes')
+      .first()
+      .show();
+
     //course-page bubbles on click
     $('.bubble').on('click', function() {
       $('.bubble').removeClass('active');
@@ -84,7 +95,7 @@
       $(`[data-id=${id}]`).show();
     });
 
-    let $bubble = $('.bubble');
+    // let $bubble = $('.bubble');
     let $bubble1 = $('.bubble41');
     let $bubble2 = $('.bubble109');
     let $bubble3 = $('.bubble111');
