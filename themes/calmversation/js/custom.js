@@ -70,8 +70,8 @@
     let readMore = $('.readmore .wp-block-button__link');
 
     readMore.click(function() {
-      // console.log('asdf');
       extraText.toggleClass('hide-text');
+      readMore.toggleClass('readmore-up');
     });
 
     // $('.themes').hide();
