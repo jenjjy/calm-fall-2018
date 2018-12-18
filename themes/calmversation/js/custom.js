@@ -66,12 +66,13 @@
     } //flickity for our-company & our-founder
 
     //course-page readmore
-    let extraText = $('.course-text-more');
-    let readMore = $('.readmore .wp-block-button__link');
+    let $extraText = $('.course-text-more');
+    let $readMore = $('.readmore .wp-block-button__link');
+    let $arrow = $('.fa-caret-down');
 
-    readMore.click(function() {
-      extraText.toggleClass('hide-text');
-      readMore.toggleClass('readmore-up');
+    $readMore.click(function() {
+      $extraText.toggleClass();
+      $arrow.toggleClass('transform');
     });
 
     // $('.themes').hide();
