@@ -61,6 +61,17 @@
       extraText.toggleClass('hide-text');
     });
 
+    // $('.themes').hide();
+    $('.bubble')
+      .first()
+      .addClass('active');
+
+    $('.themes').hide();
+
+    $('.themes')
+      .first()
+      .show();
+
     //course-page bubbles on click
     $('.bubble').on('click', function() {
       $('.bubble').removeClass('active');

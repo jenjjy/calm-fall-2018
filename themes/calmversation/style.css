@@ -2761,45 +2761,45 @@ object {
     .page-id-80 .course-themes .course-bubbles .bubble.active {
       background: coral; }
   .page-id-80 .course-themes .course-bubbles .bubble41 {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1; }
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; }
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble41 {
         position: absolute;
         top: 1030px;
         left: 140px; } }
   .page-id-80 .course-themes .course-bubbles .bubble109 {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; }
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; }
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble109 {
         position: absolute;
         top: 1230px;
         left: 390px; } }
   .page-id-80 .course-themes .course-bubbles .bubble111 {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3; }
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; }
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble111 {
         position: absolute;
         top: 1030px;
         left: 630px; } }
   .page-id-80 .course-themes .course-bubbles .bubble113 {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4; }
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble113 {
         position: absolute;
         top: 1230px;
         left: 860px; } }
   .page-id-80 .course-themes .course-bubbles .bubble115 {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5; }
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble115 {
         position: absolute;
@@ -2828,7 +2828,10 @@ object {
           -ms-flex-direction: row;
               flex-direction: row;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   .page-id-80 .course-features h2 {
     width: 100%;
     text-align: center;
@@ -2853,8 +2856,7 @@ object {
         padding: 2rem;
         width: 28%;
         border: 3px solid #52b0cc;
-        border-radius: 25px;
-        margin-right: 5%; } }
+        border-radius: 25px; } }
     .page-id-80 .course-features .feature-block img {
       width: 110px; }
     .page-id-80 .course-features .feature-block h3 {
@@ -2865,12 +2867,14 @@ object {
       @media (min-width: 600px) {
         .page-id-80 .course-features .feature-block p {
           display: block; } }
-  .page-id-80 .course-features .feature-block:nth-child(5) {
-    margin-left: 10%;
-    margin-top: 8%; }
-  .page-id-80 .course-features .feature-block:nth-child(6) {
-    margin-left: 10%;
-    margin-top: 8%; }
+  @media (min-width: 1240px) {
+    .page-id-80 .course-features .feature-block:nth-child(5) {
+      margin-left: 18%;
+      margin-top: 8%; } }
+  @media (min-width: 1240px) {
+    .page-id-80 .course-features .feature-block:nth-child(6) {
+      margin-right: 18%;
+      margin-top: 8%; } }
 
 .page-id-80 .course-pack {
   display: -webkit-box;
@@ -2904,6 +2908,17 @@ object {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row; } }
+  .page-id-80 .course-banner .banner-info {
+    width: 50%; }
+    .page-id-80 .course-banner .banner-info h2 {
+      font-size: 2rem;
+      margin: 1.5rem 0; }
+    .page-id-80 .course-banner .banner-info p {
+      margin-bottom: 1.5rem;
+      margin-right: 4rem; }
+  .page-id-80 .course-banner img {
+    width: 540px;
+    height: 220px; }
 
 /*--------------------------------------------------------------
 # Contact Us
