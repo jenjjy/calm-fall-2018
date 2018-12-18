@@ -16,7 +16,7 @@
   }
 
   h1:nth-child(odd) {
-    font-size: 42px;
+    font-size: $main-header__mobile;
     text-align: center;
     @include tablet {
       display: none;
@@ -38,7 +38,7 @@
   a {
     padding: 0.8rem 3rem;
     @include tablet {
-      font-size: 13px;
+      font-size: $main-paragraph__desktop - 6;
     }
   }
 
@@ -72,7 +72,7 @@
 
   @include desktop {
     padding: 2rem 0;
-    font-size: 3rem;
+    font-size: $main-header__desktop;
   }
 }
 
@@ -85,13 +85,13 @@
     width: 42%;
     padding-bottom: 3rem;
     h2 {
-      font-size: 1.7rem;
+      font-size: $main-paragraph__desktop + 8;
     }
   }
 
   @include desktop {
     h2 {
-      font-size: 2rem;
+      font-size: $main-paragraph__desktop + 13;
       width: 40%;
     }
   }
@@ -124,7 +124,7 @@
   padding: 25px 0;
 
   h1:nth-child(even) {
-    font-size: 35px;
+    font-size: $main-header__mobile - 7;
     @include tablet {
       display: none;
     }
@@ -133,7 +133,7 @@
   h2 {
     display: none;
     @include tablet {
-      font-size: 26px;
+      font-size: $main-paragraph__desktop + 6;
       display: block;
     }
     @include desktop {
@@ -145,7 +145,7 @@
     line-height: 24px;
     width: 85%;
     margin: $margin__auto;
-    font-size: 22px;
+    font-size: $main-paragraph__mobile;
     @include tablet {
       display: none;
     }
@@ -156,12 +156,12 @@
     @include tablet {
       display: block;
       padding-top: 20px;
-      font-size: 16px;
+      font-size: $main-paragraph__mobile - 6;
     }
     @include desktop {
       width: 90%;
       margin: $margin__auto;
-      font-size: 18px;
+      font-size: $main-paragraph__desktop - 3;
     }
   }
 }
@@ -170,11 +170,11 @@
   display: none;
   @include tablet {
     display: block;
-    font-size: 2rem;
+    font-size: $main-header__desktop - 6;
   }
   @include desktop {
     display: block;
-    font-size: 3rem;
+    font-size: $main-header__desktop;
   }
 }
 
@@ -194,11 +194,11 @@
     text-align: center;
     @include tablet {
       width: 45vw;
-      font-size: 1.7rem;
+      font-size: $main-paragraph__desktop + 8;
     }
     @include desktop {
       width: 450px;
-      font-size: 2rem;
+      font-size: $main-paragraph__desktop + 8;
     }
   }
 
@@ -243,7 +243,7 @@
       }
 
       p {
-        font-size: 1rem;
+        font-size: $main-paragraph__desktop - 4;
         text-align: right;
       }
     }
@@ -259,7 +259,7 @@
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: $main-paragraph__desktop + 4;
     }
   }
 }
