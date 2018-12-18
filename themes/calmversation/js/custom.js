@@ -44,16 +44,13 @@
             });
         } //carousel testimony
 
-        $(window).resize(function () {
-            // console.log('carousel');
-            if ($(window).width() < 600) {
-                $('.main-carousel').flickity({
-                    cellAlign: 'left',
-                    contain: true,
-                    wrapAround: true
-                });
-            }
-        }); //flickity for our-company & our-founder
+        if (mobileWidth < 600) {
+            $('.main-carousel').flickity({
+                cellAlign: 'left',
+                contain: true,
+                wrapAround: true
+            });
+        } //flickity for our-company & our-founder
 
         //course-page readmore
         let extraText = $('.course-text-more');
@@ -64,6 +61,7 @@
             extraText.toggleClass('hide-text');
         });
 
+        //course-page bubbles on click
         $('.bubble').on('click', function () {
             $('.bubble').removeClass('active');
             $(this).addClass('active');
@@ -72,6 +70,50 @@
             $('.themes').hide();
 
             $(`[data-id=${id}]`).show();
+        });
+
+        let $bubble = $('.bubble');
+        let $bubble1 = $('.bubble41');
+        let $bubble2 = $('.bubble109');
+        let $bubble3 = $('.bubble111');
+        let $bubble4 = $('.bubble113');
+        let $bubble5 = $('.bubble115');
+
+        $bubble1.on('click', function () {
+            $bubble1.css('order', '3');
+            $bubble2.css('order', '4');
+            $bubble3.css('order', '5');
+            $bubble4.css('order', '1');
+            $bubble5.css('order', '2');
+        });
+
+        $bubble2.on('click', function () {
+            $bubble1.css('order', '2');
+            $bubble2.css('order', '3');
+            $bubble3.css('order', '4');
+            $bubble4.css('order', '5');
+            $bubble5.css('order', '1');
+        });
+        $bubble3.on('click', function () {
+            $bubble1.css('order', '1');
+            $bubble2.css('order', '2');
+            $bubble3.css('order', '3');
+            $bubble4.css('order', '4');
+            $bubble5.css('order', '5');
+        });
+        $bubble4.on('click', function () {
+            $bubble1.css('order', '5');
+            $bubble2.css('order', '1');
+            $bubble3.css('order', '2');
+            $bubble4.css('order', '3');
+            $bubble5.css('order', '4');
+        });
+        $bubble5.on('click', function () {
+            $bubble1.css('order', '4');
+            $bubble2.css('order', '5');
+            $bubble3.css('order', '1');
+            $bubble4.css('order', '2');
+            $bubble5.css('order', '3');
         });
     }); // end of doc ready
 })(jQuery);
