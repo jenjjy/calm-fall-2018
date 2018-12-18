@@ -153,41 +153,32 @@
     .bubble41 {
       order: 3;
       @include desktop {
-        position: absolute;
-        top: 1030px;
-        left: 140px;
+        @include positionAbsolute(1030px, 160px);
       }
     }
     .bubble109 {
       order: 4;
       @include desktop {
-        position: absolute;
-        top: 1230px;
-        left: 390px;
+        @include positionAbsolute(1230px, 390px);
       }
     }
+
     .bubble111 {
       order: 5;
       @include desktop {
-        position: absolute;
-        top: 1030px;
-        left: 630px;
+        @include positionAbsolute(1030px, 630px);
       }
     }
     .bubble113 {
       order: 1;
       @include desktop {
-        position: absolute;
-        top: 1230px;
-        left: 860px;
+        @include positionAbsolute(1230px, 860px);
       }
     }
     .bubble115 {
       order: 2;
       @include desktop {
-        position: absolute;
-        top: 1030px;
-        left: 1090px;
+        @include positionAbsolute(1030px, 1090px);
       }
     }
   }
