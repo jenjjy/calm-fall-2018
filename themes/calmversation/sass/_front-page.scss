@@ -6,7 +6,7 @@
   margin-bottom: 2.2rem;
 
   h1 {
-    padding-bottom: 25px;
+    padding: 30px 0;
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
     font-size: 2.7rem;
@@ -23,8 +23,8 @@
     }
   }
   @include desktop {
-    top: 55vh;
-    left: 5vh;
+    top: 50vh;
+    left: 10vh;
     position: absolute;
     color: $color__white;
     text-align: inherit;
@@ -34,10 +34,10 @@
   }
 }
 
-
-.founder-container, .solutions-container {
+.founder-container,
+.solutions-container {
   text-align: center;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.5rem;
 
   h1 {
     font-size: 36px;
@@ -50,11 +50,16 @@
   p {
     font-size: 22px;
     margin: 0 auto;
+    padding: 0 1rem;
   }
 }
 
-
 .founder-container {
+  iframe {
+    height: 220px;
+    width: 320px;
+  }
+
   @include tablet {
     @include flex(row-reverse nowrap, center, center);
     iframe {
@@ -74,7 +79,7 @@
   }
 }
 
-.founder-button-container{
+.founder-button-container {
   padding: 25px 0;
 }
 
@@ -105,10 +110,7 @@
     .solution-text-mobile {
       display: none;
     }
-
-
   }
-
 }
 
 .checkmark-container {
@@ -119,14 +121,14 @@
   margin-bottom: 25px;
 
   &:before {
-    content: "";
+    content: '';
     height: 1px;
     width: 50%;
     border-top: 2px solid $secondary__color;
   }
 
   &:after {
-    content: "";
+    content: '';
     height: 1px;
     width: 50%;
     border-bottom: 2px solid $secondary__color;
@@ -135,13 +137,13 @@
   @include tablet {
     display: none;
   }
-
 }
 
 .front-page-check-mark {
   margin: 15px 0;
   @include flex(row wrap, center, center);
   width: 110%;
+
   h2 {
     margin-left: 10px;
     width: 60%;
@@ -149,46 +151,42 @@
   }
 }
 
-
 .campaign-container {
   @include flex(column wrap, center, null);
   margin-bottom: 25px;
+
   @include tablet {
     display: inline-block;
+    width: 55%;
+
     h2 {
       text-align: left;
+      margin: 2rem 0;
     }
-  }
-
-  @include desktop {
-    width: 55%;
   }
 
   .campaign-text-desktop {
     display: none;
-
   }
 
-  @include desktop {
+  @include tablet {
     display: inline-block;
     .campaign-text-mobile {
       display: none;
     }
-    @include desktop {
-      .campaign-text-desktop {
-        display: block;
-        margin: 0 auto;
 
-
-      }
+    .campaign-text-desktop {
+      display: block;
+      margin: 0 auto;
+      // width: 450px;
     }
-
   }
 
   p {
     text-align: center;
-    font-size: 22px;
+    font-size: 1rem;
     margin: 25px auto;
+
     @include tablet {
       padding-bottom: 25px;
       line-height: 24px;
@@ -206,12 +204,16 @@
 
   h2 {
     text-align: center;
-    font-size: 42px;
+    font-size: 2rem;
     font-weight: bolder;
     margin-top: auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
     @include tablet {
       text-align: left;
     }
+
     @include desktop {
       font-size: 48px;
       margin: 8% 0;
@@ -219,19 +221,26 @@
   }
 
   .campaign-logo {
-    margin: 30px auto;
-    height: 150px;
+    margin: 10px auto;
+    height: 130px;
     width: auto;
+
+    @include tablet {
+      height: 200px;
+    }
   }
 
   .campaign-logo-container-mobile {
     text-align: center;
+
     @include tablet {
+      position: absolute;
+      right: 5%;
+    }
+    @include desktop {
       display: none;
     }
-
   }
-
 
   .campaign-button {
     padding-top: 25px;
@@ -244,25 +253,23 @@
       text-align: left;
     }
   }
-
 }
-
 
 .campaign-logo-container-desktop {
   display: none;
   @include tablet {
-    display: inline-block;
+    // display: inline-block;
     width: 35%;
+
     img {
-      margin-bottom: 27%;
+      margin-bottom: 18%;
     }
   }
+
   @include desktop {
     display: inline-block;
     width: 44%;
     img {
-      margin-bottom: 11%;
-      margin-left: 35px;
     }
   }
 }
@@ -288,7 +295,8 @@
   }
 }
 
-.vp-video-wrapper, .transparent {
+.vp-video-wrapper,
+.transparent {
   border-radius: 25px;
 }
 
@@ -299,7 +307,6 @@
     float: right;
     padding-top: 9%;
   }
-
 }
 
 .front-page-video {
@@ -311,7 +318,6 @@
     height: 380px;
     width: 670px;
   }
-
 }
 
 .goals-desktop {
@@ -334,9 +340,7 @@
     background: $color__white;
     border-radius: 25px;
     box-shadow: 5px 5px 11px grey;
-    padding: 30px 0;
-
-
+    padding: 30px 0 45px 0;
   }
 
   @include tablet {
@@ -346,6 +350,4 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
   }
-
 }
-

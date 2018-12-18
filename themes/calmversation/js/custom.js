@@ -44,16 +44,13 @@
       });
     } //carousel testimony
 
-    $(window).resize(function() {
-      // console.log('carousel');
-      if ($(window).width() < 600) {
-        $('.main-carousel').flickity({
-          cellAlign: 'left',
-          contain: true,
-          wrapAround: true
-        });
-      }
-    }); //flickity for our-company & our-founder
+    if (mobileWidth < 600) {
+      $('.main-carousel').flickity({
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true
+      });
+    } //flickity for our-company & our-founder
 
     //course-page readmore
     let extraText = $('.course-text-more');

@@ -54,9 +54,11 @@ form {
 
 
   .medium {
+    font-size: 16px !important;
     border: none;
     border-bottom: 2px solid $secondary__color;
     @include tablet {
+      font-size: 35px !important;
       width: 100% !important;
       border-bottom: 5px solid $secondary__color;
     }
@@ -104,17 +106,23 @@ textarea {
 }
 
 .gform_confirmation_wrapper {
-  padding: 25px;
+  padding: 25px 0;
 }
 
 .gform_confirmation_message_1, .gform_confirmation_message {
-  width: 80%;
+  font-weight: bolder;
+  height: 200px;
   @include flex(column nowrap, center, center);
   text-align: center;
   margin: $margin__auto;
-  border: 2px solid $secondary__color;
+  border: 5px solid $primary__color;
   padding: 25px;
-  border-radius: 15px;
+  border-radius: 30px;
+  @include desktop {
+    width: 80%;
+    font-size: 48px;
+    height: 500px;
+  }
 }
 
 

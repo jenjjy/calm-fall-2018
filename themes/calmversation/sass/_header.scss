@@ -26,7 +26,8 @@
       .logo-main {
         display: flex;
         margin: auto;
-        width: 150px;
+        padding-bottom: 1rem;
+        width: 200px;
 
         @include tablet {
           width: 250px;

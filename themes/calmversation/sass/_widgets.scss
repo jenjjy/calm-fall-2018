@@ -16,9 +16,8 @@
 
 .site-footer {
   background-color: $primary__color;
-  @include flex(column, null, center);
-  padding-top: 20px;
-
+  @include flex(column, center, center);
+  // padding-top: 20px;
 
   ul {
     list-style: none;
@@ -29,6 +28,7 @@
   a {
     text-decoration: none;
     color: $color__white;
+    font-family: $font__secondary;
     display: block;
     margin: 5px;
   }
@@ -36,62 +36,107 @@
   .footer-navigation {
     text-align: center;
     letter-spacing: 2px;
+    padding-top: 1rem;
 
-  }
-
-  h6 {
-    color: $color__white;
-    margin: 0;
-    letter-spacing: 0.5px;
-  }
-
-  .social-media-icon {
-    padding-top: 10px;
+    @include tablet {
+      padding-top: 0;
+    }
 
     ul {
-      @include flex(row, null, center);
+      @include desktop {
+        width: 800px;
+      }
 
       a {
-        margin: 0px 25px;
+        &:hover {
+          border-bottom: $border-hover;
+        }
       }
     }
   }
 
+  h6 {
+    color: $color__white;
+    letter-spacing: 0.5px;
+    margin: 0;
+
+    @include tablet {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  .social-media-icon {
+    font-size: 20px;
+    padding: 0.5rem 0;
+
+    @include tablet {
+      padding: 0;
+    }
+
+    ul {
+      @include flex(row nowrap, space-between, center);
+
+      @include tablet {
+        @include flex(row nowrap, flex-start, center);
+      }
+
+      li {
+        padding: 0 5px;
+
+        @include desktop {
+          padding: 0 20px;
+        }
+      }
+
+      a {
+        border: white solid 1px;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        // padding: 2px;
+
+        &:hover {
+          border: $secondary__color solid 1px;
+          color: $secondary__color;
+        }
+
+        @include tablet {
+          border: white solid 1.5px;
+          padding: 0;
+          height: 45px;
+          width: 45px;
+
+          &:hover {
+            border: $secondary__color solid 2px;
+          }
+        }
+
+        .far,
+        .fab {
+          // background-color: $primary__color;
+          @include tablet {
+          }
+        }
+      }
+    }
+  }
 }
 
 /*footer tablet*/
 
 @include tablet {
   .site-footer {
-
     @include flex(row, null, center);
     position: relative;
-    @include heightandwidth(120px, 100%);
+    @include heightandwidth(130px, 100%);
 
-  }
-
-  .site-footer .social-media-icon {
-    order: 1;
-    @include flex(row, null, flex-start);
-    font-size: 30px;
-    @include heightandwidth(100%, auto);
-
-    ul {
-      a {
-
-        margin: 0px 15px;
-
-        .far,
-        .fab {
-          border: white solid 1px;
-          padding: 10px;
-          border-radius: 50%;
-          background-color: $primary__color;
-        }
-
-
-
-      }
+    .social-media-icon {
+      order: 1;
+      font-size: 30px;
+      // @include heightandwidth(100%, auto);
+      position: absolute;
+      left: 0;
     }
   }
 
@@ -99,26 +144,20 @@
     order: 2;
     @include heightandwidth(100%, 100%);
 
-
-
-
     ul {
-      @include flex(row, space-evenly, flex-start);
+      @include flex(row, space-evenly, center);
       @include heightandwidth(100%, 100%);
-      padding-bottom: 40px;
-
-
+      margin: auto;
+      // padding-bottom: 40px;
+      width: 600px;
     }
 
     a {
-
       text-transform: uppercase;
     }
   }
 
-
   h6 {
-
     order: 3;
     position: absolute;
     bottom: 0px;
@@ -127,43 +166,33 @@
     font-size: 16px;
     padding: 10px 0px 5px 0px;
   }
-
 }
 
 /*footer desktop*/
-@include desktop {
-  .site-footer {
+// @include desktop {
+//   .site-footer {
+//     .social-media-icon {
+//       padding: 10px 40px;
+//       width: 20%;
+//       margin-left: 30px;
 
-    .social-media-icon {
+//       ul {
+//         li {
+//           height: auto;
+//           width: 45px;
+//         }
+//         a {
+//           margin: 0px 25px;
+//         }
+//       }
+//     }
 
-      padding: 10px 40px;
-      width: 20%;
-      margin-left: 30px;
-
-      ul {
-        a {
-
-          margin: 0px 25px;
-        }
-      }
-    }
-
-    .footer-navigation {
-      padding-top: 10px;
-      position: relative;
-      left: 30px;
-      width: 50%;
-      margin-left: 20px;
-
-    }
-
-
-  }
-
-
-
-
-
-
-
-}
+//     .footer-navigation {
+//       padding-top: 10px;
+//       position: relative;
+//       left: 30px;
+//       width: 50%;
+//       margin-left: 20px;
+//     }
+//   }
+// }
