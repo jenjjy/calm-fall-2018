@@ -3,6 +3,7 @@
   .hide-text {
     display: none;
   }
+
   .entry-content {
     h2 {
       @include desktop {
@@ -50,12 +51,14 @@
       border: none;
       background: none;
       color: black;
+      &:hover {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+      }
       @include desktop {
         display: none;
       }
-    }
-    &:hover {
-      background-color: transparent;
     }
   } //end of wp columns
 

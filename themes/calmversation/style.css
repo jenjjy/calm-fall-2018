@@ -2712,11 +2712,14 @@ object {
     border: none;
     background: none;
     color: black; }
+    .page-id-80 .wp-block-columns .readmore .wp-block-button__link:hover {
+      background-color: transparent;
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
     @media (min-width: 1240px) {
       .page-id-80 .wp-block-columns .readmore .wp-block-button__link {
         display: none; } }
-  .page-id-80 .wp-block-columns:hover {
-    background-color: transparent; }
 
 @media (min-width: 1240px) {
   .page-id-80 .wp-block-button {
