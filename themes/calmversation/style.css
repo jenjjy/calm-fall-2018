@@ -2844,6 +2844,8 @@ object {
         margin-right: 0; } }
     .course-themes .course-bubbles .bubble.active {
       background: #b4de96; }
+    .course-themes .course-bubbles .bubble:hover {
+      background: #b4de96; }
   .course-themes .course-bubbles .bubble41 {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -2971,7 +2973,8 @@ object {
         padding: 2rem;
         width: 31%;
         border: 3px solid #52b0cc;
-        border-radius: 25px; } }
+        border-radius: 25px;
+        height: 572px; } }
     .course-features .feature-block img {
       width: 110px; }
     .course-features .feature-block h3 {
@@ -2987,16 +2990,18 @@ object {
       @media (min-width: 1240px) {
         .course-features .feature-block p {
           display: block;
-          text-align: center;
-          width: 100%; } }
+          text-align: left;
+          width: 98%; } }
   @media (min-width: 1240px) {
     .course-features .feature-block:nth-child(5) {
       margin-left: 18%;
-      margin-top: 8%; } }
+      margin-top: 8%;
+      height: 450px; } }
   @media (min-width: 1240px) {
     .course-features .feature-block:nth-child(6) {
       margin-right: 18%;
-      margin-top: 8%; } }
+      margin-top: 8%;
+      height: 450px; } }
 
 .course-pack {
   display: -webkit-box;

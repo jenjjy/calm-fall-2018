@@ -144,6 +144,9 @@
       &.active {
         background: $secondary__color;
       }
+      &:hover {
+        background: $secondary__color;
+      }
       .course-title {
         h2 {
         }
@@ -251,6 +254,7 @@
       width: 31%;
       border: 3px solid $primary__color;
       border-radius: 25px;
+      height: 572px;
       // margin-right: 5%;
     }
     img {
@@ -269,8 +273,8 @@
       }
       @include desktop {
         display: block;
-        text-align: center;
-        width: 100%;
+        text-align: left;
+        width: 98%;
       }
     }
   }
@@ -279,12 +283,14 @@
     @include desktop {
       margin-left: 18%;
       margin-top: 8%;
+      height: 450px;
     }
   }
   .feature-block:nth-child(6) {
     @include desktop {
       margin-right: 18%;
       margin-top: 8%;
+      height: 450px;
     }
   }
 }
