@@ -1529,7 +1529,7 @@ object {
   margin-bottom: 2.5rem; }
   .founder-container h1,
   .solutions-container h1 {
-    font-size: 35px; }
+    font-size: 36px; }
   .founder-container img,
   .solutions-container img {
     margin-bottom: 15px; }
@@ -2436,7 +2436,7 @@ object {
     padding: 0.8rem 3rem; }
     @media (min-width: 600px) {
       .free-resource-banner a {
-        font-size: 14px; } }
+        font-size: 12px; } }
   .free-resource-banner .free-resource-image-desktop {
     display: none; }
     @media (min-width: 600px) {
@@ -2499,6 +2499,7 @@ object {
     display: none; }
     @media (min-width: 600px) {
       .free-resource-text-desktop p {
+        line-height: 20px;
         display: block;
         margin-bottom: 3rem; } }
     @media (min-width: 1240px) {
@@ -2549,7 +2550,7 @@ object {
   @media (min-width: 600px) {
     .space-thought-header-desktop {
       display: block;
-      font-size: 42px; } }
+      font-size: 37px; } }
   @media (min-width: 1240px) {
     .space-thought-header-desktop {
       display: block;
@@ -2572,6 +2573,10 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (min-width: 600px) {
+    .free-resource-video-container,
+    .free-resource-video {
+      max-width: 85%; } }
   .free-resource-video-container h2,
   .free-resource-video h2 {
     padding: 10px 0;
@@ -2595,8 +2600,7 @@ object {
     @media (min-width: 600px) {
       .free-resource-video-container iframe,
       .free-resource-video iframe {
-        height: 370px;
-        width: 600px; } }
+        width: 500px; } }
     @media (min-width: 1240px) {
       .free-resource-video-container iframe,
       .free-resource-video iframe {
