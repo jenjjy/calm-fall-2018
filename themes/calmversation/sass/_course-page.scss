@@ -117,7 +117,7 @@
       }
 
       .bubble41 {
-        order: 1;
+        order: 3;
         @include desktop {
           position: absolute;
           top: 1030px;
@@ -125,7 +125,7 @@
         }
       }
       .bubble109 {
-        order: 2;
+        order: 4;
         @include desktop {
           position: absolute;
           top: 1230px;
@@ -133,7 +133,7 @@
         }
       }
       .bubble111 {
-        order: 3;
+        order: 5;
         @include desktop {
           position: absolute;
           top: 1030px;
@@ -141,7 +141,7 @@
         }
       }
       .bubble113 {
-        order: 4;
+        order: 1;
         @include desktop {
           position: absolute;
           top: 1230px;
@@ -149,7 +149,7 @@
         }
       }
       .bubble115 {
-        order: 5;
+        order: 2;
         @include desktop {
           position: absolute;
           top: 1030px;
@@ -178,6 +178,7 @@
     @include desktop {
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     h2 {
@@ -198,7 +199,7 @@
         width: 28%;
         border: 3px solid $primary__color;
         border-radius: 25px;
-        margin-right: 5%;
+        // margin-right: 5%;
       }
       img {
         width: 110px;
@@ -216,12 +217,16 @@
     }
 
     .feature-block:nth-child(5) {
-      margin-left: 10%;
-      margin-top: 8%;
+      @include desktop {
+        margin-left: 18%;
+        margin-top: 8%;
+      }
     }
     .feature-block:nth-child(6) {
-      margin-left: 10%;
-      margin-top: 8%;
+      @include desktop {
+        margin-right: 18%;
+        margin-top: 8%;
+      }
     }
   }
 
@@ -246,6 +251,21 @@
       margin: 8% 0;
       display: flex;
       flex-direction: row;
+    }
+    .banner-info {
+      width: 50%;
+      h2 {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+      }
+      p {
+        margin-bottom: 1.5rem;
+        margin-right: 4rem;
+      }
+    }
+    img {
+      width: 540px;
+      height: 220px;
     }
   }
 }

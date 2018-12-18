@@ -61,6 +61,26 @@
             extraText.toggleClass('hide-text');
         });
 
+<<<<<<< HEAD
+    // $('.themes').hide();
+    $('.bubble')
+      .first()
+      .addClass('active');
+
+    $('.themes').hide();
+
+    $('.themes')
+      .first()
+      .show();
+
+    //course-page bubbles on click
+    $('.bubble').on('click', function() {
+      $('.bubble').removeClass('active');
+      $(this).addClass('active');
+      let id = $(this).attr('data-id');
+      // console.log(id);
+      $('.themes').hide();
+=======
         //course-page bubbles on click
         $('.bubble').on('click', function () {
             $('.bubble').removeClass('active');
@@ -68,6 +88,7 @@
             let id = $(this).attr('data-id');
             // console.log(id);
             $('.themes').hide();
+>>>>>>> b6787d4ef7d09ba2151d73c6fdd7add84a9cdc31
 
             $(`[data-id=${id}]`).show();
         });
