@@ -23,8 +23,8 @@
     }
   }
   @include desktop {
-    top: 55vh;
-    left: 5vh;
+    top: 50vh;
+    left: 10vh;
     position: absolute;
     color: $color__white;
     text-align: inherit;
@@ -57,7 +57,7 @@
 .founder-container {
   iframe {
     height: 220px;
-    width: 380px;
+    width: 320px;
   }
 
   @include tablet {
@@ -186,7 +186,6 @@
     text-align: center;
     font-size: 1rem;
     margin: 25px auto;
-    padding: 0 1rem;
 
     @include tablet {
       padding-bottom: 25px;
@@ -263,7 +262,7 @@
     width: 35%;
 
     img {
-      margin-bottom: 15%;
+      margin-bottom: 18%;
     }
   }
 
@@ -271,8 +270,6 @@
     display: inline-block;
     width: 44%;
     img {
-      // margin-bottom: 11%;
-      margin-left: 35px;
     }
   }
 }
@@ -343,7 +340,7 @@
     background: $color__white;
     border-radius: 25px;
     box-shadow: 5px 5px 11px grey;
-    padding: 30px 0;
+    padding: 30px 0 45px 0;
   }
 
   @include tablet {

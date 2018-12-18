@@ -487,7 +487,6 @@ table {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   letter-spacing: 2px;
-  padding: 20px;
   text-align: center;
   text-transform: uppercase;
   position: relative;
@@ -529,7 +528,6 @@ table {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   letter-spacing: 2px;
-  padding: 20px;
   text-align: center;
   text-transform: uppercase;
   position: relative;
@@ -1505,8 +1503,8 @@ object {
         font-size: 35px; } }
   @media (min-width: 1240px) {
     .banner-header {
-      top: 55vh;
-      left: 5vh;
+      top: 50vh;
+      left: 10vh;
       position: absolute;
       color: #fff;
       text-align: inherit; }
@@ -1531,7 +1529,7 @@ object {
 
 .founder-container iframe {
   height: 220px;
-  width: 380px; }
+  width: 320px; }
 
 @media (min-width: 600px) {
   .founder-container {
@@ -1680,8 +1678,7 @@ object {
   .campaign-container p {
     text-align: center;
     font-size: 1rem;
-    margin: 25px auto;
-    padding: 0 1rem; }
+    margin: 25px auto; }
     @media (min-width: 600px) {
       .campaign-container p {
         padding-bottom: 25px;
@@ -1742,13 +1739,11 @@ object {
     .campaign-logo-container-desktop {
       width: 35%; }
       .campaign-logo-container-desktop img {
-        margin-bottom: 15%; } }
+        margin-bottom: 18%; } }
   @media (min-width: 1240px) {
     .campaign-logo-container-desktop {
       display: inline-block;
-      width: 44%; }
-      .campaign-logo-container-desktop img {
-        margin-left: 35px; } }
+      width: 44%; } }
 
 .view-courses {
   display: -webkit-box;
@@ -1841,7 +1836,7 @@ object {
     border-radius: 25px;
     -webkit-box-shadow: 5px 5px 11px grey;
             box-shadow: 5px 5px 11px grey;
-    padding: 30px 0; }
+    padding: 30px 0 45px 0; }
   @media (min-width: 600px) {
     .goals-desktop {
       max-width: 93%;
@@ -1883,7 +1878,6 @@ object {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     letter-spacing: 2px;
-    padding: 20px;
     text-align: center;
     text-transform: uppercase;
     position: relative;
@@ -2071,9 +2065,9 @@ object {
 /*--------------------------------------------------------------
 # our company  and our fonder
 --------------------------------------------------------------*/
-.page-template-page-our-company .site-content h2,
-.page-template-page-our-founder .site-content h2 {
-  color: black; }
+.page-template-page-our-company .site-content .main-carousel h2,
+.page-template-page-our-founder .site-content .main-carousel h2 {
+  color: #787878; }
 
 .page-template-page-our-company .site-content .main-carousel ol,
 .page-template-page-our-founder .site-content .main-carousel ol {
@@ -2085,7 +2079,7 @@ object {
   .page-template-page-our-company .site-content .main-carousel .carousel-cell h3,
   .page-template-page-our-founder .site-content .main-carousel .carousel-cell h3 {
     font-size: 36px;
-    color: black; }
+    color: #000; }
   .page-template-page-our-company .site-content .main-carousel .carousel-cell p,
   .page-template-page-our-founder .site-content .main-carousel .carousel-cell p {
     padding-bottom: 30px; }
@@ -2117,7 +2111,7 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 150px 40px 40px 40px; }
+    margin: 100px 40px 40px 40px; }
     .site-content .main-carousel .carousel-cell {
       width: 33.3333%;
       padding: 50px; }
@@ -2145,15 +2139,12 @@ object {
         width: auto; }
     .site-content .our-founder .our-founder-text {
       margin-left: 40px;
-      padding-top: 30px;
       width: 70%; }
       .site-content .our-founder .our-founder-text h2 {
-        margin: 0px;
-        padding: 0px; }
+        padding-top: 0; }
       .site-content .our-founder .our-founder-text p {
         text-align: left;
-        font-size: 16px;
-        margin: 0px; } }
+        font-size: 16px; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2424,7 +2415,6 @@ object {
         height: auto;
         width: 55%; } }
   .free-resource-banner a {
-    font-size: 20px;
     padding: 0.8rem 3rem; }
     @media (min-width: 600px) {
       .free-resource-banner a {
@@ -2751,10 +2741,12 @@ form {
   background: transparent; }
 
 .ginput_container .medium, .ginput_container_text .medium {
+  font-size: 16px !important;
   border: none;
   border-bottom: 2px solid #b4de96; }
   @media (min-width: 600px) {
     .ginput_container .medium, .ginput_container_text .medium {
+      font-size: 35px !important;
       width: 100% !important;
       border-bottom: 5px solid #b4de96; } }
 
@@ -2798,11 +2790,10 @@ textarea {
     overflow: inherit !important; } }
 
 .gform_confirmation_wrapper {
-  padding: 25px; }
+  padding: 25px 0; }
 
 .gform_confirmation_message_1, .gform_confirmation_message {
   font-weight: bolder;
-  width: 80%;
   height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2824,6 +2815,7 @@ textarea {
   border-radius: 30px; }
   @media (min-width: 1240px) {
     .gform_confirmation_message_1, .gform_confirmation_message {
+      width: 80%;
       font-size: 48px;
       height: 500px; } }
 
