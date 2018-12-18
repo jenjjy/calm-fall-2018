@@ -14,17 +14,18 @@ form {
   }
 
   h3 {
-    font-size: $main-header__mobile - 7;
+    font-size: $sub-header;
     display: none;
     @include tablet {
       display: block;
       text-align: center;
     }
   }
-
 }
 
-.gf_browser_safari, .gf_browser_iphone, .gform_wrapper {
+.gf_browser_safari,
+.gf_browser_iphone,
+.gform_wrapper {
   border-radius: 15px;
   border: 2px solid $primary__color;
   margin: 25px auto !important;
@@ -47,11 +48,11 @@ form {
   }
 }
 
-.ginput_container, .ginput_container_text {
+.ginput_container,
+.ginput_container_text {
   input {
     background: transparent;
   }
-
 
   .medium {
     font-size: $main-paragraph__desktop - 4 !important;
@@ -88,9 +89,9 @@ textarea {
 }
 
 .gform_next_button {
-  padding: .2rem 3rem !important;
+  padding: 0.2rem 3rem !important;
   @include tablet {
-    padding: .8rem 6rem !important;
+    padding: 0.8rem 6rem !important;
     overflow: inherit !important;
   }
 }
@@ -109,7 +110,8 @@ textarea {
   padding: 25px 0;
 }
 
-.gform_confirmation_message_1, .gform_confirmation_message {
+.gform_confirmation_message_1,
+.gform_confirmation_message {
   font-weight: bolder;
   height: 200px;
   @include flex(column nowrap, center, center);
@@ -125,13 +127,11 @@ textarea {
   }
 }
 
-
 .gform_body {
   @include tablet {
     @include flex(row nowrap, center, center);
   }
 }
-
 
 .gfield_description {
   text-align: center;
@@ -143,14 +143,12 @@ textarea {
   }
 }
 
-
 .gfield_checkbox {
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
-
 
   li {
     position: relative;
@@ -161,7 +159,7 @@ textarea {
       padding-left: 50px !important;
 
       &:after {
-        content: "";
+        content: '';
         background: transparent;
         border: 2px solid $primary__color;
         width: 27px;
@@ -175,7 +173,7 @@ textarea {
       }
 
       &:before {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         width: 6px;
@@ -191,10 +189,9 @@ textarea {
       }
     }
   }
-
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   opacity: 0;
   outline: none;
   z-index: 100;
@@ -218,6 +215,7 @@ input[type="checkbox"] {
   }
 }
 
-.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li{
+.gform_wrapper ul.gfield_checkbox li,
+.gform_wrapper ul.gfield_radio li {
   overflow: inherit !important;
 }

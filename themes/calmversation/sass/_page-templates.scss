@@ -5,10 +5,10 @@
 /* Testimony */
 .page-title {
   font-size: $main-header__mobile - 7;
-  padding-top: 1.5rem;
+  // padding-top: 1rem;
   text-align: center;
   @include tablet {
-    font-size: 48px;
+    font-size: $main-header__desktop;
     // padding-top: 3rem;
   }
 }

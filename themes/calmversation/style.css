@@ -1087,11 +1087,11 @@ ul.sub-menu {
       margin: 55px auto; } }
   .entry-content h2 {
     font-weight: bolder;
-    font-size: 42px;
+    font-size: 36px;
     padding: 25px 0; }
     @media (min-width: 1240px) {
       .entry-content h2 {
-        font-size: 48px;
+        font-size: 40px;
         padding: 25px 0; } }
   .entry-content p {
     padding: 15px 0;
@@ -1103,7 +1103,7 @@ ul.sub-menu {
       .entry-content p {
         margin: 25px auto;
         width: 85%;
-        font-size: 20px; } }
+        font-size: 18px; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1405,12 +1405,11 @@ object {
 --------------------------------------------------------------*/
 /* Testimony */
 .page-title {
-  font-size: 35px;
-  padding-top: 1.5rem;
+  font-size: 29px;
   text-align: center; }
   @media (min-width: 600px) {
     .page-title {
-      font-size: 48px; } }
+      font-size: 40px; } }
 
 .testimony {
   font-size: 18px;
@@ -1503,7 +1502,7 @@ object {
     padding: 30px 0;
     margin: 0 auto;
     font-family: 'Quicksand-Light', sans-serif;
-    font-size: 48px; }
+    font-size: 42px; }
   @media (min-width: 600px) {
     .banner-header {
       top: 26vh;
@@ -1512,7 +1511,7 @@ object {
       color: #fff;
       text-align: inherit; }
       .banner-header h1 {
-        font-size: 32px; } }
+        font-size: 26px; } }
   @media (min-width: 1240px) {
     .banner-header {
       top: 50vh;
@@ -1521,7 +1520,7 @@ object {
       color: #fff;
       text-align: inherit; }
       .banner-header h1 {
-        font-size: 48px; } }
+        font-size: 40px; } }
 
 .founder-container,
 .solutions-container {
@@ -1529,7 +1528,7 @@ object {
   margin-bottom: 2.5rem; }
   .founder-container h1,
   .solutions-container h1 {
-    font-size: 35px; }
+    font-size: 29px; }
   .founder-container img,
   .solutions-container img {
     margin-bottom: 15px; }
@@ -1708,7 +1707,7 @@ object {
         padding-right: 10%; } }
   .campaign-container h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 29px;
     font-weight: bolder;
     margin-top: auto;
     padding-top: 2rem;
@@ -1718,7 +1717,7 @@ object {
         text-align: left; } }
     @media (min-width: 1240px) {
       .campaign-container h1 {
-        font-size: 48px;
+        font-size: 40px;
         margin: 8% 0; } }
   .campaign-container .campaign-logo {
     margin: 10px auto;
@@ -2305,9 +2304,6 @@ object {
       .tedx-video .tedx-content {
         padding-right: 2rem; } }
 
-.ytp-icon-large-play-button {
-  display: none; }
-
 .single-course .site-content header h1 {
   text-align: center;
   font-family: "Quicksand-Bold", sans-serif; }
@@ -2418,7 +2414,7 @@ object {
     text-align: center;
     width: 100%; }
   .free-resource-banner h1:nth-child(odd) {
-    font-size: 42px;
+    font-size: 36px;
     text-align: center; }
     @media (min-width: 600px) {
       .free-resource-banner h1:nth-child(odd) {
@@ -2436,7 +2432,7 @@ object {
     padding: 0.8rem 3rem; }
     @media (min-width: 600px) {
       .free-resource-banner a {
-        font-size: 14px; } }
+        font-size: 12px; } }
   .free-resource-banner .free-resource-image-desktop {
     display: none; }
     @media (min-width: 600px) {
@@ -2460,7 +2456,7 @@ object {
   @media (min-width: 1240px) {
     .free-resource-header-desktop {
       padding: 2rem 0;
-      font-size: 48px; } }
+      font-size: 40px; } }
 
 .free-resource-text-desktop {
   display: -webkit-box;
@@ -2483,10 +2479,10 @@ object {
       width: 42%;
       padding-bottom: 3rem; }
       .free-resource-text-desktop h2 {
-        font-size: 28px; } }
+        font-size: 26px; } }
   @media (min-width: 1240px) {
     .free-resource-text-desktop h2 {
-      font-size: 33px;
+      font-size: 31px;
       width: 40%; } }
   .free-resource-text-desktop h2 {
     display: none; }
@@ -2510,7 +2506,7 @@ object {
   text-align: center;
   padding: 25px 0; }
   .free-resource-info h1:nth-child(even) {
-    font-size: 35px; }
+    font-size: 29px; }
     @media (min-width: 600px) {
       .free-resource-info h1:nth-child(even) {
         display: none; } }
@@ -2518,7 +2514,7 @@ object {
     display: none; }
     @media (min-width: 600px) {
       .free-resource-info h2 {
-        font-size: 26px;
+        font-size: 24px;
         display: block; } }
     @media (min-width: 1240px) {
       .free-resource-info h2 {
@@ -2542,18 +2538,18 @@ object {
       .free-resource-info p:nth-child(odd) {
         width: 90%;
         margin: 0 auto;
-        font-size: 17px; } }
+        font-size: 15px; } }
 
 .space-thought-header-desktop {
   display: none; }
   @media (min-width: 600px) {
     .space-thought-header-desktop {
       display: block;
-      font-size: 42px; } }
+      font-size: 34px; } }
   @media (min-width: 1240px) {
     .space-thought-header-desktop {
       display: block;
-      font-size: 48px; } }
+      font-size: 40px; } }
 
 .free-resource-video-container,
 .free-resource-video {
@@ -2582,12 +2578,12 @@ object {
       .free-resource-video-container h2,
       .free-resource-video h2 {
         width: 45vw;
-        font-size: 28px; } }
+        font-size: 26px; } }
     @media (min-width: 1240px) {
       .free-resource-video-container h2,
       .free-resource-video h2 {
         width: 450px;
-        font-size: 28px; } }
+        font-size: 26px; } }
   .free-resource-video-container iframe,
   .free-resource-video iframe {
     height: 198px;
@@ -2621,7 +2617,7 @@ object {
     .free-resource-video-container .free-resource-video-description div:nth-child(even) {
       padding-left: 1rem; }
     .free-resource-video-container .free-resource-video-description p {
-      font-size: 16px;
+      font-size: 14px;
       text-align: right; } }
 
 @media (min-width: 1240px) {
@@ -2634,7 +2630,7 @@ object {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly; }
   .free-resource-video-container p {
-    font-size: 24px; } }
+    font-size: 22px; } }
 
 .free-resource-video-description p {
   display: none; }
@@ -3009,45 +3005,52 @@ form {
   text-align: center; }
   @media (min-width: 600px) {
     .contact-us-container h2 {
-      font-size: 48px; } }
+      font-size: 40px; } }
 
 .contact-us-container h3 {
-  font-size: 35px;
+  font-size: 24px;
   display: none; }
   @media (min-width: 600px) {
     .contact-us-container h3 {
       display: block;
       text-align: center; } }
 
-.gf_browser_safari, .gf_browser_iphone, .gform_wrapper {
+.gf_browser_safari,
+.gf_browser_iphone,
+.gform_wrapper {
   border-radius: 15px;
   border: 2px solid #52b0cc;
   margin: 25px auto !important; }
   @media (min-width: 600px) {
-    .gf_browser_safari, .gf_browser_iphone, .gform_wrapper {
+    .gf_browser_safari,
+    .gf_browser_iphone,
+    .gform_wrapper {
       width: 82%;
       border: 11px solid #52b0cc;
       border-radius: 35px; } }
 
 .gfield_label {
-  font-size: 20px !important;
+  font-size: 18px !important;
   text-align: center; }
   @media (min-width: 600px) {
     .gfield_label {
       width: 100%;
       margin-bottom: 11%;
-      font-size: 35px !important; } }
+      font-size: 29px !important; } }
 
-.ginput_container input, .ginput_container_text input {
+.ginput_container input,
+.ginput_container_text input {
   background: transparent; }
 
-.ginput_container .medium, .ginput_container_text .medium {
-  font-size: 16px !important;
+.ginput_container .medium,
+.ginput_container_text .medium {
+  font-size: 14px !important;
   border: none;
   border-bottom: 2px solid #b4de96; }
   @media (min-width: 600px) {
-    .ginput_container .medium, .ginput_container_text .medium {
-      font-size: 35px !important;
+    .ginput_container .medium,
+    .ginput_container_text .medium {
+      font-size: 29px !important;
       width: 100% !important;
       border-bottom: 5px solid #b4de96; } }
 
@@ -3077,10 +3080,10 @@ textarea {
               align-items: center; } }
 
 .gform_next_button {
-  padding: .2rem 3rem !important; }
+  padding: 0.2rem 3rem !important; }
   @media (min-width: 600px) {
     .gform_next_button {
-      padding: .8rem 6rem !important;
+      padding: 0.8rem 6rem !important;
       overflow: inherit !important; } }
 
 .gform_previous_button {
@@ -3093,7 +3096,8 @@ textarea {
 .gform_confirmation_wrapper {
   padding: 25px 0; }
 
-.gform_confirmation_message_1, .gform_confirmation_message {
+.gform_confirmation_message_1,
+.gform_confirmation_message {
   font-weight: bolder;
   height: 200px;
   display: -webkit-box;
@@ -3115,9 +3119,10 @@ textarea {
   padding: 25px;
   border-radius: 30px; }
   @media (min-width: 1240px) {
-    .gform_confirmation_message_1, .gform_confirmation_message {
+    .gform_confirmation_message_1,
+    .gform_confirmation_message {
       width: 80%;
-      font-size: 48px;
+      font-size: 40px;
       height: 500px; } }
 
 @media (min-width: 600px) {
@@ -3156,7 +3161,7 @@ textarea {
     font-size: 15px !important;
     padding-left: 50px !important; }
     .gfield_checkbox li label:after {
-      content: "";
+      content: '';
       background: transparent;
       border: 2px solid #52b0cc;
       width: 27px;
@@ -3168,7 +3173,7 @@ textarea {
       border-radius: 3px;
       z-index: 0; }
     .gfield_checkbox li label:before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       width: 6px;
@@ -3184,7 +3189,7 @@ textarea {
       -webkit-transition: all 100ms;
       transition: all 100ms; }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   opacity: 0;
   outline: none;
   z-index: 100;
@@ -3197,11 +3202,12 @@ input[type="checkbox"] {
      -moz-appearance: none;
           appearance: none;
   cursor: pointer; }
-  input[type="checkbox"] + label {
+  input[type='checkbox'] + label {
     cursor: pointer; }
-  input[type="checkbox"]:checked + label:before {
+  input[type='checkbox']:checked + label:before {
     opacity: 1;
     top: 3px; }
 
-.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+.gform_wrapper ul.gfield_checkbox li,
+.gform_wrapper ul.gfield_radio li {
   overflow: inherit !important; }
