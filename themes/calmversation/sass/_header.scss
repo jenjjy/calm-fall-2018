@@ -71,13 +71,14 @@
   }
 } // end of .login
 
-.menu {
-  @include flex(column nowrap, space-between, center);
+.main-navigation .menu {
+  // @include flex(column nowrap, space-between, center);
   margin: auto;
 
   @include tablet {
-    display: block;
-    padding-top: 1rem;
+    // display: block;
+    margin: auto;
+    max-width: 975px;
   }
 }
 
