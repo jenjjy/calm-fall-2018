@@ -70,23 +70,25 @@
 
   h2 {
     font-weight: bolder;
-    font-size: 42px;
+    font-size: $main-header__mobile;
     padding: 25px 0;
     @include desktop {
-      font-size: 48px;
-      padding: 45px 0;
+      font-size: $main-header__desktop;
+      padding: 25px 0;
 
     }
   }
 
   p {
     padding: 15px 0;
-    font-size: 22px;
+    font-size: $main-paragraph__mobile;
     @include tablet {
       padding: 0;
     }
     @include desktop {
-      font-size: 28px;
+      margin: 25px auto;
+      width: 85%;
+      font-size: $main-paragraph__desktop;
     }
   }
 
