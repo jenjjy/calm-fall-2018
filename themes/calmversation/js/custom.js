@@ -45,9 +45,10 @@
     } //carousel testimony
 
     let fixedHeader = $('.menu-header-container');
-    let headerHeight = $('.site-header').height();
+    let headerHeight = $('.site-branding').height();
 
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function(event) {
+      event.preventDefault();
       console.log('working?');
       if ($(window).scrollTop() > headerHeight) {
         fixedHeader.addClass('fixed-header');

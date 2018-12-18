@@ -35,12 +35,11 @@ a {
   letter-spacing: 1px;
   height: 100%;
   width: 100%;
-  max-width: 1024px;
 
   @include tablet {
     background: transparent;
     display: block;
-    margin: auto;
+    // margin: auto;
     height: auto;
 
     li.current-menu-item {
@@ -190,20 +189,14 @@ a {
   }
 } // end of .main-navigation
 
-.menu {
-  @include tablet {
-    margin: auto;
-    width: 975px;
-  }
-}
-
 .fixed-header {
   @include tablet {
     background-color: $color__background-body;
+
     opacity: 0.85;
     padding: 1rem 0;
     position: fixed;
-    top: 30px;
+    top: 0;
     width: 100%;
     z-index: 1000;
   }
