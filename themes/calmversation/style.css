@@ -1241,7 +1241,7 @@ object {
   @media (min-width: 600px) {
     .main-navigation .menu {
       margin: auto;
-      width: 975px; } }
+      max-width: 975px; } }
 
 /* 
  * Mobile Menu Slide 
