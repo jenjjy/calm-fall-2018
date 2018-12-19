@@ -43,6 +43,11 @@
     }
 
     ul {
+      padding-top: 1rem;
+
+      @include tablet {
+        padding-top: 0;
+      }
       @include desktop {
         width: 800px;
       }

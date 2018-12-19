@@ -12,8 +12,7 @@
   }
 }
 
-.b
-.sticky {
+.b .sticky {
   display: block;
 }
 
@@ -58,15 +57,12 @@
   display: block;
 }
 
-
 .entry-content {
   text-align: center;
   margin: 0 auto;
   @include desktop {
     margin: 55px auto;
   }
-;
-
 
   h2 {
     font-weight: bolder;
@@ -75,7 +71,6 @@
     @include desktop {
       font-size: $main-header__desktop;
       padding: 25px 0;
-
     }
   }
 
@@ -91,5 +86,20 @@
       font-size: $main-paragraph__desktop;
     }
   }
+}
 
+/* Scroll Top */
+.scrollTop {
+  position: fixed;
+  right: 10%;
+  bottom: 10px;
+  background-color: #be3f48;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.scrollTop a {
+  font-size: 18px;
+  color: #fff;
 }
