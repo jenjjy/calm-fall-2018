@@ -4,11 +4,25 @@
     display: block;
   }
 
-  .entry-title,
-  .entry-content h2 {
-    text-align: center;
-    left: 20%;
+  .entry-content {
+    h2 {
+      @include desktop {
+        text-align: left;
+        margin-left: 6%;
+        margin-bottom: -5%;
+        font-weight: 400;
+      }
+    }
+    .themes-title {
+      @include desktop {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 10%;
+      }
+    }
   }
+<<<<<<< HEAD
+=======
   .entry-content {
     h2 {
       @include desktop {
@@ -25,6 +39,7 @@
       }
     }
   }
+>>>>>>> fb20b60eb286a4d4fb7ed1b8972cbf3c371bbe2f
   .wp-block-columns {
     display: flex;
     flex-direction: column;

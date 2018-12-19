@@ -1,4 +1,11 @@
 .single-course {
+<<<<<<< HEAD
+  .site-content {
+    header {
+      h1 {
+        text-align: center;
+        font-family: $font__main-bold;
+=======
   h2:nth-child(1) {
     padding-bottom: 0;
     text-align: center;
@@ -36,6 +43,7 @@
 
     figure {
       img {
+>>>>>>> fb20b60eb286a4d4fb7ed1b8972cbf3c371bbe2f
         @include tablet {
           width: 100%;
         }
@@ -90,6 +98,24 @@
           padding-bottom: 1rem;
         }
       }
+<<<<<<< HEAD
+
+      .theme-bar img {
+        display: none;
+
+        @include tablet {
+          display: block;
+          position: relative;
+          left: 120px;
+          top: 140px;
+          z-index: -3;
+          // width: 520px;
+          width: 100%;
+          border-radius: 0;
+        }
+        @include desktop {
+          // width: 1100px;
+=======
     }
     .wp-block-column:nth-child(2) {
       h3 {
@@ -99,6 +125,7 @@
         }
         @include bigTablet {
           padding-bottom: 2.5rem;
+>>>>>>> fb20b60eb286a4d4fb7ed1b8972cbf3c371bbe2f
         }
       }
     }
@@ -112,12 +139,36 @@
           padding-bottom: 2.5rem;
         }
       }
+<<<<<<< HEAD
+
+      .wp-block-column {
+        h4 {
+          padding-bottom: 1rem;
+        }
+
+        h3 {
+          &:last-child {
+            font-family: $font__main-light;
+            padding-bottom: 1rem;
+          }
+        }
+
+        ul {
+          border-top: $border-sec;
+          width: 200px;
+          margin: auto;
+
+          li {
+            width: 100%;
+          }
+=======
     }
     .wp-block-column:nth-child(4) {
       h4 {
         padding-bottom: 2rem;
         @include tablet {
           padding-bottom: 0rem;
+>>>>>>> fb20b60eb286a4d4fb7ed1b8972cbf3c371bbe2f
         }
         @include bigTablet {
           padding-bottom: 1.1rem;
@@ -152,6 +203,19 @@
           font-size: 18px;
         }
       }
+<<<<<<< HEAD
+
+      hr {
+        display: none;
+        width: 46%;
+        margin-left: 27%;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        line-height: 3;
+=======
       h4 {
         padding-bottom: 2rem;
         font-size: 20px;
@@ -160,6 +224,7 @@
           font-size: 14px;
           padding-bottom: 1rem;
         }
+>>>>>>> fb20b60eb286a4d4fb7ed1b8972cbf3c371bbe2f
       }
     }
   }

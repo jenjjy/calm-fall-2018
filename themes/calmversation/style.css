@@ -2151,89 +2151,90 @@ object {
       display: block;
       margin-top: -10px; } }
 
-/*--------------------------------------------------------------
-# our company  and our fonder
---------------------------------------------------------------*/
-.page-template-page-our-company .site-content .main-carousel h2,
-.page-template-page-our-founder .site-content .main-carousel h2 {
-  color: #787878; }
-
-.page-template-page-our-company .site-content .main-carousel ol,
-.page-template-page-our-founder .site-content .main-carousel ol {
-  padding: 20px 0px; }
-
-.page-template-page-our-company .site-content .main-carousel .carousel-cell,
-.page-template-page-our-founder .site-content .main-carousel .carousel-cell {
-  width: 100%; }
-  .page-template-page-our-company .site-content .main-carousel .carousel-cell h3,
-  .page-template-page-our-founder .site-content .main-carousel .carousel-cell h3 {
+.our-founder-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  @media (min-width: 1240px) {
+    .our-founder-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: left; } }
+  .our-founder-container h2 {
     font-size: 36px;
-    color: #000; }
-  .page-template-page-our-company .site-content .main-carousel .carousel-cell p,
-  .page-template-page-our-founder .site-content .main-carousel .carousel-cell p {
-    padding-bottom: 30px; }
+    padding: 20px 0; }
+  .our-founder-container p {
+    font-size: 15px; }
+  .our-founder-container img {
+    max-width: 300px; }
+    @media (min-width: 1240px) {
+      .our-founder-container img {
+        max-width: 400px;
+        margin-right: 15px; } }
 
-.page-template-page-our-company .site-content .main-carousel button,
-.page-template-page-our-founder .site-content .main-carousel button {
-  display: none; }
+.main-carousel {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (min-width: 1240px) {
+    .main-carousel {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
-@media (min-width: 600px) {
-  .site-content .our-company {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .site-content .our-company h2 {
-      text-align: left;
-      font-size: 30px;
-      height: auto; }
-  .site-content .founder-img {
-    width: 50%;
-    margin: 0px; }
-  .site-content .our-company-text {
-    width: 70%;
-    margin-left: 40px; }
-    .site-content .our-company-text p {
-      text-align: left;
-      font-size: 16px;
-      margin: 0px; }
-  .site-content .main-carousel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 100px 40px 40px 40px; }
-    .site-content .main-carousel .carousel-cell {
-      width: 33.3333%;
-      padding: 50px; }
-      .site-content .main-carousel .carousel-cell h3 {
-        text-transform: capitalize;
-        font-family: "Quicksand-Bold", sans-serif, "Muli-SemiBold", sans-serif; }
-      .site-content .main-carousel .carousel-cell p {
-        font-size: 16px; } }
-
-/*--------------------------------------------------------------
-# our founder
---------------------------------------------------------------*/
-@media (min-width: 600px) {
-  .site-content .our-founder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .site-content .our-founder h2 {
-      text-align: left;
-      font-size: 35px; }
-    .site-content .our-founder .our-founder .founder-img {
-      width: 50%; }
-      .site-content .our-founder .our-founder .founder-img img {
-        height: auto;
-        width: auto; }
-    .site-content .our-founder .our-founder-text {
-      margin-left: 40px;
-      width: 70%; }
-      .site-content .our-founder .our-founder-text h2 {
-        padding-top: 0; }
-      .site-content .our-founder .our-founder-text p {
-        text-align: left;
-        font-size: 16px; } }
+.carousel-cell {
+  width: 100%;
+  text-align: center; }
+  @media (min-width: 1240px) {
+    .carousel-cell {
+      border: 2px solid #52b0cc;
+      border-radius: 25px;
+      padding: 50px 25px 0 25px; }
+      .carousel-cell p {
+        max-width: 80%;
+        margin: 0 auto; } }
+  .carousel-cell h2 {
+    color: #000;
+    font-size: 36px; }
+  .carousel-cell img {
+    max-width: 200px; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2387,9 +2388,6 @@ object {
   @media (min-width: 600px) {
     .single-course h2:nth-child(1) {
       text-align: left; } }
-  @media (min-width: 1240px) {
-    .single-course h2:nth-child(1) {
-      margin-left: 5%; } }
 
 .single-course h2:nth-child(2) {
   padding: 0;
@@ -2399,31 +2397,7 @@ object {
   text-align: center; }
   @media (min-width: 600px) {
     .single-course h2:nth-child(2) {
-      text-align: left;
-      margin-bottom: 5%; } }
-  @media (min-width: 1240px) {
-    .single-course h2:nth-child(2) {
-      margin-left: 5%; } }
-
-@media (min-width: 600px) {
-  .single-course .has-2-columns {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap; } }
-
-.single-course .has-2-columns .course-theme-text {
-  width: 100%; }
-
-@media (min-width: 600px) {
-  .single-course .has-2-columns figure img {
-    width: 100%; } }
-
-.single-course .has-2-columns .wp-block-column:nth-child(2) {
-  margin-top: 10%; }
-  @media (min-width: 1240px) {
-    .single-course .has-2-columns .wp-block-column:nth-child(2) p {
-      font-size: 23px; } }
+      text-align: left; } }
 
 .single-course .theme-bar img {
   display: none; }
@@ -2431,27 +2405,25 @@ object {
     .single-course .theme-bar img {
       display: block;
       position: relative;
-      left: 90px;
-      top: 110px;
+      left: 120px;
+      top: 140px;
       z-index: -3;
       width: 520px;
       border-radius: 0; } }
-  @media (min-width: 1024px) {
-    .single-course .theme-bar img {
-      width: 700px;
-      top: 130px; } }
   @media (min-width: 1240px) {
     .single-course .theme-bar img {
-      width: 1000px;
-      top: 140px; } }
+      width: 1100px; } }
 
 .single-course .has-4-columns {
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+      -ms-flex-direction: row;
+          flex-direction: row; }
   @media (min-width: 600px) {
     .single-course .has-4-columns {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-flow: row nowrap;
@@ -2460,64 +2432,29 @@ object {
   @media (min-width: 600px) {
     .single-course .has-4-columns .course-theme-image img {
       width: 75%; } }
-  .single-course .has-4-columns .wp-block-column:nth-child(1) h4 {
-    padding-bottom: 2rem; }
-    @media (min-width: 600px) {
-      .single-course .has-4-columns .wp-block-column:nth-child(1) h4 {
-        padding-bottom: 1rem; } }
-  .single-course .has-4-columns .wp-block-column:nth-child(2) h3 {
-    padding-bottom: 2rem; }
-    @media (min-width: 600px) {
-      .single-course .has-4-columns .wp-block-column:nth-child(2) h3 {
-        padding-bottom: 2.3rem; } }
-    @media (min-width: 1024px) {
-      .single-course .has-4-columns .wp-block-column:nth-child(2) h3 {
-        padding-bottom: 2.5rem; } }
+  .single-course .has-4-columns .wp-block-column:nth-child(2) h3,
   .single-course .has-4-columns .wp-block-column:nth-child(3) h3 {
     padding-bottom: 2rem; }
-    @media (min-width: 600px) {
-      .single-course .has-4-columns .wp-block-column:nth-child(3) h3 {
-        padding-bottom: 0.7rem; } }
-    @media (min-width: 1240px) {
-      .single-course .has-4-columns .wp-block-column:nth-child(3) h3 {
-        padding-bottom: 2.5rem; } }
-  .single-course .has-4-columns .wp-block-column:nth-child(4) h4 {
-    padding-bottom: 2rem; }
-    @media (min-width: 600px) {
-      .single-course .has-4-columns .wp-block-column:nth-child(4) h4 {
-        padding-bottom: 0rem; } }
-    @media (min-width: 1024px) {
-      .single-course .has-4-columns .wp-block-column:nth-child(4) h4 {
-        padding-bottom: 1.1rem; } }
-    @media (min-width: 1240px) {
-      .single-course .has-4-columns .wp-block-column:nth-child(4) h4 {
-        padding-bottom: 1.5rem; } }
-  .single-course .has-4-columns .wp-block-column ul {
-    border-top: 2px solid #b4de96;
-    width: 200px;
-    margin: auto; }
-    @media (min-width: 600px) {
-      .single-course .has-4-columns .wp-block-column ul {
-        width: 130px; } }
-    .single-course .has-4-columns .wp-block-column ul li {
-      width: 100%; }
-  .single-course .has-4-columns .wp-block-column p {
-    padding: 0;
-    margin: auto; }
-  .single-course .has-4-columns .wp-block-column h3 {
-    font-size: 28px;
-    font-weight: bold; }
-    @media (min-width: 600px) {
-      .single-course .has-4-columns .wp-block-column h3 {
-        font-size: 18px; } }
-  .single-course .has-4-columns .wp-block-column h4 {
-    padding-bottom: 2rem;
-    font-size: 20px;
-    font-weight: 400; }
-    @media (min-width: 600px) {
-      .single-course .has-4-columns .wp-block-column h4 {
-        font-size: 14px;
-        padding-bottom: 1rem; } }
+
+.single-course .wp-block-column ul {
+  border-top: 2px solid #b4de96;
+  width: 200px;
+  margin: auto; }
+  .single-course .wp-block-column ul li {
+    width: 100%; }
+
+.single-course .wp-block-column p {
+  padding: 0;
+  margin: auto; }
+
+.single-course .wp-block-column h3 {
+  font-size: 28px;
+  font-weight: bold; }
+
+.single-course .wp-block-column h4 {
+  padding-bottom: 2rem;
+  font-size: 20px;
+  font-weight: 400; }
 
 .single-course figure img {
   border-radius: 50%;
@@ -2540,42 +2477,6 @@ object {
 
 .single-course .course-theme-icon img {
   width: 100%; }
-
-.single-course .button-bottom a {
-  margin-top: 5%;
-  background: #b4de96;
-  border: 2px solid #b4de96;
-  border-radius: 25px;
-  color: white;
-  font-size: 1rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s; }
-  .single-course .button-bottom a:after {
-    position: absolute;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    content: '';
-    width: 0;
-    left: 50%;
-    bottom: 0;
-    height: 3px;
-    background: #f7f7f7; }
-  .single-course .button-bottom a:hover {
-    cursor: pointer;
-    -webkit-box-shadow: 0px 0px 0px 8px #9fc984;
-            box-shadow: 0px 0px 0px 8px #9fc984;
-    background-color: #9fc984;
-    border: #9fc984; }
-    .single-course .button-bottom a:hover:after {
-      width: 0%; }
 
 /*--------------------------------------------------------------
 # Free Resources
@@ -2885,7 +2786,8 @@ object {
 @media (min-width: 1240px) {
   .page-id-80 .entry-content .themes-title {
     text-align: center;
-    margin: 0; } }
+    margin: 0;
+    margin-bottom: 10%; } }
 
 .page-id-80 .wp-block-columns {
   display: -webkit-box;
@@ -2998,13 +2900,6 @@ object {
     .page-id-80 .wp-block-button .wp-block-button__link {
       width: 33%; } }
 
-.page-id-80 .course-theme-introtext {
-  display: none; }
-  @media (min-width: 1240px) {
-    .page-id-80 .course-theme-introtext {
-      display: block;
-      margin-bottom: 15%; } }
-
 .page-id-80 .course-lines {
   display: none; }
   @media (min-width: 1240px) {
@@ -3064,7 +2959,7 @@ object {
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble41 {
         position: absolute;
-        top: 1130px;
+        top: 1030px;
         left: 160px; } }
   .page-id-80 .course-themes .course-bubbles .bubble109 {
     -webkit-box-ordinal-group: 5;
@@ -3073,7 +2968,7 @@ object {
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble109 {
         position: absolute;
-        top: 1290px;
+        top: 1230px;
         left: 390px; } }
   .page-id-80 .course-themes .course-bubbles .bubble111 {
     -webkit-box-ordinal-group: 6;
@@ -3082,7 +2977,7 @@ object {
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble111 {
         position: absolute;
-        top: 1130px;
+        top: 1030px;
         left: 630px; } }
   .page-id-80 .course-themes .course-bubbles .bubble113 {
     -webkit-box-ordinal-group: 2;
@@ -3091,7 +2986,7 @@ object {
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble113 {
         position: absolute;
-        top: 1290px;
+        top: 1230px;
         left: 860px; } }
   .page-id-80 .course-themes .course-bubbles .bubble115 {
     -webkit-box-ordinal-group: 3;
@@ -3100,14 +2995,14 @@ object {
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble115 {
         position: absolute;
-        top: 1130px;
+        top: 1030px;
         left: 1090px; } }
 
 .page-id-80 .course-themes .course-theme-text {
   margin: 2rem 0; }
   @media (min-width: 1240px) {
     .page-id-80 .course-themes .course-theme-text {
-      margin: 5% 0 10% 10%; } }
+      margin: 10% 0 10% 10%; } }
   .page-id-80 .course-themes .course-theme-text .themes {
     display: none; }
     .page-id-80 .course-themes .course-theme-text .themes .course-title {
