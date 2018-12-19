@@ -1337,6 +1337,7 @@ object {
           color: #fff;
           font-family: "Quicksand-Medium", sans-serif;
           font-size: 26px;
+          line-height: 1.5;
           text-decoration: none; }
     .menu-slide nav .sub-menu {
       padding-top: 0; }
@@ -1890,7 +1891,12 @@ object {
     border-radius: 25px;
     -webkit-box-shadow: 5px 5px 11px grey;
             box-shadow: 5px 5px 11px grey;
-    padding: 30px 0 45px 0; }
+    padding: 30px 0 45px 0;
+    -webkit-transition: 0.4s ease-in;
+    transition: 0.4s ease-in; }
+    .goals-desktop .goals-boxes:hover {
+      color: #f0f3f8;
+      background: #52b0cc; }
   @media (min-width: 700px) {
     .goals-desktop {
       margin: 0 auto;
@@ -2714,6 +2720,9 @@ object {
     @media (min-width: 700px) {
       .free-resource-banner a {
         font-size: 10px; } }
+  @media (min-width: 700px) and (min-width: 1240px) {
+    .free-resource-banner a {
+      font-size: 18px; } }
   .free-resource-banner .free-resource-image-desktop {
     display: none; }
     @media (min-width: 700px) {
@@ -3313,6 +3322,8 @@ object {
     margin-bottom: 1rem; }
   .page-id-80 .course-pack p {
     text-align: center; }
+  .page-id-80 .course-pack a {
+    font-size: 15px; }
 
 .page-id-80 .course-banner {
   display: none; }
