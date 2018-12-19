@@ -791,6 +791,9 @@ ul.sub-menu {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
+  color: #52b0cc;
+  text-decoration: none;
+  list-style: none;
   float: left;
   width: 50%; }
 

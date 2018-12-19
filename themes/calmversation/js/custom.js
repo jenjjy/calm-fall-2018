@@ -172,7 +172,43 @@ mm:\`    \`\`.+oo++ooosyysooossooo++oo++++++++/  .yhh
 md\`  \`.:/\`.+oooooosyyhhyyhyyyso++++++++++++/  -yhh
 mo--//++s/:+oooosyyyyyssssossssssssss+++ooo/  .yhh
 m-////+syhs+oooosyyyysysoosssssyyyyyso+oooo+  -yhh
-h./++++syhyysooooosssyyyyyyyssooooooo+o+++o+  :yhh`);
+h./++++syhyysooooosssyyyyyyyssooooooo+o+++o+  :yhh`, `
+ MMMMMMMMMhydNhyddNNNNmmddmmNMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMNhysssyydmNNNNNNmhddmmdmMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMmddmmNNNNNNNNmmdddmmmdNMMMMMMMMMMMMMMMMMM
+MMMMMNmmddhydNNNNNdhmNMMMNmmNmdNMMMMMMMMMMMMMMMMMM
+MMMMmNNNmmmmmNNNNNmymMMMMMMNmmNNMMMMMMMMMMMMMMMMMM
+MMMmNNNmNNNNNNNNNNdNhMMMMMMMMNNmMMMMMMMMMMMMMMMMMM
+MMmmNmmNMMMMNMMmyydmmNNNMNNMMMNNMMMMMMMMMMMMMMMMMM
+MMmNmmNMMMMmmmmmmNNNNNNNmmmmNNmNMMMMMMMMMMMMMMMMMM
+MmNNmmNMMNhdmmmmdmmddmmNNNNNNNNNNNMMMMMMMMMMMMMMMM
+NdNmmNMMNmNNNmmmmmmmNNNNNNNNNNNNNNNNNMMMMMMMMMMMMM
+NNNhdmMNNNNdyso++++oyhhhyyyyhddmNNNNNmNMMMMMMMMMMM
+NNmNhNNNNms/-..\`\`\`\`\`.---:::/osyhdNNNNNmNMMMMMMMMMM
+MmNNNNNNdo:-..\`\`\`\`\`\`\`\`...-::/ossydmNNNNNMMMMMMMMMM
+MNmddmNmo:--...\`\`\`\`\`....--://+oosymNNNNNMMMMMMMMMM
+MMMNddNh+:--.............-:://+osydmNNNNMMMMMMMMMM
+MMMMMddy/--.....\`\`.......--::/+osshmNNNNNMMMMMMMMM
+MMMMNdmh/-.............-----:/+ossydNNNNNMMMMMMMMM
+MMMMNNNh/::////::::-::::/+ossyhhhysymmNNNNMMMMMMMM
+MMMMdNNs/+++/+ooo+/:-:/osso+///++/::/hNNNmNMMMMMMM
+MMMMh/:--::::::::--....:/osyhysyys.\`.mNNNNmNMMMMMM
+MMMMs\`\`ydmNNNNNdhs.\`.\`-dmmdNmdNNNd..omNmmNmNNMMMMM
+MMMMNs-:yddmmNNNNd-+:--yNNNNNNNNh-:sydNhmmmdNMMMMM
+MMMMmNd+./sdmNNmh/o:\`.//+hddmdh+:oyhhdmdMNmmmmNNMM
+MMNmmmhy/:-/+o+++s/.\`.-/so+++++syhhhhhmmmmmNNmmmmM
+Mdhdmdhms/++oooss/-.--://ssssyyyyhhhhhMNNNdmMMMMMM
+MNmNMMNmNo////++//osooyhhhs+oosyyyhhhdMMmMMNNMMMMM
+MMMMMMMMMm+////::-//+osssso+oossyyhhdNMMMMMMMMMMMM
+MMMMMMMMMMd+//::::::::/ooooossssyyhdmMMMNMMMMMMMMM
+MMMMMMMMMMMh+////+ssyyhddhyyyysyyhdmMMMMMMMMMMMMMM
+MMMMMMMMMMdyso+/+o+/+osso/:/ssyhhdmMMMMMMMMMMMMMMM
+MMMMMMMMMMMNmy:://--:++:::--+/shdNMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMd:://--:+++//:::yoymMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMh++/:+-:o/////+/ohmMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMNo:/o/-://:sdmNMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMso::://+odMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMNy++ooshNMMMNMMMMMMMMMMMMMMMMMMMMM`);
 
         console.log(
             '%c This website was developed by: JY, NW, VG, FX',

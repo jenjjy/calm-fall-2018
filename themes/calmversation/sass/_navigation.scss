@@ -304,6 +304,9 @@ ul.sub-menu {
   }
 
   .nav-previous {
+    color: $primary__color;
+    text-decoration: none;
+    list-style: none;
     float: left;
     width: 50%;
   }
