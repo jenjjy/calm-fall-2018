@@ -1,147 +1,60 @@
-/*--------------------------------------------------------------
-# our company  and our fonder
---------------------------------------------------------------*/
+.our-founder-container {
+  @include flex(column nowrap, center, center);
+  text-align: center;
+  @include desktop {
+    @include flex(row nowrap, center, center);
+    text-align: left;
+  }
 
-.page-template-page-our-company,
-.page-template-page-our-founder {
-  .site-content {
+  h2 {
+    font-size: $main-header__mobile;
+    padding: 20px 0;
+  }
 
-    .main-carousel {
-      h2 {
-        color: $color__text-main;
-      }
+  p {
+    font-size: $main-paragraph__mobile - 7;
+  }
 
-      ol {
-
-        padding: 20px 0px;
-      }
-
-      .carousel-cell {
-        @include heightandwidth (null, 100%);
-
-        h3 {
-          font-size: 36px;
-          color: $black;
-        }
-
-        p {
-          padding-bottom: 30px;
-        }
-      }
-
-      button {
-        display: none;
-      }
+  img {
+    max-width: 300px;
+    @include desktop {
+      max-width: 400px;
+      margin-right: 15px;
     }
   }
 }
 
-@include tablet {
-  .site-content {
+.main-carousel {
+  text-align: center;
+  @include flex(column nowrap, center, null);
+  @include desktop {
 
-    .our-company {
-
-      display: flex;
-
-
-      h2 {
-        text-align: left;
-        font-size: 30px;
-        height: auto;
-
-      }
-    }
-
-    .founder-img {
-      @include heightandwidth(null, 50%);
-      margin: 0px;
-    }
-
-    .our-company-text {
-      @include heightandwidth(null, 70%);
-      margin-left: 40px;
-
-
-      p {
-
-        text-align: left;
-        font-size: 16px;
-        margin: 0px;
-      }
-    }
-
-    .main-carousel {
-      display: flex;
-      margin: 100px 40px 40px 40px;
-
-
-      .carousel-cell {
-        @include heightandwidth(null, 33.3333%);
-
-        padding: 50px;
-
-        h3 {
-          text-transform: capitalize;
-          font-family: $font__main-bold, $font__sec-semibold;
-        }
-
-        p {
-          font-size: 16px;
-        }
-
-      }
-    }
-
+    @include flex(row nowrap, center, null);
   }
+
 }
 
-
-/*--------------------------------------------------------------
-# our founder
---------------------------------------------------------------*/
-@include tablet {
-  .site-content {
-
-    .our-founder {
-
-      display: flex;
-
-
-      h2 {
-        text-align: left;
-        font-size: 35px;
-      }
-
-
-      .our-founder .founder-img {
-
-        @include heightandwidth(null, 50%);
-
-        img {
-
-          @include heightandwidth(auto, auto);
-        }
-      }
-
-      .our-founder-text {
-        margin-left: 40px;
-
-        h2 {
-          padding-top: 0;
-        }
-
-
-        @include heightandwidth(null, 70%);
-
-        p {
-          text-align: left;
-          font-size: 16px;
-
-        }
-      }
-
-
+.carousel-cell {
+  width: 100%;
+  text-align: center;
+  @include desktop {
+    border: 2px solid $primary__color;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding: 50px 25px 0 25px;
+    p {
+      max-width: 80%;
+      margin: $margin__auto;
     }
+  }
 
+  h2 {
+    color: $black;
+    font-size: $main-header__mobile;
+  }
+
+  img {
+    max-width: 200px;
   }
 }

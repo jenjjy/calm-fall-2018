@@ -2151,89 +2151,90 @@ object {
       display: block;
       margin-top: -10px; } }
 
-/*--------------------------------------------------------------
-# our company  and our fonder
---------------------------------------------------------------*/
-.page-template-page-our-company .site-content .main-carousel h2,
-.page-template-page-our-founder .site-content .main-carousel h2 {
-  color: #787878; }
-
-.page-template-page-our-company .site-content .main-carousel ol,
-.page-template-page-our-founder .site-content .main-carousel ol {
-  padding: 20px 0px; }
-
-.page-template-page-our-company .site-content .main-carousel .carousel-cell,
-.page-template-page-our-founder .site-content .main-carousel .carousel-cell {
-  width: 100%; }
-  .page-template-page-our-company .site-content .main-carousel .carousel-cell h3,
-  .page-template-page-our-founder .site-content .main-carousel .carousel-cell h3 {
+.our-founder-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  @media (min-width: 1240px) {
+    .our-founder-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: left; } }
+  .our-founder-container h2 {
     font-size: 36px;
-    color: #000; }
-  .page-template-page-our-company .site-content .main-carousel .carousel-cell p,
-  .page-template-page-our-founder .site-content .main-carousel .carousel-cell p {
-    padding-bottom: 30px; }
+    padding: 20px 0; }
+  .our-founder-container p {
+    font-size: 15px; }
+  .our-founder-container img {
+    max-width: 300px; }
+    @media (min-width: 1240px) {
+      .our-founder-container img {
+        max-width: 400px;
+        margin-right: 15px; } }
 
-.page-template-page-our-company .site-content .main-carousel button,
-.page-template-page-our-founder .site-content .main-carousel button {
-  display: none; }
+.main-carousel {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (min-width: 1240px) {
+    .main-carousel {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
-@media (min-width: 600px) {
-  .site-content .our-company {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .site-content .our-company h2 {
-      text-align: left;
-      font-size: 30px;
-      height: auto; }
-  .site-content .founder-img {
-    width: 50%;
-    margin: 0px; }
-  .site-content .our-company-text {
-    width: 70%;
-    margin-left: 40px; }
-    .site-content .our-company-text p {
-      text-align: left;
-      font-size: 16px;
-      margin: 0px; }
-  .site-content .main-carousel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 100px 40px 40px 40px; }
-    .site-content .main-carousel .carousel-cell {
-      width: 33.3333%;
-      padding: 50px; }
-      .site-content .main-carousel .carousel-cell h3 {
-        text-transform: capitalize;
-        font-family: "Quicksand-Bold", sans-serif, "Muli-SemiBold", sans-serif; }
-      .site-content .main-carousel .carousel-cell p {
-        font-size: 16px; } }
-
-/*--------------------------------------------------------------
-# our founder
---------------------------------------------------------------*/
-@media (min-width: 600px) {
-  .site-content .our-founder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .site-content .our-founder h2 {
-      text-align: left;
-      font-size: 35px; }
-    .site-content .our-founder .our-founder .founder-img {
-      width: 50%; }
-      .site-content .our-founder .our-founder .founder-img img {
-        height: auto;
-        width: auto; }
-    .site-content .our-founder .our-founder-text {
-      margin-left: 40px;
-      width: 70%; }
-      .site-content .our-founder .our-founder-text h2 {
-        padding-top: 0; }
-      .site-content .our-founder .our-founder-text p {
-        text-align: left;
-        font-size: 16px; } }
+.carousel-cell {
+  width: 100%;
+  text-align: center; }
+  @media (min-width: 1240px) {
+    .carousel-cell {
+      border: 2px solid #52b0cc;
+      border-radius: 25px;
+      padding: 50px 25px 0 25px; }
+      .carousel-cell p {
+        max-width: 80%;
+        margin: 0 auto; } }
+  .carousel-cell h2 {
+    color: #000;
+    font-size: 36px; }
+  .carousel-cell img {
+    max-width: 200px; }
 
 /*--------------------------------------------------------------
 # Page Templates
