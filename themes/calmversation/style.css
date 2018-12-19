@@ -1533,6 +1533,7 @@ object {
 # Front Page
 --------------------------------------------------------------*/
 .banner-header {
+  text-transform: capitalize;
   text-align: center;
   margin-bottom: 2.2rem; }
   .banner-header h1 {
@@ -1597,6 +1598,9 @@ object {
     .founder-container iframe {
       height: 380px;
       width: 670px; } }
+  @media (min-width: 700px) and (min-width: 1240px) {
+    .founder-container h1 {
+      width: 80%; } }
 
 @media (min-width: 700px) {
   .founder-container .founder-text-container {
@@ -2214,15 +2218,15 @@ object {
     max-width: 300px; }
     @media (min-width: 1240px) {
       .our-founder-container img {
-        max-width: 400px;
-        margin-right: 2rem; } }
+        margin: 0 2rem 0 6rem;
+        max-width: 400px; } }
 
 @media (min-width: 1240px) {
   .our-company-info h2 {
     padding: 0;
     padding-bottom: 25px; }
   .our-company-info p {
-    width: 90%; } }
+    width: 80%; } }
 
 .main-carousel {
   text-align: center;
@@ -2254,7 +2258,7 @@ object {
   text-align: center; }
   @media (min-width: 1240px) {
     .carousel-cell {
-      border: 2px solid #52b0cc;
+      border: 3px solid #52b0cc;
       border-radius: 25px;
       padding: 50px 0;
       margin: 25px 10px; }

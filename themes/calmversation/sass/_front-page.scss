@@ -2,6 +2,7 @@
 # Front Page
 --------------------------------------------------------------*/
 .banner-header {
+  text-transform: capitalize;
   text-align: center;
   margin-bottom: 2.2rem;
 
@@ -65,6 +66,11 @@
     iframe {
       height: 380px;
       width: 670px;
+    }
+    @include desktop{
+      h1{
+        width: 80%;
+      }
     }
   }
 
