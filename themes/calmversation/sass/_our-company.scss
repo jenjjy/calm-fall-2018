@@ -20,7 +20,7 @@
     max-width: 300px;
     @include desktop {
       max-width: 400px;
-      margin-right: 15px;
+      margin-right: 2rem;
     }
   }
 }
@@ -29,8 +29,12 @@
 
 .our-company-info{
   @include desktop{
+    h2{
+      padding:  0;
+      padding-bottom: 25px;
+    }
     p{
-      width: 80%;
+      width: 90%;
     }
   }
 }
