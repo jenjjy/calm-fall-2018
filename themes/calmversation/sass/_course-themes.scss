@@ -21,17 +21,19 @@
 
       .theme-bar img {
         display: none;
+
         @include tablet {
           display: block;
           position: relative;
           left: 120px;
           top: 140px;
           z-index: -3;
-          width: 520px;
+          // width: 520px;
+          width: 100%;
           border-radius: 0;
         }
         @include desktop {
-          width: 1100px;
+          // width: 1100px;
         }
       }
 
@@ -51,6 +53,17 @@
       }
 
       .wp-block-column {
+        h4 {
+          padding-bottom: 1rem;
+        }
+
+        h3 {
+          &:last-child {
+            font-family: $font__main-light;
+            padding-bottom: 1rem;
+          }
+        }
+
         ul {
           border-top: $border-sec;
           width: 200px;
@@ -87,10 +100,11 @@
         // border-bottom: $border-sec;
       }
 
-      // hr {
-      //   width: 46%;
-      //   margin-left: 27%;
-      // }
+      hr {
+        display: none;
+        width: 46%;
+        margin-left: 27%;
+      }
 
       ul {
         list-style: none;

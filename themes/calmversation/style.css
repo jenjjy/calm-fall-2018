@@ -922,6 +922,7 @@ ul.sub-menu {
     padding: 0.5rem 0; }
     @media (min-width: 600px) {
       .site-footer .social-media-icon {
+        font-size: 30px;
         padding: 0; } }
     .site-footer .social-media-icon ul {
       display: -webkit-box;
@@ -976,7 +977,7 @@ ul.sub-menu {
               border: #b4de96 solid 2px; } }
 
 /*footer tablet*/
-@media (min-width: 600px) {
+@media (min-width: 1240px) {
   .site-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2338,11 +2339,8 @@ object {
       left: 120px;
       top: 140px;
       z-index: -3;
-      width: 520px;
+      width: 100%;
       border-radius: 0; } }
-  @media (min-width: 1240px) {
-    .single-course .site-content .entry-content .theme-bar img {
-      width: 1100px; } }
 
 .single-course .site-content .entry-content .wp-block-columns {
   -webkit-box-orient: horizontal;
@@ -2362,6 +2360,13 @@ object {
   @media (min-width: 600px) {
     .single-course .site-content .entry-content .wp-block-columns .course-theme-image img {
       width: 75%; } }
+
+.single-course .site-content .entry-content .wp-block-column h4 {
+  padding-bottom: 1rem; }
+
+.single-course .site-content .entry-content .wp-block-column h3:last-child {
+  font-family: "Quicksand-Light", sans-serif;
+  padding-bottom: 1rem; }
 
 .single-course .site-content .entry-content .wp-block-column ul {
   border-top: 2px solid #b4de96;
@@ -2387,6 +2392,11 @@ object {
 
 .single-course .site-content .entry-content h3 {
   text-transform: capitalize; }
+
+.single-course .site-content .entry-content hr {
+  display: none;
+  width: 46%;
+  margin-left: 27%; }
 
 .single-course .site-content .entry-content ul {
   list-style: none;
@@ -2689,10 +2699,18 @@ object {
 .page-id-80 .show-text {
   display: block; }
 
-.page-id-80 .entry-title,
-.page-id-80 .entry-content h2 {
-  text-align: left;
-  left: 20%; }
+@media (min-width: 1240px) {
+  .page-id-80 .entry-content h2 {
+    text-align: left;
+    margin-left: 6%;
+    margin-bottom: -5%;
+    font-weight: 400; } }
+
+@media (min-width: 1240px) {
+  .page-id-80 .entry-content .themes-title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10%; } }
 
 .page-id-80 .wp-block-columns {
   display: -webkit-box;
