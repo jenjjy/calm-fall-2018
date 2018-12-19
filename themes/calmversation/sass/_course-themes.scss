@@ -49,6 +49,24 @@
           }
         }
       }
+
+      .wp-block-column {
+        ul {
+          border-top: $border-sec;
+          width: 200px;
+          margin: auto;
+
+          li {
+            width: 100%;
+          }
+        }
+
+        p {
+          padding: 0;
+          margin: auto;
+        }
+      }
+
       figure {
         img {
           border-radius: 50%;
@@ -66,12 +84,13 @@
 
       h3 {
         text-transform: capitalize;
+        // border-bottom: $border-sec;
       }
 
-      hr {
-        width: 46%;
-        margin-left: 27%;
-      }
+      // hr {
+      //   width: 46%;
+      //   margin-left: 27%;
+      // }
 
       ul {
         list-style: none;

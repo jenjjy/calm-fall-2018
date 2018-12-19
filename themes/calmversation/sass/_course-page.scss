@@ -3,23 +3,29 @@
   .show-text {
     display: block;
   }
-  .entry-content {
-    h2 {
-      @include desktop {
-        text-align: left;
-        margin-left: 6%;
-        margin-bottom: -5%;
-        font-weight: 400;
-      }
-    }
-    .themes-title {
-      @include desktop {
-        text-align: center;
-        margin: 0;
-        margin-bottom: 10%;
-      }
-    }
+
+  .entry-title,
+  .entry-content h2 {
+    text-align: left;
+    left: 20%;
   }
+  // .entry-content {
+  //   h2 {
+  //     @include desktop {
+  //       text-align: left;
+  //       margin-left: 6%;
+  //       margin-bottom: -5%;
+  //       font-weight: 400;
+  //     }
+  //   }
+  //   .themes-title {
+  //     @include desktop {
+  //       text-align: center;
+  //       margin: 0;
+  //       margin-bottom: 10%;
+  //     }
+  //   }
+  // }
   .wp-block-columns {
     display: flex;
     flex-direction: column;
