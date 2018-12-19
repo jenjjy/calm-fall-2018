@@ -2813,6 +2813,10 @@ object {
     .free-resource-video-container,
     .free-resource-video {
       max-width: 85%; } }
+  @media (min-width: 700px) and (min-width: 1240px) {
+    .free-resource-video-container,
+    .free-resource-video {
+      max-width: 100%; } }
   .free-resource-video-container h2,
   .free-resource-video h2 {
     padding: 10px 0;
@@ -2840,8 +2844,8 @@ object {
     @media (min-width: 1240px) {
       .free-resource-video-container iframe,
       .free-resource-video iframe {
-        max-height: 400px;
-        max-width: 710px; } }
+        height: 400px;
+        width: 710px; } }
 
 @media (min-width: 700px) {
   .free-resource-video-container {
