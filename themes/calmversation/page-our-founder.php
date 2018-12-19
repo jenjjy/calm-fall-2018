@@ -28,7 +28,7 @@ get_header(); ?>
                             </h2>
                             <p>
                                 <?php
-                                echo esc_html(CFS()->get('our_text'));
+                                echo wp_kses_post(CFS()->get('our_text'));
                                 ?>
                             </p>
                         </div>
