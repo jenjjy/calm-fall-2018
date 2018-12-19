@@ -91,15 +91,16 @@
 /* Scroll Top */
 .scrollTop {
   position: fixed;
-  right: 10%;
+  right: 0;
   bottom: 10px;
-  background-color: #be3f48;
+  background-color: #b5ccdb;
   padding: 20px;
-  opacity: 0;
+  opacity: 0.85;
   transition: all 0.4s ease-in-out 0s;
+  z-index: 99999;
 }
 
 .scrollTop a {
-  font-size: 18px;
+  font-size: 50px;
   color: #fff;
 }
