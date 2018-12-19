@@ -14,37 +14,37 @@ get_header(); ?>
             <div class="free-resource-banner">
                 <h1>
                     <?php
-                    echo CFS()->get('free_resources_header');
+                    echo esc_html(CFS()->get('free_resources_header'));
                     ?>
                 </h1>
                 <h1 class="free-resource-header-desktop">
                     <?php
-                    echo CFS()->get('free_resources_header_desktop');
+                    echo esc_html(CFS()->get('free_resources_header_desktop'));
                     ?>
                 </h1>
 
                 <div class="free-resource-text-desktop">
                     <h2>
                         <?php
-                        echo CFS()->get('free_resources_text_header_desktop');
+                        echo esc_html(CFS()->get('free_resources_text_header_desktop'));
                         ?>
                     </h2>
                     <p>
                         <?php
-                        echo CFS()->get('free_resources_text_desktop');
+                        echo esc_html(CFS()->get('free_resources_text_desktop'));
                         ?>
                     </p>
                     <img src=" <?php
-                    echo CFS()->get('free_resources_image');
+                    echo esc_html(CFS()->get('free_resources_image'));
                     ?>" alt="" class="free-resource-image-mobile">
 
                     <?php
-                    echo CFS()->get('free_resources_button');
+                    echo esc_html(CFS()->get('free_resources_button'));
                     ?>
                 </div>
 
                 <img src=" <?php
-                echo CFS()->get('free_resources_image');
+                echo esc_html(CFS()->get('free_resources_image'));
                 ?>" alt="" class="free-resource-image-desktop">
 
             </div>
@@ -53,27 +53,27 @@ get_header(); ?>
             <div class="free-resource-info">
                 <h1 class="space-thought-header-desktop">
                     <?php
-                    echo CFS()->get('space_thought_header_desktop');
+                    echo esc_html(CFS()->get('space_thought_header_desktop'));
                     ?>
                 </h1>
                 <h1>
                     <?php
-                    echo CFS()->get('space_thought_header');
+                    echo esc_html(CFS()->get('space_thought_header'));
                     ?>
                 </h1>
                 <h2>
                     <?php
-                    echo CFS()->get('space_thought_text_header_desktop');
+                    echo esc_html(CFS()->get('space_thought_text_header_desktop'));
                     ?>
                 </h2>
                 <p>
                     <?php
-                    echo CFS()->get('space_thought_text');
+                    echo esc_html(CFS()->get('space_thought_text'));
                     ?>
                 </p>
                 <p>
                     <?php
-                    echo CFS()->get('space_thought_text_desktop');
+                    echo esc_html(CFS()->get('space_thought_text_desktop'));
                     ?>
 
                 </p>

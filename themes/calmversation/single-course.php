@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="site-container">
             <?php while (have_posts()) : the_post(); ?>
                 <?php the_post_navigation(array(
-                    'prev_text' => __( '← %title'),
+                    'prev_text' => __('← %title'),
                     'next_text' => __('%title →'),
                     'taxonomy' => __('post_tag'),
                     'screen_reader_text' => __('Continue Reading'),
