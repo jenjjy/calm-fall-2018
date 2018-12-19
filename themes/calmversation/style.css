@@ -960,7 +960,7 @@ ul.sub-menu {
               -ms-flex-align: center;
                   align-items: center; } }
       .site-footer .social-media-icon ul li {
-        padding: 0 5px; }
+        padding: 0 15px; }
         @media (min-width: 1240px) {
           .site-footer .social-media-icon ul li {
             padding: 0 20px; } }
