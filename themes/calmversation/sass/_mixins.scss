@@ -58,6 +58,12 @@
   }
 }
 
+@mixin bigTablet {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
   font-size: ($sizeValue * 16) * 1px;
