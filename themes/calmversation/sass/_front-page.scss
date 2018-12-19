@@ -66,6 +66,11 @@
       height: 380px;
       width: 670px;
     }
+    @include desktop{
+      h1{
+        width: 80%;
+      }
+    }
   }
 
   .founder-text-container {
