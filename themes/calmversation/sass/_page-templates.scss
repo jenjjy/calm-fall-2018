@@ -107,7 +107,10 @@
 .single-course {
   .entry-title,
   .entry-content h2 {
-    text-align: left;
+    text-align: center;
     left: 20%;
+    h2:nth-child(even){
+      color: $black;
+    }
   }
 }

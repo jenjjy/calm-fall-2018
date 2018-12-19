@@ -1,7 +1,11 @@
 .single-course {
   .site-content {
     header {
+      h2{
+        text-align: center;
+      }
       h1 {
+        display: none;
         text-align: center;
         font-family: $font__main-bold;
         @include tablet {
