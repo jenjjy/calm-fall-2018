@@ -2,8 +2,12 @@
   h2:nth-child(1) {
     padding-bottom: 0;
     text-align: center;
+
     @include tablet {
       text-align: left;
+    }
+    @include desktop {
+      margin-left: 5%;
     }
   }
   h2:nth-child(2) {
@@ -15,33 +19,60 @@
 
     @include tablet {
       text-align: left;
+      margin-bottom: 5%;
+    }
+    @include desktop {
+      margin-left: 5%;
     }
   }
 
   .has-2-columns {
-    // flex-direction: row;
-    // flex-wrap: nowrap;
+    @include tablet {
+      flex-flow: row nowrap;
+    }
+    .course-theme-text {
+      width: 100%;
+    }
+
+    figure {
+      img {
+        @include tablet {
+          width: 100%;
+        }
+      }
+    }
+    .wp-block-column:nth-child(2) {
+      margin-top: 10%;
+      p {
+        @include desktop {
+          font-size: $main-paragraph__desktop + 5;
+        }
+      }
+    }
   }
   .theme-bar img {
     display: none;
     @include tablet {
       display: block;
       position: relative;
-      left: 120px;
-      top: 140px;
+      left: 90px;
+      top: 110px;
       z-index: -3;
       width: 520px;
       border-radius: 0;
     }
+    @include bigTablet {
+      width: 700px;
+      top: 130px;
+    }
     @include desktop {
-      width: 1100px;
+      width: 1000px;
     }
   }
 
   .has-4-columns {
     flex-direction: column;
     @include tablet {
-      display: flex;
       flex-flow: row nowrap;
       width: 100%;
     }
@@ -51,10 +82,45 @@
         width: 75%;
       }
     }
-    .wp-block-column:nth-child(2),
+    .wp-block-column:nth-child(1) {
+      h4 {
+        padding-bottom: 2rem;
+        @include tablet {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+    .wp-block-column:nth-child(2) {
+      h3 {
+        padding-bottom: 2rem;
+        @include tablet {
+          padding-bottom: 2.3rem;
+        }
+        @include bigTablet {
+          padding-bottom: 2.5rem;
+        }
+      }
+    }
     .wp-block-column:nth-child(3) {
       h3 {
         padding-bottom: 2rem;
+        @include tablet {
+          padding-bottom: 0.7rem;
+        }
+        @include desktop {
+          padding-bottom: 2.5rem;
+        }
+      }
+    }
+    .wp-block-column:nth-child(4) {
+      h4 {
+        padding-bottom: 2rem;
+        @include tablet {
+          padding-bottom: 0rem;
+        }
+        @include bigTablet {
+          padding-bottom: 1.1rem;
+        }
       }
     }
     .wp-block-column {
@@ -62,6 +128,9 @@
         border-top: $border-sec;
         width: 200px;
         margin: auto;
+        @include tablet {
+          width: 130px;
+        }
 
         li {
           width: 100%;
@@ -75,11 +144,18 @@
       h3 {
         font-size: 28px;
         font-weight: bold;
+        @include tablet {
+          font-size: 18px;
+        }
       }
       h4 {
         padding-bottom: 2rem;
         font-size: 20px;
         font-weight: 400;
+        @include tablet {
+          font-size: 14px;
+          padding-bottom: 1rem;
+        }
       }
     }
   }
@@ -112,5 +188,9 @@
 
   .course-theme-icon img {
     width: 100%;
+  }
+  .button-bottom a {
+    margin-top: 5%;
+    @include button;
   }
 } //the page end
