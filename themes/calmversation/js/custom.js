@@ -4,16 +4,18 @@
     let mobileMenu = $('#menu-slide');
     let mobileWidth = $('#page').width();
     let hamburger = $('#nav-icon');
+    let scrollTop = $('.scrollTop');
     let subMenu = $('.sub-menu');
     let fixedHeader = $('.menu-header-container');
     let headerHeight = $('.site-branding').height();
+    let $window = $(window);
 
     // Sub-Menu toggle
     $('.menu-item a').on('click', function(event) {
       let $select = $(this);
       let hasLink = $select.attr('href');
 
-      if (hasLink === '#' && mobileWidth < 600) {
+      if (hasLink === '#' && mobileWidth < 700) {
         event.preventDefault();
 
         subMenu.slideToggle('fast');
@@ -29,7 +31,33 @@
       mobileMenu.toggleClass('menu-slide show');
     });
 
-    if (mobileWidth > 600) {
+    //Scroll Top
+    if (mobileWidth < 700) {
+      $window.scroll(function() {
+        // declare letiable
+        let topPos = $(this).scrollTop();
+
+        // if user scrolls down - show scroll to top button
+        if (topPos > 100) {
+          $(scrollTop).css('opacity', '1');
+        } else {
+          $(scrollTop).css('opacity', '0');
+        }
+      }); // scroll END
+
+      //Click event to scroll to top
+      $(scrollTop).click(function() {
+        $('html, body').animate(
+          {
+            scrollTop: 0
+          },
+          800
+        );
+        return false;
+      }); // click() scroll top EMD
+    }
+
+    if (mobileWidth > 700) {
       $('.testimony-carousel').flickity({
         cellAlign: 'left',
         contain: true,
@@ -46,16 +74,16 @@
       });
     } //carousel testimony
 
-    $(window).on('scroll', function(event) {
+    $window.on('scroll', function(event) {
       event.preventDefault();
-      if ($(window).scrollTop() > headerHeight) {
+      if ($window.scrollTop() > headerHeight) {
         fixedHeader.addClass('fixed-header');
       } else {
         fixedHeader.removeClass('fixed-header');
       }
     }); // end of fixed-header
 
-    if (mobileWidth < 600) {
+    if (mobileWidth < 700) {
       $('.main-carousel').flickity({
         cellAlign: 'left',
         contain: true,
@@ -139,7 +167,8 @@
       $bubble5.css('order', '3');
     });
 
-    console.log(`
+    console.log(
+      `
  ::::::::::::::::::::::::/+ooo++++/////::::::::::::
 -------------------:/osyyhhyyyyyssssyyys+/::::::::
 ----------------:+osssyyyyyyyyyysssyyyyhyyys+:----
@@ -171,8 +200,9 @@ mm:\`    \`\`.+oo++ooosyysooossooo++oo++++++++/  .yhh
 md\`  \`.:/\`.+oooooosyyhhyyhyyyso++++++++++++/  -yhh
 mo--//++s/:+oooosyyyyyssssossssssssss+++ooo/  .yhh
 m-////+syhs+oooosyyyysysoosssssyyyyyso+oooo+  -yhh
-h./++++syhyysooooosssyyyyyyyssooooooo+o+++o+  :yhh`, `
- MMMMMMMMMhydNhyddNNNNmmddmmNMMMMMMMMMMMMMMMMMMMMMM
+h./++++syhyysooooosssyyyyyyyssooooooo+o+++o+  :yhh`,
+      `
+MMMMMMMMMhydNhyddNNNNmmddmmNMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMNhysssyydmNNNNNNmhddmmdmMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMmddmmNNNNNNNNmmdddmmmdNMMMMMMMMMMMMMMMMMM
 MMMMMNmmddhydNNNNNdhmNMMMNmmNmdNMMMMMMMMMMMMMMMMMM
@@ -207,7 +237,8 @@ MMMMMMMMMMMMd:://--:+++//:::yoymMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMh++/:+-:o/////+/ohmMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMNo:/o/-://:sdmNMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMso::://+odMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMNy++ooshNMMMNMMMMMMMMMMMMMMMMMMMMM`);
+MMMMMMMMMMMMMMMMNy++ooshNMMMNMMMMMMMMMMMMMMMMMMMMM`
+    );
 
     console.log(
       '%c This website was developed by: JY, NW, VG, FX',
@@ -215,3 +246,6 @@ MMMMMMMMMMMMMMMMNy++ooshNMMMNMMMMMMMMMMMMMMMMMMMMM`);
     );
   }); // end of doc ready
 })(jQuery);
+function newFunction($) {
+  return $('.scrollTop');
+}
