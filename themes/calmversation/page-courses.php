@@ -38,7 +38,7 @@ get_header(); ?>
                     <div class="bubble bubble<?php echo $post_id; ?>" data-id='<?php echo $post_id; ?>'>
                           
                             <div class="course-title" >
-                                <h2><?php echo CFS()->get('course_theme_title', $post_id); ?>
+                                <h2><?php echo esc_html(CFS()->get('course_theme_title', $post_id)); ?>
                                 </h2>
                             </div>
                     </div>
@@ -55,9 +55,9 @@ get_header(); ?>
     
                     <article class="themes" data-id='<?php echo $post_id; ?>'>
 
-                        <h2 class="course-title" ><?php echo CFS()->get('course_theme_title', $post_id); ?>
+                        <h2 class="course-title" ><?php echo esc_html(CFS()->get('course_theme_title', $post_id)); ?>
                         </h2>                          
-                        <p class="themes-text"><?php echo CFS()->get('course_theme_description', $post_id); ?> </p>
+                        <p class="themes-text"><?php echo esc_html(CFS()->get('course_theme_description', $post_id)); ?> </p>
                         <a class="cfs-hyperlink learn-more" href="<?php echo $post_url; ?>">Learn More</a>
                     </article>
                     <?php endforeach;
@@ -70,7 +70,7 @@ get_header(); ?>
             </section>
             <section class="course-features">
                 <h2>
-                    <?php echo CFS()->get('feature_title'); ?>
+                    <?php echo esc_html(CFS()->get('feature_title')); ?>
                 </h2>
 
                 <?php
@@ -89,17 +89,17 @@ get_header(); ?>
                 <?php endforeach; ?>
             </section>
             <section class="course-pack">
-                <h2><?php echo CFS()->get('course_pack_title'); ?></h2>
-                <p><?php echo CFS()->get('course_pack'); ?></p>
-                <?php echo CFS()->get('course_pack_button'); ?>
+                <h2><?php echo esc_html(CFS()->get('course_pack_title')); ?></h2>
+                <p><?php echo esc_html(CFS()->get('course_pack')); ?></p>
+                <?php echo esc_html(CFS()->get('course_pack_button')); ?>
 
             </section>
             <section class="course-banner">
                 <div class="banner-info">
-                <h2><?php echo CFS()->get('banner_title'); ?></h2>
-                <p><?php echo CFS()->get('banner_text'); ?></p>
+                <h2><?php echo esc_html(CFS()->get('banner_title')); ?></h2>
+                <p><?php echo esc_html(CFS()->get('banner_text')); ?></p>
                 </div>
-                <img src="<?php echo CFS()->get('banner_image'); ?>" alt="banner image courses page">
+                <img src="<?php echo esc_html(CFS()->get('banner_image')); ?>" alt="banner image courses page">
             </section>
             <?php get_template_part('template-parts/testimony'); ?>
         </div><!--site container -->
