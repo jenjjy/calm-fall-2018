@@ -1533,6 +1533,7 @@ object {
 # Front Page
 --------------------------------------------------------------*/
 .banner-header {
+  text-transform: capitalize;
   text-align: center;
   margin-bottom: 2.2rem; }
   .banner-header h1 {
