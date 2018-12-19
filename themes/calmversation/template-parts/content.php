@@ -27,5 +27,5 @@
 </article><!-- #post-## -->
 
 <div id="stop" class="scrollTop">
-    <span><a href="">toptoptop</a></span>
+    <span><a href="">˄</a></span>
 </div>
