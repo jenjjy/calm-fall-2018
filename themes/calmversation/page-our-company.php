@@ -18,17 +18,18 @@ get_header(); ?>
                     <img src=" <?php
                     echo CFS()->get('our_image');
                     ?>" alt="">
-                    <h2>
-                        <?php
-                        echo CFS()->get('our_header');
-                        ?>
-                    </h2>
-                    <p>
-                        <?php
-                        echo CFS()->get('our_text');
-                        ?>
-                    </p>
-
+                    <div class="our-company-info">
+                        <h2>
+                            <?php
+                            echo CFS()->get('our_header');
+                            ?>
+                        </h2>
+                        <p>
+                            <?php
+                            echo CFS()->get('our_text');
+                            ?>
+                        </p>
+                    </div>
                 </div>
 
 
