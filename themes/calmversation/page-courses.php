@@ -57,7 +57,7 @@ get_header(); ?>
 
                         <h2 class="course-title" ><?php echo esc_html(CFS()->get('course_theme_title', $post_id)); ?>
                         </h2>                          
-                        <p class="themes-text"><?php echo esc_html(CFS()->get('course_theme_description', $post_id)); ?> </p>
+                        <p class="themes-text"><?php echo CFS()->get('course_theme_description', $post_id); ?> </p>
                         <a class="cfs-hyperlink learn-more" href="<?php echo $post_url; ?>">Learn More</a>
                     </article>
                     <?php endforeach;

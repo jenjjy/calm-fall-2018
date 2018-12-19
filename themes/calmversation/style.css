@@ -1117,10 +1117,10 @@ ul.sub-menu {
 
 /* Scroll Top */
 .scrollTop {
+  background-color: rgba(67, 106, 156, 0.4);
   position: fixed;
   right: 0;
   bottom: 10px;
-  background-color: rgba(67, 106, 156, 0.4);
   padding: 0 10px;
   opacity: 0.5;
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -2432,10 +2432,12 @@ object {
   @media (min-width: 700px) {
     .single-course h2:nth-child(2) {
       text-align: left;
-      margin-bottom: 5%; } }
+      margin-bottom: 5%;
+      font-size: 30px; } }
   @media (min-width: 1240px) {
     .single-course h2:nth-child(2) {
-      margin-left: 5%; } }
+      margin-left: 5%;
+      font-size: 40px; } }
 
 @media (min-width: 700px) {
   .single-course .has-2-columns {
@@ -2531,6 +2533,12 @@ object {
     @media (min-width: 700px) {
       .single-course .has-4-columns .wp-block-column ul {
         width: 130px; } }
+    @media (min-width: 1024px) {
+      .single-course .has-4-columns .wp-block-column ul {
+        width: 180px; } }
+    @media (min-width: 1240px) {
+      .single-course .has-4-columns .wp-block-column ul {
+        width: 200px; } }
     .single-course .has-4-columns .wp-block-column ul li {
       width: 100%; }
   .single-course .has-4-columns .wp-block-column p {
@@ -2805,6 +2813,10 @@ object {
     .free-resource-video-container,
     .free-resource-video {
       max-width: 85%; } }
+  @media (min-width: 700px) and (min-width: 1240px) {
+    .free-resource-video-container,
+    .free-resource-video {
+      max-width: 100%; } }
   .free-resource-video-container h2,
   .free-resource-video h2 {
     padding: 10px 0;
@@ -2832,8 +2844,8 @@ object {
     @media (min-width: 1240px) {
       .free-resource-video-container iframe,
       .free-resource-video iframe {
-        max-height: 400px;
-        max-width: 710px; } }
+        height: 400px;
+        width: 710px; } }
 
 @media (min-width: 700px) {
   .free-resource-video-container {
