@@ -18,17 +18,17 @@ get_header(); ?>
 
                     <div class="our-founder-container">
                         <img src=" <?php
-                        echo CFS()->get('our_image');
+                        echo esc_html(CFS()->get('our_image'));
                         ?>" alt="">
                         <div class="our-founder-info">
                             <h2>
                                 <?php
-                                echo CFS()->get('our_header');
+                                echo esc_html(CFS()->get('our_header'));
                                 ?>
                             </h2>
                             <p>
                                 <?php
-                                echo CFS()->get('our_text');
+                                echo esc_html(CFS()->get('our_text'));
                                 ?>
                             </p>
                         </div>

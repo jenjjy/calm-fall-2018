@@ -4,6 +4,7 @@
   @include desktop {
     @include flex(row nowrap, center, center);
     text-align: left;
+    padding-bottom: 10%;
   }
 
   h2 {
@@ -19,7 +20,21 @@
     max-width: 300px;
     @include desktop {
       max-width: 400px;
-      margin-right: 15px;
+      margin-right: 2rem;
+    }
+  }
+}
+
+
+
+.our-company-info{
+  @include desktop{
+    h2{
+      padding:  0;
+      padding-bottom: 25px;
+    }
+    p{
+      width: 90%;
     }
   }
 }
@@ -42,7 +57,8 @@
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    padding: 50px 25px 0 25px;
+    padding: 50px 0;
+    margin: 25px 10px;
     p {
       max-width: 80%;
       margin: $margin__auto;
