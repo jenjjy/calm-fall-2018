@@ -1337,6 +1337,7 @@ object {
           color: #fff;
           font-family: "Quicksand-Medium", sans-serif;
           font-size: 26px;
+          line-height: 1.5;
           text-decoration: none; }
     .menu-slide nav .sub-menu {
       padding-top: 0; }
