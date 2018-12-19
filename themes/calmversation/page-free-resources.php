@@ -26,12 +26,12 @@ get_header(); ?>
                 <div class="free-resource-text-desktop">
                     <h2>
                         <?php
-                        echo esc_html(CFS()->get('free_resources_text_header_desktop'));
+                        echo wp_kses_post(CFS()->get('free_resources_text_header_desktop'));
                         ?>
                     </h2>
                     <p>
                         <?php
-                        echo esc_html(CFS()->get('free_resources_text_desktop'));
+                        echo wp_kses_post(CFS()->get('free_resources_text_desktop'));
                         ?>
                     </p>
                     <img src=" <?php
@@ -39,7 +39,7 @@ get_header(); ?>
                     ?>" alt="" class="free-resource-image-mobile">
 
                     <?php
-                    echo esc_html(CFS()->get('free_resources_button'));
+                    echo wp_kses_post(CFS()->get('free_resources_button'));
                     ?>
                 </div>
 
@@ -63,17 +63,17 @@ get_header(); ?>
                 </h1>
                 <h2>
                     <?php
-                    echo esc_html(CFS()->get('space_thought_text_header_desktop'));
+                    echo wp_kses_post(CFS()->get('space_thought_text_header_desktop'));
                     ?>
                 </h2>
                 <p>
                     <?php
-                    echo esc_html(CFS()->get('space_thought_text'));
+                    echo wp_kses_post(CFS()->get('space_thought_text'));
                     ?>
                 </p>
                 <p>
                     <?php
-                    echo esc_html(CFS()->get('space_thought_text_desktop'));
+                    echo wp_kses_post(CFS()->get('space_thought_text_desktop'));
                     ?>
 
                 </p>
