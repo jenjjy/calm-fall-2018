@@ -1494,6 +1494,14 @@ object {
       background: #52b0cc; }
 
 /*--------------------------------------------------------------
+# single-courses
+--------------------------------------------------------------*/
+.single-course .entry-title,
+.single-course .entry-content h2 {
+  text-align: left;
+  left: 20%; }
+
+/*--------------------------------------------------------------
 # Front Page
 --------------------------------------------------------------*/
 .banner-header {
@@ -2352,6 +2360,17 @@ object {
     .single-course .site-content .entry-content .wp-block-columns .course-theme-image img {
       width: 75%; } }
 
+.single-course .site-content .entry-content .wp-block-column ul {
+  border-top: 2px solid #b4de96;
+  width: 200px;
+  margin: auto; }
+  .single-course .site-content .entry-content .wp-block-column ul li {
+    width: 100%; }
+
+.single-course .site-content .entry-content .wp-block-column p {
+  padding: 0;
+  margin: auto; }
+
 .single-course .site-content .entry-content figure img {
   border-radius: 50%;
   width: 60%; }
@@ -2365,10 +2384,6 @@ object {
 
 .single-course .site-content .entry-content h3 {
   text-transform: capitalize; }
-
-.single-course .site-content .entry-content hr {
-  width: 46%;
-  margin-left: 27%; }
 
 .single-course .site-content .entry-content ul {
   list-style: none;
@@ -2671,18 +2686,10 @@ object {
 .page-id-80 .show-text {
   display: block; }
 
-@media (min-width: 1240px) {
-  .page-id-80 .entry-content h2 {
-    text-align: left;
-    margin-left: 6%;
-    margin-bottom: -5%;
-    font-weight: 400; } }
-
-@media (min-width: 1240px) {
-  .page-id-80 .entry-content .themes-title {
-    text-align: center;
-    margin: 0;
-    margin-bottom: 10%; } }
+.page-id-80 .entry-title,
+.page-id-80 .entry-content h2 {
+  text-align: left;
+  left: 20%; }
 
 .page-id-80 .wp-block-columns {
   display: -webkit-box;
