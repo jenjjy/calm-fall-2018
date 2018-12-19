@@ -2414,10 +2414,10 @@ object {
       width: 1100px; } }
 
 .single-course .has-4-columns {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+      -ms-flex-direction: column;
+          flex-direction: column; }
   @media (min-width: 600px) {
     .single-course .has-4-columns {
       display: -webkit-box;
@@ -2434,26 +2434,22 @@ object {
   .single-course .has-4-columns .wp-block-column:nth-child(2) h3,
   .single-course .has-4-columns .wp-block-column:nth-child(3) h3 {
     padding-bottom: 2rem; }
-
-.single-course .wp-block-column ul {
-  border-top: 2px solid #b4de96;
-  width: 200px;
-  margin: auto; }
-  .single-course .wp-block-column ul li {
-    width: 100%; }
-
-.single-course .wp-block-column p {
-  padding: 0;
-  margin: auto; }
-
-.single-course .wp-block-column h3 {
-  font-size: 28px;
-  font-weight: bold; }
-
-.single-course .wp-block-column h4 {
-  padding-bottom: 2rem;
-  font-size: 20px;
-  font-weight: 400; }
+  .single-course .has-4-columns .wp-block-column ul {
+    border-top: 2px solid #b4de96;
+    width: 200px;
+    margin: auto; }
+    .single-course .has-4-columns .wp-block-column ul li {
+      width: 100%; }
+  .single-course .has-4-columns .wp-block-column p {
+    padding: 0;
+    margin: auto; }
+  .single-course .has-4-columns .wp-block-column h3 {
+    font-size: 28px;
+    font-weight: bold; }
+  .single-course .has-4-columns .wp-block-column h4 {
+    padding-bottom: 2rem;
+    font-size: 20px;
+    font-weight: 400; }
 
 .single-course figure img {
   border-radius: 50%;
