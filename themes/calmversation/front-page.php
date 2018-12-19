@@ -122,7 +122,7 @@ get_header(); ?>
             <!--- COURSES -->
             <div class="view-courses">
                 <?php
-                echo esc_html(CFS()->get('view_courses'));
+                echo (CFS()->get('view_courses'));
                 ?>
             </div>
 
