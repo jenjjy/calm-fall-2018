@@ -42,6 +42,7 @@
       .wp-block-columns {
         flex-direction: row;
         @include tablet {
+          align-items: center;
           display: flex;
           flex-flow: row nowrap;
           width: 100%;
