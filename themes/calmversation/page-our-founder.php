@@ -28,7 +28,7 @@ get_header(); ?>
                             </h2>
                             <p>
                                 <?php
-                                echo esc_html(CFS()->get('our_text'));
+                                echo esc_textarea(CFS()->get('our_text'));
                                 ?>
                             </p>
                         </div>

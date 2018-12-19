@@ -135,6 +135,12 @@
         @include tablet {
           width: 130px;
         }
+        @include bigTablet {
+          width: 180px;
+        }
+        @include desktop {
+          width: 200px;
+        }
 
         li {
           width: 100%;
