@@ -4,11 +4,11 @@
     let mobileMenu = $('#menu-slide');
     let mobileWidth = $('#page').width();
     let hamburger = $('#nav-icon');
-    let scrollTop = $('.scrollTop');
     let subMenu = $('.sub-menu');
     let fixedHeader = $('.menu-header-container');
     let headerHeight = $('.site-branding').height();
     let $window = $(window);
+    let $scrollTop = $('.scrollTop');
 
     // Sub-Menu toggle
     $('.menu-item a').on('click', function(event) {
@@ -32,30 +32,29 @@
     });
 
     //Scroll Top
-    if (mobileWidth < 700) {
-      $window.scroll(function() {
-        // declare letiable
-        let topPos = $(this).scrollTop();
+    $window.scroll(function() {
+      // declare letiable
 
-        // if user scrolls down - show scroll to top button
-        if (topPos > 100) {
-          $(scrollTop).css('opacity', '1');
-        } else {
-          $(scrollTop).css('opacity', '0');
-        }
-      }); // scroll END
+      let topPos = $(this).scrollTop();
 
-      //Click event to scroll to top
-      $(scrollTop).click(function() {
-        $('html, body').animate(
-          {
-            scrollTop: 0
-          },
-          800
-        );
-        return false;
-      }); // click() scroll top EMD
-    }
+      // if user scrolls down - show scroll to top button
+      if (topPos > 150) {
+        $scrollTop.css('opacity', '1');
+      } else {
+        $scrollTop.css('opacity', '0');
+      }
+    }); // scroll END
+
+    //Click event to scroll to top
+    $scrollTop.click(function() {
+      $('html, body').animate(
+        {
+          scrollTop: 0
+        },
+        800
+      );
+      return false;
+    }); // click() scroll top EMD
 
     if (mobileWidth > 700) {
       $('.testimony-carousel').flickity({
@@ -246,6 +245,3 @@ MMMMMMMMMMMMMMMMNy++ooshNMMMNMMMMMMMMMMMMMMMMMMMMM`
     );
   }); // end of doc ready
 })(jQuery);
-function newFunction($) {
-  return $('.scrollTop');
-}
