@@ -14,23 +14,23 @@ get_header(); ?>
         <div class="banner-header">
             <h1>
                 <?php
-                echo CFS()->get('mobile_banner_header');
+                echo esc_html(CFS()->get('mobile_banner_header'));
                 ?>
             </h1>
             <div class="button-container">
                 <?php
-                echo CFS()->get('mobile_banner_button');
+                echo esc_html(CFS()->get('mobile_banner_button'));
                 ?>
             </div>
         </div>
         <!--- BANNER IMAGE -->
         <div class="banner-image-container">
             <img src="<?php
-            echo CFS()->get('banner_image_mobile');
+            echo esc_html(CFS()->get('banner_image_mobile'));
             ?>" alt="" class="banner-image-mobile">
             <div>
                 <img src="<?php
-                echo CFS()->get('banner_image_desktop');
+                echo esc_html(CFS()->get('banner_image_desktop'));
                 ?>" alt="" class="banner-image-desktop">
             </div>
 
@@ -47,17 +47,17 @@ get_header(); ?>
                 <!--- FOUNDER -->
                 <div class="founder-container">
                     <iframe src=" <?php
-                    echo CFS()->get('listen_to_founder_video');
+                   echo esc_html(CFS()->get('listen_to_founder_video'));
                     ?>"></iframe>
                     <div class="founder-text-container">
                         <h1>
                             <?php
-                            echo CFS()->get('listen_to_founder_header');
+                            echo esc_html(CFS()->get('listen_to_founder_header'));
                             ?>
                         </h1>
                         <div class="founder-button-container">
                             <?php
-                            echo CFS()->get('listen_to_founder_button');
+                            echo esc_html(CFS()->get('listen_to_founder_button'));
                             ?>
                         </div>
                     </div>
@@ -67,21 +67,21 @@ get_header(); ?>
                 <div class="solutions-container">
                     <h1>
                         <?php
-                        echo CFS()->get('game_changing_solution_header');
+                        echo esc_html(CFS()->get('game_changing_solution_header'));
                         ?>
                     </h1>
                     <div>
                         <img src=" <?php
-                        echo CFS()->get('game_changing_solution_image');
+                        echo esc_html(CFS()->get('game_changing_solution_image'));
                         ?>" alt="game changing solution">
                         <p class="solution-text-mobile">
                             <?php
-                            echo CFS()->get('game_changing_solution_text');
+                            echo esc_html(CFS()->get('game_changing_solution_text'));
                             ?>
                         </p>
                         <p class="solution-text-desktop">
                             <?php
-                            echo CFS()->get('game_changing_solution_text_desktop');
+                            echo esc_html(CFS()->get('game_changing_solution_text_desktop'));
                             ?>
                         </p>
                     </div>
@@ -122,7 +122,7 @@ get_header(); ?>
             <!--- COURSES -->
             <div class="view-courses">
                 <?php
-                echo CFS()->get('view_courses');
+                echo esc_html(CFS()->get('view_courses'));
                 ?>
             </div>
 
@@ -130,38 +130,38 @@ get_header(); ?>
             <div class="campaign-container">
                 <h1>
                     <?php
-                    echo CFS()->get('campaign_header');
+                    echo esc_html(CFS()->get('campaign_header'));
                     ?>
                 </h1>
 
                 <div class="campaign-logo-container-mobile">
                     <img src="<?php
-                    echo CFS()->get('campaign_logo');
+                    echo esc_html(CFS()->get('campaign_logo'));
                     ?>" alt="" class="campaign-logo">
                 </div>
 
                 <p class="campaign-text-mobile">
                     <?php
-                    echo CFS()->get('campaign_text');
+                    echo esc_html(CFS()->get('campaign_text'));
                     ?>
                 </p>
 
                 <p class="campaign-text-desktop">
                     <?php
-                    echo CFS()->get('campaign_text_desktop');
+                    echo esc_html(CFS()->get('campaign_text_desktop'));
                     ?>
                 </p>
 
                 <div class="campaign-button">
                     <?php
-                    echo CFS()->get('campaign_button');
+                    echo esc_html(CFS()->get('campaign_button'));
                     ?>
                 </div>
             </div>
 
             <div class="campaign-logo-container-desktop">
                 <img src="<?php
-                echo CFS()->get('campaign_logo');
+                echo esc_html(CFS()->get('campaign_logo'));
                 ?>" alt="" class="campaign-logo">
             </div>
 
