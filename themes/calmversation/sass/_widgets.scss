@@ -43,6 +43,11 @@
     }
 
     ul {
+      padding-top: 1rem;
+
+      @include tablet {
+        padding-top: 0;
+      }
       @include desktop {
         width: 800px;
       }
@@ -70,6 +75,7 @@
     padding: 0.5rem 0;
 
     @include tablet {
+      font-size: 30px;
       padding: 0;
     }
 
@@ -125,7 +131,7 @@
 
 /*footer tablet*/
 
-@include tablet {
+@include desktop {
   .site-footer {
     @include flex(row, null, center);
     position: relative;

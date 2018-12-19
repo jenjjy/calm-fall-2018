@@ -46,6 +46,7 @@ a {
     li.current-menu-item {
       a {
         border-bottom: $border-active;
+        color: $primary__color;
         &:hover {
           border-bottom: $border-active;
         }
@@ -59,9 +60,6 @@ a {
   }
 
   a {
-    // color: $color__white;
-    // font-family: $font__main-med;
-    // font-size: 26px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -91,7 +89,6 @@ a {
     }
 
     ul {
-      // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       font-family: $font__main-light;
       position: absolute;
       // top: $base__space-unit;
@@ -140,7 +137,6 @@ a {
         @include tablet {
           color: $color__text-main;
           font-size: 1rem;
-          // width: 100%;
         }
       }
 
@@ -166,7 +162,6 @@ a {
   } // end of ul
 
   li {
-    // float: left;
     position: relative;
 
     &:hover > a,
@@ -287,10 +282,6 @@ ul.sub-menu {
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    // display: none;
-  }
-
-  .main-navigation ul {
     // display: none;
   }
 }

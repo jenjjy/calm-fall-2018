@@ -4,11 +4,6 @@
     display: block;
   }
 
-  .entry-title,
-  .entry-content h2 {
-    text-align: center;
-    left: 20%;
-  }
   .entry-content {
     h2 {
       @include desktop {
@@ -26,6 +21,25 @@
       }
     }
   }
+<<<<<<< HEAD
+=======
+  .entry-content {
+    h2 {
+      @include desktop {
+        text-align: left;
+        margin-left: 6%;
+        margin-bottom: -5%;
+        font-weight: 400;
+      }
+    }
+    .themes-title {
+      @include desktop {
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+>>>>>>> fb20b60eb286a4d4fb7ed1b8972cbf3c371bbe2f
   .wp-block-columns {
     display: flex;
     flex-direction: column;
@@ -107,6 +121,13 @@
       }
     }
   }
+  .course-theme-introtext {
+    display: none;
+    @include desktop {
+      display: block;
+      margin-bottom: 15%;
+    }
+  }
 
   .course-lines {
     display: none;
@@ -161,39 +182,39 @@
       .bubble41 {
         order: 3;
         @include desktop {
-          @include positionAbsolute(1030px, 160px);
+          @include positionAbsolute(1130px, 160px);
         }
       }
       .bubble109 {
         order: 4;
         @include desktop {
-          @include positionAbsolute(1230px, 390px);
+          @include positionAbsolute(1290px, 390px);
         }
       }
 
       .bubble111 {
         order: 5;
         @include desktop {
-          @include positionAbsolute(1030px, 630px);
+          @include positionAbsolute(1130px, 630px);
         }
       }
       .bubble113 {
         order: 1;
         @include desktop {
-          @include positionAbsolute(1230px, 860px);
+          @include positionAbsolute(1290px, 860px);
         }
       }
       .bubble115 {
         order: 2;
         @include desktop {
-          @include positionAbsolute(1030px, 1090px);
+          @include positionAbsolute(1130px, 1090px);
         }
       }
     }
     .course-theme-text {
       margin: 2rem 0;
       @include desktop {
-        margin: 10% 0 10% 10%;
+        margin: 5% 0 10% 10%;
       }
       .themes {
         display: none;

@@ -22,4 +22,10 @@
     <div class="entry-content">
         <?php the_content(); ?>
     </div><!-- .entry-content -->
+
+
 </article><!-- #post-## -->
+
+<div id="stop" class="scrollTop">
+    <span><a href="">toptoptop</a></span>
+</div>
