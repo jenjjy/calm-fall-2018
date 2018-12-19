@@ -47,6 +47,7 @@ a {
       a {
         border-bottom: $border-active;
         color: $primary__color;
+
         &:hover {
           border-bottom: $border-active;
         }
@@ -131,7 +132,9 @@ a {
             color: $color__white;
           }
         }
-      } // end of ul^3 li
+      }
+
+      // end of ul^3 li
 
       a {
         @include tablet {
@@ -147,7 +150,9 @@ a {
       a:hover,
       a.focus {
       }
-    } // end of ul ul
+    }
+
+    // end of ul ul
 
     li:focus > ul {
       left: -30%;
@@ -159,7 +164,9 @@ a {
         left: -30%;
       }
     }
-  } // end of ul
+  }
+
+  // end of ul
 
   li {
     position: relative;
@@ -177,13 +184,17 @@ a {
         }
       }
     }
-  } // end of li
+  }
+
+  // end of li
 
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
   }
-} // end of .main-navigation
+}
+
+// end of .main-navigation
 
 .fixed-header {
   @include tablet {
@@ -205,8 +216,8 @@ a {
   // width: 250px;
 
   @include tablet {
-    border-bottom: transparent;
-    padding-bottom: transparent;
+    border-bottom: none;
+    padding-bottom: 0;
   }
 }
 
@@ -220,8 +231,8 @@ a {
   }
 
   @include tablet {
-    border-bottom: transparent;
-    padding-bottom: transparent;
+    border-bottom: none;
+    padding-bottom: 0;
   }
 }
 
@@ -241,10 +252,11 @@ ul.sub-menu {
     background: $color__background-body;
     display: flex;
     flex-direction: column;
-    padding-bottom: none;
+    padding-bottom: 0;
 
     a {
       width: 100%;
+
       &:hover,
       &:focus {
         background: $primary__color;
@@ -267,6 +279,7 @@ ul.sub-menu {
         border-bottom: transparent;
         color: $primary__color;
         font-family: $font__sec-semibold;
+
         &:hover {
           border-bottom: $color__white;
         }
