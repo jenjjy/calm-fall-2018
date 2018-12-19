@@ -105,9 +105,13 @@
 
   .campaign-features:nth-child(1) {
     @include tablet {
+      top: 870px;
+      flex-direction: row-reverse;
+    }
+
+    @include bigTablet {
       top: 940px;
       left: 0;
-      flex-direction: row-reverse;
     }
     @include desktop {
       top: 1253px;
@@ -135,6 +139,9 @@
         @include tablet {
           margin-left: 5%;
         }
+        @include bigTablet {
+          margin-left: 15%;
+        }
       }
       p {
         @include tablet {
@@ -143,12 +150,19 @@
           margin-left: 5%;
           line-height: 1.5;
         }
+        @include bigTablet {
+          margin-left: 15%;
+        }
       }
     }
   }
 
   .campaign-features:nth-child(2) {
     @include tablet {
+      top: 1190px;
+      left: 6px;
+    }
+    @include bigTablet {
       top: 1240px;
       left: 0;
     }
@@ -156,9 +170,6 @@
       top: 1600px;
       left: 205px;
       right: 120px;
-      p {
-        width: 93%;
-      }
     }
 
     img {
@@ -184,6 +195,9 @@
         }
       }
       p {
+        @include tablet {
+          width: 95%;
+        }
         @include bigTablet {
           width: 90%;
         }
@@ -193,9 +207,12 @@
 
   .campaign-features:nth-child(3) {
     @include tablet {
+      top: 1580px;
+      flex-direction: row-reverse;
+    }
+    @include bigTablet {
       top: 1630px;
       left: 10px;
-      flex-direction: row-reverse;
     }
     @include desktop {
       top: 1957px;
@@ -222,15 +239,22 @@
         @include tablet {
           margin-left: 5%;
         }
+        @include bigTablet {
+          margin-left: 15%;
+        }
         @include desktop {
           align-self: flex-start;
         }
       }
       p {
-        width: 76%;
+        // width: 76%;
         @include tablet {
           width: 90%;
           margin-left: 5%;
+        }
+        @include bigTablet {
+          width: 70%;
+          margin-left: 15%;
         }
       }
     }
@@ -238,6 +262,9 @@
 
   .campaign-features:nth-child(4) {
     @include tablet {
+      top: 1910px;
+    }
+    @include bigTablet {
       top: 1960px;
       left: 40px;
       right: 40px;
