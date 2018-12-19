@@ -196,11 +196,10 @@
     @include desktop {
       line-height: 22px;
       padding-bottom: 0;
-      font-size: $main-paragraph__mobile  - 6;
+      font-size: $main-paragraph__mobile - 6;
       width: 100%;
       text-align: left;
       padding-right: 10%;
-
     }
   }
 
