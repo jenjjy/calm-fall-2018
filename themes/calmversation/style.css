@@ -3202,7 +3202,7 @@ object {
         .page-id-80 .course-features .feature-block p {
           display: block;
           text-align: left;
-          width: 98%; } }
+          width: 100%; } }
   @media (min-width: 1240px) {
     .page-id-80 .course-features .feature-block:nth-child(5) {
       margin-left: 18%;
