@@ -2442,7 +2442,8 @@ object {
       top: 130px; } }
   @media (min-width: 1240px) {
     .single-course .theme-bar img {
-      width: 1000px; } }
+      width: 1000px;
+      top: 140px; } }
 
 .single-course .has-4-columns {
   -webkit-box-orient: vertical;
@@ -2488,6 +2489,9 @@ object {
     @media (min-width: 1024px) {
       .single-course .has-4-columns .wp-block-column:nth-child(4) h4 {
         padding-bottom: 1.1rem; } }
+    @media (min-width: 1240px) {
+      .single-course .has-4-columns .wp-block-column:nth-child(4) h4 {
+        padding-bottom: 1.5rem; } }
   .single-course .has-4-columns .wp-block-column ul {
     border-top: 2px solid #b4de96;
     width: 200px;
@@ -2881,8 +2885,7 @@ object {
 @media (min-width: 1240px) {
   .page-id-80 .entry-content .themes-title {
     text-align: center;
-    margin: 0;
-    margin-bottom: 10%; } }
+    margin: 0; } }
 
 .page-id-80 .wp-block-columns {
   display: -webkit-box;
@@ -2995,6 +2998,13 @@ object {
     .page-id-80 .wp-block-button .wp-block-button__link {
       width: 33%; } }
 
+.page-id-80 .course-theme-introtext {
+  display: none; }
+  @media (min-width: 1240px) {
+    .page-id-80 .course-theme-introtext {
+      display: block;
+      margin-bottom: 15%; } }
+
 .page-id-80 .course-lines {
   display: none; }
   @media (min-width: 1240px) {
@@ -3054,7 +3064,7 @@ object {
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble41 {
         position: absolute;
-        top: 1030px;
+        top: 1130px;
         left: 160px; } }
   .page-id-80 .course-themes .course-bubbles .bubble109 {
     -webkit-box-ordinal-group: 5;
@@ -3063,7 +3073,7 @@ object {
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble109 {
         position: absolute;
-        top: 1230px;
+        top: 1290px;
         left: 390px; } }
   .page-id-80 .course-themes .course-bubbles .bubble111 {
     -webkit-box-ordinal-group: 6;
@@ -3072,7 +3082,7 @@ object {
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble111 {
         position: absolute;
-        top: 1030px;
+        top: 1130px;
         left: 630px; } }
   .page-id-80 .course-themes .course-bubbles .bubble113 {
     -webkit-box-ordinal-group: 2;
@@ -3081,7 +3091,7 @@ object {
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble113 {
         position: absolute;
-        top: 1230px;
+        top: 1290px;
         left: 860px; } }
   .page-id-80 .course-themes .course-bubbles .bubble115 {
     -webkit-box-ordinal-group: 3;
@@ -3090,14 +3100,14 @@ object {
     @media (min-width: 1240px) {
       .page-id-80 .course-themes .course-bubbles .bubble115 {
         position: absolute;
-        top: 1030px;
+        top: 1130px;
         left: 1090px; } }
 
 .page-id-80 .course-themes .course-theme-text {
   margin: 2rem 0; }
   @media (min-width: 1240px) {
     .page-id-80 .course-themes .course-theme-text {
-      margin: 10% 0 10% 10%; } }
+      margin: 5% 0 10% 10%; } }
   .page-id-80 .course-themes .course-theme-text .themes {
     display: none; }
     .page-id-80 .course-themes .course-theme-text .themes .course-title {

@@ -22,7 +22,6 @@
       @include desktop {
         text-align: center;
         margin: 0;
-        margin-bottom: 10%;
       }
     }
   }
@@ -107,6 +106,13 @@
       }
     }
   }
+  .course-theme-introtext {
+    display: none;
+    @include desktop {
+      display: block;
+      margin-bottom: 15%;
+    }
+  }
 
   .course-lines {
     display: none;
@@ -161,39 +167,39 @@
       .bubble41 {
         order: 3;
         @include desktop {
-          @include positionAbsolute(1030px, 160px);
+          @include positionAbsolute(1130px, 160px);
         }
       }
       .bubble109 {
         order: 4;
         @include desktop {
-          @include positionAbsolute(1230px, 390px);
+          @include positionAbsolute(1290px, 390px);
         }
       }
 
       .bubble111 {
         order: 5;
         @include desktop {
-          @include positionAbsolute(1030px, 630px);
+          @include positionAbsolute(1130px, 630px);
         }
       }
       .bubble113 {
         order: 1;
         @include desktop {
-          @include positionAbsolute(1230px, 860px);
+          @include positionAbsolute(1290px, 860px);
         }
       }
       .bubble115 {
         order: 2;
         @include desktop {
-          @include positionAbsolute(1030px, 1090px);
+          @include positionAbsolute(1130px, 1090px);
         }
       }
     }
     .course-theme-text {
       margin: 2rem 0;
       @include desktop {
-        margin: 10% 0 10% 10%;
+        margin: 5% 0 10% 10%;
       }
       .themes {
         display: none;

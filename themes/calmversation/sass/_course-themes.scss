@@ -67,6 +67,7 @@
     }
     @include desktop {
       width: 1000px;
+      top: 140px;
     }
   }
 
@@ -120,6 +121,9 @@
         }
         @include bigTablet {
           padding-bottom: 1.1rem;
+        }
+        @include desktop {
+          padding-bottom: 1.5rem;
         }
       }
     }
