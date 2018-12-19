@@ -42,7 +42,14 @@ This website was designed by RED Academy UX / UI team and brought to life by the
     * post types
     * custom field types
     * plugins
-    
+
+ ##Contributing Links
+
+* https://www.gravityforms.com
+* https://flickity.metafizzy.co
+* https://fontawesome.com/?from=io
+* https://developer.wordpress.org/reference/functions/add_action
+
 ## Created By
 
 UX/UI Design Team:
