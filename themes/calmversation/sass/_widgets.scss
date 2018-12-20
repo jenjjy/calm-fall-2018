@@ -48,6 +48,7 @@
       @include tablet {
         padding-top: 0;
       }
+
       @include desktop {
         width: 800px;
       }
@@ -87,7 +88,7 @@
       }
 
       li {
-        padding: 0 5px;
+        padding: 0 15px;
 
         @include desktop {
           padding: 0 20px;
@@ -100,7 +101,7 @@
         height: 30px;
         width: 30px;
         text-align: center;
-        // padding: 2px;
+
 
         &:hover {
           border: $secondary__color solid 1px;
@@ -120,9 +121,9 @@
 
         .far,
         .fab {
+
           // background-color: $primary__color;
-          @include tablet {
-          }
+          @include tablet {}
         }
       }
     }
