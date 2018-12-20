@@ -51,11 +51,11 @@
 
     img {
       @include tablet {
-        // transform: scale(0.8) translateY(-206px);
         height: inherit;
       }
 
-      @include desktop {}
+      @include desktop {
+      }
     }
   }
 
@@ -79,7 +79,6 @@
       }
 
       @include desktop {
-        // width: 22%;
         width: 200px;
       }
     }
@@ -119,7 +118,7 @@
 
   .campaign-features:nth-child(1) {
     @include tablet {
-      top: 870px;
+      top: 850px;
       flex-direction: row-reverse;
     }
 
@@ -135,19 +134,11 @@
     }
 
     img {
-      @include tablet {
-        //width: 20%;
-        //margin-left: 20%;
-        //margin-right: 8%;
-      }
-
       @include bigTablet {
         margin-right: 10%;
       }
 
       @include desktop {
-        //width: 16%;
-        //margin-left: 20%;
         margin-right: 0;
       }
     }
@@ -180,7 +171,7 @@
 
   .campaign-features:nth-child(2) {
     @include tablet {
-      top: 1190px;
+      top: 1170px;
       left: 6px;
     }
 
@@ -190,7 +181,7 @@
     }
 
     @include desktop {
-      top: 1600px;
+      top: 1570px;
       left: 205px;
       right: 120px;
 
@@ -209,7 +200,6 @@
       }
 
       @include desktop {
-        // padding-right: 54px;
         margin-left: 4%;
       }
     }
@@ -217,7 +207,6 @@
     .campaign-text {
       h2 {
         @include tablet {
-          // align-self: center;
         }
 
         @include desktop {
@@ -249,18 +238,12 @@
     }
 
     @include desktop {
-      top: 1957px;
+      top: 1917px;
       left: 120px;
       right: 330px;
     }
 
     img {
-      @include tablet {
-        //width: 20%;
-        //margin-left: 5%;
-        //margin-right: 3%;
-      }
-
       @include bigTablet {
         margin-right: 10%;
       }
@@ -275,17 +258,14 @@
         @include tablet {
           margin-left: 5%;
         }
-
-        @include desktop {
-          align-self: flex-start;
+        @include bigTablet {
+          margin-left: 15%;
         }
       }
 
       p {
-        width: 76%;
-
         @include tablet {
-          width: 90%;
+          width: 80%;
           margin-left: 5%;
         }
 
@@ -309,25 +289,17 @@
     }
 
     @include desktop {
-      top: 2320px;
+      top: 2290px;
       left: 205px;
       right: 120px;
     }
 
     img {
-      @include tablet {
-        //width: 25%;
-        //margin-right: 5%;
-        //margin-left: 3%;
-      }
-
       @include bigTablet {
         margin-left: 10%;
       }
 
       @include desktop {
-        // padding-right: 54px;
-        //width: 12%;
         margin-right: 5%;
         margin-left: 0;
       }

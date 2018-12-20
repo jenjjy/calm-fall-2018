@@ -2041,7 +2041,7 @@ object {
 
 @media (min-width: 700px) {
   .page-id-68 .campaign-features:nth-child(1) {
-    top: 870px;
+    top: 850px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -2087,7 +2087,7 @@ object {
 
 @media (min-width: 700px) {
   .page-id-68 .campaign-features:nth-child(2) {
-    top: 1190px;
+    top: 1170px;
     left: 6px; } }
 
 @media (min-width: 1024px) {
@@ -2097,7 +2097,7 @@ object {
 
 @media (min-width: 1240px) {
   .page-id-68 .campaign-features:nth-child(2) {
-    top: 1600px;
+    top: 1570px;
     left: 205px;
     right: 120px; }
     .page-id-68 .campaign-features:nth-child(2) p {
@@ -2143,7 +2143,7 @@ object {
 
 @media (min-width: 1240px) {
   .page-id-68 .campaign-features:nth-child(3) {
-    top: 1957px;
+    top: 1917px;
     left: 120px;
     right: 330px; } }
 
@@ -2159,21 +2159,19 @@ object {
   .page-id-68 .campaign-features:nth-child(3) .campaign-text h2 {
     margin-left: 5%; } }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .page-id-68 .campaign-features:nth-child(3) .campaign-text h2 {
-    -ms-flex-item-align: start;
-        align-self: flex-start; } }
+    margin-left: 15%; } }
 
-.page-id-68 .campaign-features:nth-child(3) .campaign-text p {
-  width: 76%; }
-  @media (min-width: 700px) {
-    .page-id-68 .campaign-features:nth-child(3) .campaign-text p {
-      width: 90%;
-      margin-left: 5%; } }
-  @media (min-width: 1024px) {
-    .page-id-68 .campaign-features:nth-child(3) .campaign-text p {
-      width: 70%;
-      margin-left: 15%; } }
+@media (min-width: 700px) {
+  .page-id-68 .campaign-features:nth-child(3) .campaign-text p {
+    width: 80%;
+    margin-left: 5%; } }
+
+@media (min-width: 1024px) {
+  .page-id-68 .campaign-features:nth-child(3) .campaign-text p {
+    width: 70%;
+    margin-left: 15%; } }
 
 @media (min-width: 700px) {
   .page-id-68 .campaign-features:nth-child(4) {
@@ -2187,7 +2185,7 @@ object {
 
 @media (min-width: 1240px) {
   .page-id-68 .campaign-features:nth-child(4) {
-    top: 2320px;
+    top: 2290px;
     left: 205px;
     right: 120px; } }
 
