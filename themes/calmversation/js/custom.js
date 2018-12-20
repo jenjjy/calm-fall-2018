@@ -32,13 +32,13 @@
     });
 
     //Scroll Top
-    $window.scroll(function() {
+    $window.on('scroll', function() {
       // declare letiable
-
       let topPos = $(this).scrollTop();
 
       // if user scrolls down - show scroll to top button
-      if (topPos > 150) {
+
+      if (mobileWidth < 700 && topPos > 150) {
         $scrollTop.css('opacity', '1');
       } else {
         $scrollTop.css('opacity', '0');
@@ -86,7 +86,8 @@
       $('.main-carousel').flickity({
         cellAlign: 'left',
         contain: true,
-        wrapAround: true
+        wrapAround: true,
+        prevNextButtons: false
       });
     } //flickity for our-company & our-founder
 
