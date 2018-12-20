@@ -1907,19 +1907,21 @@ object {
 .page-id-68 .entry-title {
   text-align: center; }
 
-.page-id-68 .wp-block-embed-vimeo iframe {
-  width: auto;
-  height: auto; }
-  @media (min-width: 700px) {
-    .page-id-68 .wp-block-embed-vimeo iframe {
-      width: 640px;
-      height: 360px;
-      -webkit-transform: translateX(-10px);
-              transform: translateX(-10px); } }
-  @media (min-width: 1240px) {
-    .page-id-68 .wp-block-embed-vimeo iframe {
-      width: 1000px;
-      height: 639px; } }
+.page-id-68 .wp-block-embed-vimeo {
+  margin: 0; }
+  .page-id-68 .wp-block-embed-vimeo iframe {
+    width: auto;
+    height: auto; }
+    @media (min-width: 700px) {
+      .page-id-68 .wp-block-embed-vimeo iframe {
+        width: 640px;
+        height: 360px;
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px); } }
+    @media (min-width: 1240px) {
+      .page-id-68 .wp-block-embed-vimeo iframe {
+        width: 1000px;
+        height: 639px; } }
 
 .page-id-68 .wp-block-button {
   margin: 3rem 0; }
