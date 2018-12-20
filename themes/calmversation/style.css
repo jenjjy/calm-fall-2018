@@ -960,7 +960,7 @@ ul.sub-menu {
               -ms-flex-align: center;
                   align-items: center; } }
       .site-footer .social-media-icon ul li {
-        padding: 0 5px; }
+        padding: 0 15px; }
         @media (min-width: 1240px) {
           .site-footer .social-media-icon ul li {
             padding: 0 20px; } }
@@ -2097,7 +2097,9 @@ object {
   .page-id-68 .campaign-features:nth-child(2) {
     top: 1600px;
     left: 205px;
-    right: 120px; } }
+    right: 120px; }
+    .page-id-68 .campaign-features:nth-child(2) p {
+      width: 93%; } }
 
 @media (min-width: 700px) {
   .page-id-68 .campaign-features:nth-child(2) img {
@@ -2155,24 +2157,21 @@ object {
   .page-id-68 .campaign-features:nth-child(3) .campaign-text h2 {
     margin-left: 5%; } }
 
-@media (min-width: 1024px) {
-  .page-id-68 .campaign-features:nth-child(3) .campaign-text h2 {
-    margin-left: 15%; } }
-
 @media (min-width: 1240px) {
   .page-id-68 .campaign-features:nth-child(3) .campaign-text h2 {
     -ms-flex-item-align: start;
         align-self: flex-start; } }
 
-@media (min-width: 700px) {
-  .page-id-68 .campaign-features:nth-child(3) .campaign-text p {
-    width: 90%;
-    margin-left: 5%; } }
-
-@media (min-width: 1024px) {
-  .page-id-68 .campaign-features:nth-child(3) .campaign-text p {
-    width: 70%;
-    margin-left: 15%; } }
+.page-id-68 .campaign-features:nth-child(3) .campaign-text p {
+  width: 76%; }
+  @media (min-width: 700px) {
+    .page-id-68 .campaign-features:nth-child(3) .campaign-text p {
+      width: 90%;
+      margin-left: 5%; } }
+  @media (min-width: 1024px) {
+    .page-id-68 .campaign-features:nth-child(3) .campaign-text p {
+      width: 70%;
+      margin-left: 15%; } }
 
 @media (min-width: 700px) {
   .page-id-68 .campaign-features:nth-child(4) {
@@ -2298,9 +2297,7 @@ object {
   text-align: center; }
   @media (min-width: 1240px) {
     .carousel-cell {
-      border: 3px solid #52b0cc;
-      border-radius: 25px;
-      padding: 50px 0;
+      padding: 10px 0;
       margin: 25px 10px; }
       .carousel-cell p {
         max-width: 80%;
@@ -2309,7 +2306,7 @@ object {
     color: #000;
     font-size: 36px; }
   .carousel-cell img {
-    max-width: 200px; }
+    max-width: 400px; }
 
 /*--------------------------------------------------------------
 # Page Templates

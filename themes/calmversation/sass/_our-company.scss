@@ -1,6 +1,7 @@
 .our-founder-container {
   @include flex(column nowrap, center, center);
   text-align: center;
+
   @include desktop {
     @include flex(row nowrap, center, center);
     text-align: left;
@@ -19,7 +20,6 @@
   img {
     max-width: 300px;
 
-
     @include desktop {
       margin: 0 2rem 0 6rem;
       max-width: 400px;
@@ -35,6 +35,7 @@
       padding: 0;
       padding-bottom: 25px;
     }
+
     p {
       width: 80%;
     }
@@ -44,6 +45,7 @@
 .main-carousel {
   text-align: center;
   @include flex(column nowrap, center, null);
+
   @include desktop {
 
     @include flex(row nowrap, center, null);
@@ -56,25 +58,26 @@
   text-align: center;
 
   @include desktop {
-    border: 3px solid $primary__color;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-    padding: 50px 0;
+
+    padding: 10px 0;
     margin: 25px 10px;
+
     p {
       max-width: 80%;
       margin: $margin__auto;
+
     }
   }
 
   h2 {
+
     color: $black;
     font-size: $main-header__mobile;
   }
 
   img {
-    max-width: 200px;
+    max-width: 400px;
+
   }
 
 }
