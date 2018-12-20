@@ -7,11 +7,13 @@
     iframe {
       width: auto;
       height: auto;
+
       @include tablet {
         width: 640px;
         height: 360px;
         transform: translateX(-10px);
       }
+
       @include desktop {
         width: 1000px;
         height: 639px;
@@ -21,6 +23,7 @@
 
   .wp-block-button {
     margin: 3rem 0;
+
     @include tablet {
       margin-bottom: 0;
     }
@@ -33,15 +36,14 @@
   .wp-block-image {
     //this is the svg line
     display: none;
+
     @include tablet {
-      // margin-top: -8px;
-      // margin-bottom: 0;
-      // margin-left:7%;
       margin: -8px 0 0 7%;
       display: block;
       position: relative;
       transform: translate(-4.5%, 0);
     }
+
     @include desktop {
       transform: translate(-7.5%, 0);
     }
@@ -51,8 +53,8 @@
         // transform: scale(0.8) translateY(-206px);
         height: inherit;
       }
-      @include desktop {
-      }
+
+      @include desktop {}
     }
   }
 
@@ -61,16 +63,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     @include tablet {
       position: absolute;
       flex-direction: row;
     }
+
     img {
       margin-bottom: 1.5rem;
       width: 70%;
+
       @include tablet {
         width: 20%;
       }
+
       @include desktop {
         // width: 22%;
         width: 200px;
@@ -80,28 +86,35 @@
     .campaign-text {
       display: flex;
       flex-direction: column;
+
       @include tablet {
         align-items: flex-start;
       }
+
       p {
         text-align: center;
         font-size: $main-paragraph__mobile;
+
         @include tablet {
           font-size: 16px;
           text-align: left;
         }
       }
+
       h2 {
         font-size: 30px;
         text-align: center;
         margin-bottom: 1.5rem;
+
         @include tablet {
           text-align: left;
           font-size: 20px;
         }
       }
     }
-  } //end of campaign features
+  }
+
+  //end of campaign features
 
   .campaign-features:nth-child(1) {
     @include tablet {
@@ -109,20 +122,24 @@
       left: 0;
       flex-direction: row-reverse;
     }
+
     @include desktop {
       top: 1253px;
       left: 125px;
       right: 340px;
     }
+
     img {
       @include tablet {
         //width: 20%;
         //margin-left: 20%;
         //margin-right: 8%;
       }
+
       @include bigTablet {
         margin-right: 10%;
       }
+
       @include desktop {
         //width: 16%;
         //margin-left: 20%;
@@ -136,6 +153,7 @@
           margin-left: 5%;
         }
       }
+
       p {
         @include tablet {
           font-size: 16px;
@@ -152,10 +170,12 @@
       top: 1240px;
       left: 0;
     }
+
     @include desktop {
       top: 1600px;
       left: 205px;
       right: 120px;
+
       p {
         width: 93%;
       }
@@ -165,9 +185,11 @@
       @include tablet {
         margin-right: 3%;
       }
+
       @include bigTablet {
         margin-left: 10%;
       }
+
       @include desktop {
         // padding-right: 54px;
         margin-left: 4%;
@@ -179,10 +201,12 @@
         @include tablet {
           // align-self: center;
         }
+
         @include desktop {
           align-self: flex-start;
         }
       }
+
       p {
         @include bigTablet {
           width: 90%;
@@ -197,6 +221,7 @@
       left: 10px;
       flex-direction: row-reverse;
     }
+
     @include desktop {
       top: 1957px;
       left: 120px;
@@ -209,9 +234,11 @@
         //margin-left: 5%;
         //margin-right: 3%;
       }
+
       @include bigTablet {
         margin-right: 10%;
       }
+
       @include desktop {
         margin-right: 0;
       }
@@ -222,12 +249,15 @@
         @include tablet {
           margin-left: 5%;
         }
+
         @include desktop {
           align-self: flex-start;
         }
       }
+
       p {
         width: 76%;
+
         @include tablet {
           width: 90%;
           margin-left: 5%;
@@ -242,6 +272,7 @@
       left: 40px;
       right: 40px;
     }
+
     @include desktop {
       top: 2320px;
       left: 205px;
@@ -254,9 +285,11 @@
         //margin-right: 5%;
         //margin-left: 3%;
       }
+
       @include bigTablet {
         margin-left: 10%;
       }
+
       @include desktop {
         // padding-right: 54px;
         //width: 12%;
@@ -269,9 +302,11 @@
       @include tablet {
         margin-left: 5%;
       }
+
       @include desktop {
         margin-left: 0;
       }
+
       p {
         text-align: left;
       }
@@ -280,6 +315,7 @@
 
   .button-bottom {
     display: none;
+
     @include tablet {
       display: block;
       margin-top: -10px;
