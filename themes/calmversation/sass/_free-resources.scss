@@ -39,6 +39,9 @@
     padding: 0.8rem 3rem;
     @include tablet {
       font-size: $main-paragraph__desktop - 8;
+      @include desktop {
+        font-size: $main-paragraph__desktop;
+      }
     }
   }
 
@@ -186,6 +189,9 @@
   @include flex(column nowrap, center, center);
   @include tablet {
     max-width: $container-width-desktop;
+    @include desktop {
+      max-width: 100%;
+    }
   }
 
   h2 {
@@ -212,8 +218,8 @@
     }
 
     @include desktop {
-      max-height: 400px;
-      max-width: 710px;
+      height: 400px;
+      width: 710px;
     }
   }
 }

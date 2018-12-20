@@ -32,39 +32,37 @@ get_header(); ?>
 
                 <div class="course-bubbles">
                     <?php foreach ($course_posts as $post) : setup_postdata($post); ?>
-                    <?php
-                            $post_id = $post->ID;
-                            ?>
-                    <div class="bubble bubble<?php echo $post_id; ?>" data-id='<?php echo $post_id; ?>'>
-                          
-                            <div class="course-title" >
+                        <?php
+                        $post_id = $post->ID;
+                        ?>
+                        <div class="bubble bubble<?php echo $post_id; ?>" data-id='<?php echo $post_id; ?>'>
+
+                            <div class="course-title">
                                 <h2><?php echo esc_html(CFS()->get('course_theme_title', $post_id)); ?>
                                 </h2>
                             </div>
-                    </div>
+                        </div>
                     <?php endforeach;
                     wp_reset_postdata(); ?>
                 </div>
 
                 <div class="course-theme-text">
                     <?php foreach ($course_posts as $post) : setup_postdata($post); ?>
-                    <?php
-                            $post_id = $post->ID;
-                            $post_url = $post->guid;
-                            ?>
-    
-                    <article class="themes" data-id='<?php echo $post_id; ?>'>
+                        <?php
+                        $post_id = $post->ID;
+                        $post_url = $post->guid;
+                        ?>
 
-                        <h2 class="course-title" ><?php echo esc_html(CFS()->get('course_theme_title', $post_id)); ?>
-                        </h2>                          
-                        <p class="themes-text"><?php echo esc_html(CFS()->get('course_theme_description', $post_id)); ?> </p>
-                        <a class="cfs-hyperlink learn-more" href="<?php echo $post_url; ?>">Learn More</a>
-                    </article>
+                        <article class="themes" data-id='<?php echo $post_id; ?>'>
+
+                            <h2 class="course-title"><?php echo esc_html(CFS()->get('course_theme_title', $post_id)); ?>
+                            </h2>
+                            <p class="themes-text"><?php echo CFS()->get('course_theme_description', $post_id); ?> </p>
+                            <a class="cfs-hyperlink learn-more" href="<?php echo $post_url; ?>">Learn More</a>
+                        </article>
                     <?php endforeach;
                     wp_reset_postdata(); ?>
                 </div>
-
-
 
 
             </section>
@@ -82,22 +80,22 @@ get_header(); ?>
                             <?php echo $row['feature_text_mobile']; ?>
                         </h3>
                         <p>
-                        <?php echo $row['feature_text_desktop']; ?>
+                            <?php echo $row['feature_text_desktop']; ?>
                         </p>
-                        
+
                     </div>
                 <?php endforeach; ?>
             </section>
             <section class="course-pack">
                 <h2><?php echo esc_html(CFS()->get('course_pack_title')); ?></h2>
                 <p><?php echo esc_html(CFS()->get('course_pack')); ?></p>
-                <?php echo esc_html(CFS()->get('course_pack_button')); ?>
+                <?php echo wp_kses_post(CFS()->get('course_pack_button')); ?>
 
             </section>
             <section class="course-banner">
                 <div class="banner-info">
-                <h2><?php echo esc_html(CFS()->get('banner_title')); ?></h2>
-                <p><?php echo esc_html(CFS()->get('banner_text')); ?></p>
+                    <h2><?php echo esc_html(CFS()->get('banner_title')); ?></h2>
+                    <p><?php echo esc_html(CFS()->get('banner_text')); ?></p>
                 </div>
                 <img src="<?php echo esc_html(CFS()->get('banner_image')); ?>" alt="banner image courses page">
             </section>

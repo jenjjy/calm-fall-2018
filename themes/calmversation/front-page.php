@@ -19,7 +19,7 @@ get_header(); ?>
             </h1>
             <div class="button-container">
                 <?php
-                echo esc_html(CFS()->get('mobile_banner_button'));
+                echo CFS()->get('mobile_banner_button');
                 ?>
             </div>
         </div>
@@ -47,7 +47,7 @@ get_header(); ?>
                 <!--- FOUNDER -->
                 <div class="founder-container">
                     <iframe src=" <?php
-                   echo esc_html(CFS()->get('listen_to_founder_video'));
+                    echo esc_html(CFS()->get('listen_to_founder_video'));
                     ?>"></iframe>
                     <div class="founder-text-container">
                         <h1>
@@ -57,7 +57,7 @@ get_header(); ?>
                         </h1>
                         <div class="founder-button-container">
                             <?php
-                            echo esc_html(CFS()->get('listen_to_founder_button'));
+                            echo CFS()->get('listen_to_founder_button');
                             ?>
                         </div>
                     </div>
@@ -76,12 +76,12 @@ get_header(); ?>
                         ?>" alt="game changing solution">
                         <p class="solution-text-mobile">
                             <?php
-                            echo esc_html(CFS()->get('game_changing_solution_text'));
+                            echo wp_kses_post(CFS()->get('game_changing_solution_text'));
                             ?>
                         </p>
                         <p class="solution-text-desktop">
                             <?php
-                            echo esc_html(CFS()->get('game_changing_solution_text_desktop'));
+                            echo wp_kses_post(CFS()->get('game_changing_solution_text_desktop'));
                             ?>
                         </p>
                     </div>
@@ -122,7 +122,7 @@ get_header(); ?>
             <!--- COURSES -->
             <div class="view-courses">
                 <?php
-                echo esc_html(CFS()->get('view_courses'));
+                echo (CFS()->get('view_courses'));
                 ?>
             </div>
 
@@ -142,19 +142,19 @@ get_header(); ?>
 
                 <p class="campaign-text-mobile">
                     <?php
-                    echo esc_html(CFS()->get('campaign_text'));
+                    echo wp_kses_post(CFS()->get('campaign_text'));
                     ?>
                 </p>
 
                 <p class="campaign-text-desktop">
                     <?php
-                    echo esc_html(CFS()->get('campaign_text_desktop'));
+                    echo wp_kses_post(CFS()->get('campaign_text_desktop'));
                     ?>
                 </p>
 
                 <div class="campaign-button">
                     <?php
-                    echo esc_html(CFS()->get('campaign_button'));
+                    echo CFS()->get('campaign_button');
                     ?>
                 </div>
             </div>
@@ -165,7 +165,6 @@ get_header(); ?>
                 ?>" alt="" class="campaign-logo">
             </div>
 
-            
 
         </div>
     </main><!-- #main -->
